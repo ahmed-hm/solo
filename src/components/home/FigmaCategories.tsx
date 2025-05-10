@@ -1,10 +1,10 @@
 'use client';
 
-import React, { useState } from 'react';
 import Image from 'next/image';
+import React from 'react';
 // Import Swiper components and modules
-import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -89,9 +89,9 @@ const FigmaCategories: React.FC<FigmaCategoriesProps> = ({ onCategorySelect, sel
             nextEl: nextRef.current,
           }}
           onBeforeInit={(swiper) => {
-            // @ts-ignore - Swiper types issue
+            // @ts-expect-error - Known issue with Swiper types
             swiper.params.navigation.prevEl = prevRef.current;
-            // @ts-ignore - Swiper types issue
+            // @ts-expect-error - Known issue with Swiper types
             swiper.params.navigation.nextEl = nextRef.current;
           }}
           className="pb-6 hide-scrollbar"
