@@ -20,7 +20,7 @@ const BigEventBanner = () => {
           </div>
 
           {/* Right column with content */}
-          <div className="w-full md:w-5/12 flex flex-col gap-[35px] bg-white">
+          <div className="w-full md:w-5/12 flex flex-col gap-[35px] bg-white p-2">
             <h5 className="font-['Montserrat'] font-bold text-base tracking-[0.625%] text-[#BDBDBD]">June 2025</h5>
 
             <h1 className="font-['Dancing_Script'] font-bold text-[40px] leading-[1.25em] tracking-[0.5%] text-black">

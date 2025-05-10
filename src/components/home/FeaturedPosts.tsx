@@ -22,7 +22,7 @@ const BlogPostCard: React.FC<BlogPostCardProps> = ({
 }) => {
   return (
     <div className="bg-white rounded overflow-hidden shadow-[0px_2px_4px_0px_rgba(0,0,0,0.1)]">
-      <div className="relative w-full h-[300px] overflow-hidden">
+      <div className="relative w-full md:h-[300px] h-0 pb-[62.9%] md:pb-0 overflow-hidden">
         <Image src={`/images/featured/${imageUrl}`} alt={title} fill style={{ objectFit: 'cover' }} />
 
         {isNew && (
@@ -123,13 +123,14 @@ const FeaturedPosts = () => {
     <section className="py-[30px]">
       <div className="container mx-auto px-4">
         <div className="text-center mb-[30px]">
-          <h2 className="font-['Dancing_Script'] text-[84px] leading-[1.2em] font-semibold text-black">
+          <h2 className="font-['Dancing_Script'] text-[42px] md:text-[84px] leading-[1.2em] font-semibold text-black">
             Featured Posts
           </h2>
         </div>
 
-        <div className="flex justify-center">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-[30px] max-w-[1100px]">
+        {/* Desktop view (grid layout) - Visible on md screens and above */}
+        <div className="hidden md:flex justify-center">
+          <div className="grid grid-cols-3 gap-[30px] max-w-[1100px]">
             {posts.map((post, index) => (
               <BlogPostCard
                 key={index}
@@ -144,9 +145,46 @@ const FeaturedPosts = () => {
             ))}
           </div>
         </div>
+
+        {/* Mobile view (scrollable horizontal cards) - Visible on screens below md */}
+        <div className="md:hidden">
+          <div className="flex overflow-x-auto scrollbar-hide pb-4 -mx-4 px-4 space-x-4">
+            {posts.map((post, index) => (
+              <div key={index} className="flex-none w-[85%]">
+                <BlogPostCard
+                  title={post.title}
+                  tags={post.tags}
+                  date={post.date}
+                  comments={post.comments}
+                  imageUrl={post.imageUrl}
+                  description={post.description}
+                  isNew={post.isNew}
+                />
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
     </section>
   );
 };
+
+// Add this CSS to hide scrollbars but allow scrolling
+const scrollbarHideStyle = `
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;  /* Chrome, Safari and Opera */
+}
+`;
+
+// Add the style to the document
+if (typeof document !== 'undefined') {
+  const style = document.createElement('style');
+  style.textContent = scrollbarHideStyle;
+  document.head.appendChild(style);
+}
 
 export default FeaturedPosts;

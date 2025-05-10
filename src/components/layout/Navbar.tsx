@@ -1,92 +1,535 @@
-"use client";
+'use client';
 
-import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { useEffect, useRef, useState } from 'react';
 
 const Navbar = () => {
+  const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [mobileSubmenuOpen, setMobileSubmenuOpen] = useState<string | null>(null);
+  const navRef = useRef<HTMLDivElement>(null);
+
+  const toggleDropdown = (menuId: string) => {
+    if (activeDropdown === menuId) {
+      setActiveDropdown(null);
+    } else {
+      setActiveDropdown(menuId);
+    }
+  };
+
+  const toggleMobileMenu = () => {
+    setMobileMenuOpen(!mobileMenuOpen);
+  };
+
+  const toggleMobileSubmenu = (menuId: string) => {
+    if (mobileSubmenuOpen === menuId) {
+      setMobileSubmenuOpen(null);
+    } else {
+      setMobileSubmenuOpen(menuId);
+    }
+  };
+
+  // Close dropdown when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (navRef.current && !navRef.current.contains(event.target as Node)) {
+        setActiveDropdown(null);
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
+
+  // Prevent body scroll when mobile menu is open
+  useEffect(() => {
+    if (mobileMenuOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'auto';
+    }
+    return () => {
+      document.body.style.overflow = 'auto';
+    };
+  }, [mobileMenuOpen]);
+
   return (
-    <header className="sticky top-0 bg-white shadow-[0_4px_10px_rgba(0,0,0,0.05)] z-50">
-      <div className="container mx-auto px-[20px] h-[100px] flex justify-between items-center">
+    <header className="sticky top-0 bg-white shadow-[0px_2px_2px_0px_rgba(0,0,0,0.15)] z-50 p-4">
+      <div className="container mx-auto px-[20px] py-[27px] flex justify-between items-center">
+        {/* Logo Section */}
         <div className="flex items-center">
           <Link href="/" className="flex items-center">
-            <Image 
-              src="/images/logo.svg"
-              alt="Solo Logo"
-              width={180}
-              height={60}
-              priority
-            />
+            <Image src="/images/logo.svg" alt="Solo Logo" width={260} height={100} priority />
           </Link>
         </div>
-        
-        <nav className="hidden lg:flex items-center space-x-[40px]">
-          <Link href="/" className="text-black font-montserrat font-medium text-[16px] leading-[24px] hover:text-primary-color transition duration-300">
+
+        {/* Navigation Menu */}
+        <nav ref={navRef} className="hidden lg:flex items-center gap-[25px]">
+          <Link
+            href="/"
+            className="text-[#DBB58F] font-montserrat font-bold text-[17px] leading-[20.7px] tracking-[-0.6px]"
+          >
             Home
           </Link>
-          <div className="flex items-center">
-            <Link href="/about" className="text-black font-montserrat font-medium text-[16px] leading-[24px] hover:text-primary-color transition duration-300">
+          <div className="flex items-center gap-[3px] relative">
+            <Link
+              href="/about"
+              className="text-black font-montserrat font-medium text-[17px] leading-[20.7px] tracking-[-0.6px] hover:text-[#DBB58F] transition duration-300"
+            >
               About Us
             </Link>
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" className="ml-[6px]">
-              <path d="M4 6L8 10L12 6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-            </svg>
+            <button
+              onClick={() => toggleDropdown('about')}
+              className="focus:outline-none h-full"
+              aria-label="Toggle About Us dropdown menu"
+            >
+              <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M1 1L5 5L9 1"
+                  stroke="#252B42"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            </button>
+            {activeDropdown === 'about' && (
+              <div className="absolute top-full left-0 mt-2 w-[178px] bg-white shadow-md flex flex-col z-10">
+                <div className="w-full py-1">
+                  <hr className="border-[#DBB58F] border-t-[5px]" />
+                </div>
+                <div className="flex flex-col gap-[10px] p-[10px]">
+                  <Link
+                    href="/about/story"
+                    className="text-black font-montserrat font-medium text-[14px] hover:text-[#DBB58F] transition duration-300"
+                  >
+                    Our Story
+                  </Link>
+                  <Link
+                    href="/about/private-label"
+                    className="text-black font-montserrat font-medium text-[14px] hover:text-[#DBB58F] transition duration-300"
+                  >
+                    The core of Solo
+                  </Link>
+                </div>
+              </div>
+            )}
           </div>
-          <div className="flex items-center">
-            <Link href="/marketplace" className="text-primary-color font-montserrat font-bold text-[16px] leading-[24px]">
+          {/* <div className="flex items-center gap-[3px] relative">
+            <Link href="/marketplace" className="text-black font-montserrat font-medium text-[17px] leading-[20.7px] tracking-[-0.6px] hover:text-[#DBB58F] transition duration-300">
               Marketplace
             </Link>
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" className="ml-[6px]">
-              <path d="M4 6L8 10L12 6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-            </svg>
-          </div>
-          <div className="flex items-center">
-            <Link href="/recipes" className="text-black font-montserrat font-medium text-[16px] leading-[24px] hover:text-primary-color transition duration-300">
+            <button 
+              onClick={() => toggleDropdown('marketplace')}
+              className="focus:outline-none"
+              aria-label="Toggle Marketplace dropdown menu"
+            >
+              <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 1L5 5L9 1" stroke="#252B42" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+            </button>
+            {activeDropdown === 'marketplace' && (
+              <div className="absolute top-full left-0 mt-2 w-[178px] bg-white shadow-md flex flex-col z-10">
+                <div className="w-full py-1">
+                  <hr className="border-[#DBB58F] border-t-[5px]" />
+                </div>
+                <div className="flex flex-col gap-[10px] p-[10px]">
+                  <Link href="/marketplace/products" className="text-black font-montserrat font-medium text-[14px] hover:text-[#DBB58F] transition duration-300">
+                    Products
+                  </Link>
+                  <Link href="/marketplace/categories" className="text-black font-montserrat font-medium text-[14px] hover:text-[#DBB58F] transition duration-300">
+                    Categories
+                  </Link>
+                </div>
+              </div>
+            )}
+          </div> */}
+          <div className="flex items-center gap-[3px] relative">
+            <Link
+              href="/recipes"
+              className="text-black font-montserrat font-medium text-[17px] leading-[20.7px] tracking-[-0.6px] hover:text-[#DBB58F] transition duration-300"
+            >
               Recipes
             </Link>
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" className="ml-[6px]">
-              <path d="M4 6L8 10L12 6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-            </svg>
+            {/* <button 
+              onClick={() => toggleDropdown('recipes')}
+              className="focus:outline-none"
+              aria-label="Toggle Recipes dropdown menu"
+            >
+              <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 1L5 5L9 1" stroke="#252B42" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+            </button>
+            {activeDropdown === 'recipes' && (
+              <div className="absolute top-full left-0 mt-2 w-[178px] bg-white shadow-md flex flex-col z-10">
+                <div className="w-full py-1">
+                  <hr className="border-[#DBB58F] border-t-[5px]" />
+                </div>
+                <div className="flex flex-col gap-[10px] p-[10px]">
+                  <Link href="/recipes/popular" className="text-black font-montserrat font-medium text-[14px] hover:text-[#DBB58F] transition duration-300">
+                    Popular Recipes
+                  </Link>
+                  <Link href="/recipes/new" className="text-black font-montserrat font-medium text-[14px] hover:text-[#DBB58F] transition duration-300">
+                    New Recipes
+                  </Link>
+                </div>
+              </div>
+            )} */}
           </div>
-          <div className="flex items-center">
-            <Link href="/loyalty" className="text-black font-montserrat font-medium text-[16px] leading-[24px] hover:text-primary-color transition duration-300">
+          {/* <div className="flex items-center gap-[3px] relative">
+            <Link href="/loyalty" className="text-black font-montserrat font-medium text-[17px] leading-[20.7px] tracking-[-0.6px] hover:text-[#DBB58F] transition duration-300">
               Loyalty Program
             </Link>
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" className="ml-[6px]">
-              <path d="M4 6L8 10L12 6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-            </svg>
-          </div>
-          <div className="flex items-center">
-            <Link href="/partners" className="text-black font-montserrat font-medium text-[16px] leading-[24px] hover:text-primary-color transition duration-300">
+            <button 
+              onClick={() => toggleDropdown('loyalty')}
+              className="focus:outline-none"
+              aria-label="Toggle Loyalty dropdown menu"
+            >
+              <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 1L5 5L9 1" stroke="#252B42" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+            </button>
+            {activeDropdown === 'loyalty' && (
+              <div className="absolute top-full left-0 mt-2 w-[178px] bg-white shadow-md flex flex-col z-10">
+                <div className="w-full py-1">
+                  <hr className="border-[#DBB58F] border-t-[5px]" />
+                </div>
+                <div className="flex flex-col gap-[10px] p-[10px]">
+                  <Link href="/loyalty/benefits" className="text-black font-montserrat font-medium text-[14px] hover:text-[#DBB58F] transition duration-300">
+                    Benefits
+                  </Link>
+                  <Link href="/loyalty/join" className="text-black font-montserrat font-medium text-[14px] hover:text-[#DBB58F] transition duration-300">
+                    Join Program
+                  </Link>
+                </div>
+              </div>
+            )}
+          </div> */}
+          <div className="flex items-center gap-[3px] relative">
+            <Link
+              href="/partners"
+              className="text-black font-montserrat font-medium text-[17px] leading-[20.7px] tracking-[-0.6px] hover:text-[#DBB58F] transition duration-300"
+            >
               Our Success Partners
             </Link>
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" className="ml-[6px]">
-              <path d="M4 6L8 10L12 6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+            <button
+              onClick={() => toggleDropdown('partners')}
+              className="focus:outline-none"
+              aria-label="Toggle Partners dropdown menu"
+            >
+              <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M1 1L5 5L9 1"
+                  stroke="#252B42"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            </button>
+            {activeDropdown === 'partners' && (
+              <div className="absolute top-full left-0 mt-2 w-[178px] bg-white shadow-md flex flex-col z-10">
+                <div className="w-full py-1">
+                  <hr className="border-[#DBB58F] border-t-[5px]" />
+                </div>
+                <div className="flex flex-col gap-[10px] p-[10px]">
+                  <Link
+                    href="/partners/clients"
+                    className="text-black font-montserrat font-medium text-[14px] hover:text-[#DBB58F] transition duration-300"
+                  >
+                    Clients
+                  </Link>
+                  <Link
+                    href="/partners/countries"
+                    className="text-black font-montserrat font-medium text-[14px] hover:text-[#DBB58F] transition duration-300"
+                  >
+                    Countries
+                  </Link>
+                </div>
+              </div>
+            )}
+          </div>
+          {/* <Link href="/jobs" className="text-black font-montserrat font-medium text-[17px] leading-[20.7px] tracking-[-0.6px] hover:text-[#DBB58F] transition duration-300">
+            Join Our Team
+          </Link> */}
+        </nav>
+
+        {/* Language Selector */}
+        <div className="flex items-center gap-[5px]">
+          <div className="w-[20px] h-[15px] relative">
+            {/* British flag */}
+            <svg width="20" height="15" viewBox="0 0 20 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="20" height="15" rx="2" fill="#F0F0F0" />
+              <path d="M8.69565 15H11.3043V0H8.69565V15Z" fill="#D80027" />
+              <path d="M20 5.2174H0V9.78262H20V5.2174Z" fill="#D80027" />
             </svg>
           </div>
-          <Link href="/jobs" className="text-black font-montserrat font-medium text-[16px] leading-[24px] hover:text-primary-color transition duration-300">
-            Join Our Team
-          </Link>
-        </nav>
-        
-        <div className="flex items-center gap-[15px]">
-          <div className="flex items-center">
-            <span className="text-black font-montserrat font-medium text-[14px] mr-[8px]">English</span>
-            <div className="w-[24px] h-[24px] relative">
-              <div className="absolute inset-0 bg-[#F2F2F2] rounded-full flex items-center justify-center text-[10px] font-medium">
-                EN
-              </div>
-            </div>
-          </div>
-          
+          <span className="text-black font-montserrat font-medium text-[17px] leading-[20.7px] tracking-[-0.6px]">
+            English
+          </span>
+
           {/* Mobile menu button */}
-          <button className="lg:hidden w-[24px] h-[24px] flex flex-col justify-center items-center">
+          <button
+            className="lg:hidden ml-[15px] w-[24px] h-[24px] flex flex-col justify-center items-center"
+            onClick={toggleMobileMenu}
+          >
             <span className="w-[24px] h-[2px] bg-black mb-[5px]"></span>
             <span className="w-[24px] h-[2px] bg-black mb-[5px]"></span>
             <span className="w-[24px] h-[2px] bg-black"></span>
           </button>
         </div>
       </div>
+
+      {/* Mobile Menu Overlay */}
+      {mobileMenuOpen && (
+        <div className="fixed top-0 right-0 left-0 bg-white z-50 overflow-y-auto lg:hidden shadow-md">
+          {/* Menu Header */}
+          <div className="flex justify-between items-center p-5 bg-black text-white border-b border-gray-700">
+            <span className="text-xl font-montserrat font-medium">Menu</span>
+            <button 
+              onClick={toggleMobileMenu}
+              className="focus:outline-none text-white"
+              aria-label="Close menu"
+            >
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18 6L6 18" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M6 6L18 18" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
+            </button>
+          </div>
+          
+          {/* Menu Items */}
+          <div className="p-5 flex flex-col gap-6">
+            {/* Home with icon */}
+            <Link href="/" className="flex items-center gap-3" onClick={toggleMobileMenu}>
+              <div className="w-6 h-6 flex items-center justify-center">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M5 10.5V20H19V10.5"
+                    stroke="#DBB58F"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                  <path
+                    d="M12 3L2 12H22L12 3Z"
+                    stroke="#DBB58F"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </div>
+              <span className="text-[#DBB58F] font-montserrat font-medium text-[16px]">Home</span>
+            </Link>
+
+            {/* About Us with icon and dropdown */}
+            <div className="flex flex-col gap-3">
+              <div className="flex items-center justify-between">
+                <div className="flex items-center gap-3">
+                  <div className="w-6 h-6 flex items-center justify-center">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                        stroke="black"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                      <path d="M12 8V12" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                      <path d="M12 16H12.01" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                    </svg>
+                  </div>
+                  <button
+                    onClick={() => toggleMobileSubmenu('about')}
+                    className="text-black font-montserrat font-medium text-[16px] focus:outline-none text-left"
+                  >
+                    About Us
+                  </button>
+                </div>
+                <button onClick={() => toggleMobileSubmenu('about')} className="focus:outline-none">
+                  {mobileSubmenuOpen === 'about' ? (
+                    <svg width="24" height="24" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M13.0938 26.4682C5.94665 26.4682 0.153076 20.6746 0.153076 13.5274C0.153076 6.38026 5.94665 0.586685 13.0938 0.586685C20.241 0.586685 26.0346 6.38026 26.0346 13.5274C26.0346 20.6746 20.241 26.4682 13.0938 26.4682ZM13.0938 23.88C15.8395 23.88 18.4727 22.7893 20.4142 20.8478C22.3557 18.9063 23.4464 16.2731 23.4464 13.5274C23.4464 10.7817 22.3557 8.14853 20.4142 6.20704C18.4727 4.26555 15.8395 3.17483 13.0938 3.17483C10.3481 3.17483 7.71492 4.26555 5.77343 6.20704C3.83194 8.14853 2.74122 10.7817 2.74122 13.5274C2.74122 16.2731 3.83194 18.9063 5.77343 20.8478C7.71492 22.7893 10.3481 23.88 13.0938 23.88V23.88ZM6.62345 12.2334H19.5642V14.8215H6.62345V12.2334Z"
+                        fill="black"
+                      />
+                    </svg>
+                  ) : (
+                    <svg width="24" height="24" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M11.7996 12.2333V7.05704H14.3878V12.2333H19.5641V14.8215H14.3878V19.9978H11.7996V14.8215H6.62333V12.2333H11.7996ZM13.0937 26.4682C5.94653 26.4682 0.152954 20.6746 0.152954 13.5274C0.152954 6.38024 5.94653 0.58667 13.0937 0.58667C20.2409 0.58667 26.0344 6.38024 26.0344 13.5274C26.0344 20.6746 20.2409 26.4682 13.0937 26.4682ZM13.0937 23.88C15.8394 23.88 18.4726 22.7893 20.4141 20.8478C22.3556 18.9063 23.4463 16.2731 23.4463 13.5274C23.4463 10.7817 22.3556 8.14851 20.4141 6.20702C18.4726 4.26554 15.8394 3.17482 13.0937 3.17482C10.348 3.17482 7.7148 4.26554 5.77331 6.20702C3.83182 8.14851 2.7411 10.7817 2.7411 13.5274C2.7411 16.2731 3.83182 18.9063 5.77331 20.8478C7.7148 22.7893 10.348 23.88 13.0937 23.88V23.88Z"
+                        fill="black"
+                      />
+                    </svg>
+                  )}
+                </button>
+              </div>
+
+              {/* About Us Submenu */}
+              {mobileSubmenuOpen === 'about' && (
+                <div className="flex flex-col gap-4 px-9">
+                  <Link
+                    href="/about/story"
+                    className="text-black font-montserrat font-medium text-[15px] flex items-center justify-between"
+                    onClick={toggleMobileMenu}
+                  >
+                    <span>Our Story</span>
+                    <svg width="7" height="13" viewBox="0 0 7 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M6.75476 6.05632L0.754761 12.0563V0.0563202L6.75476 6.05632Z" fill="black"/>
+                    </svg>
+                  </Link>
+                  <Link
+                    href="/about/private-label"
+                    className="text-black font-montserrat font-medium text-[15px] flex items-center justify-between"
+                    onClick={toggleMobileMenu}
+                  >
+                    <span>The core of Solo</span>
+                    <svg width="7" height="13" viewBox="0 0 7 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M6.75476 6.05632L0.754761 12.0563V0.0563202L6.75476 6.05632Z" fill="black"/>
+                    </svg>
+                  </Link>
+                </div>
+              )}
+            </div>
+
+            {/* Recipes with icon */}
+            <div className="flex items-center gap-3">
+              <div className="w-6 h-6 flex items-center justify-center">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M2 6H22V18H2V6Z"
+                    stroke="black"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                  <path
+                    d="M12 10C12.5523 10 13 9.55228 13 9C13 8.44772 12.5523 8 12 8C11.4477 8 11 8.44772 11 9C11 9.55228 11.4477 10 12 10Z"
+                    stroke="black"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                  <path
+                    d="M17 10C17.5523 10 18 9.55228 18 9C18 8.44772 17.5523 8 17 8C16.4477 8 16 8.44772 16 9C16 9.55228 16.4477 10 17 10Z"
+                    stroke="black"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                  <path
+                    d="M7 10C7.55228 10 8 9.55228 8 9C8 8.44772 7.55228 8 7 8C6.44772 8 6 8.44772 6 9C6 9.55228 6.44772 10 7 10Z"
+                    stroke="black"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </div>
+              <Link
+                href="/recipes"
+                className="text-black font-montserrat font-medium text-[16px]"
+                onClick={toggleMobileMenu}
+              >
+                Recipes
+              </Link>
+            </div>
+
+            {/* Our Success Partners with icon and dropdown */}
+            <div className="flex flex-col gap-3">
+              <div className="flex items-center justify-between">
+                <div className="flex items-center gap-3">
+                  <div className="w-6 h-6 flex items-center justify-center">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M17 21V19C17 16.7909 15.2091 15 13 15H5C2.79086 15 1 16.7909 1 19V21"
+                        stroke="black"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                      <path
+                        d="M9 11C11.2091 11 13 9.20914 13 7C13 4.79086 11.2091 3 9 3C6.79086 3 5 4.79086 5 7C5 9.20914 6.79086 11 9 11Z"
+                        stroke="black"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                      <path
+                        d="M23 21V19C22.9986 17.1771 21.765 15.5857 20 15.13"
+                        stroke="black"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                      <path
+                        d="M16 3.13C17.7699 3.58317 19.0078 5.17799 19.0078 7.005C19.0078 8.83201 17.7699 10.4268 16 10.88"
+                        stroke="black"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                    </svg>
+                  </div>
+                  <button
+                    onClick={() => toggleMobileSubmenu('partners')}
+                    className="text-black font-montserrat font-medium text-[16px] focus:outline-none text-left"
+                  >
+                    Our Success Partners
+                  </button>
+                </div>
+                <button onClick={() => toggleMobileSubmenu('partners')} className="focus:outline-none">
+                  {mobileSubmenuOpen === 'partners' ? (
+                    <svg width="24" height="24" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M13.0938 26.4682C5.94665 26.4682 0.153076 20.6746 0.153076 13.5274C0.153076 6.38026 5.94665 0.586685 13.0938 0.586685C20.241 0.586685 26.0346 6.38026 26.0346 13.5274C26.0346 20.6746 20.241 26.4682 13.0938 26.4682ZM13.0938 23.88C15.8395 23.88 18.4727 22.7893 20.4142 20.8478C22.3557 18.9063 23.4464 16.2731 23.4464 13.5274C23.4464 10.7817 22.3557 8.14853 20.4142 6.20704C18.4727 4.26555 15.8395 3.17483 13.0938 3.17483C10.3481 3.17483 7.71492 4.26555 5.77343 6.20704C3.83194 8.14853 2.74122 10.7817 2.74122 13.5274C2.74122 16.2731 3.83194 18.9063 5.77343 20.8478C7.71492 22.7893 10.3481 23.88 13.0938 23.88V23.88ZM6.62345 12.2334H19.5642V14.8215H6.62345V12.2334Z"
+                        fill="black"
+                      />
+                    </svg>
+                  ) : (
+                    <svg width="24" height="24" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M11.7996 12.2333V7.05704H14.3878V12.2333H19.5641V14.8215H14.3878V19.9978H11.7996V14.8215H6.62333V12.2333H11.7996ZM13.0937 26.4682C5.94653 26.4682 0.152954 20.6746 0.152954 13.5274C0.152954 6.38024 5.94653 0.58667 13.0937 0.58667C20.2409 0.58667 26.0344 6.38024 26.0344 13.5274C26.0344 20.6746 20.2409 26.4682 13.0937 26.4682ZM13.0937 23.88C15.8394 23.88 18.4726 22.7893 20.4141 20.8478C22.3556 18.9063 23.4463 16.2731 23.4463 13.5274C23.4463 10.7817 22.3556 8.14851 20.4141 6.20702C18.4726 4.26554 15.8394 3.17482 13.0937 3.17482C10.348 3.17482 7.7148 4.26554 5.77331 6.20702C3.83182 8.14851 2.7411 10.7817 2.7411 13.5274C2.7411 16.2731 3.83182 18.9063 5.77331 20.8478C7.7148 22.7893 10.348 23.88 13.0937 23.88V23.88Z"
+                        fill="black"
+                      />
+                    </svg>
+                  )}
+                </button>
+              </div>
+
+              {/* Partners Submenu */}
+              {mobileSubmenuOpen === 'partners' && (
+                <div className="flex flex-col gap-4 px-9">
+                  <Link
+                    href="/partners/clients"
+                    className="text-black font-montserrat font-medium text-[15px] flex items-center justify-between"
+                    onClick={toggleMobileMenu}
+                  >
+                    <span>Clients</span>
+                    <svg width="7" height="13" viewBox="0 0 7 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M6.75476 6.05632L0.754761 12.0563V0.0563202L6.75476 6.05632Z" fill="black"/>
+                    </svg>
+                  </Link>
+                  <Link
+                    href="/partners/countries"
+                    className="text-black font-montserrat font-medium text-[15px] flex items-center justify-between"
+                    onClick={toggleMobileMenu}
+                  >
+                    <span>Countries</span>
+                    <svg width="7" height="13" viewBox="0 0 7 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M6.75476 6.05632L0.754761 12.0563V0.0563202L6.75476 6.05632Z" fill="black"/>
+                    </svg>
+                  </Link>
+                </div>
+              )}
+            </div>
+          </div>
+        </div>
+      )}
     </header>
   );
 };

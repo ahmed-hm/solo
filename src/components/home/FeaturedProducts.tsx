@@ -21,7 +21,7 @@ interface ProductsProps {
 }
 
 const FeaturedProducts: React.FC<ProductsProps> = ({
-  title = 'Best Selling Products',
+  title = '',
   subtitle = '',
   products = [
     {

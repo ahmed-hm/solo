@@ -28,7 +28,7 @@ const FeaturedSection = () => {
         </div>
 
         {/* Featured Cards Grid */}
-        <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[0.85fr_1.15fr] gap-[30px]">
+        <div className="w-full hidden md:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[0.85fr_1.15fr] gap-[30px]">
           {/* First card - Café Favorites (Full Width) */}
           <div className="relative w-full h-[400px] md:h-[600px] rounded-[4px] overflow-hidden group">
             <Image src={cafeFavorites} alt="Café Favorites" fill className="object-cover" />
@@ -113,6 +113,95 @@ const FeaturedSection = () => {
                       </Link>
                       <div className="w-full h-[1px] bg-white/50 mt-1"></div>
                     </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Mobile Featured Cards Grid - Scrollable Horizontally */}
+        <div className="w-full block md:hidden overflow-x-auto pb-4 no-scrollbar">
+          <div className="flex space-x-4" style={{ minWidth: 'min-content' }}>
+            {/* First card - Café Favorites */}
+            <div className="relative rounded-[4px] overflow-hidden flex-shrink-0" style={{ width: '240px', aspectRatio: '0.835' }}>
+              <Image src={cafeFavorites} alt="Café Favorites" fill className="object-cover" />
+              <div className="absolute inset-0 bg-black/30 flex flex-col justify-end p-4">
+                <div className="flex flex-col gap-2">
+                  <h3 className="font-['Dancing_Script'] font-semibold text-xl leading-[1em] tracking-[3%] text-[#FAFAFA]">
+                    Café Favorites
+                  </h3>
+                  <div className="flex flex-col">
+                    <Link
+                      href="#"
+                      className="font-['Montserrat'] font-medium text-sm leading-[1.5em] text-white hover:underline"
+                    >
+                      Discover
+                    </Link>
+                    <div className="w-full h-[1px] bg-white/50 mt-1"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Floral-inspired flavors card */}
+            <div className="relative rounded-[4px] overflow-hidden flex-shrink-0" style={{ width: '240px', aspectRatio: '0.835' }}>
+              <Image src={floralInspired} alt="Floral-inspired flavors" fill className="object-cover" />
+              <div className="absolute inset-0 bg-black/30 flex flex-col justify-end p-4">
+                <div className="flex flex-col gap-2">
+                  <h3 className="font-['Dancing_Script'] font-semibold text-xl leading-[1em] tracking-[3%] text-[#FAFAFA]">
+                    Floral-inspired flavors
+                  </h3>
+                  <div className="flex flex-col">
+                    <Link
+                      href="#"
+                      className="font-['Montserrat'] font-medium text-sm leading-[1.5em] text-white hover:underline"
+                    >
+                      Discover
+                    </Link>
+                    <div className="w-full h-[1px] bg-white/50 mt-1"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Non-Alcoholic Sips card 1 */}
+            <div className="relative rounded-[4px] overflow-hidden flex-shrink-0" style={{ width: '240px', aspectRatio: '0.835' }}>
+              <Image src={nonAlcoholicSips1} alt="Non-Alcoholic Sips" fill className="object-cover" />
+              <div className="absolute inset-0 bg-black/30 flex flex-col justify-end p-4">
+                <div className="flex flex-col gap-2">
+                  <h3 className="font-['Dancing_Script'] font-semibold text-xl leading-[1em] tracking-[3%] text-[#FAFAFA]">
+                    Non-Alcoholic Sips
+                  </h3>
+                  <div className="flex flex-col">
+                    <Link
+                      href="#"
+                      className="font-['Montserrat'] font-medium text-sm leading-[1.5em] text-white hover:underline"
+                    >
+                      Discover
+                    </Link>
+                    <div className="w-full h-[1px] bg-white/50 mt-1"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Non-Alcoholic Sips card 2 */}
+            <div className="relative rounded-[4px] overflow-hidden flex-shrink-0" style={{ width: '240px', aspectRatio: '0.835' }}>
+              <Image src={nonAlcoholicSips2} alt="Non-Alcoholic Sips" fill className="object-cover" />
+              <div className="absolute inset-0 bg-black/30 flex flex-col justify-end p-4">
+                <div className="flex flex-col gap-2">
+                  <h3 className="font-['Dancing_Script'] font-semibold text-xl leading-[1em] tracking-[3%] text-[#FAFAFA]">
+                    Non-Alcoholic Sips
+                  </h3>
+                  <div className="flex flex-col">
+                    <Link
+                      href="#"
+                      className="font-['Montserrat'] font-medium text-sm leading-[1.5em] text-white hover:underline"
+                    >
+                      Discover
+                    </Link>
+                    <div className="w-full h-[1px] bg-white/50 mt-1"></div>
                   </div>
                 </div>
               </div>

@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import FigmaCategories from './FigmaCategories';
 import FeaturedProducts from './FeaturedProducts';
 
@@ -28,6 +28,25 @@ type Category = 'Puree' | 'Syrup' | 'Sauces' | 'Powder' | 'Spreads' | 'Topping';
 const FigmaCategoryProducts = () => {
   // State to track the selected category
   const [selectedCategory, setSelectedCategory] = useState<Category>('Puree');
+  // State to track if the device is mobile
+  const [isMobile, setIsMobile] = useState(false);
+
+  // Effect to check screen size on mount and when window resizes
+  useEffect(() => {
+    // Function to check if screen width is mobile
+    const checkIsMobile = () => {
+      setIsMobile(window.innerWidth < 768); // 768px is commonly used as the breakpoint for mobile
+    };
+
+    // Check on mount
+    checkIsMobile();
+
+    // Add resize listener
+    window.addEventListener('resize', checkIsMobile);
+
+    // Clean up
+    return () => window.removeEventListener('resize', checkIsMobile);
+  }, []);
 
   // Handler for category selection
   const handleCategorySelect = (category: Category) => {
@@ -39,10 +58,10 @@ const FigmaCategoryProducts = () => {
       {/* Categories Section */}
       <FigmaCategories selectedCategory={selectedCategory} onCategorySelect={handleCategorySelect} />
 
-      {/* Products Section - using the reusable FeaturedProducts component */}
+      {/* Products Section - conditionally pass title and subtitle based on screen size */}
       <FeaturedProducts
-        title="Our Products"
-        subtitle="Explore our curated range of syrups, purees, sauces, spreads and toppings. Crafted to inspire excellence in every recipe and experience."
+        title={!isMobile ? "Our Products" : undefined}
+        subtitle={!isMobile ? "Explore our curated range of syrups, purees, sauces, spreads and toppings. Crafted to inspire excellence in every recipe and experience." : undefined}
         products={productData}
         filterByCategory={selectedCategory}
       />

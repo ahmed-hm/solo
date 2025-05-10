@@ -23,21 +23,39 @@ const ProductsSection = () => {
           <span className="font-['Montserrat'] font-bold text-base tracking-[-2.5%] text-[#0D0D0D]">View All</span>
         </button>
 
-        {/* Product images - with staggered layout */}
-        <div className="relative flex justify-center items-start w-full max-w-[1350px]">
-          {/* First image - positioned lower */}
-          <div className="h-[521px] w-[60%] aspect-[1/1] relative overflow-hidden mt-[20px] md:mt-[80px]">
-            <Image src="/images/video-thumbnail-1.jpg" alt="Solo product" fill className="object-cover" />
+        {/* Product images - Mobile: horizontal scroll, Desktop: staggered layout */}
+        <div className="relative w-full max-w-[1350px]">
+          {/* Mobile view with horizontal scroll */}
+          <div className="md:hidden w-full overflow-x-auto scrollbar-hide">
+            <div className="flex gap-4 pb-4 pl-4 pr-20 w-max">
+              <div className="h-auto w-[280px] relative overflow-hidden" style={{ aspectRatio: '0.824' }}>
+                <Image src="/images/video-thumbnail-1.jpg" alt="Solo product" fill className="object-cover" />
+              </div>
+              <div className="h-auto w-[280px] relative overflow-hidden" style={{ aspectRatio: '0.824' }}>
+                <Image src="/images/video-thumbnail-2.jpg" alt="Solo product" fill className="object-cover" />
+              </div>
+              <div className="h-auto w-[280px] relative overflow-hidden" style={{ aspectRatio: '0.824' }}>
+                <Image src="/images/video-thumbnail-1.jpg" alt="Solo product" fill className="object-cover" />
+              </div>
+            </div>
           </div>
 
-          {/* Middle image - elevated */}
-          <div className="h-[521px] w-[60%] aspect-[1/1] relative overflow-hidden mx-[3%] z-10">
-            <Image src="/images/video-thumbnail-2.jpg" alt="Solo product" fill className="object-cover" />
-          </div>
+          {/* Desktop view (original implementation) */}
+          <div className="hidden md:flex justify-center items-start w-full">
+            {/* First image - positioned lower */}
+            <div className="h-[521px] w-[60%] aspect-[1/1] relative overflow-hidden mt-[80px]">
+              <Image src="/images/video-thumbnail-1.jpg" alt="Solo product" fill className="object-cover" />
+            </div>
 
-          {/* Third image - positioned lower */}
-          <div className="h-[521px] w-[60%] aspect-[1/1] relative overflow-hidden mt-[20px] md:mt-[80px]">
-            <Image src="/images/video-thumbnail-1.jpg" alt="Solo product" fill className="object-cover" />
+            {/* Middle image - elevated */}
+            <div className="h-[521px] w-[60%] aspect-[1/1] relative overflow-hidden mx-[3%] z-10">
+              <Image src="/images/video-thumbnail-2.jpg" alt="Solo product" fill className="object-cover" />
+            </div>
+
+            {/* Third image - positioned lower */}
+            <div className="h-[521px] w-[60%] aspect-[1/1] relative overflow-hidden mt-[80px]">
+              <Image src="/images/video-thumbnail-1.jpg" alt="Solo product" fill className="object-cover" />
+            </div>
           </div>
         </div>
       </div>

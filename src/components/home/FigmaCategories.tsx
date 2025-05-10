@@ -57,7 +57,7 @@ const FigmaCategories: React.FC<FigmaCategoriesProps> = ({ onCategorySelect, sel
           </div>
 
           {/* Navigation Arrows */}
-          <div className="flex gap-2">
+          <div className="hidden md:flex gap-2">
             <button
               ref={prevRef}
               className="w-10 h-10 rounded-full bg-[#F5F5F5] flex items-center justify-center"
