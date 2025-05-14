@@ -1,34 +1,34 @@
-import type { Config } from "tailwindcss";
+import type { Config } from 'tailwindcss';
 
 const config: Config = {
   content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
     extend: {
       colors: {
-        "primary-color": "#DBB58F",
-        "secondary-color": "#B08566",
-        "light-color": "#F3DEBC",
-        "accent-color": "#E74040",
-        "text-gray": "#737373",
+        'primary-color': '#DBB58F',
+        'secondary-color': '#B08566',
+        'light-color': '#F3DEBC',
+        'accent-color': '#E74040',
+        'text-gray': '#737373',
       },
       fontFamily: {
-        dancing: ["var(--font-dancing)"],
-        montserrat: ["var(--font-montserrat)"],
+        dancing: ['var(--font-dancing)'],
+        montserrat: ['var(--font-montserrat)'],
       },
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+        'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
     },
   },
   plugins: [
     // Plugin for RTL support
-    function({ addUtilities }) {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    function ({ addUtilities }: any) {
       const newUtilities = {
         '.rtl': {
           direction: 'rtl',

@@ -62,31 +62,31 @@ const Footer = ({ lng = 'en' }: FooterProps) => {
             <div className="text-white text-[20px] font-medium font-montserrat mb-[24px]">{t('footer.quickLink')}</div>
             <div className="flex flex-col gap-[16px]">
               <Link
-                href="/privacy"
+                href={`/${lng}/privacy`}
                 className="text-white text-[16px] font-montserrat opacity-70 hover:opacity-100 transition-colors duration-300"
               >
                 {t('footer.privacyPolicy')}
               </Link>
               <Link
-                href="/terms"
+                href={`/${lng}/terms`}
                 className="text-white text-[16px] font-montserrat opacity-70 hover:opacity-100 transition-colors duration-300"
               >
                 {t('footer.termsOfUse')}
               </Link>
               <Link
-                href="/faq"
+                href={`/${lng}/faq`}
                 className="text-white text-[16px] font-montserrat opacity-70 hover:opacity-100 transition-colors duration-300"
               >
                 {t('footer.faq')}
               </Link>
               <Link
-                href="/careers"
+                href={`/${lng}/careers`}
                 className="text-white text-[16px] font-montserrat opacity-70 hover:opacity-100 transition-colors duration-300"
               >
                 {t('footer.careers')}
               </Link>
               <Link
-                href="/contact"
+                href={`/${lng}/contact`}
                 className="text-white text-[16px] font-montserrat opacity-70 hover:opacity-100 transition-colors duration-300"
               >
                 {t('footer.contactUs')}

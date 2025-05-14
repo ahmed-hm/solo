@@ -14,28 +14,28 @@
   "about": {
     "hero": {
       "imageAlt": "Solo brand story image",
-      "title": "Our Story",
-      "description": "At Solo, we believe in the extraordinary. Since our founding, we've been committed to crafting premium food products that elevate culinary experiences worldwide. Our journey began with a simple vision: to create exceptional flavors that inspire creativity and deliver consistent quality."
+      "title": "Luxurious",
+      "description": "This is the inspiring dream that four partners decided to turn into reality."
     },
     "sophisticated": {
       "imageAlt": "Sophisticated flavors image",
-      "title": "Sophisticated Flavors",
-      "description": "We craft our products with meticulous attention to detail, ensuring each flavor profile is sophisticated, balanced, and memorable. Our expert culinary team combines traditional techniques with innovative approaches to create truly remarkable taste experiences."
+      "title": "Sophisticated",
+      "description": "Each partner brings a unique set of talents in product manufacturing, sales and marketing, finance, research and product development."
     },
     "distinctive": {
       "imageAlt": "Distinctive quality image",
-      "title": "Distinctive Quality",
-      "description": "Every Solo product is distinct, created to stand out in a crowded market. We source the finest ingredients and employ rigorous quality control to ensure our products meet the highest standards."
+      "title": "Distinctive",
+      "description": "Since its launch, Solo has marked a turning point in the world of beverages, standing out among global products during blind tests."
     },
     "premium": {
       "imageAlt": "Premium ingredients image",
-      "title": "Premium Ingredients",
-      "description": "We use only the finest ingredients, sourced from trusted suppliers who share our commitment to quality and sustainability. Our ingredients are carefully selected to ensure exceptional flavor and performance."
+      "title": "Premium",
+      "description": "Fancy and high quality products that turn every sip into an indulgence experience."
     },
     "exceptional": {
       "imageAlt": "Exceptional commitment image",
-      "title": "Exceptional Commitment",
-      "description": "Our commitment to excellence extends beyond our products. We strive to provide exceptional service, support, and partnership to our clients. We're dedicated to helping our partners succeed by offering reliable products that exceed expectations and inspire culinary creativity."
+      "title": "Exceptional",
+      "description": "Baristas have been able to rely on Solo's diverse products to craft the most delicious recipes for their customers, ensuring they return for more delightful and exceptional flavors."
     },
     "certifications": {
       "title": "Our Certifications",
@@ -50,24 +50,24 @@
     "hero": {
       "imageAlt": "Solo Core background image",
       "title": "The Core of Solo",
-      "description": "Solo's essence is defined by unwavering commitment to quality, innovation, and culinary excellence. Every product we create embodies our core values and reflects our dedication to elevating food experiences worldwide."
+      "description": "At Solo, we aim to lead the beverage industry by enriching culinary experiences with innovative, premium products. Through natural ingredients, sustainable practices, and unwavering quality, we empower home cooks, professionals, and startups to explore creativity—fostering a community that values flavor innovation, eco-conscious sourcing, and support for emerging culinary talents."
     },
     "mission": {
-      "title": "Our Mission",
-      "description": "To craft exceptional food products that inspire culinary creativity, deliver consistent quality, and enhance dining experiences across the globe. We aim to exceed expectations through innovation, premium ingredients, and sustainable practices that respect both people and the planet.",
+      "title": "Mission",
+      "description": "To craft premium, natural culinary products that inspire creativity and innovation in every kitchen.",
       "imageAlt": "Solo mission image"
     },
     "vision": {
-      "title": "Our Vision",
-      "description": "To be the global leader in specialty food products, recognized for superior quality, innovative flavors, and sustainable practices. We envision a world where Solo products are the first choice for chefs, baristas, and food enthusiasts who demand excellence in every culinary creation.",
+      "title": "Vision",
+      "description": "To be the leading innovator in the beverage industry, enriching culinary experiences with exceptional, natural flavors.",
       "imageAlt": "Solo vision image"
     },
     "values": {
-      "title": "Our Values",
-      "innovation": "• Innovation: Constantly exploring new ideas and techniques to create extraordinary products.",
-      "quality": "• Quality: Unwavering commitment to excellence in every ingredient and process.",
-      "sustainability": "• Sustainability: Responsible sourcing and production that respects our environment.",
-      "consistency": "• Consistency: Delivering reliable products that meet the same high standards every time.",
+      "title": "Values",
+      "innovation": "Innovation",
+      "quality": "Quality",
+      "sustainability": "Sustainability",
+      "consistency": "Consistency & Trust",
       "imageAlt": "Solo values image"
     }
   },
@@ -159,5 +159,32 @@
     "socialMedia": "Scan to social media",
     "qrDescription": "All Links in one QR",
     "copyright": "Solo-Sauce 2025. All right reserved"
+  },
+  "home": {
+    "featured_posts": {
+      "title": "Featured Posts",
+      "tags": {
+        "google": "Google",
+        "trending": "Trending",
+        "new": "New"
+      },
+      "post1": {
+        "title": "Sahlab Turkey",
+        "date": "26 February 2025",
+        "description": "Easy recipes for preparing Solo Chocolate that you should try"
+      },
+      "post2": {
+        "title": "Dolce De lcehe Solo",
+        "date": "21 February 2025",
+        "description": "Easy recipes to prepare Dolce De lcehe Solo that you should try"
+      },
+      "post3": {
+        "title": "Chocolate Solo",
+        "date": "18 February 2025",
+        "description": "Easy recipes for preparing Solo Chocolate that you should try"
+      },
+      "learn_more": "Learn More",
+      "comments": "comments"
+    }
   }
 }

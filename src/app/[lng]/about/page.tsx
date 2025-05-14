@@ -4,11 +4,11 @@ import { getTranslation } from '@/i18n/server';
 
 export const metadata: Metadata = {
   title: 'Solo - Premium Food Products | About Us',
-  description: 'Learn about Solo\'s journey, vision, and commitment to quality in the world of premium food products',
+  description: "Learn about Solo's journey, vision, and commitment to quality in the world of premium food products",
 };
 
 interface AboutPageProps {
-  params: { lng: string };
+  params: Promise<{ lng: string }>;
 }
 
 export default async function AboutPage({ params }: AboutPageProps) {
@@ -22,9 +22,9 @@ export default async function AboutPage({ params }: AboutPageProps) {
         <div className="container flex flex-col lg:flex-row items-center justify-between items-stretch">
           <div className="w-full lg:w-1/2 bg-white">
             <div className="h-[400px] md:h-[500px] w-full overflow-hidden relative">
-              <Image 
-                src="/images/about/about-hero.jpg" 
-                alt={t('about.hero.imageAlt')} 
+              <Image
+                src="/images/about/about-hero.jpg"
+                alt={t('about.hero.imageAlt')}
                 fill
                 className="object-cover"
                 priority
@@ -35,9 +35,7 @@ export default async function AboutPage({ params }: AboutPageProps) {
             <h1 className="font-['Dancing_Script'] text-4xl md:text-5xl font-bold text-black">
               {t('about.hero.title')}
             </h1>
-            <p className="text-lg md:text-xl font-montserrat text-black">
-              {t('about.hero.description')}
-            </p>
+            <p className="text-lg md:text-xl font-montserrat text-black">{t('about.hero.description')}</p>
           </div>
         </div>
       </section>
@@ -50,9 +48,9 @@ export default async function AboutPage({ params }: AboutPageProps) {
             {/* Sophisticated Card (full width on mobile) */}
             <div className="bg-white rounded-sm overflow-hidden shadow-sm mb-6 relative">
               <div className="aspect-[3/2] relative">
-                <Image 
-                  src="/images/about/sophisticated.jpg" 
-                  alt={t('about.sophisticated.imageAlt')} 
+                <Image
+                  src="/images/about/sophisticated.jpg"
+                  alt={t('about.sophisticated.imageAlt')}
                   fill
                   className="object-cover"
                 />
@@ -66,13 +64,13 @@ export default async function AboutPage({ params }: AboutPageProps) {
                 </p>
               </div>
             </div>
-            
+
             {/* Distinctive Card */}
             <div className="bg-white rounded-sm overflow-hidden shadow-sm mb-6 relative">
               <div className="aspect-[3/2] relative">
-                <Image 
-                  src="/images/about/distinctive.jpg" 
-                  alt={t('about.distinctive.imageAlt')} 
+                <Image
+                  src="/images/about/distinctive.jpg"
+                  alt={t('about.distinctive.imageAlt')}
                   fill
                   className="object-cover"
                 />
@@ -86,13 +84,13 @@ export default async function AboutPage({ params }: AboutPageProps) {
                 </p>
               </div>
             </div>
-            
+
             {/* Premium Card */}
             <div className="bg-white rounded-sm overflow-hidden shadow-sm mb-6 relative">
               <div className="aspect-[3/2] relative">
-                <Image 
-                  src="/images/about/premium.jpg" 
-                  alt={t('about.premium.imageAlt')} 
+                <Image
+                  src="/images/about/premium.jpg"
+                  alt={t('about.premium.imageAlt')}
                   fill
                   className="object-cover"
                 />
@@ -107,15 +105,15 @@ export default async function AboutPage({ params }: AboutPageProps) {
               </div>
             </div>
           </div>
-          
+
           {/* Desktop layout - 2 column grid */}
           <div className="hidden md:grid grid-cols-1 lg:grid-cols-2 gap-4">
             {/* First column - Sophisticated Card (tall card) */}
             <div className="bg-white rounded-sm overflow-hidden shadow-sm h-full relative">
               <div className="aspect-[1/1] relative">
-                <Image 
-                  src="/images/about/sophisticated.jpg" 
-                  alt={t('about.sophisticated.imageAlt')} 
+                <Image
+                  src="/images/about/sophisticated.jpg"
+                  alt={t('about.sophisticated.imageAlt')}
                   fill
                   className="object-cover"
                 />
@@ -129,15 +127,15 @@ export default async function AboutPage({ params }: AboutPageProps) {
                 </p>
               </div>
             </div>
-            
+
             {/* Second column - Distinctive and Premium Cards (stacked) */}
             <div className="flex flex-col gap-4 h-full">
               {/* Distinctive Card */}
               <div className="bg-white rounded-sm overflow-hidden shadow-sm flex-1 relative">
                 <div className="w-full h-full relative">
-                  <Image 
-                    src="/images/about/distinctive.jpg" 
-                    alt={t('about.distinctive.imageAlt')} 
+                  <Image
+                    src="/images/about/distinctive.jpg"
+                    alt={t('about.distinctive.imageAlt')}
                     fill
                     className="object-cover"
                   />
@@ -151,13 +149,13 @@ export default async function AboutPage({ params }: AboutPageProps) {
                   </p>
                 </div>
               </div>
-              
+
               {/* Premium Card */}
               <div className="bg-white rounded-sm overflow-hidden shadow-sm flex-1 relative">
                 <div className="w-full h-full relative">
-                  <Image 
-                    src="/images/about/premium.jpg" 
-                    alt={t('about.premium.imageAlt')} 
+                  <Image
+                    src="/images/about/premium.jpg"
+                    alt={t('about.premium.imageAlt')}
                     fill
                     className="object-cover"
                   />
@@ -182,9 +180,9 @@ export default async function AboutPage({ params }: AboutPageProps) {
           <div className="flex flex-col lg:flex-row items-center gap-6 md:gap-10 lg:gap-20">
             <div className="w-full lg:w-1/2 relative">
               <div className="h-[300px] md:h-[400px] lg:h-[500px] w-full overflow-hidden rounded-lg relative">
-                <Image 
-                  src="/images/about/exceptional.jpg" 
-                  alt={t('about.exceptional.imageAlt')} 
+                <Image
+                  src="/images/about/exceptional.jpg"
+                  alt={t('about.exceptional.imageAlt')}
                   fill
                   className="object-cover"
                 />
@@ -195,9 +193,7 @@ export default async function AboutPage({ params }: AboutPageProps) {
               <h2 className="font-['Dancing_Script'] text-3xl md:text-4xl font-bold text-[#252B42]">
                 {t('about.exceptional.title')}
               </h2>
-              <p className="text-[#737373] text-base md:text-lg">
-                {t('about.exceptional.description')}
-              </p>
+              <p className="text-[#737373] text-base md:text-lg">{t('about.exceptional.description')}</p>
             </div>
           </div>
         </div>
@@ -209,7 +205,7 @@ export default async function AboutPage({ params }: AboutPageProps) {
           <div className="flex flex-wrap justify-center items-center gap-6 md:gap-8 lg:gap-16 py-8 bg-[#FAFAFA]">
             {/* Certification logos */}
             <div className="w-24 h-24 md:w-32 md:h-32 flex items-center justify-center">
-              <Image 
+              <Image
                 src="/images/about/certifications/halal-logo.svg"
                 alt={t('about.certifications.halal')}
                 width={60}
@@ -218,7 +214,7 @@ export default async function AboutPage({ params }: AboutPageProps) {
               />
             </div>
             <div className="w-24 h-24 md:w-32 md:h-32 flex items-center justify-center">
-              <Image 
+              <Image
                 src="/images/about/certifications/fssc-22000-logo.svg"
                 alt={t('about.certifications.fssc')}
                 width={60}
@@ -227,7 +223,7 @@ export default async function AboutPage({ params }: AboutPageProps) {
               />
             </div>
             <div className="w-24 h-24 md:w-32 md:h-32 flex items-center justify-center">
-              <Image 
+              <Image
                 src="/images/about/certifications/iso-45001-logo.svg"
                 alt={t('about.certifications.iso45001')}
                 width={60}
@@ -236,7 +232,7 @@ export default async function AboutPage({ params }: AboutPageProps) {
               />
             </div>
             <div className="w-24 h-24 md:w-32 md:h-32 flex items-center justify-center">
-              <Image 
+              <Image
                 src="/images/about/certifications/iso-9001-logo.svg"
                 alt={t('about.certifications.iso9001')}
                 width={60}
@@ -245,7 +241,7 @@ export default async function AboutPage({ params }: AboutPageProps) {
               />
             </div>
             <div className="w-24 h-24 md:w-32 md:h-32 flex items-center justify-center">
-              <Image 
+              <Image
                 src="/images/about/certifications/iso-9001-2015-logo.svg"
                 alt={t('about.certifications.iso90012015')}
                 width={60}

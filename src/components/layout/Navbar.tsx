@@ -69,7 +69,7 @@ const Navbar = ({ lng = 'en' }: NavbarProps) => {
       <div className="container mx-auto px-[15px] py-[12px] lg:px-[20px] lg:py-[27px] flex justify-between items-center">
         {/* Logo Section */}
         <div className="flex items-center">
-          <Link href="/" className="flex items-center">
+          <Link href={`/${lng}`} className="flex items-center">
             <Image
               src="/images/logo.svg"
               alt="Solo Logo"
@@ -84,14 +84,14 @@ const Navbar = ({ lng = 'en' }: NavbarProps) => {
         {/* Navigation Menu - Apply RTL-aware classes */}
         <nav ref={navRef} className={`hidden lg:flex items-center gap-[25px] ${isRtl ? 'flex-row-reverse' : ''}`}>
           <Link
-            href="/"
+            href={`/${lng}`}
             className={`text-[#DBB58F] font-montserrat font-bold text-[17px] leading-[20.7px] tracking-[-0.6px]`}
           >
             {t('nav.home')}
           </Link>
           <div className={`flex items-center gap-[3px] relative ${isRtl ? 'flex-row-reverse' : ''}`}>
             <Link
-              href="/about"
+              href={`/${lng}/about`}
               className="text-black font-montserrat font-medium text-[17px] leading-[20.7px] tracking-[-0.6px] hover:text-[#DBB58F] transition duration-300"
             >
               {t('nav.aboutUs')}
@@ -122,13 +122,13 @@ const Navbar = ({ lng = 'en' }: NavbarProps) => {
                 </div>
                 <div className="flex flex-col gap-[10px] p-[10px]">
                   <Link
-                    href="/about/story"
+                    href={`/${lng}/about`}
                     className="text-black font-montserrat font-medium text-[14px] hover:text-[#DBB58F] transition duration-300"
                   >
                     {t('nav.ourStory')}
                   </Link>
                   <Link
-                    href="/about/private-label"
+                    href={`/${lng}/solo-core`}
                     className="text-black font-montserrat font-medium text-[14px] hover:text-[#DBB58F] transition duration-300"
                   >
                     {t('nav.coreOfSolo')}
@@ -139,7 +139,7 @@ const Navbar = ({ lng = 'en' }: NavbarProps) => {
           </div>
           <div className={`flex items-center gap-[3px] relative ${isRtl ? 'flex-row-reverse' : ''}`}>
             <Link
-              href="/recipes"
+              href={`/${lng}/recipes`}
               className="text-black font-montserrat font-medium text-[17px] leading-[20.7px] tracking-[-0.6px] hover:text-[#DBB58F] transition duration-300"
             >
               {t('nav.recipes')}
@@ -147,7 +147,7 @@ const Navbar = ({ lng = 'en' }: NavbarProps) => {
           </div>
           <div className={`flex items-center gap-[3px] relative ${isRtl ? 'flex-row-reverse' : ''}`}>
             <Link
-              href="/partners"
+              href={`/${lng}/partners`}
               className="text-black font-montserrat font-medium text-[17px] leading-[20.7px] tracking-[-0.6px] hover:text-[#DBB58F] transition duration-300"
             >
               {t('nav.partners')}
@@ -178,13 +178,13 @@ const Navbar = ({ lng = 'en' }: NavbarProps) => {
                 </div>
                 <div className="flex flex-col gap-[10px] p-[10px]">
                   <Link
-                    href="/partners/clients"
+                    href={`/${lng}/partners/clients`}
                     className="text-black font-montserrat font-medium text-[14px] hover:text-[#DBB58F] transition duration-300"
                   >
                     {t('nav.clients')}
                   </Link>
                   <Link
-                    href="/partners/countries"
+                    href={`/${lng}/partners/countries`}
                     className="text-black font-montserrat font-medium text-[14px] hover:text-[#DBB58F] transition duration-300"
                   >
                     {t('nav.countries')}
@@ -245,7 +245,7 @@ const Navbar = ({ lng = 'en' }: NavbarProps) => {
           {/* Menu Items - Apply RTL-aware styles */}
           <div className="p-4 flex flex-col gap-5">
             {/* Home with icon */}
-            <Link href="/" className="flex items-center gap-3" onClick={toggleMobileMenu}>
+            <Link href={`/${lng}`} className="flex items-center gap-3" onClick={toggleMobileMenu}>
               <div className="w-6 h-6 flex items-center justify-center">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -320,7 +320,7 @@ const Navbar = ({ lng = 'en' }: NavbarProps) => {
               {mobileSubmenuOpen === 'about' && (
                 <div className="flex flex-col gap-4 px-9">
                   <Link
-                    href="/about/story"
+                    href={`/${lng}/about/story`}
                     className="text-black font-montserrat font-medium text-[15px] flex items-center justify-between"
                     onClick={toggleMobileMenu}
                   >
@@ -337,7 +337,7 @@ const Navbar = ({ lng = 'en' }: NavbarProps) => {
                     </svg>
                   </Link>
                   <Link
-                    href="/about/private-label"
+                    href={`/${lng}/about/private-label`}
                     className="text-black font-montserrat font-medium text-[15px] flex items-center justify-between"
                     onClick={toggleMobileMenu}
                   >
@@ -392,7 +392,7 @@ const Navbar = ({ lng = 'en' }: NavbarProps) => {
                 </svg>
               </div>
               <Link
-                href="/recipes"
+                href={`/${lng}/recipes`}
                 className="text-black font-montserrat font-medium text-[16px]"
                 onClick={toggleMobileMenu}
               >
@@ -466,7 +466,7 @@ const Navbar = ({ lng = 'en' }: NavbarProps) => {
               {mobileSubmenuOpen === 'partners' && (
                 <div className="flex flex-col gap-4 px-9">
                   <Link
-                    href="/partners/clients"
+                    href={`/${lng}/partners/clients`}
                     className="text-black font-montserrat font-medium text-[15px] flex items-center justify-between"
                     onClick={toggleMobileMenu}
                   >
@@ -483,7 +483,7 @@ const Navbar = ({ lng = 'en' }: NavbarProps) => {
                     </svg>
                   </Link>
                   <Link
-                    href="/partners/countries"
+                    href={`/${lng}/partners/countries`}
                     className="text-black font-montserrat font-medium text-[15px] flex items-center justify-between"
                     onClick={toggleMobileMenu}
                   >

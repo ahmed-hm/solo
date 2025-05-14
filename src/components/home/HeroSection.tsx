@@ -73,14 +73,22 @@ const HeroSection = ({ lng = 'en' }: HeroSectionProps) => {
   const slides = [
     {
       id: 1,
-      backgroundImage: '/images/banner/banner-1.png',
+      backgroundImage: '/images/banner/banner-1.jpg',
       backgroundImageMobile: '/images/banner/banner-mobile-1.png',
+      firstWord: 'Every',
+      remainingText: 'taste\npure delight',
+      firstWordArabic: 'مذاق  ',
+      remainingTextArabic: 'مثالي\n في كل قطرة',
       alt: 'Banner 1',
     },
     {
       id: 2,
-      backgroundImage: '/images/banner/banner-2.png',
+      backgroundImage: '/images/banner/banner-2.jpg',
       backgroundImageMobile: '/images/banner/banner-mobile-2.png',
+      firstWord: 'Find',
+      remainingText: 'Your\nSpecial Drink',
+      firstWordArabic: 'مشروبك  ',
+      remainingTextArabic: 'المميز\n في كل قطرة',
       alt: 'Banner 2',
     },
   ];
@@ -115,7 +123,7 @@ const HeroSection = ({ lng = 'en' }: HeroSectionProps) => {
               {/* Background Image */}
               <div className="absolute inset-0">
                 <Image
-                  src={isMobile ? slide.backgroundImageMobile : slide.backgroundImage}
+                  src={slide.backgroundImage}
                   alt={slide.alt}
                   fill
                   priority={slide.id === 1}
@@ -123,16 +131,22 @@ const HeroSection = ({ lng = 'en' }: HeroSectionProps) => {
                 />
               </div>
 
-              {/* Mobile Banner Text - Based on Figma Design */}
-              {isMobile && (
-                <div className="absolute inset-0 flex flex-col items-center justify-center">
-                  {/* <h1 className="text-center text-white text-[75px] font-normal leading-[1.2em] tracking-[0.3%] font-['Dancing_Script']">
-                    Easy Way
-                    <br />
-                    to Change
-                  </h1> */}
-                </div>
-              )}
+              {/* Banner Text based on Figma Design */}
+              <div className="absolute inset-0 flex flex-col items-center justify-center">
+                <h1
+                  className={`text-center text-white font-normal leading-[4em] ${
+                    isRtl ? 'lg:leading-[8em]' : 'lg:leading-[6em]'
+                  } tracking-[0.3%] whitespace-pre-line`}
+                >
+                  {/* First Word */}`
+                  <span className="text-[75px] lg:text-[150px] font-bold font-['Montserrat']">
+                    {isRtl ? slide.firstWordArabic : slide.firstWord}
+                  </span>
+                  <span className="text-[70px] lg:text-[130px] font-['Dancing_Script']">
+                    {isRtl ? slide.remainingTextArabic : slide.remainingText}
+                  </span>
+                </h1>
+              </div>
             </div>
           </SwiperSlide>
         ))}

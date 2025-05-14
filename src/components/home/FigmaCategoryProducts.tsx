@@ -60,16 +60,18 @@ const FigmaCategoryProducts: React.FC<FigmaCategoryProductsProps> = ({ lng }) =>
   return (
     <div>
       {/* Categories Section */}
-      <FigmaCategories 
-        selectedCategory={selectedCategory} 
-        onCategorySelect={handleCategorySelect} 
-        lng={lng} 
-      />
+      <FigmaCategories selectedCategory={selectedCategory} onCategorySelect={handleCategorySelect} lng={lng} />
 
       {/* Products Section - conditionally pass title and subtitle based on screen size */}
       <FeaturedProducts
-        title={!isMobile ? "Our Products" : undefined}
-        subtitle={!isMobile ? "Explore our curated range of syrups, purees, sauces, spreads and toppings. Crafted to inspire excellence in every recipe and experience." : undefined}
+        title={!isMobile ? 'Our Products' : undefined}
+        subtitle={
+          !isMobile
+            ? lng === 'en'
+              ? 'Explore our curated range of syrups, purees, sauces, spreads and toppings. Crafted to inspire excellence in every recipe and experience.'
+              : 'اكتشف منتجات صولو المتنوعة من السيرابات، البيوريه الصوصات، السبريد و التوبينج. صُممت لتلهم التميز في كل وصفة وكل تجربة.'
+            : undefined
+        }
         products={productData}
         filterByCategory={selectedCategory}
         lng={lng}

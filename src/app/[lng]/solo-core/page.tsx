@@ -40,10 +40,11 @@ export default async function SoloCorePageComponent({ params }: { params: Promis
         </div>
       </section>
 
-      {/* Mission Section - Added from Figma design */}
+      {/* Mission Section */}
       <section className="w-full py-16">
         <div className="max-w-[1080px] mx-auto">
-          <div className="flex flex-col md:flex-row justify-center gap-8 md:gap-[215px] px-4">
+          {/* Desktop View */}
+          <div className="hidden md:flex md:flex-row justify-center gap-8 md:gap-[215px] px-4">
             {/* Left Column - Text and Image */}
             <div className="flex flex-col gap-[80px] py-6 flex-1 max-w-[50%]">
               <div className="flex flex-col gap-6 w-full">
@@ -74,13 +75,46 @@ export default async function SoloCorePageComponent({ params }: { params: Promis
               />
             </div>
           </div>
+          
+          {/* Mobile View */}
+          <div className="flex flex-col md:hidden px-4">
+            <div className="flex flex-col gap-[15px] mb-[15px]">
+              <h2 className="font-montserrat font-bold text-[40px] text-black leading-[1.22] tracking-[0.24%]">
+                {t('soloCore.mission.title')}
+              </h2>
+              <p className="font-montserrat font-normal text-[14.7px] text-black leading-[1.22] tracking-[0.65%]">
+                {t('soloCore.mission.description')}
+              </p>
+            </div>
+            
+            {/* Updated: Images side by side instead of stacked */}
+            <div className="flex flex-row gap-[15px]">
+              <div className="relative w-1/2 aspect-[0.759] rounded-[7.6px] overflow-hidden">
+                <Image
+                  src="/images/solo-core/mission-image-1.jpg"
+                  alt={t('soloCore.mission.imageAlt')}
+                  fill
+                  style={{ objectFit: 'cover' }}
+                />
+              </div>
+              <div className="relative w-1/2 aspect-[0.759] rounded-[4.75px] overflow-hidden">
+                <Image
+                  src="/images/solo-core/mission-image-2.jpg"
+                  alt={t('soloCore.mission.imageAlt')}
+                  fill
+                  style={{ objectFit: 'cover' }}
+                />
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
-      {/* Vision Section - Added from Figma design */}
+      {/* Vision Section */}
       <section className="w-full py-16 bg-white">
         <div className="max-w-[1080px] mx-auto">
-          <div className="flex flex-col md:flex-row justify-center gap-8 md:gap-[60px] px-4">
+          {/* Desktop View */}
+          <div className="hidden md:flex md:flex-row justify-center gap-8 md:gap-[60px] px-4">
             {/* Left Column - Images */}
             <div className="flex-1 max-w-[50%]">
               <div className="flex flex-row gap-16 h-[670px]">
@@ -123,13 +157,56 @@ export default async function SoloCorePageComponent({ params }: { params: Promis
               </div>
             </div>
           </div>
+          
+          {/* Mobile View */}
+          <div className="flex flex-col md:hidden px-4">
+            <div className="flex flex-col gap-[15px] mb-[15px]">
+              <h2 className="font-montserrat font-bold text-[40px] text-black leading-[1.22] tracking-[0.52%]">
+                {t('soloCore.vision.title')}
+              </h2>
+              <p className="font-montserrat font-normal text-[14.7px] text-black leading-[1.43] tracking-[1.43%]">
+                {t('soloCore.vision.description')}
+              </p>
+            </div>
+            
+            {/* Mobile horizontal scrolling image container */}
+            <div className="flex flex-row overflow-x-auto gap-[15px] w-full pb-4 scrollbar-hide">
+              <div className="relative min-w-[300px] rounded-[16.8px] h-[400px] overflow-hidden">
+                <Image
+                  src="/images/solo-core/vision-image-3.jpg"
+                  alt={t('soloCore.vision.imageAlt')}
+                  fill
+                  style={{ objectFit: 'cover' }}
+                />
+              </div>
+              <div className="flex flex-row gap-[15px]">
+                <div className="relative min-w-[200px] rounded-[7.52px] h-[400px] overflow-hidden">
+                  <Image
+                    src="/images/solo-core/vision-image-1.jpg"
+                    alt={t('soloCore.vision.imageAlt')}
+                    fill
+                    style={{ objectFit: 'cover' }}
+                  />
+                </div>
+                <div className="relative min-w-[200px] rounded-[7.52px] h-[400px] overflow-hidden">
+                  <Image
+                    src="/images/solo-core/vision-image-2.jpg"
+                    alt={t('soloCore.vision.imageAlt')}
+                    fill
+                    style={{ objectFit: 'cover' }}
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
-      {/* Values Section - Added from Figma design */}
+      {/* Values Section */}
       <section className="w-full py-16">
         <div className="max-w-[1080px] mx-auto">
-          <div className="flex flex-col md:flex-row justify-center gap-8 md:gap-[215px] px-4">
+          {/* Desktop View */}
+          <div className="hidden md:flex md:flex-row justify-center gap-8 md:gap-[215px] px-4">
             {/* Left Column - Text and Image */}
             <div className="flex flex-col gap-[80px] py-6 flex-1">
               <div className="flex flex-col gap-6 w-full max-w-[381px]">
@@ -164,6 +241,44 @@ export default async function SoloCorePageComponent({ params }: { params: Promis
                 fill
                 style={{ objectFit: 'cover' }}
               />
+            </div>
+          </div>
+          
+          {/* Mobile View */}
+          <div className="flex flex-col md:hidden px-4">
+            <div className="flex flex-col gap-[15px] mb-[15px]">
+              <h2 className="font-montserrat font-bold text-[40px] text-black leading-[1.22] tracking-[0.24%]">
+                {t('soloCore.values.title')}
+              </h2>
+              <p className="font-montserrat font-normal text-[14.7px] text-black leading-[1.22] tracking-[0.65%]">
+                {t('soloCore.values.innovation')}
+                <br />
+                {t('soloCore.values.quality')}
+                <br />
+                {t('soloCore.values.sustainability')}
+                <br />
+                {t('soloCore.values.consistency')}
+              </p>
+            </div>
+            
+            {/* Updated: Images side by side instead of stacked */}
+            <div className="flex flex-row gap-[15px]">
+              <div className="relative w-1/2 aspect-[0.759] rounded-[7.6px] overflow-hidden">
+                <Image
+                  src="/images/solo-core/values-image-1.jpg"
+                  alt={t('soloCore.values.imageAlt')}
+                  fill
+                  style={{ objectFit: 'cover' }}
+                />
+              </div>
+              <div className="relative w-1/2 aspect-[0.759] rounded-[4.75px] overflow-hidden">
+                <Image
+                  src="/images/solo-core/values-image-2.jpg"
+                  alt={t('soloCore.values.imageAlt')}
+                  fill
+                  style={{ objectFit: 'cover' }}
+                />
+              </div>
             </div>
           </div>
         </div>

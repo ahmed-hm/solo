@@ -1,15 +1,10 @@
 'use client';
 
-import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { useTranslation, useIsRTL } from '../../i18n/client';
 
 const LanguageSwitcher = ({ lng }: { lng: string }) => {
-  const router = useRouter();
   const pathname = usePathname();
-  const { i18n } = useTranslation(lng);
-  const isRtl = useIsRTL(lng);
 
   const languages = [
     { code: 'en', name: 'English' },
