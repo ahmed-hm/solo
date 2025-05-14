@@ -320,7 +320,7 @@ const Navbar = ({ lng = 'en' }: NavbarProps) => {
               {mobileSubmenuOpen === 'about' && (
                 <div className="flex flex-col gap-4 px-9">
                   <Link
-                    href={`/${lng}/about/story`}
+                    href={`/${lng}/about`}
                     className="text-black font-montserrat font-medium text-[15px] flex items-center justify-between"
                     onClick={toggleMobileMenu}
                   >
@@ -337,7 +337,7 @@ const Navbar = ({ lng = 'en' }: NavbarProps) => {
                     </svg>
                   </Link>
                   <Link
-                    href={`/${lng}/about/private-label`}
+                    href={`/${lng}/solo-core`}
                     className="text-black font-montserrat font-medium text-[15px] flex items-center justify-between"
                     onClick={toggleMobileMenu}
                   >
