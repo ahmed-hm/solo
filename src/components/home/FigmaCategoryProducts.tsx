@@ -25,7 +25,11 @@ const productData = [
 // Category type from FigmaCategories
 type Category = 'Puree' | 'Syrup' | 'Sauces' | 'Powder' | 'Spreads' | 'Topping';
 
-const FigmaCategoryProducts = () => {
+interface FigmaCategoryProductsProps {
+  lng: string; // Add language prop
+}
+
+const FigmaCategoryProducts: React.FC<FigmaCategoryProductsProps> = ({ lng }) => {
   // State to track the selected category
   const [selectedCategory, setSelectedCategory] = useState<Category>('Puree');
   // State to track if the device is mobile
@@ -56,14 +60,21 @@ const FigmaCategoryProducts = () => {
   return (
     <div>
       {/* Categories Section */}
-      <FigmaCategories selectedCategory={selectedCategory} onCategorySelect={handleCategorySelect} />
+      <FigmaCategories selectedCategory={selectedCategory} onCategorySelect={handleCategorySelect} lng={lng} />
 
       {/* Products Section - conditionally pass title and subtitle based on screen size */}
       <FeaturedProducts
-        title={!isMobile ? "Our Products" : undefined}
-        subtitle={!isMobile ? "Explore our curated range of syrups, purees, sauces, spreads and toppings. Crafted to inspire excellence in every recipe and experience." : undefined}
+        title={!isMobile ? 'Our Products' : undefined}
+        subtitle={
+          !isMobile
+            ? lng === 'en'
+              ? 'Explore our curated range of syrups, purees, sauces, spreads and toppings. Crafted to inspire excellence in every recipe and experience.'
+              : 'اكتشف منتجات صولو المتنوعة من السيرابات، البيوريه الصوصات، السبريد و التوبينج. صُممت لتلهم التميز في كل وصفة وكل تجربة.'
+            : undefined
+        }
         products={productData}
         filterByCategory={selectedCategory}
+        lng={lng}
       />
     </div>
   );

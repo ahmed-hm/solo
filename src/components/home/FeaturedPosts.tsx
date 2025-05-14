@@ -1,3 +1,5 @@
+import { isRTL } from '@/i18n/i18n-config';
+import { getTranslation } from '@/i18n/server';
 import Image from 'next/image';
 import React from 'react';
 
@@ -9,6 +11,9 @@ interface BlogPostCardProps {
   imageUrl: string;
   description: string;
   isNew?: boolean;
+  learnMoreText: string;
+  commentsText: string;
+  lng: string;
 }
 
 const BlogPostCard: React.FC<BlogPostCardProps> = ({
@@ -19,6 +24,9 @@ const BlogPostCard: React.FC<BlogPostCardProps> = ({
   imageUrl,
   description,
   isNew = true,
+  learnMoreText,
+  commentsText,
+  lng,
 }) => {
   return (
     <div className="bg-white rounded overflow-hidden shadow-[0px_2px_4px_0px_rgba(0,0,0,0.1)]">
@@ -68,13 +76,22 @@ const BlogPostCard: React.FC<BlogPostCardProps> = ({
                 />
               </svg>
             </span>
-            <span className="text-xs tracking-wider text-black">{comments} comments</span>
+            <span className="text-xs tracking-wider text-black">
+              {comments} {commentsText}
+            </span>
           </div>
         </div>
 
         <div className="flex items-center gap-2.5 mt-2 cursor-pointer">
-          <span className="text-sm font-bold text-[#737373] tracking-wider">Learn More</span>
-          <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <span className="text-sm font-bold text-[#737373] tracking-wider">{learnMoreText}</span>
+          <svg
+            width="9"
+            height="16"
+            viewBox="0 0 9 16"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            className={`${isRTL(lng) ? 'rotate-180' : ''}`}
+          >
             <path
               fillRule="evenodd"
               clipRule="evenodd"
@@ -88,34 +105,63 @@ const BlogPostCard: React.FC<BlogPostCardProps> = ({
   );
 };
 
-const FeaturedPosts = () => {
+const FeaturedPosts = async ({ lng }: { lng: string }) => {
+  const { t } = await getTranslation(lng, 'common');
+
   const posts = [
     {
-      title: 'Sahlab Turkey',
-      tags: ['Google', 'Trending', 'New'],
-      date: '26 February 2025',
+      title: t('home.featured_posts.post1.title', 'Sahlab Turkey'),
+      tags: [
+        t('home.featured_posts.tags.google', 'Google'),
+        t('home.featured_posts.tags.trending', 'Trending'),
+        t('home.featured_posts.tags.new', 'New'),
+      ],
+      date: t('home.featured_posts.post1.date', '26 February 2025'),
       comments: 10,
       imageUrl: 'sahlab-turkey.jpg',
-      description: 'Easy recipes for preparing Solo Chocolate that you should try',
+      description: t(
+        'home.featured_posts.post1.description',
+        'Easy recipes for preparing Solo Chocolate that you should try'
+      ),
       isNew: true,
+      learnMoreText: t('home.featured_posts.learn_more', 'Learn More'),
+      commentsText: t('home.featured_posts.comments', 'comments'),
     },
     {
-      title: 'Dolce De lcehe Solo',
-      tags: ['Google', 'Trending', 'New'],
-      date: '21 February 2025',
+      title: t('home.featured_posts.post2.title', 'Dolce De lcehe Solo'),
+      tags: [
+        t('home.featured_posts.tags.google', 'Google'),
+        t('home.featured_posts.tags.trending', 'Trending'),
+        t('home.featured_posts.tags.new', 'New'),
+      ],
+      date: t('home.featured_posts.post2.date', '21 February 2025'),
       comments: 10,
       imageUrl: 'dolce-de-lcehe.jpg',
-      description: 'Easy recipes to prepare Dolce De lcehe Solo that you should try',
+      description: t(
+        'home.featured_posts.post2.description',
+        'Easy recipes to prepare Dolce De lcehe Solo that you should try'
+      ),
       isNew: true,
+      learnMoreText: t('home.featured_posts.learn_more', 'Learn More'),
+      commentsText: t('home.featured_posts.comments', 'comments'),
     },
     {
-      title: 'Chocolate Solo',
-      tags: ['Google', 'Trending', 'New'],
-      date: '18 February 2025',
+      title: t('home.featured_posts.post3.title', 'Chocolate Solo'),
+      tags: [
+        t('home.featured_posts.tags.google', 'Google'),
+        t('home.featured_posts.tags.trending', 'Trending'),
+        t('home.featured_posts.tags.new', 'New'),
+      ],
+      date: t('home.featured_posts.post3.date', '18 February 2025'),
       comments: 10,
       imageUrl: 'chocolate-solo.jpg',
-      description: 'Easy recipes for preparing Solo Chocolate that you should try',
+      description: t(
+        'home.featured_posts.post3.description',
+        'Easy recipes for preparing Solo Chocolate that you should try'
+      ),
       isNew: true,
+      learnMoreText: t('home.featured_posts.learn_more', 'Learn More'),
+      commentsText: t('home.featured_posts.comments', 'comments'),
     },
   ];
 
@@ -124,7 +170,7 @@ const FeaturedPosts = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-[30px]">
           <h2 className="font-['Dancing_Script'] text-[42px] md:text-[84px] leading-[1.2em] font-semibold text-black">
-            Featured Posts
+            {t('home.featured_posts.title', 'Featured Posts')}
           </h2>
         </div>
 
@@ -141,6 +187,9 @@ const FeaturedPosts = () => {
                 imageUrl={post.imageUrl}
                 description={post.description}
                 isNew={post.isNew}
+                learnMoreText={post.learnMoreText}
+                commentsText={post.commentsText}
+                lng={lng}
               />
             ))}
           </div>
@@ -159,6 +208,9 @@ const FeaturedPosts = () => {
                   imageUrl={post.imageUrl}
                   description={post.description}
                   isNew={post.isNew}
+                  learnMoreText={post.learnMoreText}
+                  commentsText={post.commentsText}
+                  lng={lng}
                 />
               </div>
             ))}

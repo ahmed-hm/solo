@@ -13,6 +13,9 @@ import 'swiper/css/navigation';
 import Lottie from 'lottie-react';
 import arrowAnimation from '../../../public/lottie/arrow-down.json';
 
+// Import translation hook
+import { useTranslation } from '../../i18n/client';
+
 // Category types
 type Category = 'Puree' | 'Syrup' | 'Sauces' | 'Powder' | 'Spreads' | 'Topping';
 
@@ -29,9 +32,17 @@ const categoryImages = {
 interface FigmaCategoriesProps {
   onCategorySelect: (category: Category) => void;
   selectedCategory: Category;
+  lng: string; // Add language prop
 }
 
-const FigmaCategories: React.FC<FigmaCategoriesProps> = ({ onCategorySelect, selectedCategory = 'Puree' }) => {
+const FigmaCategories: React.FC<FigmaCategoriesProps> = ({ 
+  onCategorySelect, 
+  selectedCategory = 'Puree',
+  lng 
+}) => {
+  // Initialize translation hook
+  const { t } = useTranslation(lng);
+  
   // List of all categories
   const categories: Category[] = ['Puree', 'Syrup', 'Sauces', 'Powder', 'Spreads', 'Topping'];
 
@@ -48,11 +59,11 @@ const FigmaCategories: React.FC<FigmaCategoriesProps> = ({ onCategorySelect, sel
             <div className="flex items-center gap-4">
               <div className="w-5 h-10 rounded bg-[#DBB58F]"></div>
               <span className="font-['Dancing_Script'] font-semibold text-[64px] leading-[0.75em] tracking-[4%] text-[#DBB58F]">
-                Categories
+                {t('categories.title', 'Categories')}
               </span>
             </div>
             <span className="font-['Montserrat'] font-bold text-3xl tracking-[4%] leading-[1.6em] text-black">
-              Browse By Category
+              {t('categories.browse', 'Browse By Category')}
             </span>
           </div>
 
@@ -61,7 +72,7 @@ const FigmaCategories: React.FC<FigmaCategoriesProps> = ({ onCategorySelect, sel
             <button
               ref={prevRef}
               className="w-10 h-10 rounded-full bg-[#F5F5F5] flex items-center justify-center"
-              aria-label="Previous category"
+              aria-label={t('categories.previous', 'Previous category')}
             >
               <div className="w-6 h-6 rotate-90">
                 <Lottie animationData={arrowAnimation} loop={true} />
@@ -70,7 +81,7 @@ const FigmaCategories: React.FC<FigmaCategoriesProps> = ({ onCategorySelect, sel
             <button
               ref={nextRef}
               className="w-10 h-10 rounded-full bg-[#F5F5F5] flex items-center justify-center"
-              aria-label="Next category"
+              aria-label={t('categories.next', 'Next category')}
             >
               <div className="w-6 h-6 rotate-270">
                 <Lottie animationData={arrowAnimation} loop={true} />
@@ -107,14 +118,14 @@ const FigmaCategories: React.FC<FigmaCategoriesProps> = ({ onCategorySelect, sel
                 }`}
               >
                 <div className="w-24 h-24 relative mb-2">
-                  <Image src={categoryImages[category]} alt={category} fill className="object-contain" />
+                  <Image src={categoryImages[category]} alt={t(`categories.${category.toLowerCase()}`, category)} fill className="object-contain" />
                 </div>
                 <span
                   className={`text-center font-['Montserrat'] ${
                     selectedCategory === category ? 'font-bold' : 'font-medium'
                   } text-[17px] tracking-tight`}
                 >
-                  {category}
+                  {t(`categories.${category.toLowerCase()}`, category)}
                 </span>
               </button>
             </SwiperSlide>

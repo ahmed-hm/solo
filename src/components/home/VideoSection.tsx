@@ -4,44 +4,61 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, EffectCards } from 'swiper/modules';
+import { useTranslation, useIsRTL } from '../../i18n/client';
 
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/effect-cards';
 
-const VideoSection = () => {
+interface VideoSectionProps {
+  lng: string;
+}
+
+const VideoSection = ({ lng = 'en' }: VideoSectionProps) => {
   const [activeIndex, setActiveIndex] = useState(0);
+  const { t } = useTranslation(lng, 'common');
+  const isRtl = useIsRTL(lng);
 
   const videoItems = [
     {
       id: 1,
       src: '/images/video-thumbnail-1.png',
-      alt: 'Video thumbnail 1',
+      alt: t('videoSection.thumbnail1Alt', 'Video thumbnail 1'),
     },
     {
       id: 2,
       src: '/images/video-thumbnail-2.png',
-      alt: 'Video thumbnail 2',
+      alt: t('videoSection.thumbnail2Alt', 'Video thumbnail 2'),
     },
   ];
 
   return (
     <section className="w-full py-20 bg-gradient-to-b from-[#DBB58F] via-[#B08566] to-[#EFD8B5]">
       <div className="container mx-auto px-4">
-        <div className="flex flex-col lg:flex-row justify-center items-center gap-8 lg:gap-[30px] max-w-[1232px] mx-auto">
+        <div
+          className={`flex flex-col ${
+            isRtl ? 'lg:flex-row-reverse' : 'lg:flex-row'
+          } justify-center items-center gap-8 lg:gap-[30px] max-w-[1232px] mx-auto`}
+        >
           {/* Left column with text content */}
-          <div className="w-full lg:w-[438px] flex flex-col gap-4 text-center lg:text-left">
+          <div
+            className={`w-full lg:w-[438px] flex flex-col gap-4 text-center ${
+              isRtl ? 'lg:text-right' : 'lg:text-left'
+            }`}
+          >
             <h2 className="font-['Dancing_Script'] font-bold text-5xl lg:text-[64px] leading-[1.2] text-white">
-              Watch our latest
+              {t('videoSection.title', 'Watch our latest')}
               <br />
-              Videos
+              {t('videoSection.titleSecondLine', 'Videos')}
             </h2>
             <p className="text-white text-sm tracking-[1.4%] leading-[1.43] lg:w-full">
-              Showing off what Solo products can do in the delicious culinary world.
+              {t('videoSection.description', 'Showing off what Solo products can do in the delicious culinary world.')}
             </p>
-            <button className="mt-2 bg-black text-white rounded-full px-8 py-3 font-bold tracking-[0.4%] text-xl lg:text-2xl mx-auto lg:mx-0 lg:self-start">
-              Learn More!
+            <button
+              className={`mt-2 bg-black text-white rounded-full px-8 py-3 font-bold tracking-[0.4%] text-xl lg:text-2xl mx-auto lg:mx-0 lg:self-start`}
+            >
+              {t('videoSection.learnMoreButton', 'Learn More!')}
             </button>
           </div>
 
@@ -57,6 +74,7 @@ const VideoSection = () => {
                   grabCursor={true}
                   modules={[EffectCards, Pagination]}
                   className="mySwiper"
+                  dir={isRtl ? 'rtl' : 'ltr'}
                   onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)}
                   pagination={{
                     el: '.swiper-pagination',
@@ -86,7 +104,10 @@ const VideoSection = () => {
                           className="w-full h-auto"
                           priority
                         />
-                        <button className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white rounded-full p-10 z-20">
+                        <button
+                          className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white rounded-full p-10 z-20"
+                          aria-label={t('videoSection.playButton', 'Play video')}
+                        >
                           <svg
                             width="24"
                             height="24"
@@ -142,7 +163,7 @@ const VideoSection = () => {
 
         .swiper-cards .swiper-slide-prev {
           transform: translateY(-16px) scale(0.9) !important;
-          opacity: 0.0;
+          opacity: 0;
         }
       `}</style>
     </section>

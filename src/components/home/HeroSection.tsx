@@ -6,18 +6,24 @@ import { useState, useEffect, useRef } from 'react';
 import { Autoplay, Navigation, Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import arrowAnimation from '../../../public/lottie/arrow-down.json';
+import { useIsRTL } from '../../i18n/client';
 
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
-const HeroSection = () => {
+interface HeroSectionProps {
+  lng: string;
+}
+
+const HeroSection = ({ lng = 'en' }: HeroSectionProps) => {
   const [isLeftHovered, setIsLeftHovered] = useState(false);
   const [isRightHovered, setIsRightHovered] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
   const leftArrowRef = useRef<LottieRefCurrentProps>(null);
   const rightArrowRef = useRef<LottieRefCurrentProps>(null);
+  const isRtl = useIsRTL(lng);
 
   // Handle responsive behavior
   useEffect(() => {
@@ -67,20 +73,28 @@ const HeroSection = () => {
   const slides = [
     {
       id: 1,
-      backgroundImage: '/images/banner/banner-1.png',
+      backgroundImage: '/images/banner/banner-1.jpg',
       backgroundImageMobile: '/images/banner/banner-mobile-1.png',
+      firstWord: 'Every',
+      remainingText: 'taste\npure delight',
+      firstWordArabic: 'مذاق  ',
+      remainingTextArabic: 'مثالي\n في كل قطرة',
       alt: 'Banner 1',
     },
     {
       id: 2,
-      backgroundImage: '/images/banner/banner-2.png',
+      backgroundImage: '/images/banner/banner-2.jpg',
       backgroundImageMobile: '/images/banner/banner-mobile-2.png',
+      firstWord: 'Find',
+      remainingText: 'Your\nSpecial Drink',
+      firstWordArabic: 'مشروبك  ',
+      remainingTextArabic: 'المميز\n في كل قطرة',
       alt: 'Banner 2',
     },
   ];
 
   return (
-    <section className={`relative overflow-hidden  ${isMobile ? 'aspect-[1.3458]' : 'aspect-[2.687]'}`}>
+    <section className={`relative overflow-hidden ${isMobile ? 'aspect-[1.3458]' : 'aspect-[2.687]'}`}>
       <Swiper
         modules={[Navigation, Pagination, Autoplay]}
         spaceBetween={0}
@@ -100,6 +114,7 @@ const HeroSection = () => {
           delay: 5000,
           disableOnInteraction: false,
         }}
+        dir={isRtl ? 'rtl' : 'ltr'}
         className="h-full w-full"
       >
         {slides.map((slide) => (
@@ -108,7 +123,7 @@ const HeroSection = () => {
               {/* Background Image */}
               <div className="absolute inset-0">
                 <Image
-                  src={isMobile ? slide.backgroundImageMobile : slide.backgroundImage}
+                  src={slide.backgroundImage}
                   alt={slide.alt}
                   fill
                   priority={slide.id === 1}
@@ -116,16 +131,22 @@ const HeroSection = () => {
                 />
               </div>
 
-              {/* Mobile Banner Text - Based on Figma Design */}
-              {isMobile && (
-                <div className="absolute inset-0 flex flex-col items-center justify-center">
-                  {/* <h1 className="text-center text-white text-[75px] font-normal leading-[1.2em] tracking-[0.3%] font-['Dancing_Script']">
-                    Easy Way
-                    <br />
-                    to Change
-                  </h1> */}
-                </div>
-              )}
+              {/* Banner Text based on Figma Design */}
+              <div className="absolute inset-0 flex flex-col items-center justify-center">
+                <h1
+                  className={`text-center text-white font-normal leading-[4em] ${
+                    isRtl ? 'lg:leading-[8em]' : 'lg:leading-[6em]'
+                  } tracking-[0.3%] whitespace-pre-line`}
+                >
+                  {/* First Word */}`
+                  <span className="text-[75px] lg:text-[150px] font-bold font-['Montserrat']">
+                    {isRtl ? slide.firstWordArabic : slide.firstWord}
+                  </span>
+                  <span className="text-[70px] lg:text-[130px] font-['Dancing_Script']">
+                    {isRtl ? slide.remainingTextArabic : slide.remainingText}
+                  </span>
+                </h1>
+              </div>
             </div>
           </SwiperSlide>
         ))}
@@ -133,7 +154,7 @@ const HeroSection = () => {
 
       {/* Custom Navigation Arrows with Lottie Animations */}
       <div
-        className={`swiper-button-prev absolute top-1/2 left-${
+        className={`swiper-button-prev absolute top-1/2 ${isRtl ? 'right' : 'left'}-${
           isMobile ? '[15px]' : '[40px]'
         } z-30 flex items-center justify-center transform -translate-y-1/2 cursor-pointer`}
         onMouseEnter={() => setIsLeftHovered(true)}
@@ -151,7 +172,7 @@ const HeroSection = () => {
         </div>
       </div>
       <div
-        className={`swiper-button-next absolute top-1/2 right-${
+        className={`swiper-button-next absolute top-1/2 ${isRtl ? 'left' : 'right'}-${
           isMobile ? '[15px]' : '[40px]'
         } z-30 flex items-center justify-center transform -translate-y-1/2 cursor-pointer`}
         onMouseEnter={() => setIsRightHovered(true)}
@@ -185,14 +206,10 @@ const HeroSection = () => {
 
         .swiper-button-prev,
         .swiper-button-next {
-          right: -10;
+          // right: -10;
           margin-top: 0px;
           width: var(--swiper-navigation-size);
           height: var(--swiper-navigation-size);
-        }
-
-        .swiper-button-prev {
-          left: -10px;
         }
 
         /* Updated pagination dots to match design */
@@ -228,6 +245,11 @@ const HeroSection = () => {
         .swiper,
         .swiper-slide {
           border-radius: 0px;
+        }
+
+        /* RTL specific adjustments for Swiper */
+        [dir='rtl'] .swiper-wrapper {
+          direction: rtl;
         }
       `}</style>
     </section>
