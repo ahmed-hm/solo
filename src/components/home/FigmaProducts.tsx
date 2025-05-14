@@ -6,6 +6,8 @@ import Lottie from 'lottie-react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 import arrowAnimation from '../../../public/lottie/arrow-down.json';
+// Import translation hook
+import { useTranslation } from '../../i18n/client';
 
 // Import Swiper styles
 import 'swiper/css';
@@ -39,9 +41,13 @@ const productData: Product[] = [
 
 interface FigmaProductsProps {
   selectedCategory: string;
+  lng: string; // Add language prop
 }
 
-const FigmaProducts: React.FC<FigmaProductsProps> = ({ selectedCategory }) => {
+const FigmaProducts: React.FC<FigmaProductsProps> = ({ selectedCategory, lng }) => {
+  // Initialize translation hook
+  const { t } = useTranslation(lng);
+  
   // Filter products by selected category
   const filteredProducts = productData.filter(product => product.category === selectedCategory);
   
@@ -55,11 +61,10 @@ const FigmaProducts: React.FC<FigmaProductsProps> = ({ selectedCategory }) => {
         {/* Header */}
         <div className="flex flex-col items-center text-center mb-12">
           <h2 className="font-['Dancing_Script'] font-semibold text-[84px] leading-[1.2em] text-black mb-3">
-            Our Products
+            {t('products.our_products', 'Our Products')}
           </h2>
           <p className="font-['Montserrat'] text-[25px] leading-[1.22em] text-black max-w-2xl">
-            Explore our curated range of syrups, purees, sauces, spreads and toppings. 
-            Crafted to inspire excellence in every recipe and experience.
+            {t('products.explore_description', 'Explore our curated range of syrups, purees, sauces, spreads and toppings. Crafted to inspire excellence in every recipe and experience.')}
           </p>
         </div>
 
@@ -109,13 +114,13 @@ const FigmaProducts: React.FC<FigmaProductsProps> = ({ selectedCategory }) => {
                   <div className="w-full h-[295px] relative mb-4 rounded-md overflow-hidden">
                     <Image 
                       src={product.imageUrl} 
-                      alt={product.name} 
+                      alt={t(`products.${product.name.toLowerCase().replace(/\s+/g, '_')}`, product.name)} 
                       fill 
                       className="object-contain"
                     />
                   </div>
                   <h3 className="font-['Montserrat'] font-bold text-[17px] tracking-tight text-black text-center">
-                    {product.name}
+                    {t(`products.${product.name.toLowerCase().replace(/\s+/g, '_')}`, product.name)}
                   </h3>
                 </div>
               </SwiperSlide>
@@ -126,6 +131,7 @@ const FigmaProducts: React.FC<FigmaProductsProps> = ({ selectedCategory }) => {
           <div 
             ref={prevRef}
             className="absolute left-1 top-1/2 transform -translate-y-1/2 w-10 h-10 rounded-full bg-[#F5F5F5] flex items-center justify-center shadow-md z-10 cursor-pointer"
+            aria-label={t('products.previous', 'Previous product')}
           >
             <div className="w-6 h-6 rotate-90">
               <Lottie animationData={arrowAnimation} loop={true} />
@@ -134,6 +140,7 @@ const FigmaProducts: React.FC<FigmaProductsProps> = ({ selectedCategory }) => {
           <div 
             ref={nextRef}
             className="absolute right-1 top-1/2 transform -translate-y-1/2 w-10 h-10 rounded-full bg-[#F5F5F5] flex items-center justify-center shadow-md z-10 cursor-pointer"
+            aria-label={t('products.next', 'Next product')}
           >
             <div className="w-6 h-6 rotate-270">
               <Lottie animationData={arrowAnimation} loop={true} />

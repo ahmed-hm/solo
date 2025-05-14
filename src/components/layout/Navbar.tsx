@@ -3,12 +3,20 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { useEffect, useRef, useState } from 'react';
+import { useTranslation, useIsRTL } from '../../i18n/client';
+import LanguageSwitcher from './LanguageSwitcher';
 
-const Navbar = () => {
+interface NavbarProps {
+  lng: string;
+}
+
+const Navbar = ({ lng = 'en' }: NavbarProps) => {
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [mobileSubmenuOpen, setMobileSubmenuOpen] = useState<string | null>(null);
   const navRef = useRef<HTMLDivElement>(null);
+  const { t } = useTranslation(lng);
+  const isRtl = useIsRTL(lng);
 
   const toggleDropdown = (menuId: string) => {
     if (activeDropdown === menuId) {
@@ -73,20 +81,20 @@ const Navbar = () => {
           </Link>
         </div>
 
-        {/* Navigation Menu */}
-        <nav ref={navRef} className="hidden lg:flex items-center gap-[25px]">
+        {/* Navigation Menu - Apply RTL-aware classes */}
+        <nav ref={navRef} className={`hidden lg:flex items-center gap-[25px] ${isRtl ? 'flex-row-reverse' : ''}`}>
           <Link
             href="/"
-            className="text-[#DBB58F] font-montserrat font-bold text-[17px] leading-[20.7px] tracking-[-0.6px]"
+            className={`text-[#DBB58F] font-montserrat font-bold text-[17px] leading-[20.7px] tracking-[-0.6px]`}
           >
-            Home
+            {t('nav.home')}
           </Link>
-          <div className="flex items-center gap-[3px] relative">
+          <div className={`flex items-center gap-[3px] relative ${isRtl ? 'flex-row-reverse' : ''}`}>
             <Link
               href="/about"
               className="text-black font-montserrat font-medium text-[17px] leading-[20.7px] tracking-[-0.6px] hover:text-[#DBB58F] transition duration-300"
             >
-              About Us
+              {t('nav.aboutUs')}
             </Link>
             <button
               onClick={() => toggleDropdown('about')}
@@ -104,7 +112,11 @@ const Navbar = () => {
               </svg>
             </button>
             {activeDropdown === 'about' && (
-              <div className="absolute top-full left-0 mt-2 w-[178px] bg-white shadow-md flex flex-col z-10">
+              <div
+                className={`absolute top-full ${
+                  isRtl ? 'right-0' : 'left-0'
+                } mt-2 w-[178px] bg-white shadow-md flex flex-col z-10`}
+              >
                 <div className="w-full py-1">
                   <hr className="border-[#DBB58F] border-t-[5px]" />
                 </div>
@@ -113,32 +125,32 @@ const Navbar = () => {
                     href="/about/story"
                     className="text-black font-montserrat font-medium text-[14px] hover:text-[#DBB58F] transition duration-300"
                   >
-                    Our Story
+                    {t('nav.ourStory')}
                   </Link>
                   <Link
                     href="/about/private-label"
                     className="text-black font-montserrat font-medium text-[14px] hover:text-[#DBB58F] transition duration-300"
                   >
-                    The core of Solo
+                    {t('nav.coreOfSolo')}
                   </Link>
                 </div>
               </div>
             )}
           </div>
-          <div className="flex items-center gap-[3px] relative">
+          <div className={`flex items-center gap-[3px] relative ${isRtl ? 'flex-row-reverse' : ''}`}>
             <Link
               href="/recipes"
               className="text-black font-montserrat font-medium text-[17px] leading-[20.7px] tracking-[-0.6px] hover:text-[#DBB58F] transition duration-300"
             >
-              Recipes
+              {t('nav.recipes')}
             </Link>
           </div>
-          <div className="flex items-center gap-[3px] relative">
+          <div className={`flex items-center gap-[3px] relative ${isRtl ? 'flex-row-reverse' : ''}`}>
             <Link
               href="/partners"
               className="text-black font-montserrat font-medium text-[17px] leading-[20.7px] tracking-[-0.6px] hover:text-[#DBB58F] transition duration-300"
             >
-              Our Success Partners
+              {t('nav.partners')}
             </Link>
             <button
               onClick={() => toggleDropdown('partners')}
@@ -156,7 +168,11 @@ const Navbar = () => {
               </svg>
             </button>
             {activeDropdown === 'partners' && (
-              <div className="absolute top-full left-0 mt-2 w-[178px] bg-white shadow-md flex flex-col z-10">
+              <div
+                className={`absolute top-full ${
+                  isRtl ? 'right-0' : 'left-0'
+                } mt-2 w-[178px] bg-white shadow-md flex flex-col z-10`}
+              >
                 <div className="w-full py-1">
                   <hr className="border-[#DBB58F] border-t-[5px]" />
                 </div>
@@ -165,13 +181,13 @@ const Navbar = () => {
                     href="/partners/clients"
                     className="text-black font-montserrat font-medium text-[14px] hover:text-[#DBB58F] transition duration-300"
                   >
-                    Clients
+                    {t('nav.clients')}
                   </Link>
                   <Link
                     href="/partners/countries"
                     className="text-black font-montserrat font-medium text-[14px] hover:text-[#DBB58F] transition duration-300"
                   >
-                    Countries
+                    {t('nav.countries')}
                   </Link>
                 </div>
               </div>
@@ -179,22 +195,10 @@ const Navbar = () => {
           </div>
         </nav>
 
-        {/* Mobile View: Language Selector and Menu Button (updated to match Figma) */}
-        <div className="flex items-center gap-[10px] lg:gap-[20px]">
-          {/* Language selector */}
-          <div className="flex items-center gap-[3.4px]">
-            <div className="w-[20px] h-[15px] relative">
-              {/* British flag */}
-              <svg width="20" height="15" viewBox="0 0 20 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect width="20" height="15" rx="2" fill="#F0F0F0" />
-                <path d="M8.69565 15H11.3043V0H8.69565V15Z" fill="#D80027" />
-                <path d="M20 5.2174H0V9.78262H20V5.2174Z" fill="#D80027" />
-              </svg>
-            </div>
-            <span className="text-black font-montserrat font-medium text-[10px] lg:text-[11.7px] tracking-[-0.353%]">
-              English
-            </span>
-          </div>
+        {/* Language Selector and Menu Button */}
+        <div className={`flex items-center gap-[10px] lg:gap-[20px]`}>
+          {/* Language switcher */}
+          <LanguageSwitcher lng={lng} />
 
           {/* Mobile menu button */}
           <button
@@ -212,12 +216,12 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile Menu Overlay */}
+      {/* Mobile Menu Overlay - also make RTL-aware */}
       {mobileMenuOpen && (
-        <div className="fixed top-0 right-0 left-0 bg-white z-50 overflow-y-auto lg:hidden shadow-md h-full">
+        <div className={`fixed top-0 right-0 left-0 bg-white z-50 overflow-y-auto lg:hidden shadow-md h-full`}>
           {/* Menu Header */}
           <div className="flex justify-between items-center p-4 bg-black text-white border-b border-gray-700">
-            <span className="text-lg font-montserrat font-medium">Menu</span>
+            <span className="text-lg font-montserrat font-medium">{t('nav.menu')}</span>
             <button onClick={toggleMobileMenu} className="focus:outline-none text-white" aria-label="Close menu">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -238,7 +242,7 @@ const Navbar = () => {
             </button>
           </div>
 
-          {/* Menu Items */}
+          {/* Menu Items - Apply RTL-aware styles */}
           <div className="p-4 flex flex-col gap-5">
             {/* Home with icon */}
             <Link href="/" className="flex items-center gap-3" onClick={toggleMobileMenu}>
@@ -260,7 +264,7 @@ const Navbar = () => {
                   />
                 </svg>
               </div>
-              <span className="text-[#DBB58F] font-montserrat font-medium text-[16px]">Home</span>
+              <span className="text-[#DBB58F] font-montserrat font-medium text-[16px]">{t('nav.home')}</span>
             </Link>
 
             {/* About Us with icon and dropdown */}
@@ -290,7 +294,7 @@ const Navbar = () => {
                     onClick={() => toggleMobileSubmenu('about')}
                     className="text-black font-montserrat font-medium text-[16px] focus:outline-none text-left"
                   >
-                    About Us
+                    {t('nav.aboutUs')}
                   </button>
                 </div>
                 <button onClick={() => toggleMobileSubmenu('about')} className="focus:outline-none">
@@ -320,8 +324,15 @@ const Navbar = () => {
                     className="text-black font-montserrat font-medium text-[15px] flex items-center justify-between"
                     onClick={toggleMobileMenu}
                   >
-                    <span>Our Story</span>
-                    <svg width="7" height="13" viewBox="0 0 7 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <span>{t('nav.ourStory')}</span>
+                    <svg
+                      width="7"
+                      height="13"
+                      viewBox="0 0 7 13"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      className={isRtl ? 'rotate-180' : ''}
+                    >
                       <path d="M6.75476 6.05632L0.754761 12.0563V0.0563202L6.75476 6.05632Z" fill="black" />
                     </svg>
                   </Link>
@@ -330,8 +341,15 @@ const Navbar = () => {
                     className="text-black font-montserrat font-medium text-[15px] flex items-center justify-between"
                     onClick={toggleMobileMenu}
                   >
-                    <span>The core of Solo</span>
-                    <svg width="7" height="13" viewBox="0 0 7 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <span>{t('nav.coreOfSolo')}</span>
+                    <svg
+                      width="7"
+                      height="13"
+                      viewBox="0 0 7 13"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      className={isRtl ? 'rotate-180' : ''}
+                    >
                       <path d="M6.75476 6.05632L0.754761 12.0563V0.0563202L6.75476 6.05632Z" fill="black" />
                     </svg>
                   </Link>
@@ -378,7 +396,7 @@ const Navbar = () => {
                 className="text-black font-montserrat font-medium text-[16px]"
                 onClick={toggleMobileMenu}
               >
-                Recipes
+                {t('nav.recipes')}
               </Link>
             </div>
 
@@ -422,7 +440,7 @@ const Navbar = () => {
                     onClick={() => toggleMobileSubmenu('partners')}
                     className="text-black font-montserrat font-medium text-[16px] focus:outline-none text-left"
                   >
-                    Our Success Partners
+                    {t('nav.partners')}
                   </button>
                 </div>
                 <button onClick={() => toggleMobileSubmenu('partners')} className="focus:outline-none">
@@ -452,8 +470,15 @@ const Navbar = () => {
                     className="text-black font-montserrat font-medium text-[15px] flex items-center justify-between"
                     onClick={toggleMobileMenu}
                   >
-                    <span>Clients</span>
-                    <svg width="7" height="13" viewBox="0 0 7 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <span>{t('nav.clients')}</span>
+                    <svg
+                      width="7"
+                      height="13"
+                      viewBox="0 0 7 13"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      className={isRtl ? 'rotate-180' : ''}
+                    >
                       <path d="M6.75476 6.05632L0.754761 12.0563V0.0563202L6.75476 6.05632Z" fill="black" />
                     </svg>
                   </Link>
@@ -462,8 +487,15 @@ const Navbar = () => {
                     className="text-black font-montserrat font-medium text-[15px] flex items-center justify-between"
                     onClick={toggleMobileMenu}
                   >
-                    <span>Countries</span>
-                    <svg width="7" height="13" viewBox="0 0 7 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <span>{t('nav.countries')}</span>
+                    <svg
+                      width="7"
+                      height="13"
+                      viewBox="0 0 7 13"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      className={isRtl ? 'rotate-180' : ''}
+                    >
                       <path d="M6.75476 6.05632L0.754761 12.0563V0.0563202L6.75476 6.05632Z" fill="black" />
                     </svg>
                   </Link>

@@ -1,0 +1,163 @@
+{
+  "title": "Solo Sauce",
+  "nav": {
+    "home": "Home",
+    "aboutUs": "About Us",
+    "ourStory": "Our Story",
+    "coreOfSolo": "Core of Solo",
+    "recipes": "Recipes",
+    "partners": "Partners",
+    "clients": "Our Clients",
+    "countries": "Countries",
+    "menu": "Menu"
+  },
+  "about": {
+    "hero": {
+      "imageAlt": "Solo brand story image",
+      "title": "Our Story",
+      "description": "At Solo, we believe in the extraordinary. Since our founding, we've been committed to crafting premium food products that elevate culinary experiences worldwide. Our journey began with a simple vision: to create exceptional flavors that inspire creativity and deliver consistent quality."
+    },
+    "sophisticated": {
+      "imageAlt": "Sophisticated flavors image",
+      "title": "Sophisticated Flavors",
+      "description": "We craft our products with meticulous attention to detail, ensuring each flavor profile is sophisticated, balanced, and memorable. Our expert culinary team combines traditional techniques with innovative approaches to create truly remarkable taste experiences."
+    },
+    "distinctive": {
+      "imageAlt": "Distinctive quality image",
+      "title": "Distinctive Quality",
+      "description": "Every Solo product is distinct, created to stand out in a crowded market. We source the finest ingredients and employ rigorous quality control to ensure our products meet the highest standards."
+    },
+    "premium": {
+      "imageAlt": "Premium ingredients image",
+      "title": "Premium Ingredients",
+      "description": "We use only the finest ingredients, sourced from trusted suppliers who share our commitment to quality and sustainability. Our ingredients are carefully selected to ensure exceptional flavor and performance."
+    },
+    "exceptional": {
+      "imageAlt": "Exceptional commitment image",
+      "title": "Exceptional Commitment",
+      "description": "Our commitment to excellence extends beyond our products. We strive to provide exceptional service, support, and partnership to our clients. We're dedicated to helping our partners succeed by offering reliable products that exceed expectations and inspire culinary creativity."
+    },
+    "certifications": {
+      "title": "Our Certifications",
+      "halal": "Halal Certification",
+      "fssc": "FSSC 22000 Certification",
+      "iso45001": "ISO 45001 Certification",
+      "iso9001": "ISO 9001 Certification",
+      "iso90012015": "ISO 9001:2015 Certification"
+    }
+  },
+  "soloCore": {
+    "hero": {
+      "imageAlt": "Solo Core background image",
+      "title": "The Core of Solo",
+      "description": "Solo's essence is defined by unwavering commitment to quality, innovation, and culinary excellence. Every product we create embodies our core values and reflects our dedication to elevating food experiences worldwide."
+    },
+    "mission": {
+      "title": "Our Mission",
+      "description": "To craft exceptional food products that inspire culinary creativity, deliver consistent quality, and enhance dining experiences across the globe. We aim to exceed expectations through innovation, premium ingredients, and sustainable practices that respect both people and the planet.",
+      "imageAlt": "Solo mission image"
+    },
+    "vision": {
+      "title": "Our Vision",
+      "description": "To be the global leader in specialty food products, recognized for superior quality, innovative flavors, and sustainable practices. We envision a world where Solo products are the first choice for chefs, baristas, and food enthusiasts who demand excellence in every culinary creation.",
+      "imageAlt": "Solo vision image"
+    },
+    "values": {
+      "title": "Our Values",
+      "innovation": "• Innovation: Constantly exploring new ideas and techniques to create extraordinary products.",
+      "quality": "• Quality: Unwavering commitment to excellence in every ingredient and process.",
+      "sustainability": "• Sustainability: Responsible sourcing and production that respects our environment.",
+      "consistency": "• Consistency: Delivering reliable products that meet the same high standards every time.",
+      "imageAlt": "Solo values image"
+    }
+  },
+  "events": {
+    "exhibition": {
+      "imageAlt": "Dubai Exhibition Conference",
+      "date": "June 2025",
+      "title": "Dubai Exhibition\nConference events",
+      "description": "Watch Solo at the Dubai Exhibition Conference events",
+      "followButton": "FOLLOW US",
+      "readMoreButton": "READ MORE"
+    }
+  },
+  "featuredSection": {
+    "title": "Featured",
+    "subtitle": "Flavor Inspiration",
+    "cafe": "Café Favorites",
+    "floral": "Floral-inspired flavors",
+    "nonAlcoholic": "Non-Alcoholic Sips",
+    "discover": "Discover",
+    "raspberryTitle": "Raspberry Puree",
+    "raspberryDesc": "Solo Natural Berry Purée is characterized by its rich texture, concentrated flavor and luxurious taste that adds a unique touch to any recipe",
+    "learnMore": "Learn More"
+  },
+  "categories": {
+    "title": "Categories",
+    "browse": "Browse By Category",
+    "previous": "Previous category",
+    "next": "Next category",
+    "puree": "Puree",
+    "syrup": "Syrup",
+    "sauces": "Sauces",
+    "powder": "Powder",
+    "spreads": "Spreads",
+    "topping": "Topping"
+  },
+  "products": {
+    "featured": "Featured Products",
+    "our_products": "Our Products",
+    "explore_description": "Explore our curated range of syrups, purees, sauces, spreads and toppings. Crafted to inspire excellence in every recipe and experience.",
+    "welcome": "Welcome to Solo World",
+    "welcome_description": "Where premium quality meets boundless creativity. Crafting syrups, purees, sauces, and toppings that elevate every sip and culinary creation.",
+    "view_all": "View All",
+    "product_thumbnail": "Solo product",
+    "previous": "Previous product",
+    "next": "Next product",
+    "blue_berry_puree": "Blue Berry Puree",
+    "blue_raspberry_puree": "Blue Raspberry Puree",
+    "cherry_puree": "Cherry Puree",
+    "mix_berry": "Mix Berry",
+    "pineapple": "Pineapple",
+    "hibiscus": "Hibiscus",
+    "vanilla_syrup": "Vanilla Syrup",
+    "hazelnut_syrup": "Hazelnut Syrup",
+    "chocolate_sauce": "Chocolate Sauce",
+    "caramel_sauce": "Caramel Sauce",
+    "matcha_powder": "Matcha Powder",
+    "cocoa_powder": "Cocoa Powder",
+    "almond_spread": "Almond Spread",
+    "honey_topping": "Honey Topping",
+    "blueberry": "Blueberry",
+    "blue_curacao": "Blue Curacao",
+    "turkish_sahalb": "Turkish Sahalb",
+    "premium_spread_pistachio": "Premium Spread Pistachio",
+    "pure_cocoa": "Pure COCOA"
+  },
+  "videoSection": {
+    "title": "Watch our latest",
+    "titleSecondLine": "Videos",
+    "description": "Showing off what Solo products can do in the delicious culinary world.",
+    "learnMoreButton": "Learn More!",
+    "playButton": "Play video",
+    "thumbnail1Alt": "Video thumbnail 1",
+    "thumbnail2Alt": "Video thumbnail 2"
+  },
+  "footer": {
+    "exclusive": "Exclusive",
+    "subscribe": "Subscribe",
+    "discount": "Get 10% off your first order",
+    "emailPlaceholder": "Enter your email",
+    "support": "Support",
+    "address": "Industrial Zone B.G. Obour City - Qalyubia - Egypt.",
+    "quickLink": "Quick Link",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfUse": "Terms Of Use",
+    "faq": "FAQ",
+    "careers": "Careers",
+    "contactUs": "Contact Us",
+    "socialMedia": "Scan to social media",
+    "qrDescription": "All Links in one QR",
+    "copyright": "Solo-Sauce 2025. All right reserved"
+  }
+}

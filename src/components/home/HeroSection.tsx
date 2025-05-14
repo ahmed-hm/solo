@@ -6,18 +6,24 @@ import { useState, useEffect, useRef } from 'react';
 import { Autoplay, Navigation, Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import arrowAnimation from '../../../public/lottie/arrow-down.json';
+import { useIsRTL } from '../../i18n/client';
 
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
-const HeroSection = () => {
+interface HeroSectionProps {
+  lng: string;
+}
+
+const HeroSection = ({ lng = 'en' }: HeroSectionProps) => {
   const [isLeftHovered, setIsLeftHovered] = useState(false);
   const [isRightHovered, setIsRightHovered] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
   const leftArrowRef = useRef<LottieRefCurrentProps>(null);
   const rightArrowRef = useRef<LottieRefCurrentProps>(null);
+  const isRtl = useIsRTL(lng);
 
   // Handle responsive behavior
   useEffect(() => {
@@ -80,7 +86,7 @@ const HeroSection = () => {
   ];
 
   return (
-    <section className={`relative overflow-hidden  ${isMobile ? 'aspect-[1.3458]' : 'aspect-[2.687]'}`}>
+    <section className={`relative overflow-hidden ${isMobile ? 'aspect-[1.3458]' : 'aspect-[2.687]'}`}>
       <Swiper
         modules={[Navigation, Pagination, Autoplay]}
         spaceBetween={0}
@@ -100,6 +106,7 @@ const HeroSection = () => {
           delay: 5000,
           disableOnInteraction: false,
         }}
+        dir={isRtl ? 'rtl' : 'ltr'}
         className="h-full w-full"
       >
         {slides.map((slide) => (
@@ -133,7 +140,7 @@ const HeroSection = () => {
 
       {/* Custom Navigation Arrows with Lottie Animations */}
       <div
-        className={`swiper-button-prev absolute top-1/2 left-${
+        className={`swiper-button-prev absolute top-1/2 ${isRtl ? 'right' : 'left'}-${
           isMobile ? '[15px]' : '[40px]'
         } z-30 flex items-center justify-center transform -translate-y-1/2 cursor-pointer`}
         onMouseEnter={() => setIsLeftHovered(true)}
@@ -151,7 +158,7 @@ const HeroSection = () => {
         </div>
       </div>
       <div
-        className={`swiper-button-next absolute top-1/2 right-${
+        className={`swiper-button-next absolute top-1/2 ${isRtl ? 'left' : 'right'}-${
           isMobile ? '[15px]' : '[40px]'
         } z-30 flex items-center justify-center transform -translate-y-1/2 cursor-pointer`}
         onMouseEnter={() => setIsRightHovered(true)}
@@ -185,14 +192,10 @@ const HeroSection = () => {
 
         .swiper-button-prev,
         .swiper-button-next {
-          right: -10;
+          // right: -10;
           margin-top: 0px;
           width: var(--swiper-navigation-size);
           height: var(--swiper-navigation-size);
-        }
-
-        .swiper-button-prev {
-          left: -10px;
         }
 
         /* Updated pagination dots to match design */
@@ -228,6 +231,11 @@ const HeroSection = () => {
         .swiper,
         .swiper-slide {
           border-radius: 0px;
+        }
+
+        /* RTL specific adjustments for Swiper */
+        [dir='rtl'] .swiper-wrapper {
+          direction: rtl;
         }
       `}</style>
     </section>

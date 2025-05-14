@@ -4,6 +4,8 @@ import React, { useRef, useState, TouchEvent } from 'react';
 import Image from 'next/image';
 import Lottie from 'lottie-react';
 import arrowAnimation from '../../../public/lottie/arrow-down.json';
+// Import translation hook
+import { useTranslation } from '../../i18n/client';
 
 // Define the Product type
 interface Product {
@@ -18,6 +20,7 @@ interface ProductsProps {
   subtitle?: string;
   products?: Product[];
   filterByCategory?: string;
+  lng: string; // Add language prop
 }
 
 const FeaturedProducts: React.FC<ProductsProps> = ({
@@ -56,7 +59,11 @@ const FeaturedProducts: React.FC<ProductsProps> = ({
     },
   ],
   filterByCategory,
+  lng,
 }) => {
+  // Initialize translation hook
+  const { t } = useTranslation(lng);
+
   // Filter products by category if specified
   const displayProducts = filterByCategory
     ? products.filter((product) => product.category === filterByCategory)
@@ -119,9 +126,13 @@ const FeaturedProducts: React.FC<ProductsProps> = ({
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="flex flex-col items-center text-center mb-6 md:mb-12">
-          <h2 className="font-['Dancing_Script'] font-semibold text-[42px] md:text-[84px] leading-[1.2em] text-black mb-2 md:mb-3">{title}</h2>
+          <h2 className="font-['Dancing_Script'] font-semibold text-[42px] md:text-[84px] leading-[1.2em] text-black mb-2 md:mb-3">
+            {title ? t(`products.${title.toLowerCase().replace(/\s+/g, '_')}`, title) : t('products.featured', 'Featured Products')}
+          </h2>
           {subtitle && (
-            <p className="font-['Montserrat'] text-base md:text-[25px] leading-[1.22em] text-black max-w-5xl">{subtitle}</p>
+            <p className="font-['Montserrat'] text-base md:text-[25px] leading-[1.22em] text-black max-w-5xl">
+              {t(`products.${subtitle.toLowerCase().replace(/\s+/g, '_')}`, subtitle)}
+            </p>
           )}
         </div>
 
@@ -139,10 +150,15 @@ const FeaturedProducts: React.FC<ProductsProps> = ({
               <div key={product.id} className="flex-shrink-0 w-[130px] md:w-[273px]">
                 <div className="flex flex-col items-center p-2 md:p-4">
                   <div className="w-full h-[130px] md:h-[295px] relative mb-2 md:mb-4 rounded-md overflow-hidden">
-                    <Image src={product.imageUrl} alt={product.name} fill className="object-contain" />
+                    <Image 
+                      src={product.imageUrl} 
+                      alt={t(`products.${product.name.toLowerCase().replace(/\s+/g, '_')}`, product.name)} 
+                      fill 
+                      className="object-contain" 
+                    />
                   </div>
                   <span className="font-['Montserrat'] font-bold text-[11px] md:text-[17px] tracking-tight text-black text-center">
-                    {product.name}
+                    {t(`products.${product.name.toLowerCase().replace(/\s+/g, '_')}`, product.name)}
                   </span>
                 </div>
               </div>

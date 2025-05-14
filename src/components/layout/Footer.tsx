@@ -2,28 +2,36 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
+import { useTranslation, useIsRTL } from '../../i18n/client';
 
-const Footer = () => {
+interface FooterProps {
+  lng: string;
+}
+
+const Footer = ({ lng = 'en' }: FooterProps) => {
+  const { t } = useTranslation(lng);
+  const isRtl = useIsRTL(lng);
+  
   return (
     <footer className="bg-black text-white py-[80px]">
       <div className="container mx-auto px-[20px]">
-        <div className="grid grid-cols-2 md:grid-cols-12 gap-[40px]">
+        <div className={`grid grid-cols-2 md:grid-cols-12 gap-[40px] ${isRtl ? 'text-right' : 'text-left'}`}>
           {/* Newsletter section */}
           <div className="col-span-1 md:col-span-3">
             <div className="flex flex-col gap-[24px]">
               <div className="flex flex-col">
-                <div className="text-white text-[24px] font-medium font-montserrat pb-2">Exclusive</div>
-                <div className="text-white text-[20px] font-medium font-montserrat pb-2">Subscribe</div>
-                <div className="text-white text-[16px] font-montserrat opacity-70">Get 10% off your first order</div>
+                <div className="text-white text-[24px] font-medium font-montserrat pb-2">{t('footer.exclusive')}</div>
+                <div className="text-white text-[20px] font-medium font-montserrat pb-2">{t('footer.subscribe')}</div>
+                <div className="text-white text-[16px] font-montserrat opacity-70">{t('footer.discount')}</div>
               </div>
-              <div className="flex items-center border border-white rounded-[4px] overflow-hidden">
+              <div className={`flex items-center border border-white rounded-[4px] overflow-hidden ${isRtl ? 'flex-row-reverse' : ''}`}>
                 <input
                   type="email"
-                  placeholder="Enter your email"
-                  className="bg-transparent text-white px-[16px] py-[12px] flex-grow outline-none placeholder:text-white placeholder:opacity-40 font-montserrat text-[16px]"
+                  placeholder={t('footer.emailPlaceholder')}
+                  className={`bg-transparent text-white px-[16px] py-[12px] flex-grow outline-none placeholder:text-white placeholder:opacity-40 font-montserrat text-[16px] ${isRtl ? 'text-right' : 'text-left'}`}
                 />
                 <button className="p-[12px]">
-                  <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg" className={isRtl ? 'rotate-180' : ''}>
                     <path
                       d="M8.91196 9.9998H2.99996L1.02296 2.1348C1.0103 2.0891 1.00259 2.04216 0.999959 1.9948C0.977959 1.2738 1.77196 0.773804 2.45996 1.1038L21 9.9998L2.45996 18.8958C1.77996 19.2228 0.995959 18.7368 0.999959 18.0288C1.00198 17.9655 1.0131 17.9029 1.03296 17.8428L2.49996 12.9998"
                       stroke="white"
@@ -39,10 +47,10 @@ const Footer = () => {
 
           {/* Support section */}
           <div className="col-span-1 md:col-span-3">
-            <div className="text-white text-[20px] font-medium font-montserrat mb-[24px]">Support</div>
+            <div className="text-white text-[20px] font-medium font-montserrat mb-[24px]">{t('footer.support')}</div>
             <div className="flex flex-col gap-[16px]">
               <p className="text-white text-[16px] font-montserrat opacity-70 leading-[24px]">
-                Industrial Zone B.G. Obour City - Qalyubia - Egypt.
+                {t('footer.address')}
               </p>
               <p className="text-white text-[16px] font-montserrat opacity-70">info@solo-sauce.com</p>
               <p className="text-white text-[16px] font-montserrat opacity-70">+201002299067</p>
@@ -51,37 +59,37 @@ const Footer = () => {
 
           {/* Quick Links section */}
           <div className="col-span-1 md:col-span-3">
-            <div className="text-white text-[20px] font-medium font-montserrat mb-[24px]">Quick Link</div>
+            <div className="text-white text-[20px] font-medium font-montserrat mb-[24px]">{t('footer.quickLink')}</div>
             <div className="flex flex-col gap-[16px]">
               <Link
                 href="/privacy"
                 className="text-white text-[16px] font-montserrat opacity-70 hover:opacity-100 transition-colors duration-300"
               >
-                Privacy Policy
+                {t('footer.privacyPolicy')}
               </Link>
               <Link
                 href="/terms"
                 className="text-white text-[16px] font-montserrat opacity-70 hover:opacity-100 transition-colors duration-300"
               >
-                Terms Of Use
+                {t('footer.termsOfUse')}
               </Link>
               <Link
                 href="/faq"
                 className="text-white text-[16px] font-montserrat opacity-70 hover:opacity-100 transition-colors duration-300"
               >
-                FAQ
+                {t('footer.faq')}
               </Link>
               <Link
                 href="/careers"
                 className="text-white text-[16px] font-montserrat opacity-70 hover:opacity-100 transition-colors duration-300"
               >
-                Careers
+                {t('footer.careers')}
               </Link>
               <Link
                 href="/contact"
                 className="text-white text-[16px] font-montserrat opacity-70 hover:opacity-100 transition-colors duration-300"
               >
-                Contact Us
+                {t('footer.contactUs')}
               </Link>
             </div>
           </div>
@@ -89,11 +97,11 @@ const Footer = () => {
           {/* Social Media QR section */}
           <div className="col-span-1 md:col-span-3 flex justify-center">
             <div className="flex flex-col items-center">
-              <span className="text-white text-[20px] font-medium font-montserrat mb-[24px] text-center md:text-left w-full">
-                Scan to social media
+              <span className={`text-white text-[20px] font-medium font-montserrat mb-[24px] w-full ${isRtl ? 'text-center md:text-right' : 'text-center md:text-left'}`}>
+                {t('footer.socialMedia')}
               </span>
               <div className="flex flex-col items-center">
-                <p className="text-white text-[12px] font-medium font-montserrat mb-[8px]">All Links in one QR</p>
+                <p className="text-white text-[12px] font-medium font-montserrat mb-[8px]">{t('footer.qrDescription')}</p>
                 <div className="w-[140px] h-[140px]">
                   <Image src="/images/qr/qr-code.svg" alt="Solo-Sauce Social Media QR Code" width={140} height={140} />
                 </div>
@@ -153,7 +161,7 @@ const Footer = () => {
 
         {/* Copyright section */}
         <div className="flex justify-center mt-[40px]">
-          <div className="flex items-center gap-[6px] opacity-70">
+          <div className={`flex items-center gap-[6px] opacity-70 ${isRtl ? 'flex-row-reverse' : ''}`}>
             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M10 1.75C5.45 1.75 1.75 5.45 1.75 10C1.75 14.55 5.45 18.25 10 18.25C14.55 18.25 18.25 14.55 18.25 10C18.25 5.45 14.55 1.75 10 1.75ZM10 16.75C6.25 16.75 3.25 13.75 3.25 10C3.25 6.25 6.25 3.25 10 3.25C13.75 3.25 16.75 6.25 16.75 10C16.75 13.75 13.75 16.75 10 16.75Z"
@@ -161,7 +169,7 @@ const Footer = () => {
               />
               <path d="M10.75 6.25H9.25V10.75H13.75V9.25H10.75V6.25Z" fill="white" />
             </svg>
-            <span className="text-white text-[16px] font-montserrat">Solo-Sauce 2025. All right reserved</span>
+            <span className="text-white text-[16px] font-montserrat">{t('footer.copyright')}</span>
           </div>
         </div>
       </div>
