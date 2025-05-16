@@ -186,5 +186,39 @@
       "learn_more": "اعرف المزيد",
       "comments": "تعليقات"
     }
+  },
+  "common": {
+    "scroll_left": "التمرير لليسار",
+    "scroll_right": "التمرير لليمين",
+    "contact_us": "تواصل معنا",
+    "learn_more": "اعرف المزيد"
+  },
+  "countries": {
+    "emirates_background": "خلفية الإمارات",
+    "solo_sauce": "صلصة سولو",
+    "coming_soon_in": "قريباً في",
+    "emirates": "الإمارات",
+    "making_its_way": "سولو في طريقها إلى الإمارات. ترقبوا وصولها قريباً.",
+    "15_years_alt": "15 عاماً من سولو",
+    "presence": "التواجد",
+    "factories": "المصانع",
+    "distributors": "الموزعون",
+    "distributors_count": "+500",
+    "market_share": "حصة السوق",
+    "market_share_percent": "70%",
+    "bottles_sold": "الزجاجات المباعة",
+    "bottles_count": "+800M",
+    "explore_heading": "استكشف الدول التي تتوفر فيها صلصة سولو.",
+    "saudi_arabia": "المملكة العربية السعودية",
+    "jordan": "الأردن",
+    "oman": "عُمان",
+    "kuwait": "الكويت",
+    "bahrain": "البحرين"
+  },
+  "partners": {
+    "join_us": "انضم إلينا",
+    "join_us_description": "استخدم منتجات صلصة سولو ضمن علامتك التجارية. كل ما عليك هو التواصل معنا وسنرد عليك في أقرب وقت ممكن.",
+    "our_clients": "عملاؤنا",
+    "partner_logo_alt": "شعار الشريك {{number}}"
   }
 }

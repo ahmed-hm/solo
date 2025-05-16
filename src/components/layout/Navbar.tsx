@@ -466,7 +466,7 @@ const Navbar = ({ lng = 'en' }: NavbarProps) => {
               {mobileSubmenuOpen === 'partners' && (
                 <div className="flex flex-col gap-4 px-9">
                   <Link
-                    href={`/${lng}/partners/clients`}
+                    href={`/${lng}/partners`}
                     className="text-black font-montserrat font-medium text-[15px] flex items-center justify-between"
                     onClick={toggleMobileMenu}
                   >
@@ -483,7 +483,7 @@ const Navbar = ({ lng = 'en' }: NavbarProps) => {
                     </svg>
                   </Link>
                   <Link
-                    href={`/${lng}/partners/countries`}
+                    href={`/${lng}/countries`}
                     className="text-black font-montserrat font-medium text-[15px] flex items-center justify-between"
                     onClick={toggleMobileMenu}
                   >
