@@ -178,13 +178,13 @@ const Navbar = ({ lng = 'en' }: NavbarProps) => {
                 </div>
                 <div className="flex flex-col gap-[10px] p-[10px]">
                   <Link
-                    href={`/${lng}/partners/clients`}
+                    href={`/${lng}/partners`}
                     className="text-black font-montserrat font-medium text-[14px] hover:text-[#DBB58F] transition duration-300"
                   >
                     {t('nav.clients')}
                   </Link>
                   <Link
-                    href={`/${lng}/partners/countries`}
+                    href={`/${lng}/countries`}
                     className="text-black font-montserrat font-medium text-[14px] hover:text-[#DBB58F] transition duration-300"
                   >
                     {t('nav.countries')}
