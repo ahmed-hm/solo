@@ -186,5 +186,39 @@
       "learn_more": "Learn More",
       "comments": "comments"
     }
+  },
+  "common": {
+    "scroll_left": "Scroll left",
+    "scroll_right": "Scroll right",
+    "contact_us": "Contact Us",
+    "learn_more": "Learn More"
+  },
+  "countries": {
+    "emirates_background": "Emirates background",
+    "solo_sauce": "Solo Sauce",
+    "coming_soon_in": "is coming soon in",
+    "emirates": "Emirates",
+    "making_its_way": "Solo is making its way to Emirates. Stay tuned there soon.",
+    "15_years_alt": "15 Years of Solo",
+    "presence": "Presence",
+    "factories": "Factories",
+    "distributors": "Distributors",
+    "distributors_count": "+500",
+    "market_share": "Market share",
+    "market_share_percent": "70%",
+    "bottles_sold": "Bottles Sold",
+    "bottles_count": "+800M",
+    "explore_heading": "Explore the countries where Solo Sauce is available.",
+    "saudi_arabia": "Saudi Arabia",
+    "jordan": "Jordan",
+    "oman": "Oman",
+    "kuwait": "Kuwait",
+    "bahrain": "Bahrain"
+  },
+  "partners": {
+    "join_us": "Join Us",
+    "join_us_description": "Use Solo Sauce products within your brand. All you have to do is contact us and we will respond to you as soon as possible.",
+    "our_clients": "Our Clients",
+    "partner_logo_alt": "Partner Logo {{number}}"
   }
 }
