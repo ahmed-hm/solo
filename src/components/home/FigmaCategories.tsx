@@ -16,10 +16,10 @@ import arrowAnimation from '../../../public/lottie/arrow-down.json';
 // Import translation hook
 import { useTranslation } from '../../i18n/client';
 
-// Category types
-type Category = 'Puree' | 'Syrup' | 'Sauces' | 'Powder' | 'Spreads' | 'Topping';
+// Category types - updated to match the new structure
+type Category = 'Puree' | 'Syrup' | 'Sauces' | 'Powder' | 'Spreads' | 'Topping' | 'Mini Topping' | 'Mini Coffee';
 
-// Sample category images (you'll need to add these images to your public folder)
+// Updated category images mapping
 const categoryImages = {
   Puree: '/images/categories/puree.png',
   Syrup: '/images/categories/syrup.png',
@@ -27,6 +27,8 @@ const categoryImages = {
   Powder: '/images/categories/powder.png',
   Spreads: '/images/categories/spreads.png',
   Topping: '/images/categories/topping.png',
+  'Mini Topping': '/images/categories/topping.png', // You might want to update this image
+  'Mini Coffee': '/images/categories/powder.png', // You might want to update this image
 };
 
 interface FigmaCategoriesProps {
@@ -35,16 +37,21 @@ interface FigmaCategoriesProps {
   lng: string; // Add language prop
 }
 
-const FigmaCategories: React.FC<FigmaCategoriesProps> = ({ 
-  onCategorySelect, 
-  selectedCategory = 'Puree',
-  lng 
-}) => {
+const FigmaCategories: React.FC<FigmaCategoriesProps> = ({ onCategorySelect, selectedCategory = 'Puree', lng }) => {
   // Initialize translation hook
   const { t } = useTranslation(lng);
-  
-  // List of all categories
-  const categories: Category[] = ['Puree', 'Syrup', 'Sauces', 'Powder', 'Spreads', 'Topping'];
+
+  // List of all categories - updated with the new structure
+  const categories: Category[] = [
+    'Puree',
+    'Syrup',
+    'Sauces',
+    'Powder',
+    'Spreads',
+    'Topping',
+    'Mini Topping',
+    'Mini Coffee',
+  ];
 
   // References for Swiper navigation
   const prevRef = React.useRef<HTMLButtonElement>(null);
@@ -74,7 +81,7 @@ const FigmaCategories: React.FC<FigmaCategoriesProps> = ({
               className="w-10 h-10 rounded-full bg-[#F5F5F5] flex items-center justify-center"
               aria-label={t('categories.previous', 'Previous category')}
             >
-              <div className="w-6 h-6 rotate-90">
+              <div className={`w-6 h-6 rotate-${lng === 'en' ? 90 : 270}`}>
                 <Lottie animationData={arrowAnimation} loop={true} />
               </div>
             </button>
@@ -83,7 +90,7 @@ const FigmaCategories: React.FC<FigmaCategoriesProps> = ({
               className="w-10 h-10 rounded-full bg-[#F5F5F5] flex items-center justify-center"
               aria-label={t('categories.next', 'Next category')}
             >
-              <div className="w-6 h-6 rotate-270">
+              <div className={`w-6 h-6 rotate-${lng === 'en' ? 270 : 90}`}>
                 <Lottie animationData={arrowAnimation} loop={true} />
               </div>
             </button>
@@ -118,7 +125,12 @@ const FigmaCategories: React.FC<FigmaCategoriesProps> = ({
                 }`}
               >
                 <div className="w-24 h-24 relative mb-2">
-                  <Image src={categoryImages[category]} alt={t(`categories.${category.toLowerCase()}`, category)} fill className="object-contain" />
+                  <Image
+                    src={categoryImages[category]}
+                    alt={t(`categories.${category.toLowerCase()}`, category)}
+                    fill
+                    className="object-contain"
+                  />
                 </div>
                 <span
                   className={`text-center font-['Montserrat'] ${

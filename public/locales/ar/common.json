@@ -9,7 +9,8 @@
     "partners": "شركاؤنا",
     "clients": "عملاؤنا",
     "countries": "الدول",
-    "menu": "القائمة"
+    "menu": "القائمة",
+    "blog": "المدونة"
   },
   "about": {
     "hero": {
@@ -186,6 +187,14 @@
       "learn_more": "اعرف المزيد",
       "comments": "تعليقات"
     }
+  },
+  "blog": {
+    "comments": "التعليقات",
+    "inThisArticle": "في هذا المقال",
+    "loadMore": "تحميل المزيد",
+    "share": "شارك مع مجتمعك!",
+    "likeShare": "هل أعجبك ما رأيت؟ شارك مع صديق.",
+    "relatedArticles": "مقالات ذات صلة"
   },
   "common": {
     "scroll_left": "التمرير لليسار",

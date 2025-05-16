@@ -1,0 +1,1268 @@
+{
+  "blogs": [
+    {
+      "id": "frappe-powder",
+      "title": "Frappé Powder from Solo Sauce: Your Shortcut to the Perfect Iced Coffee Experience",
+      "date": "May 14, 2025",
+      "category": "Coffee",
+      "commentCount": 6,
+      "image": "/images/products/frappe-powder.jpg",
+      "sections": [
+        {
+          "id": "what-is-frappe",
+          "title": "What is a Frappé?",
+          "content": "A frappé is a cold coffee-based beverage blended with milk and ice, known for its creamy texture and rich flavor. It's one of the most popular drinks served in cafés, especially during the hot summer months.\nIts smooth taste and easy preparation have made it a staple and beyond"
+        },
+        {
+          "id": "solo-frappe-powder",
+          "title": "What is Solo Sauce Frappé Powder?",
+          "content": "Solo Sauce Frappé Powder is a specially formulated blend designed for fast, consistent, and professional frappé preparation.\nMade with carefully balanced ingredients, it delivers a creamy texture and smooth taste — with no lumps — making it the ideal choice for café and restaurant owners who value quality and efficiency."
+        },
+        {
+          "id": "why-choose",
+          "title": "Why Choose Solo Sauce Frappé Powder?",
+          "content": "✅ Rich, well-balanced flavor\n✅ Smooth, creamy consistency\n✅ Quick and easy – ready in under a minute\n✅ Perfect for blending with coffee, milk, ice, or flavor shots\n✅ Consistent professional quality in every cup"
+        },
+        {
+          "id": "preparation",
+          "title": "How to Prepare a Frappé with Solo Sauce Powder:",
+          "content": "Add 30g of Solo Sauce Frappé Powder to a blender\n\nPour in 150ml of cold milk + a cup of crushed ice\n\nBlend until smooth and creamy\n\nTop with whipped cream or chocolate/caramel syrup for extra indulgence\n\n💡 Pro Tip: For a stronger coffee kick, add a shot of espresso!"
+        },
+        {
+          "id": "target-audience",
+          "title": "Who Is This Product For?",
+          "content": "🔹 Baristas in cafés and coffee shops\n🔹 Restaurant and food truck owners\n🔹 Hotels and beachside resorts\n🔹 Beverage and catering companies\n🔹 Distributors of drink ingredients in Egypt and the Gulf"
+        },
+        {
+          "id": "availability",
+          "title": "Where to Find Solo Sauce Frappé Powder?",
+          "content": "You can purchase Solo Sauce products through our official distributors in Egypt or by contacting us directly.\nWe also export to Saudi Arabia, Kuwait, Bahrain, Jordan, and Oman."
+        },
+        {
+          "id": "conclusion",
+          "title": "One Sip, Total Refreshment – Frappé Powder from Solo Sauce",
+          "content": "If you're looking for a quick, professional-quality ingredient to serve rich, creamy frappés that satisfy your customers, Solo Sauce Frappé Powder is your go-to solution.\nTry it today and elevate your café or restaurant's cold drink menu with a premium frappé experience!"
+        }
+      ],
+      "relatedPosts": [
+        {
+          "id": "turkish-sahlab",
+          "title": "Turkish Sahlab by Solo Sauce: A Taste of Tradition and Comfort",
+          "image": "/images/featured/sahlab-turkey.jpg",
+          "category": "Sahlab Turkey",
+          "date": "February 26, 2025",
+          "readTime": "6 min read"
+        },
+        {
+          "id": "blue-curacao-syrup",
+          "title": "Solo Blue Curacao Syrup: Caribbean Flavor, Solo Style",
+          "image": "/images/products/blue-curacao.jpg",
+          "category": "Syrups",
+          "date": "April 20, 2025",
+          "readTime": "5 min read"
+        }
+      ],
+      "comments": [
+        {
+          "id": 1,
+          "author": "Coffee Lover",
+          "avatar": "",
+          "content": "I've been using Solo's Frappé Powder in my café for the last month and my customers are loving it! The consistency is perfect every time.",
+          "date": "2 days ago"
+        },
+        {
+          "id": 2,
+          "author": "Café Owner",
+          "avatar": "",
+          "content": "This has become a staple in our summer menu. Easy to prepare and fantastic quality. Thank you Solo!",
+          "date": "1 week ago"
+        }
+      ]
+    },
+    {
+      "id": "frappe-powder-ar",
+      "title": "الفرابيه باودر من صولو صوص: أسرع طريق لمشروب بارد مثالي",
+      "date": "May 14, 2025",
+      "category": "القهوة",
+      "commentCount": 6,
+      "image": "/images/products/frappe-powder.jpg",
+      "sections": [
+        {
+          "id": "what-is-frappe",
+          "title": "ما هو الفرابيه؟",
+          "content": "الفرابيه هو مشروب قهوة بارد ممزوج بالثلج والحليب، يتميز بقوامه الكريمي وطعمه الغني، ويُعد من أكثر المشروبات انتشارا في الكافيهات، خاصة خلال فصل الصيف.\nأصبح الفرابيه من العناصر الأساسية في قوائم المشروبات بسبب مذاقه المميز وسهولة تحضيره."
+        },
+        {
+          "id": "solo-frappe-powder",
+          "title": "ما هو فرابيه باودر من صولو صوص؟",
+          "content": "فرابيه باودر من صولو صوص هو بودرة مُحضّرة خصيصًا لتحضير الفرابيه باحترافية وسرعة.\nيحتوي على مكونات متوازنة تمنحك القوام الكريمي والطعم المتجانس بدون تكتلات، مما يجعله الخيار المثالي لأصحاب الكافيهات والمطاعم في مصر الباحثين عن ثبات الجودة وسرعة التحضير."
+        },
+        {
+          "id": "why-choose",
+          "title": "مميزات فرابيه باودر صولو:",
+          "content": "✅ نكهة غنية ومتوازنة\n✅ قوام كريمي سهل الدمج\n✅ سريع التحضير – جاهز في أقل من دقيقة\n✅ مناسب للخلط مع القهوة، الحليب، الثلج، أو الإضافات المنكهة\n✅ جودة احترافية في كل كوب"
+        },
+        {
+          "id": "preparation",
+          "title": "طريقة تحضير الفرابيه باستخدام فرابيه باودر صولو:",
+          "content": "أضف 30 جم من فرابيه باودر صولو إلى الخلاط\n\nأضف 150 مل من الحليب البارد + كوب من الثلج المجروش\n\nامزج جيدًا حتى تحصل على قوام ناعم ومتجانس\n\nزيّن بالكريمة أو صوص شوكولاتة/كراميل حسب الذوق\n\n💡 للحصول على نكهة قهوة مركزة، أضف شوت إسبريسو."
+        },
+        {
+          "id": "target-audience",
+          "title": "لمن هذا المنتج؟",
+          "content": "🔹 الباريستا في الكافيهات\n🔹 أصحاب المطاعم والـ Food Trucks\n🔹 الفنادق والمنتجعات\n🔹 شركات تجهيز المشروبات\n🔹 موزعو خامات المشروبات"
+        },
+        {
+          "id": "availability",
+          "title": "أين تجد فرابيه باودر صولو صوص؟",
+          "content": "منتجات صولو صوص متوفرة داخل مصر من خلال شبكة موزعين معتمدة او من خلال التواصل معنا، كما يتم التصدير لدول الخليج:\nالسعودية، الكويت، البحرين، الأردن، سلطنة عمان."
+        },
+        {
+          "id": "conclusion",
+          "title": "فرابيه باودر من صولو صوص = مشروب بارد باحترافية من أول رشفة",
+          "content": "إذا كنت تبحث عن مكون سريع واحترافي لتحضير مشروب فرابيه لذيذ يرضي ذوق عملاءك، فالحل هو فرابيه باودر صولو صوص.\nجرّبه اليوم وقدّم تجربة مشروب لا تُنسى في كافيهك أو مطعمك!"
+        }
+      ],
+      "relatedPosts": [
+        {
+          "id": "turkish-sahlab-ar",
+          "title": "السحلب التركي من صولو صوص: الدفء والمذاق الأصيل في كل كوب",
+          "image": "/images/featured/sahlab-turkey.jpg",
+          "category": "سحلب تركي",
+          "date": "February 26, 2025",
+          "readTime": "6 min read"
+        },
+        {
+          "id": "blue-curacao-syrup-ar",
+          "title": "بلو كروساو سيراب: نكهة البحر الكاريبي في كل مشروب",
+          "image": "/images/products/blue-curacao.jpg",
+          "category": "سيراب",
+          "date": "April 20, 2025",
+          "readTime": "5 min read"
+        }
+      ],
+      "comments": [
+        {
+          "id": 1,
+          "author": "محب القهوة",
+          "avatar": "",
+          "content": "استخدمت فرابيه باودر صولو في المقهى الخاص بي خلال الشهر الماضي وعملائي يحبونه! القوام مثالي في كل مرة.",
+          "date": "قبل يومين"
+        },
+        {
+          "id": 2,
+          "author": "صاحب كافيه",
+          "avatar": "",
+          "content": "أصبح هذا المنتج أساسيًا في قائمة المشروبات الصيفية لدينا. سهل التحضير وبجودة رائعة. شكرًا صولو!",
+          "date": "قبل أسبوع"
+        }
+      ]
+    },
+    {
+      "id": "turkish-salep",
+      "title": "Solo Turkish Salep: Warmth and Authentic Flavor in Every Cup",
+      "date": "May 10, 2025",
+      "category": "Hot Drinks",
+      "commentCount": 8,
+      "image": "/images/featured/sahlab-turkey.jpg",
+      "sections": [
+        {
+          "id": "what-is-turkish-salep",
+          "title": "What is Turkish Salep?",
+          "content": "Turkish salep is a warm, comforting winter drink rich in oriental flavors. It's made from powdered orchid roots mixed with milk, sugar, and light spices like cinnamon and mastic.\nThis creamy, distinctive drink is one of the most popular winter beverages in cafés and restaurants, especially in Egypt and other Arab countries."
+        },
+        {
+          "id": "solo-turkish-salep",
+          "title": "What is Solo Turkish Salep?",
+          "content": "Solo Salep is a high-quality instant powder blend designed to prepare authentic Turkish salep quickly and professionally.\nIt delivers a rich, traditional Turkish flavor with a smooth, creamy texture that dissolves easily, giving you a perfect drink in just a few minutes—no complicated preparation needed."
+        },
+        {
+          "id": "key-features",
+          "title": "Features of Solo Turkish Salep:",
+          "content": "✅ Authentic, rich Turkish flavor\n✅ Smooth, creamy texture with no clumps\n✅ Quick to prepare – ready in minutes\n✅ Made with carefully selected natural ingredients\n✅ Ideal for cafés, restaurants, and hotels"
+        },
+        {
+          "id": "preparation",
+          "title": "How to Prepare:",
+          "content": "Add 25g of Solo Salep to a cup (200 ml) of hot milk.\n\nStir well until the powder is fully dissolved.\n\nPlace the mixture on low heat and stir until it thickens.\n\nGarnish with cinnamon, coconut, or nuts as desired.\n\n💡 For a richer flavor, you can add a hint of vanilla or a teaspoon of sugar to taste."
+        },
+        {
+          "id": "target-audience",
+          "title": "Who Needs Solo Salep?",
+          "content": "🔸 Baristas in cafés during winter\n🔸 Restaurant owners who want to serve premium oriental drinks\n🔸 Hotels and resorts offering seasonal drink menus\n🔸 Ready-to-serve beverage suppliers"
+        },
+        {
+          "id": "availability",
+          "title": "Where to Find Solo Turkish Salep?",
+          "content": "Solo Salep is available through our official distribution network in Egypt or by contacting us directly. It is also exported to Gulf countries, including:\nSaudi Arabia – Kuwait – Bahrain – Jordan – Oman"
+        },
+        {
+          "id": "conclusion",
+          "title": "Solo Turkish Salep = A Winter Flavor to Remember",
+          "content": "If you're looking for a cozy, flavorful drink that satisfies your customers and adds a luxurious oriental touch to your beverage menu, Solo Turkish Salep is the perfect choice.\nServe it in your café or restaurant and give your customers a warm, memorable experience."
+        }
+      ],
+      "relatedPosts": [
+        {
+          "id": "frappe-powder",
+          "title": "Frappé Powder from Solo Sauce: Your Shortcut to the Perfect Iced Coffee Experience",
+          "image": "/images/products/frappe-powder.jpg",
+          "category": "Coffee",
+          "date": "May 14, 2025",
+          "readTime": "6 min read"
+        },
+        {
+          "id": "pistachio-spread",
+          "title": "Solo Pistachio Spread: Luxurious Flavor with Authentic Pistachio Taste",
+          "image": "/images/products/pistachio-spread.jpg",
+          "category": "Spreads",
+          "date": "May 5, 2025",
+          "readTime": "5 min read"
+        }
+      ],
+      "comments": [
+        {
+          "id": 1,
+          "author": "Winter Enthusiast",
+          "avatar": "",
+          "content": "I've tried many Turkish salep mixes, but Solo's is by far the most authentic and delicious. The texture is perfect!",
+          "date": "3 days ago"
+        },
+        {
+          "id": 2,
+          "author": "Café Manager",
+          "avatar": "",
+          "content": "Our customers love this salep during the winter months. It's easy to make and consistently good quality.",
+          "date": "1 week ago"
+        }
+      ]
+    },
+    {
+      "id": "turkish-salep-ar",
+      "title": "السحلب التركي من صولو صوص: الدفء والمذاق الأصيل في كل كوب",
+      "date": "May 10, 2025",
+      "category": "مشروبات ساخنة",
+      "commentCount": 8,
+      "image": "/images/featured/sahlab-turkey.jpg",
+      "sections": [
+        {
+          "id": "what-is-turkish-salep",
+          "title": "ما هو السحلب التركي؟",
+          "content": "السحلب التركي هو مشروب شتوي دافئ غني بالنكهات الشرقية، يُحضّر من بودرة جذور نبتة السحلب الطبيعية ممزوجة بالحليب والسكر والتوابل الخفيفة مثل القرفة والمستكة.\nيتميّز بقوامه الكريمي وطعمه المميز ، ويُعد من أكثر المشروبات الشتوية طلبًا في الكافيهات والمطاعم، خاصة في مصر والدول العربية."
+        },
+        {
+          "id": "solo-turkish-salep",
+          "title": "ما هو سحلب صولو التركي؟",
+          "content": "سحلب صولو هو بودرة مُحضّرة بجودة عالية لتحضير السحلب التركي الأصيل بسهولة واحترافية.\nيُقدَّم بطعم غني يشبه السحلب التقليدي التركي، مع قوام كريمي ناعم وسريع الذوبان، ليمنحك مشروبًا متكاملًا في دقائق دون الحاجة لتحضير معقد."
+        },
+        {
+          "id": "key-features",
+          "title": "مميزات سحلب صولو التركي:",
+          "content": "✅ نكهة تركية أصيلة وغنية\n✅ قوام كريمي متجانس بدون تكتلات\n✅ سريع التحضير – كوب جاهز خلال دقائق\n✅ يحتوي على مكونات طبيعية مختارة بعناية\n✅ مثالي للكافيهات والمطاعم والفنادق"
+        },
+        {
+          "id": "preparation",
+          "title": "طريقة التحضير:",
+          "content": "أضف 25 جم من سحلب صولو إلى كوب (200 مل) من الحليب الساخن\n\nقلب جيدًا حتى يذوب المسحوق تمامًا\n\nضع الخليط على النار وحرّك حتى يبدأ في التماسك\n\nزيّن بالقرفة، جوز الهند، أو المكسرات حسب الرغبة\n\n💡 للحصول على مذاق أغنى، يمكن إضافة رشة فانيليا أو ملعقة صغيرة من السكر حسب الذوق."
+        },
+        {
+          "id": "target-audience",
+          "title": "من يحتاج سحلب صولو؟",
+          "content": "🔸 الباريستا في الكافيهات خلال موسم الشتاء\n🔸 أصحاب المطاعم الراغبين في تقديم مشروب شرقي فاخر\n🔸 الفنادق والمنتجعات التي تقدم قائمة مشروبات شتوية\n🔸 شركات تجهيز المشروبات الجاهزة"
+        },
+        {
+          "id": "availability",
+          "title": "أين يتوفر سحلب صولو التركي؟",
+          "content": "يتوفر سحلب صولو عبر شبكة موزعينا داخل مصر أو من خلال التواصل معنا الكترونياً ، كما انه متاح طلبه في دول الخليج مثل:\nالسعودية – الكويت – البحرين – الأردن – سلطنة عمان"
+        },
+        {
+          "id": "conclusion",
+          "title": "سحلب صولو التركي = نكهة شتوية لا تُنسى",
+          "content": "إذا كنت تبحث عن مشروب دافئ يُرضي عملاءك ويضيف لمسة شرقية فاخرة لقائمة مشروباتك، فـ سحلب صولو التركي هو خيارك الأمثل.\nقدّمه في كافيهك أو مطعمك وامنح عملاءك لحظة دفء لا تُنسى."
+        }
+      ],
+      "relatedPosts": [
+        {
+          "id": "frappe-powder-ar",
+          "title": "الفرابيه باودر من صولو صوص: أسرع طريق لمشروب بارد مثالي",
+          "image": "/images/products/frappe-powder.jpg",
+          "category": "القهوة",
+          "date": "May 14, 2025",
+          "readTime": "6 min read"
+        },
+        {
+          "id": "pistachio-spread-ar",
+          "title": "بستاشيو سبريد من صولو: الفخامة بطعم الفستق الحلبي",
+          "image": "/images/products/pistachio-spread.jpg",
+          "category": "سبريد",
+          "date": "May 5, 2025",
+          "readTime": "5 min read"
+        }
+      ],
+      "comments": [
+        {
+          "id": 1,
+          "author": "عاشق الشتاء",
+          "avatar": "",
+          "content": "جربت العديد من خلطات السحلب التركي، لكن منتج صولو هو الأكثر أصالة ولذة. القوام مثالي!",
+          "date": "قبل 3 أيام"
+        },
+        {
+          "id": 2,
+          "author": "مدير كافيه",
+          "avatar": "",
+          "content": "عملاؤنا يحبون هذا السحلب خلال أشهر الشتاء. سهل التحضير وذو جودة متناسقة.",
+          "date": "قبل أسبوع"
+        }
+      ]
+    },
+    {
+      "id": "blue-curacao-syrup",
+      "title": "Solo Blue Curacao Syrup: Caribbean Flavor, Solo Style",
+      "date": "April 20, 2025",
+      "category": "Syrups",
+      "commentCount": 5,
+      "image": "/images/products/blue-curacao.jpg",
+      "sections": [
+        {
+          "id": "what-is-blue-curacao",
+          "title": "What is Solo Blue Curacao Syrup?",
+          "content": "Solo Blue Curacao Syrup is your tropical ticket to unforgettable beverages. Infused with the zesty essence of Laraha peels—a bitter orange grown on the island of Curaçao—this syrup brings bold citrus flavor and an iconic electric blue color to every drink.\n\nPerfect for cafes, restaurants, and creative drink makers, Solo delivers premium quality that's easy to mix, eye-catching, and full of exotic character."
+        },
+        {
+          "id": "why-choose",
+          "title": "Why Choose Solo Blue Curacao Syrup?",
+          "content": "With Solo, it's more than a color—it's an experience.\nSolo Blue Curacao Syrup adds that signature tropical twist your drink menu needs. Whether you're mixing up a mocktail or giving a soda a summer upgrade, Solo brings the vibrant island vibe in every drop."
+        },
+        {
+          "id": "key-features",
+          "title": "What Makes Solo Blue Curacao Stand Out?",
+          "content": "✅ Striking blue color that grabs attention instantly\n✅ Tropical citrus taste inspired by Caribbean heritage\n✅ Dissolves smoothly in both hot and cold drinks\n✅ Versatile – works for sodas, slushies, cocktails, and desserts\n✅ Trusted by professionals in cafes, hotels & events"
+        },
+        {
+          "id": "how-to-use",
+          "title": "How to Use Solo Blue Curacao Syrup:",
+          "content": "🔹 Craft unforgettable mocktails & cocktails like Blue Lagoon\n🔹 Add a bold splash of color to milkshakes & desserts\n🔹 Create vibrant slushies, juices, and refreshers\n🔹 Use as a signature garnish or drizzle in creative presentations\n\n💡 Pairs perfectly with lemon, pineapple, coconut, or berry flavors!"
+        },
+        {
+          "id": "target-audience",
+          "title": "Who Needs Solo Blue Curacao?",
+          "content": "🔸 Baristas and beverage artists looking to level up flavor & aesthetics\n🔸 Cafés and restaurants seeking standout drinks on their menu\n🔸 Event planners wanting colorful and refreshing beverage options\n🔸 Home mixologists ready to explore the world of tropical mocktails"
+        },
+        {
+          "id": "availability",
+          "title": "Where Can You Get Solo Blue Curacao Syrup?",
+          "content": "Solo Blue Curacao Syrup is available through our trusted distributor network across Egypt, and can be ordered directly online.\nNow also available in the Gulf region, including:\nSaudi Arabia – Kuwait – Bahrain – Jordan – Oman"
+        },
+        {
+          "id": "conclusion",
+          "title": "Go Bold. Go Blue. Go Solo.",
+          "content": "With Solo Blue Curacao Syrup, you're not just making drinks—you're creating a tropical moment in every cup.\nAdd it to your café menu, your event setup, or your home drink station—and let Solo bring the Caribbean to you. 💙"
+        }
+      ],
+      "relatedPosts": [
+        {
+          "id": "frappe-powder",
+          "title": "Frappé Powder from Solo Sauce: Your Shortcut to the Perfect Iced Coffee Experience",
+          "image": "/images/products/frappe-powder.jpg",
+          "category": "Coffee",
+          "date": "May 14, 2025",
+          "readTime": "6 min read"
+        },
+        {
+          "id": "pistachio-spread",
+          "title": "Solo Pistachio Spread: Luxurious Flavor with Authentic Pistachio Taste",
+          "image": "/images/products/pistachio-spread.jpg",
+          "category": "Spreads",
+          "date": "May 5, 2025",
+          "readTime": "5 min read"
+        }
+      ],
+      "comments": [
+        {
+          "id": 1,
+          "author": "Mixology Enthusiast",
+          "avatar": "",
+          "content": "The color is incredible and the taste is spot on. I've been making the most amazing blue mocktails with this syrup!",
+          "date": "5 days ago"
+        },
+        {
+          "id": 2,
+          "author": "Event Planner",
+          "avatar": "",
+          "content": "Used this for a beach-themed corporate event and the drinks were the highlight of the day. Great product!",
+          "date": "2 weeks ago"
+        }
+      ]
+    },
+    {
+      "id": "blue-curacao-syrup-ar",
+      "title": "بلو كروساو سيراب: نكهة البحر الكاريبي في كل مشروب",
+      "date": "April 20, 2025",
+      "category": "سيراب",
+      "commentCount": 5,
+      "image": "/images/products/blue-curacao.jpg",
+      "sections": [
+        {
+          "id": "what-is-blue-curacao",
+          "title": "ما هو بلو كروساو سيراب؟",
+          "content": "بلو كروساو سيراب يتميّز بلونه الأزرق الزاهي ونكهته الحمضية المنعشة المستوحاة من قشور فاكهة لاراها، وهي نوع من البرتقال المر يُزرع في جزيرة كوراكاو في الكاريبي.\nيُستخدم هذا السيراب بشكل واسع في تحضير المشروبات الغازية والعصائر والكوكتيلات، سواء في الكافيهات أو المطاعم أو المناسبات الخاصة"
+        },
+        {
+          "id": "why-choose",
+          "title": "لماذا تختار بلو كروساو سيراب؟",
+          "content": "بلو كروساو ليس مجرد لون جذاب، بل هو مكون رئيسي يضيف طابعًا استوائيًا مميزًا لأي مشروب. يمتزج بسهولة مع مجموعة واسعة من النكهات، ويمنح الكوكتيلات لمسة من الانتعاش والحيوية."
+        },
+        {
+          "id": "key-features",
+          "title": "مميزات بلو كروساو سيراب:",
+          "content": "✅ لون أزرق جذاب يلفت الأنظار\n✅ نكهة حمضية استوائية فريدة\n✅ يذوب بسهولة في المشروبات الباردة والساخنة\n✅ مناسب للمشروبات الغازية والعصائر والموكتيلات\n✅ يُستخدم في الكافيهات، الفنادق، والفعاليات"
+        },
+        {
+          "id": "how-to-use",
+          "title": "استخدامات بلو كروساو سيراب:",
+          "content": "🔹 الكوكتيلات والموكتيلات\n🔹 تزيين الحلويات والميلك شيك\n🔹 إضفاء لون مميز على السلاش والعصائر\n🔹 عنصر جذب بصري في تقديم المشروبات\n\nيمكن مزجه مع نكهات مثل الليمون، الأناناس، جوز الهند، والتوت لمذاق رائع!"
+        },
+        {
+          "id": "target-audience",
+          "title": "من يحتاج بلو كروساو؟",
+          "content": "🔸 الباريستا والمحترفين في عالم المشروبات\n🔸 أصحاب الكافيهات والمطاعم الباحثين عن إضافة مميزة لقائمة المشروبات\n🔸 منظمو الحفلات والفعاليات الصيفية\n🔸 المهتمون بصناعة الموكتيلات"
+        },
+        {
+          "id": "availability",
+          "title": "أين يمكن شراء صولو بلو كروساو سيراب؟",
+          "content": "يتوفر صولو بلو كروساو سيراب عبر شبكة موزعينا داخل مصر أو يمكنك الطلب من خلال التواصل معنا الكترونياً ، كما انه متاح طلبه في دول الخليج مثل:\nالسعودية – الكويت – البحرين – الأردن – سلطنة عمان"
+        },
+        {
+          "id": "conclusion",
+          "title": "جرّب بلو كروساو سيراب من صولو وامنح مشروباتك لمسة استوائية لا تُنسى!",
+          "content": "بلو كروساو هو خيارك الأمثل لرفع مستوى الطعم والشكل في كل كوب"
+        }
+      ],
+      "relatedPosts": [
+        {
+          "id": "frappe-powder-ar",
+          "title": "الفرابيه باودر من صولو صوص: أسرع طريق لمشروب بارد مثالي",
+          "image": "/images/products/frappe-powder.jpg",
+          "category": "القهوة",
+          "date": "May 14, 2025",
+          "readTime": "6 min read"
+        },
+        {
+          "id": "pistachio-spread-ar",
+          "title": "بستاشيو سبريد من صولو: الفخامة بطعم الفستق الحلبي",
+          "image": "/images/products/pistachio-spread.jpg",
+          "category": "سبريد",
+          "date": "May 5, 2025",
+          "readTime": "5 min read"
+        }
+      ],
+      "comments": [
+        {
+          "id": 1,
+          "author": "هاوي المشروبات",
+          "avatar": "",
+          "content": "اللون رائع والطعم مميز. أحضّر أجمل الموكتيلات الزرقاء باستخدام هذا السيراب!",
+          "date": "قبل 5 أيام"
+        },
+        {
+          "id": 2,
+          "author": "منظم فعاليات",
+          "avatar": "",
+          "content": "استخدمت هذا المنتج في حفل شركة بثيمة شاطئية، وكانت المشروبات هي الأبرز في اليوم. منتج رائع!",
+          "date": "قبل أسبوعين"
+        }
+      ]
+    },
+    {
+      "id": "pistachio-spread",
+      "title": "Solo Pistachio Spread: Luxurious Flavor with Authentic Pistachio Taste",
+      "date": "May 5, 2025",
+      "category": "Spreads",
+      "commentCount": 7,
+      "image": "/images/products/pistachio-spread.jpg",
+      "sections": [
+        {
+          "id": "what-is-pistachio-spread",
+          "title": "What is Solo Pistachio Spread?",
+          "content": "Solo Pistachio Spread is a premium pistachio cream with a rich flavor and silky-smooth texture, made from the finest natural pistachios.\nWhether you're using it in desserts or even as an addition to your drink, Solo offers you an unforgettable experience of indulgent taste and refined elegance."
+        },
+        {
+          "id": "why-choose",
+          "title": "Why Choose Solo Pistachio Spread?",
+          "content": "Because quality starts with the ingredients.\nSolo Pistachio Spread is crafted to give you the perfect balance of rich taste and creamy consistency — making it the ideal choice for anyone seeking a distinguished flavor."
+        },
+        {
+          "id": "key-features",
+          "title": "Key Features of Solo Pistachio Spread:",
+          "content": "✅ Natural, concentrated pistachio flavor\n✅ Smooth and easy-to-spread texture\n✅ Perfect for both Middle Eastern and Western desserts\n✅ Suitable for cafés, restaurants, and home kitchens"
+        },
+        {
+          "id": "how-to-use",
+          "title": "How to Use Solo Pistachio Spread?",
+          "content": "🔸 In making kunafa, qatayef, and other Ramadan desserts\n🔸 As a rich filling for croissants, waffles, and donuts\n🔸 For decorating cakes and cheesecakes\n🔸 As a luxurious ingredient in cold drinks or milkshakes\n\n💡 Tip: Try it on iced coffee or vanilla ice cream for an exceptional flavor twist!"
+        },
+        {
+          "id": "target-audience",
+          "title": "Who Needs Solo Pistachio Spread?",
+          "content": "🔹 Chefs and baristas looking for a premium touch\n🔹 Café and restaurant owners aiming to innovate their dessert menus\n🔹 Home bakers and content creators in the food space\n🔹 Food production companies seeking standout ingredients"
+        },
+        {
+          "id": "availability",
+          "title": "Where Can You Buy Solo Pistachio Spread?",
+          "content": "Solo Pistachio Spread is available through our distribution network across Egypt and can also be easily ordered online.\nIt's also available in Gulf countries, including:\nSaudi Arabia – Kuwait – Bahrain – Jordan – Oman"
+        },
+        {
+          "id": "conclusion",
+          "title": "Solo Pistachio = The True Taste of Luxury",
+          "content": "If you're looking for a product that elevates your recipes and adds a unique touch to your desserts and drinks, Solo Pistachio Spread is your go-to choice."
+        }
+      ],
+      "relatedPosts": [
+        {
+          "id": "turkish-salep",
+          "title": "Solo Turkish Salep: Warmth and Authentic Flavor in Every Cup",
+          "image": "/images/featured/sahlab-turkey.jpg",
+          "category": "Hot Drinks",
+          "date": "May 10, 2025",
+          "readTime": "6 min read"
+        },
+        {
+          "id": "blue-curacao-syrup",
+          "title": "Solo Blue Curacao Syrup: Caribbean Flavor, Solo Style",
+          "image": "/images/products/blue-curacao.jpg",
+          "category": "Syrups",
+          "date": "April 20, 2025",
+          "readTime": "5 min read"
+        }
+      ],
+      "comments": [
+        {
+          "id": 1,
+          "author": "Pastry Chef",
+          "avatar": "",
+          "content": "The depth of flavor in this pistachio spread is incredible. It's become a staple in my dessert creations!",
+          "date": "1 day ago"
+        },
+        {
+          "id": 2,
+          "author": "Dessert Lover",
+          "avatar": "",
+          "content": "I've tried many pistachio spreads but Solo's has the most authentic taste. Perfect balance of sweetness and natural pistachio flavor.",
+          "date": "1 week ago"
+        }
+      ]
+    },
+    {
+      "id": "pistachio-spread-ar",
+      "title": "بستاشيو سبريد من صولو: الفخامة بطعم الفستق الحلبي",
+      "date": "May 5, 2025",
+      "category": "سبريد",
+      "commentCount": 7,
+      "image": "/images/products/pistachio-spread.jpg",
+      "sections": [
+        {
+          "id": "what-is-pistachio-spread",
+          "title": "ما هو بستاشيو سبريد من صولو؟",
+          "content": "بستاشيو سبريد من صولو هو كريمة فستق حلبي فاخرة، غنية بالنكهة والقوام الكريمي الناعم، تُحضّر من أجود أنواع الفستق الطبيعي.\nسواء كنت تستخدمها في الحلويات، السندويتشات، أو حتى كإضافة لمشروبك، تمنحك صولو تجربة لا تُنسى بطعم فاخر ولمسة راقية"
+        },
+        {
+          "id": "why-choose",
+          "title": "لماذا تختار بستاشيو سبريد من صولو؟",
+          "content": "لأن الجودة تبدأ من المكونات.\nصولو بستاشيو سبريد مصمّمة لتمنحك توازنًا مثاليًا بين الطعم الغني والقوام السلس، لتكون الخيار المثالي لكل من يبحث عن طعم مميز."
+        },
+        {
+          "id": "key-features",
+          "title": "مميزات بستاشيو سبريد من صولو:",
+          "content": "✅ نكهة فستق طبيعية ومركزة\n✅ قوام كريمي ناعم وسهل الفرد\n✅ مثالية للحلويات الشرقية والغربية\n✅ تُستخدم في الكافيهات، المطاعم، والبيوت"
+        },
+        {
+          "id": "how-to-use",
+          "title": "كيف تستخدم بستاشيو سبريد من صولو؟",
+          "content": "🔸 في تحضير الكنافة والقطايف والحلويات الرمضانية\n🔸 كحشوة فاخرة للكرواسون والوافل والدونات\n🔸 في تزيين الكيك والتشيز كيك\n🔸 كمكوّن فاخر في المشروبات الباردة أو الميلك شيك\n\nنصيحة: جرّب إضافتها على قهوة باردة أو فوق آيس كريم الفانيليا للحصول على نكهة مذهلة!"
+        },
+        {
+          "id": "target-audience",
+          "title": "من يحتاج بستاشيو سبريد من صولو؟",
+          "content": "🔹 الشيفات والباريستا الباحثين عن طعم مميز\n🔹 أصحاب الكافيهات والمطاعم الراغبين في تقديم وصفات مبتكرة\n🔹 عشاق الحلويات وصناع المحتوى في عالم الطهي\n🔹 شركات تصنيع المنتجات الغذائية"
+        },
+        {
+          "id": "availability",
+          "title": "أين يمكن شراء بستاشيو سبريد من صولو؟",
+          "content": "يتوفر بستاشيو سبريد من صولو عبر شبكة موزعينا داخل مصر، كما يمكن طلبه أونلاين بسهولة.\nمتاح أيضًا في دول الخليج مثل:\nالسعودية – الكويت – البحرين – الأردن – سلطنة عمان"
+        },
+        {
+          "id": "conclusion",
+          "title": "صولو بستاشيو = طعم الفخامة الحقيقي",
+          "content": "إذا كنت تبحث عن منتج يرفع من قيمة وصفاتك ويضيف لمسة فريدة لحلوياتك ومشروباتك، فإن بستاشيو سبريد من صولو هو خيارك المثالي."
+        }
+      ],
+      "relatedPosts": [
+        {
+          "id": "turkish-salep-ar",
+          "title": "السحلب التركي من صولو صوص: الدفء والمذاق الأصيل في كل كوب",
+          "image": "/images/featured/sahlab-turkey.jpg",
+          "category": "مشروبات ساخنة",
+          "date": "May 10, 2025",
+          "readTime": "6 min read"
+        },
+        {
+          "id": "blue-curacao-syrup-ar",
+          "title": "بلو كروساو سيراب: نكهة البحر الكاريبي في كل مشروب",
+          "image": "/images/products/blue-curacao.jpg",
+          "category": "سيراب",
+          "date": "April 20, 2025",
+          "readTime": "5 min read"
+        }
+      ],
+      "comments": [
+        {
+          "id": 1,
+          "author": "شيف حلويات",
+          "avatar": "",
+          "content": "عمق النكهة في بستاشيو سبريد صولو مذهل. أصبح عنصراً أساسياً في إبداعات الحلويات الخاصة بي!",
+          "date": "قبل يوم"
+        },
+        {
+          "id": 2,
+          "author": "عاشق الحلويات",
+          "avatar": "",
+          "content": "جربت العديد من منتجات الفستق ولكن منتج صولو له الطعم الأكثر أصالة. توازن مثالي بين الحلاوة ونكهة الفستق الطبيعية.",
+          "date": "قبل أسبوع"
+        }
+      ]
+    },
+    {
+      "id": "ice-tea-syrup",
+      "title": "Ice Tea Syrup: Refreshing Flavor in an Instant",
+      "date": "May 16, 2025",
+      "category": "Syrups",
+      "commentCount": 4,
+      "image": "/images/products/ice-tea-syrup.jpg",
+      "sections": [
+        {
+          "id": "what-is-ice-tea-syrup",
+          "title": "What is Ice Tea Syrup",
+          "content": "Ice tea syrup is the perfect ingredient for preparing a refreshing, easy-to-make iced tea any time of day—especially during the summer. It's crafted from natural tea extracts blended with selected fruit flavors, delivering a balanced and refreshing taste without the need to steep or boil tea."
+        },
+        {
+          "id": "solo-signature-touch",
+          "title": "The Solo Sauce Signature Touch",
+          "content": "At Solo Sauce, we've developed our ice tea syrup with a professional touch that strikes the perfect balance between bold flavor and natural refreshment. We use high-quality ingredients that highlight the authentic tea taste with fruity notes tailored to modern preferences."
+        },
+        {
+          "id": "ingredients",
+          "title": "Carefully Selected Ingredients",
+          "content": "Our ice tea syrup is made from:\n\nPremium natural tea extract\n\nNatural fruit flavors\n\nLight, balanced sweeteners\n\nEach ingredient contributes to a cold beverage that's rich in flavor and perfect for everyday enjoyment."
+        },
+        {
+          "id": "preparation",
+          "title": "How to Prepare Solo Sauce Ice Tea",
+          "content": "Preparing a delicious iced tea using our syrup takes less than a minute:\n\nMix 30ml of Solo Sauce ice tea syrup with 200ml of cold or sparkling water.\n\nAdd ice to your liking.\n\nGarnish with lemon slices or mint leaves for an extra refreshing twist."
+        },
+        {
+          "id": "why-choose",
+          "title": "Why Choose Solo Sauce Ice Tea Syrup?",
+          "content": "Naturally refreshing flavor\n\nQuick and easy to prepare\n\nVersatile (great for cafés, restaurants, or home use)\n\nAvailable in a variety of crowd-pleasing flavors\n\nIdeal for the summer heat"
+        },
+        {
+          "id": "availability",
+          "title": "Where to Find Us",
+          "content": "You can order Solo Sauce Ice Tea Syrup by contacting us or via our trusted network of suppliers and distributors across Egypt, Bahrain, Kuwait, Jordan, Oman, and Saudi Arabia."
+        },
+        {
+          "id": "conclusion",
+          "title": "Refreshment in Every Sip",
+          "content": "Whether you're a café owner looking for the perfect summer drink or a beverage enthusiast at home, Solo Sauce Ice Tea Syrup is your ideal choice. We guarantee exceptional flavor, premium quality, and an unforgettable experience in every cup."
+        }
+      ],
+      "relatedPosts": [
+        {
+          "id": "frappe-powder",
+          "title": "Frappé Powder from Solo Sauce: Your Shortcut to the Perfect Iced Coffee Experience",
+          "image": "/images/products/frappe-powder.jpg",
+          "category": "Coffee",
+          "date": "May 14, 2025",
+          "readTime": "6 min read"
+        },
+        {
+          "id": "blue-curacao-syrup",
+          "title": "Solo Blue Curacao Syrup: Caribbean Flavor, Solo Style",
+          "image": "/images/products/blue-curacao.jpg",
+          "category": "Syrups",
+          "date": "April 20, 2025",
+          "readTime": "5 min read"
+        }
+      ],
+      "comments": [
+        {
+          "id": 1,
+          "author": "Summer Lover",
+          "avatar": "",
+          "content": "The ice tea syrup is amazing! So easy to make and the flavor is perfectly balanced.",
+          "date": "1 day ago"
+        },
+        {
+          "id": 2,
+          "author": "Café Owner",
+          "avatar": "",
+          "content": "My customers absolutely love the drinks we make with this syrup. It's become our bestseller this month!",
+          "date": "3 days ago"
+        }
+      ]
+    },
+    {
+      "id": "ice-tea-syrup-ar",
+      "title": "سيراب الآيس تي: انتعاش في كل رشفة",
+      "date": "May 16, 2025",
+      "category": "سيراب",
+      "commentCount": 4,
+      "image": "/images/products/ice-tea-syrup.jpg",
+      "sections": [
+        {
+          "id": "what-is-ice-tea-syrup",
+          "title": "ما هو سيراب الآيس تي؟",
+          "content": "سيراب الآيس تي هو المكون المثالي لتحضير مشروب شاي مثلج منعش وسهل في أي وقت من اليوم، خاصة في فصل الصيف. يُستخلص السيراب من نكهات الشاي الطبيعية الممزوجة بنكهات فواكه مختارة، ليمنحك مذاقاً متوازناً ومنعشاً، دون الحاجة لنقع أو غلي الشاي."
+        },
+        {
+          "id": "solo-signature-touch",
+          "title": "لمسة صولو صوص المميزة",
+          "content": "في Solo Sauce، قمنا بابتكار سيراب آيس تي بلمسة احترافية توازن بين النكهة القوية والانتعاش الطبيعي. نستخدم في تركيبتنا مكونات عالية الجودة تُبرز طعم الشاي الحقيقي مع لمسات من الفواكه لتلائم الذوق العصري."
+        },
+        {
+          "id": "ingredients",
+          "title": "المكونات المختارة بعناية",
+          "content": "سيراب الآيس تي الخاص بنا مصنوع من:\n\nخلاصة شاي طبيعي عالي الجودة\n\nنكهات فواكه طبيعية\n\nمُحليات خفيفة ومتوازنة\n\nكل مكون يساهم في تقديم مشروب بارد غني بالمذاق ومناسب للاستهلاك اليومي."
+        },
+        {
+          "id": "preparation",
+          "title": "طريقة تحضير آيس تي صولو صوص:",
+          "content": "تحضير مشروب الآيس تي باستخدام السيراب الخاص بنا لا يستغرق أكثر من دقيقة:\n\nامزج 30 مل من سيراب الآيس تي مع 200 مل من الماء البارد أو الفوار.\n\nأضف الثلج حسب الرغبة.\n\nزينه بشرائح ليمون أو أوراق نعناع لمزيد من الانتعاش."
+        },
+        {
+          "id": "why-choose",
+          "title": "لماذا تختار سيراب الآيس تي من صولو صوص؟",
+          "content": "طعم طبيعي ومنعش\n\nسريع التحضير\n\nمتعدد الاستخدامات (للمقاهي، المطاعم، أو المنزل)\n\nمتوفر بنكهات ترضي كل الأذواق\n\nمناسب لأجواء الصيف"
+        },
+        {
+          "id": "availability",
+          "title": "أماكن الشراء",
+          "content": "يمكنك طلب سيراب الآيس تي من Solo Sauce من خلال التواصل معنا أو من خلال شبكة شركائنا من الموردين والموزعين في مصر، البحرين، الكويت، الاردن، عمان و السعودية"
+        },
+        {
+          "id": "conclusion",
+          "title": "انتعاش في كل رشفة",
+          "content": "سواء كنت صاحب كافيه تبحث عن مشروب صيفي مثالي، أو محب للمشروبات الباردة في المنزل، سيراب الآيس تي من صولو صوص هو اختيارك الأمثل. نضمن لك نكهة مميزة، جودة عالية، وتجربة لا تُنسى في كل كوب."
+        }
+      ],
+      "relatedPosts": [
+        {
+          "id": "frappe-powder-ar",
+          "title": "الفرابيه باودر من صولو صوص: أسرع طريق لمشروب بارد مثالي",
+          "image": "/images/products/frappe-powder.jpg",
+          "category": "القهوة",
+          "date": "May 14, 2025",
+          "readTime": "6 min read"
+        },
+        {
+          "id": "blue-curacao-syrup-ar",
+          "title": "بلو كروساو سيراب: نكهة البحر الكاريبي في كل مشروب",
+          "image": "/images/products/blue-curacao.jpg",
+          "category": "سيراب",
+          "date": "April 20, 2025",
+          "readTime": "5 min read"
+        }
+      ],
+      "comments": [
+        {
+          "id": 1,
+          "author": "محب الصيف",
+          "avatar": "",
+          "content": "سيراب الآيس تي رائع! سهل التحضير والنكهة متوازنة تماماً.",
+          "date": "قبل يوم"
+        },
+        {
+          "id": 2,
+          "author": "صاحب كافيه",
+          "avatar": "",
+          "content": "عملائي يحبون المشروبات التي نصنعها بهذا السيراب. أصبح الأكثر مبيعاً هذا الشهر!",
+          "date": "قبل 3 أيام"
+        }
+      ]
+    },
+    {
+      "id": "watermelon-puree",
+      "title": "Watermelon Purée: Your Natural Ingredient for Refreshing Summer Drinks",
+      "date": "May 15, 2025",
+      "category": "Purées",
+      "commentCount": 5,
+      "image": "/images/products/watermelon-puree.jpg",
+      "sections": [
+        {
+          "id": "what-is-watermelon-puree",
+          "title": "What is Watermelon Purée?",
+          "content": "Watermelon purée is a concentrated natural extract made from ripe, fresh watermelon, used exclusively for preparing cold beverages. It features a smooth texture and a rich, fruity flavor that brings a real taste of summer to every cup. It's ideal for cafes, restaurants, and hotels looking to serve standout, professional-quality drinks."
+        },
+        {
+          "id": "why-choose",
+          "title": "Why Choose Solo Sauce's Watermelon Purée?",
+          "content": "At Solo Sauce, we carefully select the finest watermelons to deliver a 100% natural product — just the pure taste of watermelon, as it should be.\n\n✅ Authentic and refreshing flavor\n✅ Smooth consistency for easy mixing\n✅ Perfect for creating professional drinks with minimal effort"
+        },
+        {
+          "id": "how-to-use",
+          "title": "How to Use Watermelon Purée:",
+          "content": "🔸 Watermelon Iced Tea\n🔸 Watermelon Lemonade\n🔸 Sparkling fruit-infused water\n🔸 Summer mocktails\n🔸 Cold beverages on your café or restaurant menu"
+        },
+        {
+          "id": "target-audience",
+          "title": "Who Is It For?",
+          "content": "🔹 Baristas looking for unique, fruity flavors\n🔹 Cafés and restaurants upgrading their summer drink menu\n🔹 Hotels and beach bars during peak summer season\n🔹 Beverage prep companies seeking natural, high-quality ingredients"
+        },
+        {
+          "id": "preparation",
+          "title": "Easy Preparation Method:",
+          "content": "Add 30ml of Solo Sauce Watermelon Purée to a glass of cold or sparkling water.\n\nAdd ice.\n\nGarnish with lemon slices or fresh mint, and serve instantly."
+        },
+        {
+          "id": "availability",
+          "title": "Where to Find Our Product:",
+          "content": "You can get Solo Sauce's Watermelon Purée by contacting us directly or through our network of distributors across Egypt and throughout the GCC: Saudi Arabia, Kuwait, Bahrain, Jordan, and Oman."
+        },
+        {
+          "id": "conclusion",
+          "title": "Taste Summer in Every Sip",
+          "content": "Whether you're creating seasonal drinks for your café or simply want to elevate your beverage menu, Solo Sauce's Watermelon Purée is your go-to solution. Natural flavor, premium quality, and quick preparation — all in one bottle."
+        }
+      ],
+      "relatedPosts": [
+        {
+          "id": "frappe-powder",
+          "title": "Frappé Powder from Solo Sauce: Your Shortcut to the Perfect Iced Coffee Experience",
+          "image": "/images/products/frappe-powder.jpg",
+          "category": "Coffee",
+          "date": "May 14, 2025",
+          "readTime": "6 min read"
+        },
+        {
+          "id": "ice-tea-syrup",
+          "title": "Ice Tea Syrup: Refreshing Flavor in an Instant",
+          "image": "/images/products/ice-tea-syrup.jpg",
+          "category": "Syrups",
+          "date": "May 16, 2025",
+          "readTime": "5 min read"
+        }
+      ],
+      "comments": [
+        {
+          "id": 1,
+          "author": "Beach Bar Owner",
+          "avatar": "",
+          "content": "This watermelon purée has been a game-changer for our summer menu. Our guests absolutely love the refreshing taste!",
+          "date": "2 days ago"
+        },
+        {
+          "id": 2,
+          "author": "Beverage Enthusiast",
+          "avatar": "",
+          "content": "I'm impressed by how natural the flavor is. It's like having fresh watermelon in a bottle, ready whenever you want.",
+          "date": "1 week ago"
+        }
+      ]
+    },
+    {
+      "id": "watermelon-puree-ar",
+      "title": "بيوريه البطيخ: مكونك الطبيعي لمشروبات صيفية منعشة",
+      "date": "May 15, 2025",
+      "category": "بيوريه",
+      "commentCount": 5,
+      "image": "/images/products/watermelon-puree.jpg",
+      "sections": [
+        {
+          "id": "what-is-watermelon-puree",
+          "title": "ما هو بيوريه البطيخ؟",
+          "content": "بيوريه البطيخ هو مستخلص طبيعي مركز يُصنع من البطيخ الطازج الناضج، ويُستخدم حصريًا لتحضير المشروبات الباردة. يتميز بقوامه السلس ونكهته الغنية التي تضيف لمسة صيفية حقيقية لكل كوب. مثالي للمقاهي، المطاعم، والفنادق التي تبحث عن مكون احترافي لتحضير مشروبات مميزة."
+        },
+        {
+          "id": "why-choose",
+          "title": "لماذا تختار بيوريه البطيخ من صولو صوص؟",
+          "content": "في صولو صوص، نستخدم أجود أنواع البطيخ لنقدّم لك منتجًا طبيعيًا 100%، فقط طعم البطيخ الصافي كما هو.\n\n✅ نكهة أصلية ومنعشة\n✅ قوام ناعم وسهل الدمج\n✅ مثالي لتحضير مشروبات احترافية بسهولة"
+        },
+        {
+          "id": "how-to-use",
+          "title": "استخدامات بيوريه البطيخ:",
+          "content": "🔸 آيس تي بنكهة البطيخ\n🔸 ليموناضة بالبطيخ\n🔸 مياه فوار بنكهات طبيعية\n🔸 موكتيلات صيفية\n🔸 مشروبات باردة في قائمة الكافيه أو المطعم"
+        },
+        {
+          "id": "target-audience",
+          "title": "موجه لمَن؟",
+          "content": "🔹 الباريستا الذين يبحثون عن نكهة فاكهية مبتكرة\n🔹 أصحاب الكافيهات والمطاعم لتطوير قائمة المشروبات\n🔹 الفنادق والـ Beach bars في موسم الصيف\n🔹 الشركات المتخصصة في تجهيز المشروبات الجاهزة"
+        },
+        {
+          "id": "preparation",
+          "title": "طريقة التحضير السهلة:",
+          "content": "أضف 30 مل من بيوريه البطيخ إلى كوب ماء بارد أو فوار.\n\nأضف الثلج.\n\nزيّنه بشرائح ليمون أو نعناع وقدّمه فورًا."
+        },
+        {
+          "id": "availability",
+          "title": "أماكن توفر المنتج:",
+          "content": "يمكنك شراء بيوريه البطيخ من صولو صوص من خلال التواصل معنا، أو من خلال شبكة موزعينا داخل مصر بالإضافة إلى دول الخليج مثل السعودية، الكويت، البحرين، الأردن، وعمان."
+        },
+        {
+          "id": "conclusion",
+          "title": "جرّب نكهة الصيف في كل رشفة",
+          "content": "سواء كنت تحضّر مشروبات موسمية لكافيهك أو تبحث عن مكون احترافي لإضافة لمسة منعشة لقائمة مشروباتك، بيوريه البطيخ من صولو صوص هو خيارك الأمثل. نكهة طبيعية، جودة عالية، وتحضير سهل في ثوانٍ."
+        }
+      ],
+      "relatedPosts": [
+        {
+          "id": "frappe-powder-ar",
+          "title": "الفرابيه باودر من صولو صوص: أسرع طريق لمشروب بارد مثالي",
+          "image": "/images/products/frappe-powder.jpg",
+          "category": "القهوة",
+          "date": "May 14, 2025",
+          "readTime": "6 min read"
+        },
+        {
+          "id": "ice-tea-syrup-ar",
+          "title": "سيراب الآيس تي: انتعاش في كل رشفة",
+          "image": "/images/products/ice-tea-syrup.jpg",
+          "category": "سيراب",
+          "date": "May 16, 2025",
+          "readTime": "5 min read"
+        }
+      ],
+      "comments": [
+        {
+          "id": 1,
+          "author": "صاحب بار شاطئي",
+          "avatar": "",
+          "content": "بيوريه البطيخ هذا أحدث نقلة نوعية في قائمة مشروباتنا الصيفية. ضيوفنا يحبون طعمه المنعش!",
+          "date": "قبل يومين"
+        },
+        {
+          "id": 2,
+          "author": "محب المشروبات",
+          "avatar": "",
+          "content": "أنا منبهر بمدى طبيعية النكهة. الأمر أشبه بوجود بطيخ طازج في زجاجة، جاهز متى تريد.",
+          "date": "قبل أسبوع"
+        }
+      ]
+    },
+    {
+      "id": "pina-colada",
+      "title": "Piña Colada by Solo Sauce: Your Perfect Tropical Summer Drink",
+      "date": "May 12, 2025",
+      "category": "Purées",
+      "commentCount": 6,
+      "image": "/images/products/pina-colada.jpg",
+      "sections": [
+        {
+          "id": "what-is-pina-colada",
+          "title": "What is Piña Colada?",
+          "content": "Piña Colada is a refreshing tropical drink that blends the sweet taste of pineapple with the creamy flavor of coconut, transporting you to island vibes with every sip. In Egypt, this beverage has become a summer favorite on drink menus at cafés, hotels, and seaside restaurants."
+        },
+        {
+          "id": "secret-ingredients",
+          "title": "The Secret Ingredient? Pineapple & Coconut Purée from Solo Sauce",
+          "content": "At Solo Sauce, we offer high-quality ingredients to help you craft the perfect Piña Colada with authentic flavor and a smooth texture.\n\nWe use:\n✅ 100% natural pineapple purée made from ripe pineapples\n✅ Creamy coconut purée with a rich, silky texture"
+        },
+        {
+          "id": "why-choose",
+          "title": "Why Choose Solo Sauce for Your Piña Colada?",
+          "content": "🔸 Consistent quality and professional taste\n🔸 Perfect for cafés, hotels, and beach bars\n🔸 Quick and effortless preparation\n🔸 Available in Egypt with a strong distribution network"
+        },
+        {
+          "id": "preparation",
+          "title": "How to Make Piña Colada with Solo Sauce Products:",
+          "content": "Add 30ml of pineapple purée + 30ml of coconut purée\n\nBlend with cold water or crushed ice\n\nGarnish with pineapple slices or shredded coconut\n\n💡 Pro tip: Add a touch of mint or a hint of vanilla for extra flair."
+        },
+        {
+          "id": "target-audience",
+          "title": "Who Is This Drink For?",
+          "content": "🔹 Professional baristas at Egypt's top cafés\n🔹 Restaurant owners seeking unique summer beverages\n🔹 Hotels and resorts serving poolside or seaside drinks\n🔹 Beverage preparation companies offering ready-made drinks"
+        },
+        {
+          "id": "availability",
+          "title": "Where to Find Solo Sauce Purées in Egypt?",
+          "content": "Our products are available through contacting us or through our distributor network across Egypt and in Gulf countries like Saudi Arabia, Bahrain, Kuwait, Jordan, and Oman."
+        },
+        {
+          "id": "conclusion",
+          "title": "Piña Colada by Solo Sauce = The Real Taste of Summer 🍹",
+          "content": "Whether you're adding it to your café's seasonal menu or serving it to hotel guests, using Solo Sauce's pineapple and coconut purées guarantees a tropical experience in every glass. Try it today and refresh your summer with every sip!"
+        }
+      ],
+      "relatedPosts": [
+        {
+          "id": "watermelon-puree",
+          "title": "Watermelon Purée: Your Natural Ingredient for Refreshing Summer Drinks",
+          "image": "/images/products/watermelon-puree.jpg",
+          "category": "Purées",
+          "date": "May 15, 2025",
+          "readTime": "6 min read"
+        },
+        {
+          "id": "blue-curacao-syrup",
+          "title": "Solo Blue Curacao Syrup: Caribbean Flavor, Solo Style",
+          "image": "/images/products/blue-curacao.jpg",
+          "category": "Syrups",
+          "date": "April 20, 2025",
+          "readTime": "5 min read"
+        }
+      ],
+      "comments": [
+        {
+          "id": 1,
+          "author": "Resort Manager",
+          "avatar": "",
+          "content": "Our guests can't get enough of our Piña Coladas made with Solo products! The taste is authentic and preparation is so simple.",
+          "date": "4 days ago"
+        },
+        {
+          "id": 2,
+          "author": "Tropical Drink Fan",
+          "avatar": "",
+          "content": "I've tried many brands, but Solo's pineapple and coconut purées create the most authentic Piña Colada I've had outside the Caribbean!",
+          "date": "1 week ago"
+        }
+      ]
+    },
+    {
+      "id": "pina-colada-ar",
+      "title": "بيينا كولادا من صولو صوص: مشروبك الاستوائي المثالي لفصل الصيف",
+      "date": "May 12, 2025",
+      "category": "بيوريه",
+      "commentCount": 6,
+      "image": "/images/products/pina-colada.jpg",
+      "sections": [
+        {
+          "id": "what-is-pina-colada",
+          "title": "ما هي البيينا كولادا؟",
+          "content": "البيينا كولادا هو مشروب استوائي منعش يجمع بين نكهتي الأناناس وجوز الهند، ليمنحك إحساسًا بالسفر إلى الجزر الاستوائية في كل رشفة. أصبح هذا المشروب من العناصر الأساسية في قوائم المشروبات الصيفية في الكافيهات، الفنادق، والمطاعم المطلة على البحر."
+        },
+        {
+          "id": "secret-ingredients",
+          "title": "المكون السري؟ بيوريه الأناناس وبيوريه جوز الهند من صولو صوص",
+          "content": "في صولو صوص، نوفر لك مكونات عالية الجودة لتحضير مشروب بيينا كولادا بطعم أصلي وقوام مثالي.\nنستخدم:\n\n✅ بيوريه أناناس طبيعي 100% مصنوع من ثمار الأناناس الناضجة\n✅ بيوريه جوز هند كريمي بقوام ناعم وطعم غني\n✅ بدون ألوان صناعية – فقط طعم الفاكهة الحقيقي"
+        },
+        {
+          "id": "why-choose",
+          "title": "لماذا تختار صولو صوص لتحضير البيينا كولادا؟",
+          "content": "🔸 جودة ثابتة ومذاق احترافي\n🔸 مناسب للاستخدام في الكافيهات، الفنادق، والـ beach bars\n🔸 تحضير سريع بدون مجهود"
+        },
+        {
+          "id": "preparation",
+          "title": "طريقة تحضير بيينا كولادا باستخدام منتجات صولو صوص:",
+          "content": "أضف 30 مل من بيوريه الأناناس + 30 مل من بيوريه جوز الهند\n\nامزج المكونات مع كوب من الماء البارد أو الثلج المجروش في الخلاط\n\nزيّن بشرائح أناناس أو رشة جوز هند مبشور\n\n💡 يمكنك أيضًا إضافة لمسة نعناع أو نقطة فانيليا حسب الذوق."
+        },
+        {
+          "id": "target-audience",
+          "title": "لمن هذا المشروب؟",
+          "content": "🔹 الباريستا المحترفين في كافيهات مصر\n🔹 أصحاب المطاعم الباحثين عن مشروبات صيفية فريدة\n🔹 فنادق ومنتجعات تقدم مشروبات على البحر أو حمام السباحة\n🔹 شركات تجهيز العصائر والمشروبات الجاهزة"
+        },
+        {
+          "id": "availability",
+          "title": "أين تجد بيوريه صولو صوص ؟",
+          "content": "منتجاتنا متوفرة من خلال شبكة موزعينا داخل مصر أو من خلال التواصل معنا، بالإضافة إلى دول الخليج مثل السعودية، البحرين، الكويت، الأردن، وعمان."
+        },
+        {
+          "id": "conclusion",
+          "title": "بيينا كولادا من صولو صوص = طعم الصيف الحقيقي 🍹",
+          "content": "سواء كنت تضيفه لقائمة المشروبات في الكافيه أو تقدمه لضيوف الفندق، فإن استخدام بيوريه الأناناس وبيوريه جوز الهند من صولو صوص سيضمن لك تجربة استوائية مميزة في كل كوب. جربها اليوم واستمتع بطعم ينعشك من أول رشفة!"
+        }
+      ],
+      "relatedPosts": [
+        {
+          "id": "watermelon-puree-ar",
+          "title": "بيوريه البطيخ: مكونك الطبيعي لمشروبات صيفية منعشة",
+          "image": "/images/products/watermelon-puree.jpg",
+          "category": "بيوريه",
+          "date": "May 15, 2025",
+          "readTime": "6 min read"
+        },
+        {
+          "id": "blue-curacao-syrup-ar",
+          "title": "بلو كروساو سيراب: نكهة البحر الكاريبي في كل مشروب",
+          "image": "/images/products/blue-curacao.jpg",
+          "category": "سيراب",
+          "date": "April 20, 2025",
+          "readTime": "5 min read"
+        }
+      ],
+      "comments": [
+        {
+          "id": 1,
+          "author": "مدير منتجع",
+          "avatar": "",
+          "content": "ضيوفنا لا يشبعون من البيينا كولادا المصنوعة بمنتجات صولو! الطعم أصلي والتحضير بسيط للغاية.",
+          "date": "قبل 4 أيام"
+        },
+        {
+          "id": 2,
+          "author": "عاشق المشروبات الاستوائية",
+          "avatar": "",
+          "content": "جربت العديد من الماركات، لكن منتجات صولو من بيوريه الأناناس وجوز الهند تصنع أفضل بيينا كولادا تذوقتها خارج الكاريبي!",
+          "date": "قبل أسبوع"
+        }
+      ]
+    },
+    {
+      "id": "mojito-syrup",
+      "title": "Mojito Syrup by Solo Sauce: A Refreshing Burst of Mint & Lime in Every Sip!",
+      "date": "May 8, 2025",
+      "category": "Syrups",
+      "commentCount": 7,
+      "image": "/images/products/mojito-syrup.jpg",
+      "sections": [
+        {
+          "id": "what-is-mojito-syrup",
+          "title": "What is Mojito Syrup?",
+          "content": "Solo Sauce Mojito Syrup is a premium-quality, concentrated mix crafted from fresh mint and zesty lime flavors. Perfect for preparing the famous Mojito drink, it brings an instant tropical refreshment with every sip. Mojito has quickly become a summer favorite across cafés, high-end restaurants, and beach bars."
+        },
+        {
+          "id": "why-choose",
+          "title": "Why Choose Solo Sauce's Mojito Syrup?",
+          "content": "At Solo Sauce, we deliver a professionally balanced syrup that helps you create standout drinks with ease.\n\n✅ Naturally refreshing mint and lime flavor\n✅ Smooth texture, easy to mix\n✅ Quick prep, no hassle\n\nWhether you're a barista or a beverage brand, Solo Sauce ensures a consistent and high-quality experience in every glass."
+        },
+        {
+          "id": "creative-uses",
+          "title": "Creative Uses for Mojito Syrup:",
+          "content": "🔸 Classic Mojito with mint and lime\n🔸 Sparkling water mixers\n🔸 Icy summer cocktails\n🔸 Lemonades with a minty twist\n🔸 Welcome drinks in hotels and restaurants"
+        },
+        {
+          "id": "preparation",
+          "title": "How to Prepare:",
+          "content": "Add 30 ml of Solo Sauce Mojito Syrup to cold still or sparkling water\n\nAdd ice cubes as desired\n\nGarnish with lime slices and fresh mint leaves\n\nServe immediately and enjoy the chill\n\n💡 Pro Tip: For an extra fizz, top it off with soda water or a splash of unflavored soft drink!"
+        },
+        {
+          "id": "target-audience",
+          "title": "Who Needs This Syrup?",
+          "content": "✔️ Baristas in Egypt's top cafés\n✔️ Restaurant owners upgrading their drink menus\n✔️ Hotels and beach resorts looking for signature refreshments\n✔️ Ready-to-drink beverage companies\n✔️ Ingredient and beverage distributors in Egypt and the Gulf"
+        },
+        {
+          "id": "availability",
+          "title": "Where to Get It:",
+          "content": "Solo Sauce Mojito Syrup is available through contacting us directly or through our trusted distributor network across Egypt, and in Saudi Arabia, Bahrain, Kuwait, Jordan, and Oman."
+        },
+        {
+          "id": "conclusion",
+          "title": "🌴 Your Summer Mojito Starts Here",
+          "content": "If you're looking to stand out with a refreshing, professional-grade drink, Solo Sauce Mojito Syrup is your go-to. Whether it's for your menu or your beverage line, turn every glass into a tropical moment your customers will remember.\n\nOrder today and serve the taste of summer in every sip."
+        }
+      ],
+      "relatedPosts": [
+        {
+          "id": "blue-curacao-syrup",
+          "title": "Solo Blue Curacao Syrup: Caribbean Flavor, Solo Style",
+          "image": "/images/products/blue-curacao.jpg",
+          "category": "Syrups",
+          "date": "April 20, 2025",
+          "readTime": "5 min read"
+        },
+        {
+          "id": "ice-tea-syrup",
+          "title": "Ice Tea Syrup: Refreshing Flavor in an Instant",
+          "image": "/images/products/ice-tea-syrup.jpg",
+          "category": "Syrups",
+          "date": "May 16, 2025",
+          "readTime": "5 min read"
+        }
+      ],
+      "comments": [
+        {
+          "id": 1,
+          "author": "Bar Manager",
+          "avatar": "",
+          "content": "This syrup has revolutionized our mojito production! Consistent taste and saving us tons of prep time.",
+          "date": "3 days ago"
+        },
+        {
+          "id": 2,
+          "author": "Home Mixologist",
+          "avatar": "",
+          "content": "I love how versatile this syrup is. I've been experimenting with different drink combinations and they all turn out amazing!",
+          "date": "1 week ago"
+        }
+      ]
+    },
+    {
+      "id": "mojito-syrup-ar",
+      "title": "سيراب الموخيتو من صولو صوص: نكهة النعناع والليمون المنعشة في كل مشروب",
+      "date": "May 8, 2025",
+      "category": "سيراب",
+      "commentCount": 7,
+      "image": "/images/products/mojito-syrup.jpg",
+      "sections": [
+        {
+          "id": "what-is-mojito-syrup",
+          "title": "ما هو سيراب الموخيتو؟",
+          "content": "سيراب الموخيتو هو شراب مركز بنكهة النعناع الطازج والليمون، يُستخدم كمكون رئيسي في تحضير مشروب الموخيتو الشهير. يتميز هذا السيراب بقوامه المركز ونكهته المنعشة التي تضيف لمسة حيوية لأي مشروب بارد، خصوصًا في فصل الصيف، أصبح الموخيتو من أكثر المشروبات طلبًا في الكافيهات والمطاعم الراقية."
+        },
+        {
+          "id": "why-choose",
+          "title": "لماذا تختار سيراب الموخيتو من صولو صوص؟",
+          "content": "في صولو صوص، نقدم لك سيراب موخيتو احترافي بمواصفات عالية الجودة لتضمن تجربة مشروب متوازنة ومثالية.\n\n✅ نكهة طبيعية منعشة تجمع بين النعناع والليمون\n✅ قوام مثالي وسهل الدمج في المشروبات\n✅ خالي من الألوان الصناعية\n✅ تحضير سريع بدون أي تعقيد"
+        },
+        {
+          "id": "creative-uses",
+          "title": "استخدامات سيراب الموخيتو:",
+          "content": "🔸 موخيتو كلاسيك بالنعناع والليمون\n🔸 مياه غازية بنكهات طبيعية\n🔸 كوكتيلات صيفية باردة\n🔸 إضافات مبتكرة لعصائر الليمون\n🔸 مشروبات ترحيبية في الفنادق والمطاعم"
+        },
+        {
+          "id": "preparation",
+          "title": "طريقة التحضير:",
+          "content": "أضف 30 مل من سيراب الموخيتو إلى كوب ماء بارد أو مياه فوارة\n\nأضف مكعبات ثلج حسب الرغبة\n\nزيّن بشرائح ليمون وأوراق نعناع طازجة\n\nقدّمه مباشرة واستمتع بالانتعاش"
+        },
+        {
+          "id": "target-audience",
+          "title": "مَن يحتاج سيراب الموخيتو من صولو صوص؟",
+          "content": "🔹 الباريستا في كافيهات مصر\n🔹 أصحاب المطاعم والكافيهات الباحثين عن نكهات مميزة\n🔹 الفنادق والمنتجعات على الشاطئ أو حمامات السباحة\n🔹 شركات تجهيز العصائر والمشروبات الجاهزة\n🔹 موزعو المكونات والمشروبات في مصر والخليج"
+        },
+        {
+          "id": "availability",
+          "title": "أماكن توفر المنتج:",
+          "content": "يتوفر سيراب الموخيتو من صولو صوص من خلال التواصل معنا او من خلال شبكة موزعينا داخل مصر، كما يمكنك الحصول على منتجاتنا في السعودية، البحرين، الكويت، الأردن، وعمان."
+        },
+        {
+          "id": "conclusion",
+          "title": "موخيتو صيفي لا يُنسى يبدأ من سيراب صولو صوص 🌿🍹",
+          "content": "إذا كنت تبحث عن مشروب ينعش عملاءك ويضفي لمسة احترافية على قائمة مشروباتك، فإن سيراب الموخيتو من صولو صوص هو خيارك الأمثل. اجعل كل رشفة تجربة استوائية لا تُنسى."
+        }
+      ],
+      "relatedPosts": [
+        {
+          "id": "blue-curacao-syrup-ar",
+          "title": "بلو كروساو سيراب: نكهة البحر الكاريبي في كل مشروب",
+          "image": "/images/products/blue-curacao.jpg",
+          "category": "سيراب",
+          "date": "April 20, 2025",
+          "readTime": "5 min read"
+        },
+        {
+          "id": "ice-tea-syrup-ar",
+          "title": "سيراب الآيس تي: انتعاش في كل رشفة",
+          "image": "/images/products/ice-tea-syrup.jpg",
+          "category": "سيراب",
+          "date": "May 16, 2025",
+          "readTime": "5 min read"
+        }
+      ],
+      "comments": [
+        {
+          "id": 1,
+          "author": "مدير بار",
+          "avatar": "",
+          "content": "هذا السيراب أحدث ثورة في إنتاج الموخيتو لدينا! طعم متناسق ويوفر لنا الكثير من وقت التحضير.",
+          "date": "قبل 3 أيام"
+        },
+        {
+          "id": 2,
+          "author": "هاوي تحضير المشروبات",
+          "avatar": "",
+          "content": "أحب مدى تنوع استخدامات هذا السيراب. لقد كنت أجرّب مجموعات مختلفة من المشروبات وكلها تأتي رائعة!",
+          "date": "قبل أسبوع"
+        }
+      ]
+    }
+  ]
+}

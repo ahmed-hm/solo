@@ -85,14 +85,14 @@ const Navbar = ({ lng = 'en' }: NavbarProps) => {
         <nav ref={navRef} className={`hidden lg:flex items-center gap-[25px] ${isRtl ? 'flex-row-reverse' : ''}`}>
           <Link
             href={`/${lng}`}
-            className={`text-[#DBB58F] font-montserrat font-bold text-[17px] leading-[20.7px] tracking-[-0.6px]`}
+            className={`text-[#DBB58F] font-['Montserrat'] font-bold text-[17px] leading-[20.7px] tracking-[-0.6px]`}
           >
             {t('nav.home')}
           </Link>
           <div className={`flex items-center gap-[3px] relative ${isRtl ? 'flex-row-reverse' : ''}`}>
             <Link
               href={`/${lng}/about`}
-              className="text-black font-montserrat font-medium text-[17px] leading-[20.7px] tracking-[-0.6px] hover:text-[#DBB58F] transition duration-300"
+              className="text-black font-['Montserrat'] font-medium text-[17px] leading-[20.7px] tracking-[-0.6px] hover:text-[#DBB58F] transition duration-300"
             >
               {t('nav.aboutUs')}
             </Link>
@@ -123,13 +123,13 @@ const Navbar = ({ lng = 'en' }: NavbarProps) => {
                 <div className="flex flex-col gap-[10px] p-[10px]">
                   <Link
                     href={`/${lng}/about`}
-                    className="text-black font-montserrat font-medium text-[14px] hover:text-[#DBB58F] transition duration-300"
+                    className="text-black font-['Montserrat'] font-medium text-[14px] hover:text-[#DBB58F] transition duration-300"
                   >
                     {t('nav.ourStory')}
                   </Link>
                   <Link
                     href={`/${lng}/solo-core`}
-                    className="text-black font-montserrat font-medium text-[14px] hover:text-[#DBB58F] transition duration-300"
+                    className="text-black font-['Montserrat'] font-medium text-[14px] hover:text-[#DBB58F] transition duration-300"
                   >
                     {t('nav.coreOfSolo')}
                   </Link>
@@ -140,7 +140,7 @@ const Navbar = ({ lng = 'en' }: NavbarProps) => {
           <div className={`flex items-center gap-[3px] relative ${isRtl ? 'flex-row-reverse' : ''}`}>
             <Link
               href={`/${lng}/recipes`}
-              className="text-black font-montserrat font-medium text-[17px] leading-[20.7px] tracking-[-0.6px] hover:text-[#DBB58F] transition duration-300"
+              className="text-black font-['Montserrat'] font-medium text-[17px] leading-[20.7px] tracking-[-0.6px] hover:text-[#DBB58F] transition duration-300"
             >
               {t('nav.recipes')}
             </Link>
@@ -148,7 +148,7 @@ const Navbar = ({ lng = 'en' }: NavbarProps) => {
           <div className={`flex items-center gap-[3px] relative ${isRtl ? 'flex-row-reverse' : ''}`}>
             <Link
               href={`/${lng}/partners`}
-              className="text-black font-montserrat font-medium text-[17px] leading-[20.7px] tracking-[-0.6px] hover:text-[#DBB58F] transition duration-300"
+              className="text-black font-['Montserrat'] font-medium text-[17px] leading-[20.7px] tracking-[-0.6px] hover:text-[#DBB58F] transition duration-300"
             >
               {t('nav.partners')}
             </Link>
@@ -179,13 +179,13 @@ const Navbar = ({ lng = 'en' }: NavbarProps) => {
                 <div className="flex flex-col gap-[10px] p-[10px]">
                   <Link
                     href={`/${lng}/partners`}
-                    className="text-black font-montserrat font-medium text-[14px] hover:text-[#DBB58F] transition duration-300"
+                    className="text-black font-['Montserrat'] font-medium text-[14px] hover:text-[#DBB58F] transition duration-300"
                   >
                     {t('nav.clients')}
                   </Link>
                   <Link
                     href={`/${lng}/countries`}
-                    className="text-black font-montserrat font-medium text-[14px] hover:text-[#DBB58F] transition duration-300"
+                    className="text-black font-['Montserrat'] font-medium text-[14px] hover:text-[#DBB58F] transition duration-300"
                   >
                     {t('nav.countries')}
                   </Link>
@@ -221,7 +221,7 @@ const Navbar = ({ lng = 'en' }: NavbarProps) => {
         <div className={`fixed top-0 right-0 left-0 bg-white z-50 overflow-y-auto lg:hidden shadow-md h-full`}>
           {/* Menu Header */}
           <div className="flex justify-between items-center p-4 bg-black text-white border-b border-gray-700">
-            <span className="text-lg font-montserrat font-medium">{t('nav.menu')}</span>
+            <span className="text-lg font-['Montserrat'] font-medium">{t('nav.menu')}</span>
             <button onClick={toggleMobileMenu} className="focus:outline-none text-white" aria-label="Close menu">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -264,7 +264,7 @@ const Navbar = ({ lng = 'en' }: NavbarProps) => {
                   />
                 </svg>
               </div>
-              <span className="text-[#DBB58F] font-montserrat font-medium text-[16px]">{t('nav.home')}</span>
+              <span className="text-[#DBB58F] font-['Montserrat'] font-medium text-[16px]">{t('nav.home')}</span>
             </Link>
 
             {/* About Us with icon and dropdown */}
@@ -292,7 +292,7 @@ const Navbar = ({ lng = 'en' }: NavbarProps) => {
                   </div>
                   <button
                     onClick={() => toggleMobileSubmenu('about')}
-                    className="text-black font-montserrat font-medium text-[16px] focus:outline-none text-left"
+                    className="text-black font-['Montserrat'] font-medium text-[16px] focus:outline-none text-left"
                   >
                     {t('nav.aboutUs')}
                   </button>
@@ -321,7 +321,7 @@ const Navbar = ({ lng = 'en' }: NavbarProps) => {
                 <div className="flex flex-col gap-4 px-9">
                   <Link
                     href={`/${lng}/about`}
-                    className="text-black font-montserrat font-medium text-[15px] flex items-center justify-between"
+                    className="text-black font-['Montserrat'] font-medium text-[15px] flex items-center justify-between"
                     onClick={toggleMobileMenu}
                   >
                     <span>{t('nav.ourStory')}</span>
@@ -338,7 +338,7 @@ const Navbar = ({ lng = 'en' }: NavbarProps) => {
                   </Link>
                   <Link
                     href={`/${lng}/solo-core`}
-                    className="text-black font-montserrat font-medium text-[15px] flex items-center justify-between"
+                    className="text-black font-['Montserrat'] font-medium text-[15px] flex items-center justify-between"
                     onClick={toggleMobileMenu}
                   >
                     <span>{t('nav.coreOfSolo')}</span>
@@ -393,7 +393,7 @@ const Navbar = ({ lng = 'en' }: NavbarProps) => {
               </div>
               <Link
                 href={`/${lng}/recipes`}
-                className="text-black font-montserrat font-medium text-[16px]"
+                className="text-black font-['Montserrat'] font-medium text-[16px]"
                 onClick={toggleMobileMenu}
               >
                 {t('nav.recipes')}
@@ -438,7 +438,7 @@ const Navbar = ({ lng = 'en' }: NavbarProps) => {
                   </div>
                   <button
                     onClick={() => toggleMobileSubmenu('partners')}
-                    className="text-black font-montserrat font-medium text-[16px] focus:outline-none text-left"
+                    className="text-black font-['Montserrat'] font-medium text-[16px] focus:outline-none text-left"
                   >
                     {t('nav.partners')}
                   </button>
@@ -467,7 +467,7 @@ const Navbar = ({ lng = 'en' }: NavbarProps) => {
                 <div className="flex flex-col gap-4 px-9">
                   <Link
                     href={`/${lng}/partners`}
-                    className="text-black font-montserrat font-medium text-[15px] flex items-center justify-between"
+                    className="text-black font-['Montserrat'] font-medium text-[15px] flex items-center justify-between"
                     onClick={toggleMobileMenu}
                   >
                     <span>{t('nav.clients')}</span>
@@ -484,7 +484,7 @@ const Navbar = ({ lng = 'en' }: NavbarProps) => {
                   </Link>
                   <Link
                     href={`/${lng}/countries`}
-                    className="text-black font-montserrat font-medium text-[15px] flex items-center justify-between"
+                    className="text-black font-['Montserrat'] font-medium text-[15px] flex items-center justify-between"
                     onClick={toggleMobileMenu}
                   >
                     <span>{t('nav.countries')}</span>
