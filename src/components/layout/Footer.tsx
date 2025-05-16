@@ -20,15 +20,15 @@ const Footer = ({ lng = 'en' }: FooterProps) => {
           <div className="col-span-1 md:col-span-3">
             <div className="flex flex-col gap-[24px]">
               <div className="flex flex-col">
-                <div className="text-white text-[24px] font-medium font-montserrat pb-2">{t('footer.exclusive')}</div>
-                <div className="text-white text-[20px] font-medium font-montserrat pb-2">{t('footer.subscribe')}</div>
-                <div className="text-white text-[16px] font-montserrat opacity-70">{t('footer.discount')}</div>
+                <div className="text-white text-[24px] font-medium font-['Montserrat'] pb-2">{t('footer.exclusive')}</div>
+                <div className="text-white text-[20px] font-medium font-['Montserrat'] pb-2">{t('footer.subscribe')}</div>
+                <div className="text-white text-[16px] font-['Montserrat'] opacity-70">{t('footer.discount')}</div>
               </div>
               <div className={`flex items-center border border-white rounded-[4px] overflow-hidden ${isRtl ? 'flex-row-reverse' : ''}`}>
                 <input
                   type="email"
                   placeholder={t('footer.emailPlaceholder')}
-                  className={`bg-transparent text-white px-[16px] py-[12px] flex-grow outline-none placeholder:text-white placeholder:opacity-40 font-montserrat text-[16px] ${isRtl ? 'text-right' : 'text-left'}`}
+                  className={`bg-transparent text-white px-[16px] py-[12px] flex-grow outline-none placeholder:text-white placeholder:opacity-40 font-['Montserrat'] text-[16px] ${isRtl ? 'text-right' : 'text-left'}`}
                 />
                 <button className="p-[12px]">
                   <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg" className={isRtl ? 'rotate-180' : ''}>
@@ -47,47 +47,47 @@ const Footer = ({ lng = 'en' }: FooterProps) => {
 
           {/* Support section */}
           <div className="col-span-1 md:col-span-3">
-            <div className="text-white text-[20px] font-medium font-montserrat mb-[24px]">{t('footer.support')}</div>
+            <div className="text-white text-[20px] font-medium font-['Montserrat'] mb-[24px]">{t('footer.support')}</div>
             <div className="flex flex-col gap-[16px]">
-              <p className="text-white text-[16px] font-montserrat opacity-70 leading-[24px]">
+              <p className="text-white text-[16px] font-['Montserrat'] opacity-70 leading-[24px]">
                 {t('footer.address')}
               </p>
-              <p className="text-white text-[16px] font-montserrat opacity-70">info@solo-sauce.com</p>
-              <p className="text-white text-[16px] font-montserrat opacity-70">+201002299067</p>
+              <p className="text-white text-[16px] font-['Montserrat'] opacity-70">info@solo-sauce.com</p>
+              <p className="text-white text-[16px] font-['Montserrat'] opacity-70">+201002299067</p>
             </div>
           </div>
 
           {/* Quick Links section */}
           <div className="col-span-1 md:col-span-3">
-            <div className="text-white text-[20px] font-medium font-montserrat mb-[24px]">{t('footer.quickLink')}</div>
+            <div className="text-white text-[20px] font-medium font-['Montserrat'] mb-[24px]">{t('footer.quickLink')}</div>
             <div className="flex flex-col gap-[16px]">
               <Link
                 href={`/${lng}/privacy`}
-                className="text-white text-[16px] font-montserrat opacity-70 hover:opacity-100 transition-colors duration-300"
+                className="text-white text-[16px] font-['Montserrat'] opacity-70 hover:opacity-100 transition-colors duration-300"
               >
                 {t('footer.privacyPolicy')}
               </Link>
               <Link
                 href={`/${lng}/terms`}
-                className="text-white text-[16px] font-montserrat opacity-70 hover:opacity-100 transition-colors duration-300"
+                className="text-white text-[16px] font-['Montserrat'] opacity-70 hover:opacity-100 transition-colors duration-300"
               >
                 {t('footer.termsOfUse')}
               </Link>
               <Link
                 href={`/${lng}/faq`}
-                className="text-white text-[16px] font-montserrat opacity-70 hover:opacity-100 transition-colors duration-300"
+                className="text-white text-[16px] font-['Montserrat'] opacity-70 hover:opacity-100 transition-colors duration-300"
               >
                 {t('footer.faq')}
               </Link>
               <Link
                 href={`/${lng}/careers`}
-                className="text-white text-[16px] font-montserrat opacity-70 hover:opacity-100 transition-colors duration-300"
+                className="text-white text-[16px] font-['Montserrat'] opacity-70 hover:opacity-100 transition-colors duration-300"
               >
                 {t('footer.careers')}
               </Link>
               <Link
                 href={`/${lng}/contact`}
-                className="text-white text-[16px] font-montserrat opacity-70 hover:opacity-100 transition-colors duration-300"
+                className="text-white text-[16px] font-['Montserrat'] opacity-70 hover:opacity-100 transition-colors duration-300"
               >
                 {t('footer.contactUs')}
               </Link>
@@ -97,11 +97,11 @@ const Footer = ({ lng = 'en' }: FooterProps) => {
           {/* Social Media QR section */}
           <div className="col-span-1 md:col-span-3 flex justify-center">
             <div className="flex flex-col items-center">
-              <span className={`text-white text-[20px] font-medium font-montserrat mb-[24px] w-full ${isRtl ? 'text-center md:text-right' : 'text-center md:text-left'}`}>
+              <span className={`text-white text-[20px] font-medium font-['Montserrat'] mb-[24px] w-full ${isRtl ? 'text-center md:text-right' : 'text-center md:text-left'}`}>
                 {t('footer.socialMedia')}
               </span>
               <div className="flex flex-col items-center">
-                <p className="text-white text-[12px] font-medium font-montserrat mb-[8px]">{t('footer.qrDescription')}</p>
+                <p className="text-white text-[12px] font-medium font-['Montserrat'] mb-[8px]">{t('footer.qrDescription')}</p>
                 <div className="w-[140px] h-[140px]">
                   <Image src="/images/qr/qr-code.svg" alt="Solo-Sauce Social Media QR Code" width={140} height={140} />
                 </div>
@@ -169,7 +169,7 @@ const Footer = ({ lng = 'en' }: FooterProps) => {
               />
               <path d="M10.75 6.25H9.25V10.75H13.75V9.25H10.75V6.25Z" fill="white" />
             </svg>
-            <span className="text-white text-[16px] font-montserrat">{t('footer.copyright')}</span>
+            <span className="text-white text-[16px] font-['Montserrat']">{t('footer.copyright')}</span>
           </div>
         </div>
       </div>

@@ -17,6 +17,8 @@ interface VideoSectionProps {
 
 const VideoSection = ({ lng = 'en' }: VideoSectionProps) => {
   const [activeIndex, setActiveIndex] = useState(0);
+  const [showVideo, setShowVideo] = useState(false);
+  const [currentVideoUrl, setCurrentVideoUrl] = useState('');
   const { t } = useTranslation(lng, 'common');
   const isRtl = useIsRTL(lng);
 
@@ -25,17 +27,54 @@ const VideoSection = ({ lng = 'en' }: VideoSectionProps) => {
       id: 1,
       src: '/images/video-thumbnail-1.png',
       alt: t('videoSection.thumbnail1Alt', 'Video thumbnail 1'),
+      youtubeEmbedId: 'fQM6xJwtOek',
     },
     {
       id: 2,
       src: '/images/video-thumbnail-2.png',
       alt: t('videoSection.thumbnail2Alt', 'Video thumbnail 2'),
+      youtubeEmbedId: 'wsl2L-_Z9I0',
     },
   ];
+
+  const openYoutubeVideo = (embedId: string) => {
+    setCurrentVideoUrl(`https://www.youtube.com/embed/${embedId}?autoplay=1`);
+    setShowVideo(true);
+  };
+
+  const closeVideo = () => {
+    setShowVideo(false);
+    setCurrentVideoUrl('');
+  };
 
   return (
     <section className="w-full py-20 bg-gradient-to-b from-[#DBB58F] via-[#B08566] to-[#EFD8B5]">
       <div className="container mx-auto px-4">
+        {/* Video modal */}
+        {showVideo && (
+          <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black">
+            <div className="relative w-full max-w-4xl">
+              <button 
+                onClick={closeVideo} 
+                className="absolute -top-10 right-0 text-white text-2xl font-bold cursor-pointer"
+                aria-label={t('videoSection.closeButton', 'Close video')}
+              >
+                ✕
+              </button>
+              <div className="relative pt-[56.25%]">
+                <iframe
+                  className="absolute inset-0 w-full h-full bg-black"
+                  src={currentVideoUrl}
+                  title="YouTube video player"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        )}
+
         <div
           className={`flex flex-col ${
             isRtl ? 'lg:flex-row-reverse' : 'lg:flex-row'
@@ -105,8 +144,9 @@ const VideoSection = ({ lng = 'en' }: VideoSectionProps) => {
                           priority
                         />
                         <button
-                          className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white rounded-full p-10 z-20"
+                          className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white rounded-full p-10 z-20 cursor-pointer"
                           aria-label={t('videoSection.playButton', 'Play video')}
+                          onClick={() => openYoutubeVideo(video.youtubeEmbedId)}
                         >
                           <svg
                             width="24"

@@ -35,7 +35,7 @@ export default async function AboutPage({ params }: AboutPageProps) {
             <h1 className="font-['Dancing_Script'] text-4xl md:text-5xl font-bold text-black">
               {t('about.hero.title')}
             </h1>
-            <p className="text-lg md:text-xl font-montserrat text-black">{t('about.hero.description')}</p>
+            <p className="text-lg md:text-xl font-['Montserrat'] text-black">{t('about.hero.description')}</p>
           </div>
         </div>
       </section>
@@ -59,7 +59,7 @@ export default async function AboutPage({ params }: AboutPageProps) {
                 <h3 className="font-['Dancing_Script'] text-xl font-bold text-black mb-2 tracking-[0.4%]">
                   {t('about.sophisticated.title')}
                 </h3>
-                <p className="text-black text-sm font-montserrat leading-[1.67] tracking-[1.1%]">
+                <p className="text-black text-sm font-['Montserrat'] leading-[1.67] tracking-[1.1%]">
                   {t('about.sophisticated.description')}
                 </p>
               </div>
@@ -79,7 +79,7 @@ export default async function AboutPage({ params }: AboutPageProps) {
                 <h3 className="font-['Dancing_Script'] text-xl font-normal text-black mb-2 tracking-[1%]">
                   {t('about.distinctive.title')}
                 </h3>
-                <p className="text-black text-sm font-montserrat leading-[2.14] tracking-[1.43%]">
+                <p className="text-black text-sm font-['Montserrat'] leading-[2.14] tracking-[1.43%]">
                   {t('about.distinctive.description')}
                 </p>
               </div>
@@ -99,7 +99,7 @@ export default async function AboutPage({ params }: AboutPageProps) {
                 <h3 className="font-['Dancing_Script'] text-xl font-bold text-black mb-2 tracking-[1%]">
                   {t('about.premium.title')}
                 </h3>
-                <p className="text-black text-sm font-montserrat leading-[2.14] tracking-[1.43%]">
+                <p className="text-black text-sm font-['Montserrat'] leading-[2.14] tracking-[1.43%]">
                   {t('about.premium.description')}
                 </p>
               </div>
@@ -122,7 +122,7 @@ export default async function AboutPage({ params }: AboutPageProps) {
                 <h3 className="font-['Dancing_Script'] text-2xl font-bold text-black mb-4 tracking-[0.4%]">
                   {t('about.sophisticated.title')}
                 </h3>
-                <p className="text-black text-lg font-montserrat leading-[1.67] tracking-[1.1%]">
+                <p className="text-black text-lg font-['Montserrat'] leading-[1.67] tracking-[1.1%]">
                   {t('about.sophisticated.description')}
                 </p>
               </div>
@@ -144,7 +144,7 @@ export default async function AboutPage({ params }: AboutPageProps) {
                   <h3 className="font-['Dancing_Script'] text-xl font-normal text-black mb-2 tracking-[1%]">
                     {t('about.distinctive.title')}
                   </h3>
-                  <p className="text-black text-sm font-montserrat leading-[2.14] tracking-[1.43%]">
+                  <p className="text-black text-sm font-['Montserrat'] leading-[2.14] tracking-[1.43%]">
                     {t('about.distinctive.description')}
                   </p>
                 </div>
@@ -164,7 +164,7 @@ export default async function AboutPage({ params }: AboutPageProps) {
                   <h3 className="font-['Dancing_Script'] text-xl font-bold text-black mb-2 tracking-[1%]">
                     {t('about.premium.title')}
                   </h3>
-                  <p className="text-black text-sm font-montserrat leading-[2.14] tracking-[1.43%]">
+                  <p className="text-black text-sm font-['Montserrat'] leading-[2.14] tracking-[1.43%]">
                     {t('about.premium.description')}
                   </p>
                 </div>

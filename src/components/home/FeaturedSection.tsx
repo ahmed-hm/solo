@@ -14,7 +14,7 @@ import nonAlcoholicSips2 from '@/assets/images/featured/non_alcoholic_sips_2.jpg
 const FeaturedSection = ({ lng }: { lng: string }) => {
   const { t } = useTranslation(lng, 'common');
   const isRtl = useIsRTL(lng);
-  
+
   return (
     <section className="w-full py-20">
       <div className={`container mx-auto px-4 flex flex-col items-start gap-[30px] ${isRtl ? 'rtl' : ''}`}>
@@ -43,7 +43,7 @@ const FeaturedSection = ({ lng }: { lng: string }) => {
                 </h3>
                 <div className="flex flex-col">
                   <Link
-                    href="#"
+                    href={`${lng}/blogs/turkish-salep`}
                     className="font-['Montserrat'] font-medium text-base md:text-[16px] leading-[1.5em] text-white hover:underline"
                   >
                     {t('featuredSection.discover')}
@@ -66,7 +66,7 @@ const FeaturedSection = ({ lng }: { lng: string }) => {
                   </h3>
                   <div className="flex flex-col">
                     <Link
-                      href="#"
+                      href={`${lng}/blogs/pina-colada`}
                       className="font-['Montserrat'] font-medium text-base md:text-[16px] leading-[1.5em] text-white hover:underline"
                     >
                       {t('featuredSection.discover')}
@@ -89,7 +89,7 @@ const FeaturedSection = ({ lng }: { lng: string }) => {
                     </h3>
                     <div className="flex flex-col">
                       <Link
-                        href="#"
+                        href={`${lng}/blogs/mojito-syrup`}
                         className="font-['Montserrat'] font-medium text-base md:text-[16px] leading-[1.5em] text-white hover:underline"
                       >
                         {t('featuredSection.discover')}
@@ -110,7 +110,7 @@ const FeaturedSection = ({ lng }: { lng: string }) => {
                     </h3>
                     <div className="flex flex-col">
                       <Link
-                        href="#"
+                        href={`${lng}/blogs/mojito-syrup`}
                         className="font-['Montserrat'] font-medium text-base md:text-[16px] leading-[1.5em] text-white hover:underline"
                       >
                         {t('featuredSection.discover')}
@@ -128,7 +128,10 @@ const FeaturedSection = ({ lng }: { lng: string }) => {
         <div className="w-full block md:hidden overflow-x-auto pb-4 no-scrollbar">
           <div className={`flex space-x-4`} style={{ minWidth: 'min-content' }}>
             {/* First card - Café Favorites */}
-            <div className="relative rounded-[4px] overflow-hidden flex-shrink-0" style={{ width: '240px', aspectRatio: '0.835' }}>
+            <div
+              className="relative rounded-[4px] overflow-hidden flex-shrink-0"
+              style={{ width: '240px', aspectRatio: '0.835' }}
+            >
               <Image src={cafeFavorites} alt={t('featuredSection.cafe')} fill className="object-cover" />
               <div className="absolute inset-0 bg-black/30 flex flex-col justify-end p-4">
                 <div className="flex flex-col gap-2">
@@ -137,7 +140,7 @@ const FeaturedSection = ({ lng }: { lng: string }) => {
                   </h3>
                   <div className="flex flex-col">
                     <Link
-                      href="#"
+                      href={`${lng}/blogs/turkish-salep`}
                       className="font-['Montserrat'] font-medium text-sm leading-[1.5em] text-white hover:underline"
                     >
                       {t('featuredSection.discover')}
@@ -149,7 +152,10 @@ const FeaturedSection = ({ lng }: { lng: string }) => {
             </div>
 
             {/* Floral-inspired flavors card */}
-            <div className="relative rounded-[4px] overflow-hidden flex-shrink-0" style={{ width: '240px', aspectRatio: '0.835' }}>
+            <div
+              className="relative rounded-[4px] overflow-hidden flex-shrink-0"
+              style={{ width: '240px', aspectRatio: '0.835' }}
+            >
               <Image src={floralInspired} alt={t('featuredSection.floral')} fill className="object-cover" />
               <div className="absolute inset-0 bg-black/30 flex flex-col justify-end p-4">
                 <div className="flex flex-col gap-2">
@@ -158,7 +164,7 @@ const FeaturedSection = ({ lng }: { lng: string }) => {
                   </h3>
                   <div className="flex flex-col">
                     <Link
-                      href="#"
+                      href={`${lng}/blogs/pina-colada`}
                       className="font-['Montserrat'] font-medium text-sm leading-[1.5em] text-white hover:underline"
                     >
                       {t('featuredSection.discover')}
@@ -170,7 +176,10 @@ const FeaturedSection = ({ lng }: { lng: string }) => {
             </div>
 
             {/* Non-Alcoholic Sips card 1 */}
-            <div className="relative rounded-[4px] overflow-hidden flex-shrink-0" style={{ width: '240px', aspectRatio: '0.835' }}>
+            <div
+              className="relative rounded-[4px] overflow-hidden flex-shrink-0"
+              style={{ width: '240px', aspectRatio: '0.835' }}
+            >
               <Image src={nonAlcoholicSips1} alt={t('featuredSection.nonAlcoholic')} fill className="object-cover" />
               <div className="absolute inset-0 bg-black/30 flex flex-col justify-end p-4">
                 <div className="flex flex-col gap-2">
@@ -179,7 +188,7 @@ const FeaturedSection = ({ lng }: { lng: string }) => {
                   </h3>
                   <div className="flex flex-col">
                     <Link
-                      href="#"
+                      href={`${lng}/blogs/mojito-syrup`}
                       className="font-['Montserrat'] font-medium text-sm leading-[1.5em] text-white hover:underline"
                     >
                       {t('featuredSection.discover')}
@@ -191,7 +200,10 @@ const FeaturedSection = ({ lng }: { lng: string }) => {
             </div>
 
             {/* Non-Alcoholic Sips card 2 */}
-            <div className="relative rounded-[4px] overflow-hidden flex-shrink-0" style={{ width: '240px', aspectRatio: '0.835' }}>
+            <div
+              className="relative rounded-[4px] overflow-hidden flex-shrink-0"
+              style={{ width: '240px', aspectRatio: '0.835' }}
+            >
               <Image src={nonAlcoholicSips2} alt={t('featuredSection.nonAlcoholic')} fill className="object-cover" />
               <div className="absolute inset-0 bg-black/30 flex flex-col justify-end p-4">
                 <div className="flex flex-col gap-2">
@@ -200,7 +212,7 @@ const FeaturedSection = ({ lng }: { lng: string }) => {
                   </h3>
                   <div className="flex flex-col">
                     <Link
-                      href="#"
+                      href={`${lng}/blogs/mojito-syrup`}
                       className="font-['Montserrat'] font-medium text-sm leading-[1.5em] text-white hover:underline"
                     >
                       {t('featuredSection.discover')}
@@ -226,7 +238,12 @@ const FeaturedSection = ({ lng }: { lng: string }) => {
               <div className="w-1/2 h-full relative flex items-center justify-end">
                 <div className={`absolute bottom-[-80px] ${isRtl ? 'end-40' : 'start-40'} z-10`}>
                   <div className="relative w-[420px] h-[500px]">
-                    <Image src="/images/raspberry-puree.png" alt={t('featuredSection.raspberryTitle')} fill className="object-cover" />
+                    <Image
+                      src="/images/raspberry-puree.png"
+                      alt={t('featuredSection.raspberryTitle')}
+                      fill
+                      className="object-cover"
+                    />
                   </div>
                 </div>
               </div>
@@ -245,7 +262,7 @@ const FeaturedSection = ({ lng }: { lng: string }) => {
                     </div>
 
                     <Link
-                      href="#"
+                      href={`${lng}/blogs/watermelon-puree`}
                       className="bg-black text-white font-['Montserrat'] font-bold text-[24px] py-[10px] px-[28px] rounded-[28px] inline-block text-center hover:bg-black/90 transition-colors"
                     >
                       {t('featuredSection.learnMore')}
@@ -264,15 +281,26 @@ const FeaturedSection = ({ lng }: { lng: string }) => {
             </div>
 
             {/* Raspberry image without shadow effect - shifted more to the end */}
-            <div className={`relative mx-auto w-full max-w-[280px] h-[340px] z-10 flex ${isRtl ? 'justify-start pe-10' : 'justify-end ps-10'}`}>
+            <div
+              className={`relative mx-auto w-full max-w-[280px] h-[340px] z-10 flex ${
+                isRtl ? 'justify-start pe-10' : 'justify-end ps-10'
+              }`}
+            >
               <div className="relative w-[280px] h-[340px]">
-                <Image src="/images/raspberry-puree.png" alt={t('featuredSection.raspberryTitle')} fill className="object-cover" />
+                <Image
+                  src="/images/raspberry-puree.png"
+                  alt={t('featuredSection.raspberryTitle')}
+                  fill
+                  className="object-cover"
+                />
               </div>
             </div>
 
             {/* Content box for mobile */}
             <div className="w-full max-w-[384px] mx-auto bg-[#B91635] rounded-[15px] flex items-center justify-center p-4 -mt-6 relative z-0">
-              <div className={`flex flex-col gap-[16px] w-full max-w-[309px] py-4 ${isRtl ? 'text-right' : 'text-left'}`}>
+              <div
+                className={`flex flex-col gap-[16px] w-full max-w-[309px] py-4 ${isRtl ? 'text-right' : 'text-left'}`}
+              >
                 <div className="w-full">
                   <h3 className="font-['Dancing_Script'] font-bold text-[37px] leading-[1.2em] tracking-[-1.2%] text-white mb-3">
                     {t('featuredSection.raspberryTitle')}
@@ -283,8 +311,10 @@ const FeaturedSection = ({ lng }: { lng: string }) => {
                 </div>
 
                 <Link
-                  href="#"
-                  className={`bg-black text-white font-['Montserrat'] font-bold text-[21px] py-[8px] px-[21px] rounded-[21px] text-center hover:bg-black/90 transition-colors self-start mx-auto ${isRtl ? 'self-end' : 'self-start'}`}
+                  href={`${lng}/blogs/watermelon-puree`}
+                  className={`bg-black text-white font-['Montserrat'] font-bold text-[21px] py-[8px] px-[21px] rounded-[21px] text-center hover:bg-black/90 transition-colors self-start mx-auto ${
+                    isRtl ? 'self-end' : 'self-start'
+                  }`}
                 >
                   {t('featuredSection.learnMore')}
                 </Link>

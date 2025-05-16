@@ -28,10 +28,10 @@ export default async function SoloCorePageComponent({ params }: { params: Promis
           <div className="relative z-10 max-w-[1050px] mx-auto flex flex-col items-center justify-center h-full px-4 py-[112px]">
             <div className="flex flex-col items-center px-6 py-10 md:px-[80px] md:py-[80px] gap-[30px] border-[3px] border-[#ECECEC]">
               <div className="flex flex-col items-center gap-[10px]">
-                <h1 className="font-montserrat font-bold text-3xl md:text-[40px] text-center text-white leading-tight tracking-[0.2px]">
+                <h1 className="font-['Montserrat'] font-bold text-3xl md:text-[40px] text-center text-white leading-tight tracking-[0.2px]">
                   {t('soloCore.hero.title')}
                 </h1>
-                <p className="font-montserrat font-bold text-sm text-white text-center max-w-[800px] leading-[1.43] tracking-[0.2px] mt-4">
+                <p className="font-['Montserrat'] font-bold text-sm text-white text-center max-w-[800px] leading-[1.43] tracking-[0.2px] mt-4">
                   {t('soloCore.hero.description')}
                 </p>
               </div>
@@ -48,10 +48,10 @@ export default async function SoloCorePageComponent({ params }: { params: Promis
             {/* Left Column - Text and Image */}
             <div className="flex flex-col gap-[80px] py-6 flex-1 max-w-[50%]">
               <div className="flex flex-col gap-6 w-full">
-                <h2 className="font-montserrat font-bold text-3xl md:text-[40px] text-black leading-tight tracking-[0.2px]">
+                <h2 className="font-['Montserrat'] font-bold text-3xl md:text-[40px] text-black leading-tight tracking-[0.2px]">
                   {t('soloCore.mission.title')}
                 </h2>
-                <p className="font-montserrat font-normal text-sm text-black leading-[1.43] tracking-[0.2px]">
+                <p className="font-['Montserrat'] font-normal text-sm text-black leading-[1.43] tracking-[0.2px]">
                   {t('soloCore.mission.description')}
                 </p>
               </div>
@@ -79,10 +79,10 @@ export default async function SoloCorePageComponent({ params }: { params: Promis
           {/* Mobile View */}
           <div className="flex flex-col md:hidden px-4">
             <div className="flex flex-col gap-[15px] mb-[15px]">
-              <h2 className="font-montserrat font-bold text-[40px] text-black leading-[1.22] tracking-[0.24%]">
+              <h2 className="font-['Montserrat'] font-bold text-[40px] text-black leading-[1.22] tracking-[0.24%]">
                 {t('soloCore.mission.title')}
               </h2>
-              <p className="font-montserrat font-normal text-[14.7px] text-black leading-[1.22] tracking-[0.65%]">
+              <p className="font-['Montserrat'] font-normal text-[14.7px] text-black leading-[1.22] tracking-[0.65%]">
                 {t('soloCore.mission.description')}
               </p>
             </div>
@@ -140,10 +140,10 @@ export default async function SoloCorePageComponent({ params }: { params: Promis
             {/* Right Column - Text and Image */}
             <div className="flex flex-col gap-[80px] py-6 flex-1 max-w-[50%]">
               <div className="flex flex-col gap-6 w-full max-w-[381px]">
-                <h2 className="font-montserrat font-bold text-3xl md:text-[40px] text-black leading-tight tracking-[0.2px]">
+                <h2 className="font-['Montserrat'] font-bold text-3xl md:text-[40px] text-black leading-tight tracking-[0.2px]">
                   {t('soloCore.vision.title')}
                 </h2>
-                <p className="font-montserrat font-normal text-sm text-black leading-[1.43] tracking-[0.2px]">
+                <p className="font-['Montserrat'] font-normal text-sm text-black leading-[1.43] tracking-[0.2px]">
                   {t('soloCore.vision.description')}
                 </p>
               </div>
@@ -161,10 +161,10 @@ export default async function SoloCorePageComponent({ params }: { params: Promis
           {/* Mobile View */}
           <div className="flex flex-col md:hidden px-4">
             <div className="flex flex-col gap-[15px] mb-[15px]">
-              <h2 className="font-montserrat font-bold text-[40px] text-black leading-[1.22] tracking-[0.52%]">
+              <h2 className="font-['Montserrat'] font-bold text-[40px] text-black leading-[1.22] tracking-[0.52%]">
                 {t('soloCore.vision.title')}
               </h2>
-              <p className="font-montserrat font-normal text-[14.7px] text-black leading-[1.43] tracking-[1.43%]">
+              <p className="font-['Montserrat'] font-normal text-[14.7px] text-black leading-[1.43] tracking-[1.43%]">
                 {t('soloCore.vision.description')}
               </p>
             </div>
@@ -210,10 +210,10 @@ export default async function SoloCorePageComponent({ params }: { params: Promis
             {/* Left Column - Text and Image */}
             <div className="flex flex-col gap-[80px] py-6 flex-1">
               <div className="flex flex-col gap-6 w-full max-w-[381px]">
-                <h2 className="font-montserrat font-bold text-3xl md:text-[40px] text-black leading-tight tracking-[0.2px]">
+                <h2 className="font-['Montserrat'] font-bold text-3xl md:text-[40px] text-black leading-tight tracking-[0.2px]">
                   {t('soloCore.values.title')}
                 </h2>
-                <p className="font-montserrat font-normal text-sm text-black leading-[1.43] tracking-[1.43%]">
+                <p className="font-['Montserrat'] font-normal text-sm text-black leading-[1.43] tracking-[1.43%]">
                   {t('soloCore.values.innovation')}
                   <br />
                   {t('soloCore.values.quality')}
@@ -247,10 +247,10 @@ export default async function SoloCorePageComponent({ params }: { params: Promis
           {/* Mobile View */}
           <div className="flex flex-col md:hidden px-4">
             <div className="flex flex-col gap-[15px] mb-[15px]">
-              <h2 className="font-montserrat font-bold text-[40px] text-black leading-[1.22] tracking-[0.24%]">
+              <h2 className="font-['Montserrat'] font-bold text-[40px] text-black leading-[1.22] tracking-[0.24%]">
                 {t('soloCore.values.title')}
               </h2>
-              <p className="font-montserrat font-normal text-[14.7px] text-black leading-[1.22] tracking-[0.65%]">
+              <p className="font-['Montserrat'] font-normal text-[14.7px] text-black leading-[1.22] tracking-[0.65%]">
                 {t('soloCore.values.innovation')}
                 <br />
                 {t('soloCore.values.quality')}

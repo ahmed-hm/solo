@@ -9,7 +9,8 @@
     "partners": "Partners",
     "clients": "Our Clients",
     "countries": "Countries",
-    "menu": "Menu"
+    "menu": "Menu",
+    "blog": "Blog"
   },
   "about": {
     "hero": {
@@ -186,6 +187,14 @@
       "learn_more": "Learn More",
       "comments": "comments"
     }
+  },
+  "blog": {
+    "comments": "Comments",
+    "inThisArticle": "In this article",
+    "loadMore": "Load More",
+    "share": "Share with your community!",
+    "likeShare": "Like what you see? Share with a friend.",
+    "relatedArticles": "Related Articles"
   },
   "common": {
     "scroll_left": "Scroll left",
