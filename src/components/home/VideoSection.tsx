@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, EffectCards } from 'swiper/modules';
 import { useTranslation, useIsRTL } from '../../i18n/client';
+import Link from 'next/link';
 
 // Import Swiper styles
 import 'swiper/css';
@@ -94,11 +95,13 @@ const VideoSection = ({ lng = 'en' }: VideoSectionProps) => {
             <p className="text-white text-sm tracking-[1.4%] leading-[1.43] lg:w-full">
               {t('videoSection.description', 'Showing off what Solo products can do in the delicious culinary world.')}
             </p>
-            <button
-              className={`mt-2 bg-black text-white rounded-full px-8 py-3 font-bold tracking-[0.4%] text-xl lg:text-2xl mx-auto lg:mx-0 lg:self-start`}
-            >
-              {t('videoSection.learnMoreButton', 'Learn More!')}
-            </button>
+            <Link href={`/${lng}/contact`}>
+              <button
+                className={`mt-2 bg-black text-white rounded-full px-8 py-3 font-bold tracking-[0.4%] text-xl lg:text-2xl mx-auto lg:mx-0 lg:self-start cursor-pointer`}
+              >
+                {t('videoSection.learnMoreButton', 'Learn More!')}
+              </button>
+            </Link>
           </div>
 
           {/* Right column with stacked video cards */}
