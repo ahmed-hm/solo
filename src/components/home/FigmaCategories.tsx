@@ -102,7 +102,7 @@ const FigmaCategories: React.FC<FigmaCategoriesProps> = ({ onCategorySelect, sel
           modules={[Navigation]}
           breakpoints={{
             0: {
-              spaceBetween: 15,
+              spaceBetween: 10,
             },
             768: {
               spaceBetween: 30,
@@ -128,7 +128,7 @@ const FigmaCategories: React.FC<FigmaCategoriesProps> = ({ onCategorySelect, sel
             <SwiperSlide key={category} style={{ width: 'auto' }}>
               <button
                 onClick={() => onCategorySelect(category)}
-                className={`flex flex-col items-center gap-2 px-12 py-4 rounded-[12px] transition-all ${
+                className={`flex flex-col items-center gap-2 px-9 py-2 lg:px-12 lg:py-4 rounded-[12px] transition-all aspect-square ${
                   selectedCategory === category
                     ? 'border border-[#DBB58F] text-[#DBB58F]'
                     : 'border border-black text-black'
