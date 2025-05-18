@@ -79,7 +79,7 @@ const BlogPostCard: React.FC<BlogPostCardProps> = ({
         </div>
 
         {/* Make Learn More text a clickable link */}
-        <Link href={blogUrl} className="flex items-center gap-2.5 mt-2 cursor-pointer group">
+        <Link href={blogUrl.split('-ar')[0]} className="flex items-center gap-2.5 mt-2 cursor-pointer group">
           <span className="text-sm font-bold text-[#737373] tracking-wider group-hover:text-[#DBB58F] transition-colors">
             {learnMoreText}
           </span>
