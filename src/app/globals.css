@@ -185,3 +185,36 @@ select {
 .select:focus {
   outline: none;
 }
+
+.cards-container-outer {
+  padding: 20px 0;
+}
+
+.swiper {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.swiper-slide {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: none;
+  /* background-color: white; */
+}
+
+/* Ensure cards effect has proper visuals */
+.swiper-cards .swiper-slide {
+  width: 100% !important;
+  transition: all 0.3s ease;
+}
+
+/* Override Swiper's default transform for inactive slides to make them appear stacked */
+/* .swiper-cards .swiper-slide:not(.swiper-slide-active) {
+  transform: translateY(-8px) scale(0.95) !important;
+  opacity: 0.8;
+} */
+
+.swiper-cards .swiper-slide-prev {
+  transform: translateY(-16px) scale(0.9) !important;
+  opacity: 0;
+}

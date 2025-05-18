@@ -55,8 +55,8 @@ const VideoSection = ({ lng = 'en' }: VideoSectionProps) => {
         {showVideo && (
           <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black">
             <div className="relative w-full max-w-4xl">
-              <button 
-                onClick={closeVideo} 
+              <button
+                onClick={closeVideo}
                 className="absolute -top-10 right-0 text-white text-2xl font-bold cursor-pointer"
                 aria-label={t('videoSection.closeButton', 'Close video')}
               >
@@ -173,42 +173,6 @@ const VideoSection = ({ lng = 'en' }: VideoSectionProps) => {
         {/* Custom pagination dots */}
         <div className="swiper-pagination flex justify-center items-center gap-[5px] mt-8"></div>
       </div>
-
-      {/* Custom styles to enhance the cards effect */}
-      <style jsx global>{`
-        .cards-container-outer {
-          padding: 20px 0;
-        }
-
-        .swiper {
-          width: 100%;
-          border-radius: 12px;
-        }
-
-        .swiper-slide {
-          border-radius: 12px;
-          overflow: hidden;
-          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-          // background-color: white;
-        }
-
-        /* Ensure cards effect has proper visuals */
-        .swiper-cards .swiper-slide {
-          width: 100% !important;
-          transition: all 0.3s ease;
-        }
-
-        /* Override Swiper's default transform for inactive slides to make them appear stacked */
-        // .swiper-cards .swiper-slide:not(.swiper-slide-active) {
-        //   transform: translateY(-8px) scale(0.95) !important;
-        //   opacity: 0.8;
-        // }
-
-        .swiper-cards .swiper-slide-prev {
-          transform: translateY(-16px) scale(0.9) !important;
-          opacity: 0;
-        }
-      `}</style>
     </section>
   );
 };

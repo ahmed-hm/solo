@@ -65,7 +65,7 @@ const FigmaCategories: React.FC<FigmaCategoriesProps> = ({ onCategorySelect, sel
           <div className="flex flex-col gap-8">
             <div className="flex items-center gap-4">
               <div className="w-5 h-10 rounded bg-[#DBB58F]"></div>
-              <span className="font-['Dancing_Script'] font-semibold text-[64px] leading-[0.75em] tracking-[4%] text-[#DBB58F]">
+              <span className="font-['Dancing_Script'] font-semibold text-[56px] md:text-[64px] leading-[0.75em] tracking-[4%] text-[#DBB58F]">
                 {t('categories.title', 'Categories')}
               </span>
             </div>
@@ -100,7 +100,17 @@ const FigmaCategories: React.FC<FigmaCategoriesProps> = ({ onCategorySelect, sel
         {/* Categories List - Using Swiper */}
         <Swiper
           modules={[Navigation]}
-          spaceBetween={50}
+          breakpoints={{
+            0: {
+              spaceBetween: 15,
+            },
+            768: {
+              spaceBetween: 30,
+            },
+            1280: {
+              spaceBetween: 50,
+            },
+          }}
           slidesPerView={'auto'}
           navigation={{
             prevEl: prevRef.current,
