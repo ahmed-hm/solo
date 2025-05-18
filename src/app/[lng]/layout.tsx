@@ -22,10 +22,10 @@ export default async function RootLayout({ children, params }: RootLayoutProps) 
   const { lng } = await params;
 
   return (
-    <>
+    <div lang={lng} dir={lng === 'ar' ? 'rtl' : 'ltr'}>
       <Navbar lng={lng} />
       <main>{children}</main>
       <Footer lng={lng} />
-    </>
+    </div>
   );
 }

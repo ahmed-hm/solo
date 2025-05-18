@@ -1,11 +1,13 @@
 'use client';
 
-import React, { useRef, useState, TouchEvent } from 'react';
+import React, { useRef, useState, TouchEvent, useEffect } from 'react';
 import Image from 'next/image';
 import Lottie from 'lottie-react';
 import arrowAnimation from '../../../public/lottie/arrow-down.json';
 // Import translation hook
 import { useTranslation } from '../../i18n/client';
+// Import products data
+import allProducts from '@/data/products.json';
 
 // Define the Product type
 interface Product {
@@ -26,49 +28,44 @@ interface ProductsProps {
 const FeaturedProducts: React.FC<ProductsProps> = ({
   title = '',
   subtitle = '',
-  products = [
-    {
-      id: '1',
-      name: 'Hibiscus',
-      imageUrl: '/images/products/hibiscus.png',
-    },
-    {
-      id: '2',
-      name: 'Blueberry',
-      imageUrl: '/images/products/blueberry.png',
-    },
-    {
-      id: '3',
-      name: 'Blue Curacao',
-      imageUrl: '/images/products/blueraspberry.png',
-    },
-    {
-      id: '4',
-      name: 'Turkish Sahalb',
-      imageUrl: '/images/products/cherry.png',
-    },
-    {
-      id: '5',
-      name: 'Premium Spread Pistachio',
-      imageUrl: '/images/products/mixberry.png',
-    },
-    {
-      id: '6',
-      name: 'Pure COCOA',
-      imageUrl: '/images/products/pineapple.png',
-    },
-  ],
+  products = [],
   filterByCategory,
   lng,
 }) => {
   // Initialize translation hook
   const { t } = useTranslation(lng);
 
+  // Use default products from JSON file if no products provided
+  const [defaultProducts, setDefaultProducts] = useState<Product[]>([]);
+
+  // Initialize with some featured products if no specific products are provided
+  // Use a ref to track if we already set the default products to avoid infinite loops
+  const defaultsSetRef = useRef(false);
+  
+  useEffect(() => {
+    // Only set the default products once and only if needed
+    if (products.length === 0 && !defaultsSetRef.current) {
+      // Get a mix of products from different categories for featured display
+      const featured = [
+        allProducts.find(p => p.category === 'Puree' && p.name.includes('Berry')),
+        allProducts.find(p => p.category === 'Syrup' && p.name.includes('Blue')),
+        allProducts.find(p => p.category === 'Powder' && p.name.includes('Turkish')),
+        allProducts.find(p => p.category === 'Spreads' && p.name.includes('Pistachio')),
+        allProducts.find(p => p.category === 'Sauces'),
+        allProducts.find(p => p.category === 'Mini Coffee'),
+      ].filter(Boolean) as Product[];
+      
+      setDefaultProducts(featured);
+      defaultsSetRef.current = true;
+    }
+  }, []); // Empty dependency array to run only once on mount
+
   // Filter products by category if specified
   const displayProducts = filterByCategory
     ? products.filter((product) => product.category === filterByCategory)
-    : products;
+    : products.length > 0 ? products : defaultProducts;
 
+  // Rest of the component remains the same
   // Ref for the scrollable container
   const scrollContainerRef = useRef<HTMLDivElement>(null);
 
