@@ -228,8 +228,8 @@ export default function RecipeDetailPage({ params }: PageProps) {
               </span>
             </div>
 
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-8">
-              {/* Get related products from the same category (limit to 4) */}
+            {/* Get related products from the same category (limit to 4) */}
+            {/* <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-8">
               {recipesData.recipes[category as keyof typeof recipesData.recipes]
                 .filter((r) => r.id !== recipeId)
                 .slice(0, 4)
@@ -256,7 +256,7 @@ export default function RecipeDetailPage({ params }: PageProps) {
                     </div>
                   </Link>
                 ))}
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

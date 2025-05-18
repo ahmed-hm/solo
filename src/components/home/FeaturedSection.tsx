@@ -22,7 +22,7 @@ const FeaturedSection = ({ lng }: { lng: string }) => {
         <div className="flex flex-col gap-5">
           <div className="flex items-center gap-4">
             <div className="w-5 h-10 rounded bg-[#DBB58F]"></div>
-            <span className="font-['Dancing_Script'] font-semibold text-[64px] leading-[0.75em] tracking-[4%] text-[#DBB58F]">
+            <span className="font-['Dancing_Script'] font-semibold text-[56px] md:text-[64px] leading-[0.75em] tracking-[4%] text-[#DBB58F]">
               {t('featuredSection.title')}
             </span>
           </div>
