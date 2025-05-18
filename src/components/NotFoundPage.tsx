@@ -13,7 +13,7 @@ export default function NotFoundPage({ lng }: NotFoundPageProps) {
   const { t } = useTranslation(lng);
 
   return (
-    <div className="w-full h-full bg-[#F7F7F7] flex items-center justify-center">
+    <div className="absolute top-0 left-0 w-full h-full bg-[#F7F7F7] flex items-center justify-center">
       <div className="w-full h-full px-4 py-8">
         <div className="w-full h-full flex flex-col items-center rounded-[7.5px] bg-white shadow-md p-6 md:p-[22.5px] justify-center">
           {/* Illustration */}
@@ -36,7 +36,7 @@ export default function NotFoundPage({ lng }: NotFoundPageProps) {
               {t('notFound.message', 'Sorry this page is no longer available.')}
             </p>
           </div>
-
+          
           {/* Back to Home Button */}
           <div className="mt-8">
             <Link
