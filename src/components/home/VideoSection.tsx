@@ -49,7 +49,7 @@ const VideoSection = ({ lng = 'en' }: VideoSectionProps) => {
   };
 
   return (
-    <section className="w-full py-20 bg-gradient-to-b from-[#DBB58F] via-[#B08566] to-[#EFD8B5]">
+    <section className="w-full py-20 bg-gradient-to-b from-[#DBB58F] via-[#B08566] to-[#EFD8B5] overflow-hidden">
       <div className="container mx-auto px-4">
         {/* Video modal */}
         {showVideo && (
