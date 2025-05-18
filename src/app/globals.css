@@ -23,49 +23,71 @@
 }
 
 /* RTL Specific Styles */
-[dir="rtl"] {
+[dir='rtl'] {
   font-family: var(--font-montserrat), sans-serif;
   text-align: right;
 }
 
-[dir="rtl"] .ltr-only {
+[dir='rtl'] .ltr-only {
   display: none;
 }
 
-[dir="ltr"] .rtl-only {
+[dir='ltr'] .rtl-only {
   display: none;
 }
 
 /* RTL specific margin/padding adjustments */
-[dir="rtl"] .ml-1, [dir="rtl"] .ml-2, [dir="rtl"] .ml-3, [dir="rtl"] .ml-4 {
+[dir='rtl'] .ml-1,
+[dir='rtl'] .ml-2,
+[dir='rtl'] .ml-3,
+[dir='rtl'] .ml-4 {
   margin-left: 0;
 }
 
-[dir="rtl"] .mr-1, [dir="rtl"] .mr-2, [dir="rtl"] .mr-3, [dir="rtl"] .mr-4 {
+[dir='rtl'] .mr-1,
+[dir='rtl'] .mr-2,
+[dir='rtl'] .mr-3,
+[dir='rtl'] .mr-4 {
   margin-right: 0;
 }
 
-[dir="rtl"] .ml-1 { margin-right: 0.25rem; }
-[dir="rtl"] .ml-2 { margin-right: 0.5rem; }
-[dir="rtl"] .ml-3 { margin-right: 0.75rem; }
-[dir="rtl"] .ml-4 { margin-right: 1rem; }
+[dir='rtl'] .ml-1 {
+  margin-right: 0.25rem;
+}
+[dir='rtl'] .ml-2 {
+  margin-right: 0.5rem;
+}
+[dir='rtl'] .ml-3 {
+  margin-right: 0.75rem;
+}
+[dir='rtl'] .ml-4 {
+  margin-right: 1rem;
+}
 
-[dir="rtl"] .mr-1 { margin-left: 0.25rem; }
-[dir="rtl"] .mr-2 { margin-left: 0.5rem; }
-[dir="rtl"] .mr-3 { margin-left: 0.75rem; }
-[dir="rtl"] .mr-4 { margin-left: 1rem; }
+[dir='rtl'] .mr-1 {
+  margin-left: 0.25rem;
+}
+[dir='rtl'] .mr-2 {
+  margin-left: 0.5rem;
+}
+[dir='rtl'] .mr-3 {
+  margin-left: 0.75rem;
+}
+[dir='rtl'] .mr-4 {
+  margin-left: 1rem;
+}
 
 /* RTL flex direction adjustments */
-[dir="rtl"] .flex-row {
+[dir='rtl'] .flex-row {
   flex-direction: row-reverse;
 }
 
 /* RTL text alignment */
-[dir="rtl"] .text-left {
+[dir='rtl'] .text-left {
   text-align: right;
 }
 
-[dir="rtl"] .text-right {
+[dir='rtl'] .text-right {
   text-align: left;
 }
 
@@ -142,8 +164,8 @@ h3 {
 }
 
 .scrollbar-hide {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 
 /* Alternative no-scrollbar class for horizontal scrolling elements */
@@ -152,6 +174,14 @@ h3 {
 }
 
 .no-scrollbar {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+select {
+  border-right: 16px transparent;
+}
+
+.select:focus {
+  outline: none;
 }

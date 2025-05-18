@@ -1,0 +1,2310 @@
+{
+  "categories": [
+    {
+      "id": "smoothie",
+      "name": "Smoothies",
+      "nameAr": "سموذي",
+      "imageUrl": "/images/recipes/Smothie/Strawberry SMOOTHIE.png",
+      "description": "Refreshing fruit smoothies made with Solo's premium purées and syrups",
+      "descriptionAr": "سموذي منعش بالفواكه مصنوع من بيوريه وشراب صولو الممتاز"
+    },
+    {
+      "id": "hot-drinks",
+      "name": "Hot Drinks",
+      "nameAr": "مشروبات ساخنة",
+      "imageUrl": "/images/recipes/Hot Drinks/Hot Drinks.png",
+      "description": "Warm, comforting beverages with Solo's signature flavors",
+      "descriptionAr": "مشروبات دافئة ومريحة بنكهات صولو المميزة"
+    },
+    {
+      "id": "frappe",
+      "name": "Frappe",
+      "nameAr": "فرابيه",
+      "imageUrl": "/images/recipes/Frappe/Frappuccino Classic.png",
+      "description": "Cold, blended coffee drinks with a creamy texture",
+      "descriptionAr": "مشروبات قهوة باردة ومخفوقة بقوام كريمي"
+    },
+    {
+      "id": "cocktail",
+      "name": "Cocktail",
+      "nameAr": "كوكتيل",
+      "imageUrl": "/images/recipes/Cocktail/Cocktail.png",
+      "description": "Colorful mocktails made with Solo's premium syrups and purées",
+      "descriptionAr": "موكتيلات ملونة مصنوعة من شراب وبيوريه صولو الممتاز"
+    }
+  ],
+  "recipes": {
+    "smoothie": [
+      {
+        "id": "blue-berry-smoothie",
+        "name": "Blue Berry Smoothie",
+        "nameAr": "سموذي التوت الأزرق",
+        "imageUrl": "/images/recipes/Smothie/BLUE BERRY SMOOTHIE.png",
+        "ingredients": [
+          "Solo Blue Berry Purée",
+          "Milk",
+          "Ice"
+        ],
+        "ingredientsAr": [
+          "بيوريه التوت الأزرق من صولو",
+          "حليب",
+          "ثلج"
+        ],
+        "trending": true,
+        "beverageType": "blended cold",
+        "servedHow": "in a blender",
+        "flavorType": "berry",
+        "glassType": "blender cup",
+        "detailedIngredients": {
+          "12oz": [
+            "60 ML Blue berry puree",
+            "60 ML Water",
+            "210 Gram ice"
+          ],
+          "16oz": [
+            "75 ML Blue berry puree",
+            "75 ML Water",
+            "250 Gram ice"
+          ]
+        },
+        "detailedIngredientsAr": {
+          "12oz": [
+            "60 مل بيوريه",
+            "60 مل ماء",
+            "210 جم ثلج"
+          ],
+          "16oz": [
+            "75 مل بيوريه",
+            "75 مل ماء",
+            "250 جم ثلج"
+          ]
+        },
+        "preparationMethod": "Add all ingredients to the blender. Together.",
+        "preparationMethodAr": "امزج جميع المكونات في الخلاط معًا."
+      },
+      {
+        "id": "blue-raspberry-smoothie",
+        "name": "Blue Raspberry Smoothie",
+        "nameAr": "سموذي التوت الأزرق بالتوت",
+        "imageUrl": "/images/recipes/Smothie/Blue Raspberry Smoothie.png",
+        "ingredients": [
+          "Solo Blue Raspberry Purée",
+          "Milk",
+          "Ice"
+        ],
+        "ingredientsAr": [
+          "بيوريه التوت الأزرق من صولو",
+          "حليب",
+          "ثلج"
+        ],
+        "trending": false,
+        "beverageType": "blended cold",
+        "servedHow": "in a blender",
+        "flavorType": "berry",
+        "glassType": "blender cup",
+        "detailedIngredients": {
+          "12oz": [
+            "60 ML Blue Raspberry puree",
+            "60 ML Water",
+            "210 Gram ice"
+          ],
+          "16oz": [
+            "75 ML Blue Raspberry puree",
+            "75 ML Water",
+            "250 Gram ice"
+          ]
+        },
+        "detailedIngredientsAr": {
+          "12oz": [
+            "60 مل بيوريه",
+            "60 مل ماء",
+            "210 جم ثلج"
+          ],
+          "16oz": [
+            "75 مل بيوريه",
+            "75 مل ماء",
+            "250 جم ثلج"
+          ]
+        },
+        "preparationMethod": "Add all ingredients to the blender. Together.",
+        "preparationMethodAr": "امزج جميع المكونات في الخلاط معًا."
+      },
+      {
+        "id": "cherry-smoothie",
+        "name": "Cherry Smoothie",
+        "nameAr": "سموذي الكرز",
+        "imageUrl": "/images/recipes/Smothie/CHERRY SMOOTHIE.png",
+        "ingredients": [
+          "Solo Cherry Purée",
+          "Milk",
+          "Ice"
+        ],
+        "ingredientsAr": [
+          "بيوريه الكرز من صولو",
+          "حليب",
+          "ثلج"
+        ],
+        "trending": true,
+        "beverageType": "blended cold",
+        "servedHow": "in a blender",
+        "flavorType": "berry",
+        "glassType": "blender cup",
+        "detailedIngredients": {
+          "12oz": [
+            "60 ML Cherry puree",
+            "60 ML Water",
+            "210 Gram ice"
+          ],
+          "16oz": [
+            "75 ML Cherry puree",
+            "75 ML Water",
+            "250 Gram ice"
+          ]
+        },
+        "detailedIngredientsAr": {
+          "12oz": [
+            "60 مل بيوريه",
+            "60 مل ماء",
+            "210 جم ثلج"
+          ],
+          "16oz": [
+            "75 مل بيوريه",
+            "75 مل ماء",
+            "250 جم ثلج"
+          ]
+        },
+        "preparationMethod": "Add all ingredients to the blender. Together.",
+        "preparationMethodAr": "امزج جميع المكونات في الخلاط معًا."
+      },
+      {
+        "id": "green-apple-smoothie",
+        "name": "Green Apple Smoothie",
+        "nameAr": "سموذي التفاح الأخضر",
+        "imageUrl": "/images/recipes/Smothie/Green Apple SMOOTHIE.png",
+        "ingredients": [
+          "Solo Green Apple Purée",
+          "Milk",
+          "Ice"
+        ],
+        "ingredientsAr": [
+          "بيوريه التفاح الأخضر من صولو",
+          "حليب",
+          "ثلج"
+        ],
+        "trending": false,
+        "beverageType": "blended cold",
+        "servedHow": "in a blender",
+        "flavorType": "citrus",
+        "glassType": "blender cup",
+        "detailedIngredients": {
+          "12oz": [
+            "60 ML Green Apple Puree",
+            "60 ML Water",
+            "210 Gram ice"
+          ],
+          "16oz": [
+            "75 ML Green Apple Puree",
+            "75 ML Water",
+            "250 Gram ice"
+          ]
+        },
+        "detailedIngredientsAr": {
+          "12oz": [
+            "60 مل بيوريه",
+            "60 مل ماء",
+            "210 جم ثلج"
+          ],
+          "16oz": [
+            "75 مل بيوريه",
+            "75 مل ماء",
+            "250 جم ثلج"
+          ]
+        },
+        "preparationMethod": "Add all ingredients to the blender. Together.",
+        "preparationMethodAr": "امزج جميع المكونات في الخلاط معًا."
+      },
+      {
+        "id": "hibiscus-smoothie",
+        "name": "Hibiscus Smoothie",
+        "nameAr": "سموذي الكركديه",
+        "imageUrl": "/images/recipes/Smothie/Hibiscus SMOOTHIE.png",
+        "ingredients": [
+          "Solo Hibiscus Syrup",
+          "Milk",
+          "Ice"
+        ],
+        "ingredientsAr": [
+          "شراب الكركديه من صولو",
+          "حليب",
+          "ثلج"
+        ],
+        "trending": false,
+        "beverageType": "blended cold",
+        "servedHow": "in a blender",
+        "flavorType": "herbal",
+        "glassType": "blender cup",
+        "detailedIngredients": {
+          "12oz": [
+            "60 ML Hibiscus puree",
+            "60 ML Water",
+            "210 Gram ice"
+          ],
+          "16oz": [
+            "75 ML Hibiscus puree",
+            "75 ML Water",
+            "250 Gram ice"
+          ]
+        },
+        "detailedIngredientsAr": {
+          "12oz": [
+            "60 مل بيوريه",
+            "60 مل ماء",
+            "210 جم ثلج"
+          ],
+          "16oz": [
+            "75 مل بيوريه",
+            "75 مل ماء",
+            "250 جم ثلج"
+          ]
+        },
+        "preparationMethod": "Add all ingredients to the blender. Together.",
+        "preparationMethodAr": "امزج جميع المكونات في الخلاط معًا."
+      },
+      {
+        "id": "kiwi-smoothie",
+        "name": "Kiwi Smoothie",
+        "nameAr": "سموذي الكيوي",
+        "imageUrl": "/images/recipes/Smothie/Kiwi SMOOTHIE.png",
+        "ingredients": [
+          "Solo Kiwi Purée",
+          "Milk",
+          "Ice"
+        ],
+        "ingredientsAr": [
+          "بيوريه الكيوي من صولو",
+          "حليب",
+          "ثلج"
+        ],
+        "trending": false,
+        "beverageType": "blended cold",
+        "servedHow": "in a blender",
+        "flavorType": "berry",
+        "glassType": "blender cup",
+        "detailedIngredients": {
+          "12oz": [
+            "60 ML Kiwi Puree",
+            "60 ML Water",
+            "210 Gram ice"
+          ],
+          "16oz": [
+            "75 ML Kiwi Puree",
+            "75 ML Water",
+            "250 Gram ice"
+          ]
+        },
+        "detailedIngredientsAr": {
+          "12oz": [
+            "60 مل بيوريه",
+            "60 مل ماء",
+            "210 جم ثلج"
+          ],
+          "16oz": [
+            "75 مل بيوريه",
+            "75 مل ماء",
+            "250 جم ثلج"
+          ]
+        },
+        "preparationMethod": "Add all ingredients to the blender. Together.",
+        "preparationMethodAr": "امزج جميع المكونات في الخلاط معًا."
+      },
+      {
+        "id": "lemon-smoothie",
+        "name": "Lemon Smoothie",
+        "nameAr": "سموذي الليمون",
+        "imageUrl": "/images/recipes/Smothie/Lemon SMOOTHIE.png",
+        "ingredients": [
+          "Solo Lemon Purée",
+          "Milk",
+          "Ice"
+        ],
+        "ingredientsAr": [
+          "بيوريه الليمون من صولو",
+          "حليب",
+          "ثلج"
+        ],
+        "trending": false,
+        "beverageType": "blended cold",
+        "servedHow": "in a blender",
+        "flavorType": "citrus",
+        "glassType": "blender cup",
+        "detailedIngredients": {
+          "12oz": [
+            "50 ML Lemon Puree",
+            "60 ML Water",
+            "210 Gram ice"
+          ],
+          "16oz": [
+            "60 ML Lemon Puree",
+            "75 ML Water",
+            "250 Gram ice"
+          ]
+        },
+        "detailedIngredientsAr": {
+          "12oz": [
+            "50 مل بيوريه",
+            "60 مل ماء",
+            "210 جم ثلج"
+          ],
+          "16oz": [
+            "60 مل بيوريه",
+            "75 مل ماء",
+            "250 جم ثلج"
+          ]
+        },
+        "preparationMethod": "Add all ingredients to the blender. Together.",
+        "preparationMethodAr": "امزج جميع المكونات في الخلاط معًا."
+      },
+      {
+        "id": "mango-smoothie",
+        "name": "Mango Smoothie",
+        "nameAr": "سموذي المانجو",
+        "imageUrl": "/images/recipes/Smothie/MANGO SMOOTHIE.png",
+        "ingredients": [
+          "Solo Mango Purée",
+          "Milk",
+          "Ice"
+        ],
+        "ingredientsAr": [
+          "بيوريه المانجو من صولو",
+          "حليب",
+          "ثلج"
+        ],
+        "trending": true,
+        "beverageType": "blended cold",
+        "servedHow": "in a blender",
+        "flavorType": "tropical",
+        "glassType": "blender cup",
+        "detailedIngredients": {
+          "12oz": [
+            "60 ML Mango puree",
+            "60 ML Water",
+            "210 Gram ice"
+          ],
+          "16oz": [
+            "75 ML Mango puree",
+            "75 ML Water",
+            "250 Gram ice"
+          ]
+        },
+        "detailedIngredientsAr": {
+          "12oz": [
+            "60 مل بيوريه",
+            "60 مل ماء",
+            "210 جم ثلج"
+          ],
+          "16oz": [
+            "75 مل بيوريه",
+            "75 مل ماء",
+            "250 جم ثلج"
+          ]
+        },
+        "preparationMethod": "Add all ingredients to the blender. Together.",
+        "preparationMethodAr": "امزج جميع المكونات في الخلاط معًا."
+      },
+      {
+        "id": "mix-berry-smoothie",
+        "name": "Mix Berry Smoothie",
+        "nameAr": "سموذي التوت المشكل",
+        "imageUrl": "/images/recipes/Smothie/Mix Berry SMOOTHIE.png",
+        "ingredients": [
+          "Solo Mix Berry Purée",
+          "Milk",
+          "Ice"
+        ],
+        "ingredientsAr": [
+          "بيوريه التوت المشكل من صولو",
+          "حليب",
+          "ثلج"
+        ],
+        "trending": false,
+        "beverageType": "blended cold",
+        "servedHow": "in a blender",
+        "flavorType": "berry",
+        "glassType": "blender cup",
+        "detailedIngredients": {
+          "12oz": [
+            "60 ML Mix Berry puree",
+            "60 ML Water",
+            "210 Gram ice"
+          ],
+          "16oz": [
+            "75 ML Mix Berry puree",
+            "75 ML Water",
+            "250 Gram ice"
+          ]
+        },
+        "detailedIngredientsAr": {
+          "12oz": [
+            "60 مل بيوريه",
+            "60 مل ماء",
+            "210 جم ثلج"
+          ],
+          "16oz": [
+            "75 مل بيوريه",
+            "75 مل ماء",
+            "250 جم ثلج"
+          ]
+        },
+        "preparationMethod": "Add all ingredients to the blender. Together.",
+        "preparationMethodAr": "امزج جميع المكونات في الخلاط معًا."
+      },
+      {
+        "id": "passion-smoothie",
+        "name": "Passion Smoothie",
+        "nameAr": "سموذي الباشن فروت",
+        "imageUrl": "/images/recipes/Smothie/PASSION SMOOTHIE.png",
+        "ingredients": [
+          "Solo Passion Purée",
+          "Milk",
+          "Ice"
+        ],
+        "ingredientsAr": [
+          "بيوريه الباشن فروت من صولو",
+          "حليب",
+          "ثلج"
+        ],
+        "trending": false,
+        "beverageType": "blended cold",
+        "servedHow": "in a blender",
+        "flavorType": "tropical",
+        "glassType": "blender cup",
+        "detailedIngredients": {
+          "12oz": [
+            "60 ML PASSION puree",
+            "60 ML Water",
+            "210 Gram ice"
+          ],
+          "16oz": [
+            "75 ML PASSION puree",
+            "75 ML Water",
+            "250 Gram ice"
+          ]
+        },
+        "detailedIngredientsAr": {
+          "12oz": [
+            "60 مل بيوريه",
+            "60 مل ماء",
+            "210 جم ثلج"
+          ],
+          "16oz": [
+            "75 مل بيوريه",
+            "75 مل ماء",
+            "250 جم ثلج"
+          ]
+        },
+        "preparationMethod": "Add all ingredients to the blender. Together.",
+        "preparationMethodAr": "امزج جميع المكونات في الخلاط معًا."
+      },
+      {
+        "id": "pineapple-smoothie",
+        "name": "Pineapple Smoothie",
+        "nameAr": "سموذي الأناناس",
+        "imageUrl": "/images/recipes/Smothie/PINEAPPLE SMOOTHIE.png",
+        "ingredients": [
+          "Solo Pineapple Purée",
+          "Milk",
+          "Ice"
+        ],
+        "ingredientsAr": [
+          "بيوريه الأناناس من صولو",
+          "حليب",
+          "ثلج"
+        ],
+        "trending": false,
+        "beverageType": "blended cold",
+        "servedHow": "in a blender",
+        "flavorType": "tropical",
+        "glassType": "blender cup",
+        "detailedIngredients": {
+          "12oz": [
+            "60 ML PINEAPPLE Puree",
+            "60 ML Water",
+            "210 Gram ice"
+          ],
+          "16oz": [
+            "75 ML PINEAPPLE Puree",
+            "75 ML Water",
+            "250 Gram ice"
+          ]
+        },
+        "detailedIngredientsAr": {
+          "12oz": [
+            "60 مل بيوريه",
+            "60 مل ماء",
+            "210 جم ثلج"
+          ],
+          "16oz": [
+            "75 مل بيوريه",
+            "75 مل ماء",
+            "250 جم ثلج"
+          ]
+        },
+        "preparationMethod": "Add all ingredients to the blender. Together.",
+        "preparationMethodAr": "امزج جميع المكونات في الخلاط معًا."
+      },
+      {
+        "id": "peach-smoothie",
+        "name": "Peach Smoothie",
+        "nameAr": "سموذي الخوخ",
+        "imageUrl": "/images/recipes/Smothie/Peach Smoothie.png",
+        "ingredients": [
+          "Solo Peach Purée",
+          "Milk",
+          "Ice"
+        ],
+        "ingredientsAr": [
+          "بيوريه الخوخ من صولو",
+          "حليب",
+          "ثلج"
+        ],
+        "trending": false,
+        "beverageType": "blended cold",
+        "servedHow": "in a blender",
+        "flavorType": "berry",
+        "glassType": "blender cup",
+        "detailedIngredients": {
+          "12oz": [
+            "60 ML Peach puree",
+            "60 ML Water",
+            "210 Gram ice"
+          ],
+          "16oz": [
+            "75 ML Peach puree",
+            "75 ML Water",
+            "250 Gram ice"
+          ]
+        },
+        "detailedIngredientsAr": {
+          "12oz": [
+            "60 مل بيوريه",
+            "60 مل ماء",
+            "210 جم ثلج"
+          ],
+          "16oz": [
+            "75 مل بيوريه",
+            "75 مل ماء",
+            "250 جم ثلج"
+          ]
+        },
+        "preparationMethod": "Add all ingredients to the blender. Together.",
+        "preparationMethodAr": "امزج جميع المكونات في الخلاط معًا."
+      },
+      {
+        "id": "raspberry-smoothie",
+        "name": "Raspberry Smoothie",
+        "nameAr": "سموذي التوت",
+        "imageUrl": "/images/recipes/Smothie/Raspberry SMOOTHIE.png",
+        "ingredients": [
+          "Solo Raspberry Purée",
+          "Milk",
+          "Ice"
+        ],
+        "ingredientsAr": [
+          "بيوريه التوت من صولو",
+          "حليب",
+          "ثلج"
+        ],
+        "trending": false,
+        "beverageType": "blended cold",
+        "servedHow": "in a blender",
+        "flavorType": "berry",
+        "glassType": "blender cup",
+        "detailedIngredients": {
+          "12oz": [
+            "60 ML Raspberry puree",
+            "60 ML Water",
+            "210 Gram ice"
+          ],
+          "16oz": [
+            "75 ML Raspberry puree",
+            "75 ML Water",
+            "250 Gram ice"
+          ]
+        },
+        "detailedIngredientsAr": {
+          "12oz": [
+            "60 مل بيوريه",
+            "60 مل ماء",
+            "210 جم ثلج"
+          ],
+          "16oz": [
+            "75 مل بيوريه",
+            "75 مل ماء",
+            "250 جم ثلج"
+          ]
+        },
+        "preparationMethod": "Add all ingredients to the blender. Together.",
+        "preparationMethodAr": "امزج جميع المكونات في الخلاط معًا."
+      },
+      {
+        "id": "strawberry-smoothie",
+        "name": "Strawberry Smoothie",
+        "nameAr": "سموذي الفراولة",
+        "imageUrl": "/images/recipes/Smothie/Strawberry SMOOTHIE.png",
+        "ingredients": [
+          "Solo Strawberry Purée",
+          "Milk",
+          "Ice"
+        ],
+        "ingredientsAr": [
+          "بيوريه الفراولة من صولو",
+          "حليب",
+          "ثلج"
+        ],
+        "trending": true,
+        "beverageType": "blended cold",
+        "servedHow": "in a blender",
+        "flavorType": "berry",
+        "glassType": "blender cup",
+        "detailedIngredients": {
+          "12oz": [
+            "60 ML Strawberry puree",
+            "60 ML Water",
+            "210 Gram ice"
+          ],
+          "16oz": [
+            "75 ML Strawberry puree",
+            "75 ML Water",
+            "250 Gram ice"
+          ]
+        },
+        "detailedIngredientsAr": {
+          "12oz": [
+            "60 مل بيوريه",
+            "60 مل ماء",
+            "210 جم ثلج"
+          ],
+          "16oz": [
+            "75 مل بيوريه",
+            "75 مل ماء",
+            "250 جم ثلج"
+          ]
+        },
+        "preparationMethod": "Add all ingredients to the blender. Together.",
+        "preparationMethodAr": "امزج جميع المكونات في الخلاط معًا."
+      }
+    ],
+    "hot-drinks": [
+      {
+        "id": "hot-matcha",
+        "name": "Hot Matcha",
+        "nameAr": "ماتشا ساخن",
+        "imageUrl": "/images/recipes/Hot Drinks/Hot Matcha.png",
+        "ingredients": [
+          "Solo Matcha Powder",
+          "Hot Milk"
+        ],
+        "ingredientsAr": [
+          "بودرة الماتشا من صولو",
+          "حليب ساخن"
+        ],
+        "trending": false,
+        "beverageType": "hot",
+        "servedHow": "in a mug",
+        "flavorType": "specialty",
+        "glassType": "mug",
+        "detailedIngredients": {
+          "9oz": [
+            "30 gram Matcha powder",
+            "150 ml milk"
+          ],
+          "12oz": [
+            "45 gram Matcha powder",
+            "230 ml milk"
+          ]
+        },
+        "detailedIngredientsAr": {
+          "9oz": [
+            "30 جرام ماتشا باودر",
+            "150 مل حليب"
+          ],
+          "12oz": [
+            "45 جرام ماتشا باودر",
+            "230 مل حليب"
+          ]
+        },
+        "preparationMethod": "Add all ingredients to the Graf. Together.",
+        "preparationMethodAr": "يتم اضافة المكونات الي الكوب"
+      },
+      {
+        "id": "hot-white-chocolate",
+        "name": "Hot White Chocolate",
+        "nameAr": "شوكولاتة بيضاء ساخنة",
+        "imageUrl": "/images/recipes/Hot Drinks/Hot White chocolate.png",
+        "ingredients": [
+          "Solo White Chocolate Powder",
+          "Hot Milk"
+        ],
+        "ingredientsAr": [
+          "بودرة الشوكولاتة البيضاء من صولو",
+          "حليب ساخن"
+        ],
+        "trending": false,
+        "beverageType": "hot",
+        "servedHow": "in a mug",
+        "flavorType": "white chocolate",
+        "glassType": "mug",
+        "detailedIngredients": {
+          "9oz": [
+            "30 ml White chocolate Sauce",
+            "180 ml milk"
+          ],
+          "12oz": [
+            "45 ml White chocolate Sauce",
+            "230 ml milk"
+          ]
+        },
+        "detailedIngredientsAr": {
+          "9oz": [
+            "30 مل صوص شوكولاتة بيضاء",
+            "180 مل حليب"
+          ],
+          "12oz": [
+            "45 مل صوص شوكولاتة بيضاء",
+            "230 مل حليب"
+          ]
+        },
+        "preparationMethod": "Add all ingredients to the Graf. Together.",
+        "preparationMethodAr": "يتم اضافة المكونات الي الكوب"
+      },
+      {
+        "id": "hot-chocolate-jersey",
+        "name": "Hot Chocolate Jersey",
+        "nameAr": "شوكولاتة جيرسي ساخنة",
+        "imageUrl": "/images/recipes/Hot Drinks/Hot chocolate Jersey.png",
+        "ingredients": [
+          "Solo Chocolate Jersey Powder",
+          "Hot Milk"
+        ],
+        "ingredientsAr": [
+          "بودرة شوكولاتة جيرسي من صولو",
+          "حليب ساخن"
+        ],
+        "trending": false,
+        "beverageType": "hot",
+        "servedHow": "in a mug",
+        "flavorType": "chocolate",
+        "glassType": "mug",
+        "detailedIngredients": {
+          "9oz": [
+            "30 gram chocolate powder",
+            "150 ml milk",
+            "15 ML coconut Puree"
+          ],
+          "12oz": [
+            "45 gram chocolate powder",
+            "230 ml milk",
+            "30 ML coconut Puree"
+          ]
+        },
+        "detailedIngredientsAr": {
+          "9oz": [
+            "30 جرام بودرة شوكولاتة",
+            "150 مل حليب",
+            "15 مل بيوريه جوز الهند"
+          ],
+          "12oz": [
+            "45 جرام بودرة شوكولاتة",
+            "230 مل حليب",
+            "30 مل بيوريه جوز الهند"
+          ]
+        },
+        "preparationMethod": "Add all ingredients to the Graf. Together.",
+        "preparationMethodAr": "يتم اضافة المكونات الي الكوب"
+      },
+      {
+        "id": "hot-chocolate-classic",
+        "name": "Hot Chocolate Classic",
+        "nameAr": "شوكولاتة كلاسيك ساخنة",
+        "imageUrl": "/images/recipes/Hot Drinks/Hot chocolate classic.png",
+        "ingredients": [
+          "Solo Classic Chocolate Powder",
+          "Hot Milk"
+        ],
+        "ingredientsAr": [
+          "بودرة الشوكولاتة الكلاسيكية من صولو",
+          "حليب ساخن"
+        ],
+        "trending": true,
+        "beverageType": "hot",
+        "servedHow": "in a mug",
+        "flavorType": "chocolate",
+        "glassType": "mug",
+        "detailedIngredients": {
+          "9oz": [
+            "30 gram chocolate powder",
+            "150 ml milk"
+          ],
+          "12oz": [
+            "45 gram chocolate powder",
+            "230 ml milk"
+          ]
+        },
+        "detailedIngredientsAr": {
+          "9oz": [
+            "30 جرام بودرة شوكولاتة",
+            "150 مل حليب"
+          ],
+          "12oz": [
+            "45 جرام بودرة شوكولاتة",
+            "230 مل حليب"
+          ]
+        },
+        "preparationMethod": "Add all ingredients to the Graf. Together.",
+        "preparationMethodAr": "يتم اضافة المكونات الي الكوب"
+      },
+      {
+        "id": "latte-caramel",
+        "name": "Latte Caramel",
+        "nameAr": "لاتيه كراميل",
+        "imageUrl": "/images/recipes/Hot Drinks/Latte Caramel.png",
+        "ingredients": [
+          "Solo Caramel Syrup",
+          "Espresso",
+          "Steamed Milk"
+        ],
+        "ingredientsAr": [
+          "شراب الكراميل من صولو",
+          "إسبريسو",
+          "حليب مبخر"
+        ],
+        "trending": false,
+        "beverageType": "hot",
+        "servedHow": "in a mug",
+        "flavorType": "caramel",
+        "glassType": "mug",
+        "detailedIngredients": {
+          "9oz": [
+            "30 ml Caramel Sauce",
+            "1 shot Espresso",
+            "150 ml milk"
+          ],
+          "12oz": [
+            "45 ml Caramel Sauce",
+            "2 shot Espresso",
+            "200 ml milk"
+          ]
+        },
+        "detailedIngredientsAr": {
+          "9oz": [
+            "30 مل صوص كراميل",
+            "1 شوت اسبريسو",
+            "150 مل حليب"
+          ],
+          "12oz": [
+            "45 مل صوص كراميل",
+            "2 شوت اسبريسو",
+            "200 مل حليب"
+          ]
+        },
+        "preparationMethod": "Add all ingredients to the Graf. Together.",
+        "preparationMethodAr": "يتم اضافة المكونات الي الكوب"
+      },
+      {
+        "id": "latte-white-chocolate",
+        "name": "Latte White Chocolate",
+        "nameAr": "لاتيه شوكولاتة بيضاء",
+        "imageUrl": "/images/recipes/Hot Drinks/Latte White Chocolate.png",
+        "ingredients": [
+          "Solo White Chocolate Sauce",
+          "Espresso",
+          "Steamed Milk"
+        ],
+        "ingredientsAr": [
+          "صوص الشوكولاتة البيضاء من صولو",
+          "إسبريسو",
+          "حليب مبخر"
+        ],
+        "trending": false,
+        "beverageType": "hot",
+        "servedHow": "in a mug",
+        "flavorType": "white chocolate",
+        "glassType": "mug",
+        "detailedIngredients": {
+          "9oz": [
+            "30 ml White Chocolate Sauce",
+            "1 shot Espresso",
+            "150 ml milk"
+          ],
+          "12oz": [
+            "45 ml White Chocolate Sauce",
+            "2 shot Espresso",
+            "200 ml milk"
+          ]
+        },
+        "detailedIngredientsAr": {
+          "9oz": [
+            "30 مل صوص شوكولاتة بيضاء",
+            "1 شوت اسبريسو",
+            "150 مل حليب"
+          ],
+          "12oz": [
+            "45 مل صوص شوكولاتة بيضاء",
+            "2 شوت اسبريسو",
+            "200 مل حليب"
+          ]
+        },
+        "preparationMethod": "Add all ingredients to the Graf. Together.",
+        "preparationMethodAr": "يتم اضافة المكونات الي الكوب"
+      },
+      {
+        "id": "mocha-latte",
+        "name": "Mocha Latte",
+        "nameAr": "لاتيه موكا",
+        "imageUrl": "/images/recipes/Hot Drinks/Mocha latte.png",
+        "ingredients": [
+          "Solo Chocolate Sauce",
+          "Espresso",
+          "Steamed Milk"
+        ],
+        "ingredientsAr": [
+          "صوص الشوكولاتة من صولو",
+          "إسبريسو",
+          "حليب مبخر"
+        ],
+        "trending": false,
+        "beverageType": "hot",
+        "servedHow": "in a mug",
+        "flavorType": "chocolate",
+        "glassType": "mug",
+        "detailedIngredients": {
+          "9oz": [
+            "30 ml Chocolate Sauce",
+            "1 shot Espresso",
+            "150 ml milk"
+          ],
+          "12oz": [
+            "45 ml Chocolate Sauce",
+            "2 shot Espresso",
+            "200 ml milk"
+          ]
+        },
+        "detailedIngredientsAr": {
+          "9oz": [
+            "30 مل صوص شوكولاتة",
+            "1 شوت اسبريسو",
+            "150 مل حليب"
+          ],
+          "12oz": [
+            "45 مل صوص شوكولاتة",
+            "2 شوت اسبريسو",
+            "200 مل حليب"
+          ]
+        },
+        "preparationMethod": "Add all ingredients to the Graf. Together.",
+        "preparationMethodAr": "يتم اضافة المكونات الي الكوب"
+      },
+      {
+        "id": "sahlab-dulce-de-leche",
+        "name": "Sahlab Dulce de Leche",
+        "nameAr": "سحلب دولسي دي ليتشي",
+        "imageUrl": "/images/recipes/Hot Drinks/Sahlab Dulce de Leche.png",
+        "ingredients": [
+          "Solo Sahlab Powder",
+          "Solo Dulce de Leche Sauce",
+          "Hot Milk"
+        ],
+        "ingredientsAr": [
+          "بودرة السحلب من صولو",
+          "صوص دولسي دي ليتشي من صولو",
+          "حليب ساخن"
+        ],
+        "trending": true,
+        "beverageType": "hot",
+        "servedHow": "in a mug",
+        "flavorType": "specialty",
+        "glassType": "mug",
+        "detailedIngredients": {
+          "9oz": [
+            "30 ml Dulce de Leche",
+            "30 gram Sahlab",
+            "150 ml milk"
+          ],
+          "12oz": [
+            "45 ml Dulce de Leche",
+            "45 gram Sahlab",
+            "200 ml milk"
+          ]
+        },
+        "detailedIngredientsAr": {
+          "9oz": [
+            "30 مل صوص دولسي دي ليتشي",
+            "30 جرام سحلب",
+            "150 مل حليب"
+          ],
+          "12oz": [
+            "45 مل صوص دولسي دي ليتشي",
+            "45 جرام سحلب",
+            "200 مل حليب"
+          ]
+        },
+        "preparationMethod": "Add all ingredients to the Graf. Together.",
+        "preparationMethodAr": "يتم اضافة المكونات الي الكوب"
+      },
+      {
+        "id": "latte-dulce-de-leche",
+        "name": "Latte Dulce de Leche",
+        "nameAr": "لاتيه دولسي دي ليتشي",
+        "imageUrl": "/images/recipes/Hot Drinks/latte Dulce de Leche.png",
+        "ingredients": [
+          "Solo Dulce de Leche Sauce",
+          "Espresso",
+          "Steamed Milk"
+        ],
+        "ingredientsAr": [
+          "صوص دولسي دي ليتشي من صولو",
+          "إسبريسو",
+          "حليب مبخر"
+        ],
+        "trending": false,
+        "beverageType": "hot",
+        "servedHow": "in a mug",
+        "flavorType": "specialty",
+        "glassType": "mug",
+        "detailedIngredients": {
+          "9oz": [
+            "30 ml Dulce de Leche",
+            "1 shot Espresso",
+            "150 ml milk"
+          ],
+          "12oz": [
+            "45 ml Dulce de Leche",
+            "2 shot Espresso",
+            "200 ml milk"
+          ]
+        },
+        "detailedIngredientsAr": {
+          "9oz": [
+            "30 مل صوص دولسي دي ليتشي",
+            "1 شوت اسبريسو",
+            "150 مل حليب"
+          ],
+          "12oz": [
+            "45 مل صوص دولسي دي ليتشي",
+            "2 شوت اسبريسو",
+            "200 مل حليب"
+          ]
+        },
+        "preparationMethod": "Add all ingredients to the Graf. Together.",
+        "preparationMethodAr": "يتم اضافة المكونات الي الكوب"
+      }
+    ],
+    "frappe": [
+      {
+        "id": "blue-raspberry-frappe",
+        "name": "Blue Raspberry Frappe",
+        "nameAr": "فرابيه التوت الأزرق",
+        "imageUrl": "/images/recipes/Frappe/Blue Raspberry Frappe.png",
+        "ingredients": [
+          "Solo Frappe Powder",
+          "Solo Blue Raspberry Syrup",
+          "Milk",
+          "Ice"
+        ],
+        "ingredientsAr": [
+          "بودرة فرابيه من صولو",
+          "شراب التوت الأزرق من صولو",
+          "حليب",
+          "ثلج"
+        ],
+        "trending": true,
+        "beverageType": "blended cold",
+        "servedHow": "in a blender",
+        "flavorType": "berry",
+        "glassType": "blender cup",
+        "detailedIngredients": {
+          "12oz": [
+            "40 gram vanilla powder",
+            "30 ml Blue Raspberry puree",
+            "100 ml milk",
+            "170 Gram ice"
+          ],
+          "16oz": [
+            "50 gram vanilla powder",
+            "30 ml Blue Raspberry puree",
+            "150 ml milk",
+            "200 Gram ice"
+          ]
+        },
+        "detailedIngredientsAr": {
+          "12oz": [
+            "40 جرام بودرة فانيليا",
+            "30 مل بيوريه التوت الأزرق",
+            "100 مل حليب",
+            "170 جرام ثلج"
+          ],
+          "16oz": [
+            "50 جرام بودرة فانيليا",
+            "30 مل بيوريه التوت الأزرق",
+            "150 مل حليب",
+            "200 جرام ثلج"
+          ]
+        },
+        "preparationMethod": "Add all ingredients to the blender. Together.",
+        "preparationMethodAr": "امزج جميع المكونات في الخلاط معًا."
+      },
+      {
+        "id": "blueberry-frappe",
+        "name": "Blueberry Frappe",
+        "nameAr": "فرابيه التوت الأزرق",
+        "imageUrl": "/images/recipes/Frappe/Blueberry Frappe.png",
+        "ingredients": [
+          "Solo Frappe Powder",
+          "Solo Blueberry Syrup",
+          "Milk",
+          "Ice"
+        ],
+        "ingredientsAr": [
+          "بودرة فرابيه من صولو",
+          "شراب التوت الأزرق من صولو",
+          "حليب",
+          "ثلج"
+        ],
+        "trending": false,
+        "beverageType": "blended cold",
+        "servedHow": "in a blender",
+        "flavorType": "berry",
+        "glassType": "blender cup",
+        "detailedIngredients": {
+          "12oz": [
+            "40 gram vanilla powder",
+            "30 ml Blueberry puree",
+            "100 ml milk",
+            "170 Gram ice"
+          ],
+          "16oz": [
+            "50 gram vanilla powder",
+            "30 ml Blueberry puree",
+            "150 ml milk",
+            "200 Gram ice"
+          ]
+        },
+        "detailedIngredientsAr": {
+          "12oz": [
+            "40 جرام بودرة فانيليا",
+            "30 مل بيوريه التوت الأزرق",
+            "100 مل حليب",
+            "170 جرام ثلج"
+          ],
+          "16oz": [
+            "50 جرام بودرة فانيليا",
+            "30 مل بيوريه التوت الأزرق",
+            "150 مل حليب",
+            "200 جرام ثلج"
+          ]
+        },
+        "preparationMethod": "Add all ingredients to the blender. Together.",
+        "preparationMethodAr": "امزج جميع المكونات في الخلاط معًا."
+      },
+      {
+        "id": "cherry-frappe",
+        "name": "Cherry Frappe",
+        "nameAr": "فرابيه الكرز",
+        "imageUrl": "/images/recipes/Frappe/Cherry Frappe.png",
+        "ingredients": [
+          "Solo Frappe Powder",
+          "Solo Cherry Syrup",
+          "Milk",
+          "Ice"
+        ],
+        "ingredientsAr": [
+          "بودرة فرابيه من صولو",
+          "شراب الكرز من صولو",
+          "حليب",
+          "ثلج"
+        ],
+        "trending": false,
+        "beverageType": "blended cold",
+        "servedHow": "in a blender",
+        "flavorType": "berry",
+        "glassType": "blender cup",
+        "detailedIngredients": {
+          "12oz": [
+            "40 gram vanilla powder",
+            "30 ml Cherry puree",
+            "100 ml milk",
+            "170 Gram ice"
+          ],
+          "16oz": [
+            "50 gram vanilla powder",
+            "30 ml Cherry puree",
+            "150 ml milk",
+            "200 Gram ice"
+          ]
+        },
+        "detailedIngredientsAr": {
+          "12oz": [
+            "40 جرام بودرة فانيليا",
+            "30 مل بيوريه الكرز",
+            "100 مل حليب",
+            "170 جرام ثلج"
+          ],
+          "16oz": [
+            "50 جرام بودرة فانيليا",
+            "30 مل بيوريه الكرز",
+            "150 مل حليب",
+            "200 جرام ثلج"
+          ]
+        },
+        "preparationMethod": "Add all ingredients to the blender. Together.",
+        "preparationMethodAr": "امزج جميع المكونات في الخلاط معًا."
+      },
+      {
+        "id": "dulce-de-leche-frappe",
+        "name": "Dulce de Leche Frappe",
+        "nameAr": "فرابيه دولسي دي ليتشي",
+        "imageUrl": "/images/recipes/Frappe/Dulce de Leche frappe.png",
+        "ingredients": [
+          "Solo Frappe Powder",
+          "Solo Dulce de Leche Sauce",
+          "Milk",
+          "Ice"
+        ],
+        "ingredientsAr": [
+          "بودرة فرابيه من صولو",
+          "صوص دولسي دي ليتشي من صولو",
+          "حليب",
+          "ثلج"
+        ],
+        "trending": true,
+        "beverageType": "blended cold",
+        "servedHow": "in a blender",
+        "flavorType": "specialty",
+        "glassType": "blender cup",
+        "detailedIngredients": {
+          "12oz": [
+            "30 gram vanilla powder",
+            "30 ml Dulce de Leche",
+            "100 ml milk",
+            "170 Gram ice"
+          ],
+          "16oz": [
+            "50 gram vanilla powder",
+            "30 ml Dulce de Leche",
+            "150 ml milk",
+            "200 Gram ice"
+          ]
+        },
+        "detailedIngredientsAr": {
+          "12oz": [
+            "30 جرام بودرة فانيليا",
+            "30 مل دولسي دي ليتشي",
+            "100 مل حليب",
+            "170 جرام ثلج"
+          ],
+          "16oz": [
+            "50 جرام بودرة فانيليا",
+            "30 مل دولسي دي ليتشي",
+            "150 مل حليب",
+            "200 جرام ثلج"
+          ]
+        },
+        "preparationMethod": "Add all ingredients to the blender. Together.",
+        "preparationMethodAr": "امزج جميع المكونات في الخلاط معًا."
+      },
+      {
+        "id": "frappuccino-caramel",
+        "name": "Frappuccino Caramel",
+        "nameAr": "فرابوتشينو كراميل",
+        "imageUrl": "/images/recipes/Frappe/Frappuccino Caramel.png",
+        "ingredients": [
+          "Solo Frappe Powder",
+          "Espresso",
+          "Solo Caramel Sauce",
+          "Milk",
+          "Ice"
+        ],
+        "ingredientsAr": [
+          "بودرة فرابيه من صولو",
+          "إسبريسو",
+          "صوص الكراميل من صولو",
+          "حليب",
+          "ثلج"
+        ],
+        "trending": false,
+        "beverageType": "blended cold",
+        "servedHow": "in a blender",
+        "flavorType": "caramel",
+        "glassType": "blender cup",
+        "detailedIngredients": {
+          "12oz": [
+            "30 gram coffee powder",
+            "30 ml Caramel Sauce",
+            "100 ml milk",
+            "170 Gram ice"
+          ],
+          "16oz": [
+            "60 gram coffee powder",
+            "45 ml Caramel Sauce",
+            "180 ml milk",
+            "200 Gram ice"
+          ]
+        },
+        "detailedIngredientsAr": {
+          "12oz": [
+            "30 جرام بودرة قهوة",
+            "30 مل صوص كراميل",
+            "100 مل حليب",
+            "170 جرام ثلج"
+          ],
+          "16oz": [
+            "60 جرام بودرة قهوة",
+            "45 مل صوص كراميل",
+            "180 مل حليب",
+            "200 جرام ثلج"
+          ]
+        },
+        "preparationMethod": "Add all ingredients to the blender. Together.",
+        "preparationMethodAr": "امزج جميع المكونات في الخلاط معًا."
+      },
+      {
+        "id": "frappuccino-classic",
+        "name": "Frappuccino Classic",
+        "nameAr": "فرابوتشينو كلاسيك",
+        "imageUrl": "/images/recipes/Frappe/Frappuccino Classic.png",
+        "ingredients": [
+          "Solo Frappe Powder",
+          "Espresso",
+          "Milk",
+          "Ice"
+        ],
+        "ingredientsAr": [
+          "بودرة فرابيه من صولو",
+          "إسبريسو",
+          "حليب",
+          "ثلج"
+        ],
+        "trending": true,
+        "beverageType": "blended cold",
+        "servedHow": "in a blender",
+        "flavorType": "coffee",
+        "glassType": "blender cup",
+        "detailedIngredients": {
+          "12oz": [
+            "50 gram vanilla powder",
+            "100 ml milk",
+            "170 Gram ice"
+          ],
+          "16oz": [
+            "75 gram vanilla powder",
+            "150 ml milk",
+            "200 Gram ice"
+          ]
+        },
+        "detailedIngredientsAr": {
+          "12oz": [
+            "50 جرام بودرة فانيليا",
+            "100 مل حليب",
+            "170 جرام ثلج"
+          ],
+          "16oz": [
+            "75 جرام بودرة فانيليا",
+            "150 مل حليب",
+            "200 جرام ثلج"
+          ]
+        },
+        "preparationMethod": "Add all ingredients to the blender. Together.",
+        "preparationMethodAr": "امزج جميع المكونات في الخلاط معًا."
+      },
+      {
+        "id": "frappuccino-dulce-de-leche",
+        "name": "Frappuccino Dulce de Leche",
+        "nameAr": "فرابوتشينو دولسي دي ليتشي",
+        "imageUrl": "/images/recipes/Frappe/Frappuccino Dulce de Leche.png",
+        "ingredients": [
+          "Solo Frappe Powder",
+          "Espresso",
+          "Solo Dulce de Leche Sauce",
+          "Milk",
+          "Ice"
+        ],
+        "ingredientsAr": [
+          "بودرة فرابيه من صولو",
+          "إسبريسو",
+          "صوص دولسي دي ليتشي من صولو",
+          "حليب",
+          "ثلج"
+        ],
+        "trending": false,
+        "beverageType": "blended cold",
+        "servedHow": "in a blender",
+        "flavorType": "specialty",
+        "glassType": "blender cup",
+        "detailedIngredients": {
+          "12oz": [
+            "30 gram coffee powder",
+            "30 ml Dulce de Leche",
+            "100 ml milk",
+            "170 Gram ice"
+          ],
+          "16oz": [
+            "60 gram coffee powder",
+            "45 ml Dulce de Leche",
+            "180 ml milk",
+            "200 Gram ice"
+          ]
+        },
+        "detailedIngredientsAr": {
+          "12oz": [
+            "30 جرام بودرة قهوة",
+            "30 مل دولسي دي ليتشي",
+            "100 مل حليب",
+            "170 جرام ثلج"
+          ],
+          "16oz": [
+            "60 جرام بودرة قهوة",
+            "45 مل دولسي دي ليتشي",
+            "180 مل حليب",
+            "200 جرام ثلج"
+          ]
+        },
+        "preparationMethod": "Add all ingredients to the blender. Together.",
+        "preparationMethodAr": "امزج جميع المكونات في الخلاط معًا."
+      },
+      {
+        "id": "frappuccino-white-chocolate",
+        "name": "Frappuccino White Chocolate",
+        "nameAr": "فرابوتشينو شوكولاتة بيضاء",
+        "imageUrl": "/images/recipes/Frappe/Frappuccino White Chocolate.png",
+        "ingredients": [
+          "Solo Frappe Powder",
+          "Espresso",
+          "Solo White Chocolate Sauce",
+          "Milk",
+          "Ice"
+        ],
+        "ingredientsAr": [
+          "بودرة فرابيه من صولو",
+          "إسبريسو",
+          "صوص الشوكولاتة البيضاء من صولو",
+          "حليب",
+          "ثلج"
+        ],
+        "trending": false,
+        "beverageType": "blended cold",
+        "servedHow": "in a blender",
+        "flavorType": "white chocolate",
+        "glassType": "blender cup",
+        "detailedIngredients": {
+          "12oz": [
+            "30 gram coffee powder",
+            "30 ml White Chocolate Sauce",
+            "100 ml milk",
+            "170 Gram ice"
+          ],
+          "16oz": [
+            "60 gram coffee powder",
+            "45 ml White Chocolate Sauce",
+            "180 ml milk",
+            "200 Gram ice"
+          ]
+        },
+        "detailedIngredientsAr": {
+          "12oz": [
+            "30 جرام بودرة قهوة",
+            "30 مل صوص شوكولاتة بيضاء",
+            "100 مل حليب",
+            "170 جرام ثلج"
+          ],
+          "16oz": [
+            "60 جرام بودرة قهوة",
+            "45 مل صوص شوكولاتة بيضاء",
+            "180 مل حليب",
+            "200 جرام ثلج"
+          ]
+        },
+        "preparationMethod": "Add all ingredients to the blender. Together.",
+        "preparationMethodAr": "امزج جميع المكونات في الخلاط معًا."
+      },
+      {
+        "id": "frappuccino-mocha",
+        "name": "Frappuccino Mocha",
+        "nameAr": "فرابوتشينو موكا",
+        "imageUrl": "/images/recipes/Frappe/Frappuccino mocha.png",
+        "ingredients": [
+          "Solo Frappe Powder",
+          "Espresso",
+          "Solo Chocolate Sauce",
+          "Milk",
+          "Ice"
+        ],
+        "ingredientsAr": [
+          "بودرة فرابيه من صولو",
+          "إسبريسو",
+          "صوص الشوكولاتة من صولو",
+          "حليب",
+          "ثلج"
+        ],
+        "trending": false,
+        "beverageType": "blended cold",
+        "servedHow": "in a blender",
+        "flavorType": "chocolate",
+        "glassType": "blender cup",
+        "detailedIngredients": {
+          "12oz": [
+            "30 gram coffee powder",
+            "30 ml Chocolate Sauce",
+            "100 ml milk",
+            "170 Gram ice"
+          ],
+          "16oz": [
+            "60 gram coffee powder",
+            "45 ml Chocolate Sauce",
+            "180 ml milk",
+            "200 Gram ice"
+          ]
+        },
+        "detailedIngredientsAr": {
+          "12oz": [
+            "30 جرام بودرة قهوة",
+            "30 مل صوص شوكولاتة",
+            "100 مل حليب",
+            "170 جرام ثلج"
+          ],
+          "16oz": [
+            "60 جرام بودرة قهوة",
+            "45 مل صوص شوكولاتة",
+            "180 مل حليب",
+            "200 جرام ثلج"
+          ]
+        },
+        "preparationMethod": "Add all ingredients to the blender. Together.",
+        "preparationMethodAr": "امزج جميع المكونات في الخلاط معًا."
+      },
+      {
+        "id": "ice-chocolate",
+        "name": "Ice Chocolate",
+        "nameAr": "شوكولاتة مثلجة",
+        "imageUrl": "/images/recipes/Frappe/Ice Chocolate.png",
+        "ingredients": [
+          "Solo Chocolate Powder",
+          "Milk",
+          "Ice"
+        ],
+        "ingredientsAr": [
+          "بودرة الشوكولاتة من صولو",
+          "حليب",
+          "ثلج"
+        ],
+        "trending": false,
+        "beverageType": "blended cold",
+        "servedHow": "in a blender",
+        "flavorType": "chocolate",
+        "glassType": "blender cup",
+        "detailedIngredients": {
+          "12oz": [
+            "50 gram Chocolate powder",
+            "100 ml milk",
+            "170 Gram ice"
+          ],
+          "16oz": [
+            "75 gram Chocolate powder",
+            "180 ml milk",
+            "230 Gram ice"
+          ]
+        },
+        "detailedIngredientsAr": {
+          "12oz": [
+            "50 جرام بودرة شوكولاتة",
+            "100 مل حليب",
+            "170 جرام ثلج"
+          ],
+          "16oz": [
+            "75 جرام بودرة شوكولاتة",
+            "180 مل حليب",
+            "230 جرام ثلج"
+          ]
+        },
+        "preparationMethod": "Add all ingredients to the blender. Together.",
+        "preparationMethodAr": "امزج جميع المكونات في الخلاط معًا."
+      }
+    ],
+    "cocktail": [
+      {
+        "id": "black-berry",
+        "name": "Black Berry",
+        "nameAr": "بلاك بيري",
+        "imageUrl": "/images/recipes/Cocktail/Black berry.png",
+        "ingredients": [
+          "Solo Black Berry Syrup",
+          "Soda Water",
+          "Ice"
+        ],
+        "ingredientsAr": [
+          "شراب بلاك بيري من صولو",
+          "مياه غازية",
+          "ثلج"
+        ],
+        "trending": false,
+        "beverageType": "cold mixed",
+        "servedHow": "in a cup with ice",
+        "flavorType": "berry",
+        "glassType": "highball glass",
+        "detailedIngredients": {
+          "12oz": [
+            "30 ml Black berry syrup",
+            "Full Cup Ice",
+            "Soda or 7Up"
+          ],
+          "16oz": [
+            "50 ml Black berry syrup",
+            "Full Cup Ice",
+            "Soda or 7Up"
+          ]
+        },
+        "detailedIngredientsAr": {
+          "12oz": [
+            "30 مل سيراب بلاك بيري",
+            "كوب ثلج",
+            "صودا او 7up"
+          ],
+          "16oz": [
+            "50 مل سيراب بلاك بيري",
+            "كوب ثلج",
+            "صودا او 7up"
+          ]
+        },
+        "preparationMethod": "Add all ingredients to the cup. Together.",
+        "preparationMethodAr": "يتم اضافة المكونات الي الكوب"
+      },
+      {
+        "id": "blue-curacao",
+        "name": "Blue Curacao",
+        "nameAr": "بلو كوراساو",
+        "imageUrl": "/images/recipes/Cocktail/Blue Curacao.png",
+        "ingredients": [
+          "Solo Blue Curacao Syrup",
+          "Lemon Juice",
+          "Soda Water",
+          "Ice"
+        ],
+        "ingredientsAr": [
+          "شراب بلو كوراساو من صولو",
+          "عصير ليمون",
+          "مياه غازية",
+          "ثلج"
+        ],
+        "trending": true,
+        "beverageType": "cold mixed",
+        "servedHow": "in a cup with ice",
+        "flavorType": "tropical",
+        "glassType": "highball glass",
+        "detailedIngredients": {
+          "12oz": [
+            "30 ml Blue Curacao syrup",
+            "Full Cup Ice",
+            "Soda or 7Up"
+          ],
+          "16oz": [
+            "50 ml Blue Curacao syrup",
+            "Full Cup Ice",
+            "Soda or 7Up"
+          ]
+        },
+        "detailedIngredientsAr": {
+          "12oz": [
+            "30 مل سيراب بلو كوراساو",
+            "كوب ثلج",
+            "صودا او 7up"
+          ],
+          "16oz": [
+            "50 مل سيراب بلو كوراساو",
+            "كوب ثلج",
+            "صودا او 7up"
+          ]
+        },
+        "preparationMethod": "Add all ingredients to the cup. Together.",
+        "preparationMethodAr": "يتم اضافة المكونات الي الكوب"
+      },
+      {
+        "id": "blueberry",
+        "name": "Blueberry",
+        "nameAr": "بلوبيري",
+        "imageUrl": "/images/recipes/Cocktail/Blueberry.png",
+        "ingredients": [
+          "Solo Blueberry Syrup",
+          "Lemon Juice",
+          "Soda Water",
+          "Ice"
+        ],
+        "ingredientsAr": [
+          "شراب بلوبيري من صولو",
+          "عصير ليمون",
+          "مياه غازية",
+          "ثلج"
+        ],
+        "trending": false,
+        "beverageType": "cold mixed",
+        "servedHow": "in a cup with ice",
+        "flavorType": "berry",
+        "glassType": "highball glass",
+        "detailedIngredients": {
+          "12oz": [
+            "30 ml Blueberry syrup",
+            "Full Cup Ice",
+            "Soda or 7Up"
+          ],
+          "16oz": [
+            "50 ml Blueberry syrup",
+            "Full Cup Ice",
+            "Soda or 7Up"
+          ]
+        },
+        "detailedIngredientsAr": {
+          "12oz": [
+            "30 مل سيراب بلوبيري",
+            "كوب ثلج",
+            "صودا او 7up"
+          ],
+          "16oz": [
+            "50 مل سيراب بلوبيري",
+            "كوب ثلج",
+            "صودا او 7up"
+          ]
+        },
+        "preparationMethod": "Add all ingredients to the cup. Together.",
+        "preparationMethodAr": "يتم اضافة المكونات الي الكوب"
+      },
+      {
+        "id": "cherry",
+        "name": "Cherry",
+        "nameAr": "كرز",
+        "imageUrl": "/images/recipes/Cocktail/Cherry.png",
+        "ingredients": [
+          "Solo Cherry Syrup",
+          "Lemon Juice",
+          "Soda Water",
+          "Ice"
+        ],
+        "ingredientsAr": [
+          "شراب الكرز من صولو",
+          "عصير ليمون",
+          "مياه غازية",
+          "ثلج"
+        ],
+        "trending": false,
+        "beverageType": "cold mixed",
+        "servedHow": "in a cup with ice",
+        "flavorType": "berry",
+        "glassType": "highball glass",
+        "detailedIngredients": {
+          "12oz": [
+            "30 ml Cherry syrup",
+            "Full Cup Ice",
+            "Soda or 7Up"
+          ],
+          "16oz": [
+            "50 ml Cherry syrup",
+            "Full Cup Ice",
+            "Soda or 7Up"
+          ]
+        },
+        "detailedIngredientsAr": {
+          "12oz": [
+            "30 مل سيراب كرز",
+            "كوب ثلج",
+            "صودا او 7up"
+          ],
+          "16oz": [
+            "50 مل سيراب كرز",
+            "كوب ثلج",
+            "صودا او 7up"
+          ]
+        },
+        "preparationMethod": "Add all ingredients to the cup. Together.",
+        "preparationMethodAr": "يتم اضافة المكونات الي الكوب"
+      },
+      {
+        "id": "energy",
+        "name": "Energy",
+        "nameAr": "طاقة",
+        "imageUrl": "/images/recipes/Cocktail/Energy.png",
+        "ingredients": [
+          "Solo Energy Syrup",
+          "Soda Water",
+          "Ice"
+        ],
+        "ingredientsAr": [
+          "شراب الطاقة من صولو",
+          "مياه غازية",
+          "ثلج"
+        ],
+        "trending": false,
+        "beverageType": "cold mixed",
+        "servedHow": "in a cup with ice",
+        "flavorType": "specialty",
+        "glassType": "highball glass",
+        "detailedIngredients": {
+          "12oz": [
+            "30 ml Energy syrup",
+            "Full Cup Ice",
+            "Soda or 7Up",
+            "Optional: Can add flavour 10 ml (watermelon, mojito, passion, blackberry, strawberry, blue curacao)"
+          ],
+          "16oz": [
+            "30 ml Energy syrup",
+            "Full Cup Ice",
+            "Soda or 7Up",
+            "Optional: Can add flavour 20 ml (watermelon, mojito, passion, blackberry, strawberry, blue curacao)"
+          ]
+        },
+        "detailedIngredientsAr": {
+          "12oz": [
+            "30 مل سيراب انرجي",
+            "كوب ثلج",
+            "صودا او 7up",
+            "يمكن اضافة 10 مل (سيراب بطيخ - موهيتو- باشون- توت اسود - فراولة - بلو كرواساو)"
+          ],
+          "16oz": [
+            "30 مل سيراب انرجي",
+            "كوب ثلج",
+            "صودا او 7up",
+            "يمكن اضافة 20 مل (سيراب بطيخ - موهيتو- باشون- توت اسود - فراولة - بلو كرواساو)"
+          ]
+        },
+        "preparationMethod": "Add all ingredients to the cup. Together.",
+        "preparationMethodAr": "يتم اضافة المكونات الي الكوب"
+      },
+      {
+        "id": "ice-tea",
+        "name": "Ice Tea",
+        "nameAr": "شاي مثلج",
+        "imageUrl": "/images/recipes/Cocktail/Ice Tea.png",
+        "ingredients": [
+          "Solo Ice Tea Syrup",
+          "Cold Water",
+          "Ice"
+        ],
+        "ingredientsAr": [
+          "شراب الشاي المثلج من صولو",
+          "ماء بارد",
+          "ثلج"
+        ],
+        "trending": false,
+        "beverageType": "cold mixed",
+        "servedHow": "in a cup with ice",
+        "flavorType": "tea/herbal",
+        "glassType": "highball glass",
+        "detailedIngredients": {
+          "12oz": [
+            "30 ml Ice Tea syrup",
+            "120 ml water",
+            "Full Cup Ice",
+            "Optional: Can add flavour 10 ml (lemon, raspberry, peach, passion)"
+          ],
+          "16oz": [
+            "50 ml Ice Tea syrup",
+            "150 ml water",
+            "Full Cup Ice",
+            "Optional: Can add flavour 20 ml (lemon, raspberry, peach, passion)"
+          ]
+        },
+        "detailedIngredientsAr": {
+          "12oz": [
+            "30 مل سيراب ايس تي",
+            "120 مل مياه",
+            "كوب ثلج",
+            "يمكن اضافة 10 مل (سيراب ليمون - توت احمر - خوخ - باشون)"
+          ],
+          "16oz": [
+            "50 مل سيراب انرجي",
+            "150 مل مياه",
+            "كوب ثلج",
+            "يمكن اضافة 10 مل (سيراب ليمون - توت احمر - خوخ - باشون)"
+          ]
+        },
+        "preparationMethod": "Add all ingredients to the cup. Together.",
+        "preparationMethodAr": "يتم اضافة المكونات الي الكوب"
+      },
+      {
+        "id": "mojito-classic",
+        "name": "Mojito Classic",
+        "nameAr": "موهيتو كلاسيك",
+        "imageUrl": "/images/recipes/Cocktail/Mojito Classic.png",
+        "ingredients": [
+          "Solo Mojito Syrup",
+          "Lemon Juice",
+          "Mint Leaves",
+          "Soda Water",
+          "Ice"
+        ],
+        "ingredientsAr": [
+          "شراب موهيتو من صولو",
+          "عصير ليمون",
+          "أوراق نعناع",
+          "مياه غازية",
+          "ثلج"
+        ],
+        "trending": true,
+        "beverageType": "cold mixed",
+        "servedHow": "in a cup with ice",
+        "flavorType": "specialty",
+        "glassType": "highball glass",
+        "detailedIngredients": {
+          "12oz": [
+            "30 ml Mojito syrup",
+            "Full Cup Ice",
+            "Soda or 7Up",
+            "Optional: Can add flavour 10 ml (watermelon, passion, blackberry, strawberry, blue curacao, cherry)"
+          ],
+          "16oz": [
+            "50 ml Mojito syrup",
+            "Full Cup Ice",
+            "Soda or 7Up",
+            "Optional: Can add flavour 20 ml (watermelon, passion, blackberry, strawberry, blue curacao, cherry)"
+          ]
+        },
+        "detailedIngredientsAr": {
+          "12oz": [
+            "30 مل سيراب موهيتو",
+            "كوب ثلج",
+            "صودا او 7up",
+            "يمكن اضافة 10 مل (سيراب بطيخ - باشون- توت اسود - فراولة - بلو كرواساو - كريز)"
+          ],
+          "16oz": [
+            "50 مل سيراب موهيتو",
+            "كوب ثلج",
+            "صودا او 7up",
+            "يمكن اضافة 20 مل (سيراب بطيخ - باشون- توت اسود - فراولة - بلو كرواساو - كريز)"
+          ]
+        },
+        "preparationMethod": "Add all ingredients to the cup. Together.",
+        "preparationMethodAr": "يتم اضافة المكونات الي الكوب"
+      },
+      {
+        "id": "passion",
+        "name": "Passion",
+        "nameAr": "باشن",
+        "imageUrl": "/images/recipes/Cocktail/Passion.png",
+        "ingredients": [
+          "Solo Passion Fruit Syrup",
+          "Lemon Juice",
+          "Soda Water",
+          "Ice"
+        ],
+        "ingredientsAr": [
+          "شراب الباشن فروت من صولو",
+          "عصير ليمون",
+          "مياه غازية",
+          "ثلج"
+        ],
+        "trending": false,
+        "beverageType": "cold mixed",
+        "servedHow": "in a cup with ice",
+        "flavorType": "tropical",
+        "glassType": "highball glass",
+        "detailedIngredients": {
+          "12oz": [
+            "30 ml Passion syrup",
+            "Full Cup Ice",
+            "Soda or 7Up"
+          ],
+          "16oz": [
+            "50 ml Passion syrup",
+            "Full Cup Ice",
+            "Soda or 7Up"
+          ]
+        },
+        "detailedIngredientsAr": {
+          "12oz": [
+            "30 مل سيراب باشون",
+            "كوب ثلج",
+            "صودا او 7up"
+          ],
+          "16oz": [
+            "50 مل سيراب باشون",
+            "كوب ثلج",
+            "صودا او 7up"
+          ]
+        },
+        "preparationMethod": "Add all ingredients to the cup. Together.",
+        "preparationMethodAr": "يتم اضافة المكونات الي الكوب"
+      },
+      {
+        "id": "peach",
+        "name": "Peach",
+        "nameAr": "خوخ",
+        "imageUrl": "/images/recipes/Cocktail/Peach.png",
+        "ingredients": [
+          "Solo Peach Syrup",
+          "Lemon Juice",
+          "Soda Water",
+          "Ice"
+        ],
+        "ingredientsAr": [
+          "شراب الخوخ من صولو",
+          "عصير ليمون",
+          "مياه غازية",
+          "ثلج"
+        ],
+        "trending": false,
+        "beverageType": "cold mixed",
+        "servedHow": "in a cup with ice",
+        "flavorType": "tropical",
+        "glassType": "highball glass",
+        "detailedIngredients": {
+          "12oz": [
+            "30 ml Peach syrup",
+            "Full Cup Ice",
+            "Soda or 7Up"
+          ],
+          "16oz": [
+            "50 ml Peach syrup",
+            "Full Cup Ice",
+            "Soda or 7Up"
+          ]
+        },
+        "detailedIngredientsAr": {
+          "12oz": [
+            "30 مل سيراب خوخ",
+            "كوب ثلج",
+            "صودا او 7up"
+          ],
+          "16oz": [
+            "50 مل سيراب خوخ",
+            "كوب ثلج",
+            "صودا او 7up"
+          ]
+        },
+        "preparationMethod": "Add all ingredients to the cup. Together.",
+        "preparationMethodAr": "يتم اضافة المكونات الي الكوب"
+      },
+      {
+        "id": "pomegranate",
+        "name": "Pomegranate",
+        "nameAr": "رمان",
+        "imageUrl": "/images/recipes/Cocktail/Pomegranate.png",
+        "ingredients": [
+          "Solo Pomegranate Syrup",
+          "Lemon Juice",
+          "Soda Water",
+          "Ice"
+        ],
+        "ingredientsAr": [
+          "شراب الرمان من صولو",
+          "عصير ليمون",
+          "مياه غازية",
+          "ثلج"
+        ],
+        "trending": false,
+        "beverageType": "cold mixed",
+        "servedHow": "in a cup with ice",
+        "flavorType": "berry",
+        "glassType": "highball glass",
+        "detailedIngredients": {
+          "12oz": [
+            "30 ml Pomegranate syrup",
+            "Full Cup Ice",
+            "Soda or 7Up"
+          ],
+          "16oz": [
+            "50 ml Pomegranate syrup",
+            "Full Cup Ice",
+            "Soda or 7Up"
+          ]
+        },
+        "detailedIngredientsAr": {
+          "12oz": [
+            "30 مل سيراب رمان",
+            "كوب ثلج",
+            "صودا او 7up"
+          ],
+          "16oz": [
+            "50 مل سيراب رمان",
+            "كوب ثلج",
+            "صودا او 7up"
+          ]
+        },
+        "preparationMethod": "Add all ingredients to the cup. Together.",
+        "preparationMethodAr": "يتم اضافة المكونات الي الكوب"
+      },
+      {
+        "id": "raspberry",
+        "name": "Raspberry",
+        "nameAr": "توت",
+        "imageUrl": "/images/recipes/Cocktail/Raspberry.png",
+        "ingredients": [
+          "Solo Raspberry Syrup",
+          "Lemon Juice",
+          "Soda Water",
+          "Ice"
+        ],
+        "ingredientsAr": [
+          "شراب التوت من صولو",
+          "عصير ليمون",
+          "مياه غازية",
+          "ثلج"
+        ],
+        "trending": false,
+        "beverageType": "cold mixed",
+        "servedHow": "in a cup with ice",
+        "flavorType": "berry",
+        "glassType": "highball glass",
+        "detailedIngredients": {
+          "12oz": [
+            "30 ml Raspberry syrup",
+            "Full Cup Ice",
+            "Soda or 7Up"
+          ],
+          "16oz": [
+            "50 ml Raspberry syrup",
+            "Full Cup Ice",
+            "Soda or 7Up"
+          ]
+        },
+        "detailedIngredientsAr": {
+          "12oz": [
+            "30 مل سيراب توت",
+            "كوب ثلج",
+            "صودا او 7up"
+          ],
+          "16oz": [
+            "50 مل سيراب توت",
+            "كوب ثلج",
+            "صودا او 7up"
+          ]
+        },
+        "preparationMethod": "Add all ingredients to the cup. Together.",
+        "preparationMethodAr": "يتم اضافة المكونات الي الكوب"
+      },
+      {
+        "id": "strawberry",
+        "name": "Strawberry",
+        "nameAr": "فراولة",
+        "imageUrl": "/images/recipes/Cocktail/Strawberry.png",
+        "ingredients": [
+          "Solo Strawberry Syrup",
+          "Lemon Juice",
+          "Soda Water",
+          "Ice"
+        ],
+        "ingredientsAr": [
+          "شراب الفراولة من صولو",
+          "عصير ليمون",
+          "مياه غازية",
+          "ثلج"
+        ],
+        "trending": false,
+        "beverageType": "cold mixed",
+        "servedHow": "in a cup with ice",
+        "flavorType": "berry",
+        "glassType": "highball glass",
+        "detailedIngredients": {
+          "12oz": [
+            "30 ml Strawberry syrup",
+            "Full Cup Ice",
+            "Soda or 7Up"
+          ],
+          "16oz": [
+            "50 ml Strawberry syrup",
+            "Full Cup Ice",
+            "Soda or 7Up"
+          ]
+        },
+        "detailedIngredientsAr": {
+          "12oz": [
+            "30 مل سيراب فراولة",
+            "كوب ثلج",
+            "صودا او 7up"
+          ],
+          "16oz": [
+            "50 مل سيراب فراولة",
+            "كوب ثلج",
+            "صودا او 7up"
+          ]
+        },
+        "preparationMethod": "Add all ingredients to the cup. Together.",
+        "preparationMethodAr": "يتم اضافة المكونات الي الكوب"
+      },
+      {
+        "id": "watermelon",
+        "name": "Watermelon",
+        "nameAr": "بطيخ",
+        "imageUrl": "/images/recipes/Cocktail/Watermelon.png",
+        "ingredients": [
+          "Solo Watermelon Syrup",
+          "Lemon Juice",
+          "Soda Water",
+          "Ice"
+        ],
+        "ingredientsAr": [
+          "شراب البطيخ من صولو",
+          "عصير ليمون",
+          "مياه غازية",
+          "ثلج"
+        ],
+        "trending": false,
+        "beverageType": "cold mixed",
+        "servedHow": "in a cup with ice",
+        "flavorType": "tropical",
+        "glassType": "highball glass",
+        "detailedIngredients": {
+          "12oz": [
+            "30 ml Watermelon syrup",
+            "Full Cup Ice",
+            "Soda or 7Up"
+          ],
+          "16oz": [
+            "50 ml Watermelon syrup",
+            "Full Cup Ice",
+            "Soda or 7Up"
+          ]
+        },
+        "detailedIngredientsAr": {
+          "12oz": [
+            "30 مل سيراب بطيخ",
+            "كوب ثلج",
+            "صودا او 7up"
+          ],
+          "16oz": [
+            "50 مل سيراب بطيخ",
+            "كوب ثلج",
+            "صودا او 7up"
+          ]
+        },
+        "preparationMethod": "Add all ingredients to the cup. Together.",
+        "preparationMethodAr": "يتم اضافة المكونات الي الكوب"
+      }
+    ]
+  },
+  "trendyRecipes": [
+    {
+      "id": "strawberry-smoothie",
+      "category": "smoothie",
+      "name": "Strawberry Smoothie",
+      "nameAr": "سموذي الفراولة",
+      "imageUrl": "/images/recipes/Smothie/Strawberry SMOOTHIE.png"
+    },
+    {
+      "id": "blue-raspberry-frappe",
+      "category": "frappe",
+      "name": "Blue Raspberry Frappe",
+      "nameAr": "فرابيه التوت الأزرق",
+      "imageUrl": "/images/recipes/Frappe/Blue Raspberry Frappe.png"
+    },
+    {
+      "id": "mojito-classic",
+      "category": "cocktail",
+      "name": "Mojito Classic",
+      "nameAr": "موهيتو كلاسيك",
+      "imageUrl": "/images/recipes/Cocktail/Mojito Classic.png"
+    },
+    {
+      "id": "hot-chocolate-classic",
+      "category": "hot-drinks",
+      "name": "Hot Chocolate Classic",
+      "nameAr": "شوكولاتة كلاسيك ساخنة",
+      "imageUrl": "/images/recipes/Hot Drinks/Hot chocolate classic.png"
+    }
+  ]
+}
