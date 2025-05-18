@@ -274,5 +274,46 @@
       "highballGlass": "كوب طويل",
       "reset": "إستعادة"
     }
+  },
+  "contact": {
+    "background_alt": "خلفية صفحة الاتصال",
+    "product_image_alt": "منتجات صلصة سولو",
+    "form_header": "تواصل معنا",
+    "success": {
+      "message": "تم إرسال رسالتك بنجاح. سنرد عليك قريبًا.",
+      "thanks": "شكراً",
+      "icon_alt": "تم إرسال الرسالة بنجاح",
+      "title": "لقد استلمنا طلبك",
+      "description": "سنتواصل معك في أقرب وقت ممكن. شكراً لك."
+    },
+    "error": {
+      "required_fields": "يرجى ملء جميع الحقول المطلوبة",
+      "submission": "حدث خطأ أثناء إرسال رسالتك. يرجى المحاولة مرة أخرى."
+    },
+    "form": {
+      "first_name": "الاسم الأول",
+      "first_name_placeholder": "أدخل اسمك الأول",
+      "last_name": "اسم العائلة",
+      "last_name_placeholder": "أدخل اسم عائلتك",
+      "email": "البريد الإلكتروني",
+      "email_placeholder": "أدخل عنوان بريدك الإلكتروني",
+      "country": "البلد",
+      "country_placeholder": "أدخل بلدك",
+      "phone": "رقم الاتصال",
+      "phone_placeholder": "+20 100 229 9067",
+      "company_name": "اسم الشركة",
+      "company_name_placeholder": "أدخل اسم شركتك",
+      "message": "الرسالة",
+      "message_placeholder": "أدخل رسالتك",
+      "submitting": "جارٍ الإرسال...",
+      "submit": "إرسال"
+    },
+    "company_info": {
+      "title": "تواصل معنا",
+      "address_title": "العنوان",
+      "contact_title": "معلومات الاتصال",
+      "email": "البريد الإلكتروني",
+      "phone": "الهاتف"
+    }
   }
 }

@@ -274,5 +274,46 @@
     "join_us_description": "Use Solo Sauce products within your brand. All you have to do is contact us and we will respond to you as soon as possible.",
     "our_clients": "Our Clients",
     "partner_logo_alt": "Partner Logo {{number}}"
+  },
+  "contact": {
+    "background_alt": "Contact Background",
+    "product_image_alt": "Solo Sauce Products",
+    "form_header": "Contact Us",
+    "success": {
+      "message": "Your message has been sent successfully. We will get back to you soon.",
+      "thanks": "Thanks",
+      "icon_alt": "Message sent successfully",
+      "title": "We have received your request",
+      "description": "We will contact you as soon as possible. Thank you."
+    },
+    "error": {
+      "required_fields": "Please fill in all required fields",
+      "submission": "There was an error submitting your message. Please try again."
+    },
+    "form": {
+      "first_name": "First Name",
+      "first_name_placeholder": "Enter your first name",
+      "last_name": "Last Name",
+      "last_name_placeholder": "Enter your last name",
+      "email": "Email",
+      "email_placeholder": "Enter your email address",
+      "country": "Country",
+      "country_placeholder": "Enter your country",
+      "phone": "Contact Number",
+      "phone_placeholder": "+20 100 229 9067",
+      "company_name": "Company Name",
+      "company_name_placeholder": "Enter your company name",
+      "message": "Message",
+      "message_placeholder": "Enter your message",
+      "submitting": "Submitting...",
+      "submit": "Submit"
+    },
+    "company_info": {
+      "title": "Get in Touch",
+      "address_title": "Address",
+      "contact_title": "Contact Information",
+      "email": "Email",
+      "phone": "Phone"
+    }
   }
 }
