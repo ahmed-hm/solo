@@ -243,7 +243,7 @@ export default async function BlogPost({ params }: { params: Promise<{ lng: stri
                   </button>
                   <button className="w-[24px] h-[24px] rounded-full flex items-center justify-center">
                     <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <g clip-path="url(#clip0_471_6449)">
+                      <g clipPath="url(#clip0_471_6449)">
                         <path
                           d="M16.0031 14.4877L22.7542 24.1442H19.9835L14.4745 16.2644V16.264L13.6657 15.1072L7.23022 5.90186H10.0009L15.1943 13.331L16.0031 14.4877Z"
                           fill="white"
