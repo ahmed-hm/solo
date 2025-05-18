@@ -229,5 +229,50 @@
     "join_us_description": "استخدم منتجات صلصة سولو ضمن علامتك التجارية. كل ما عليك هو التواصل معنا وسنرد عليك في أقرب وقت ممكن.",
     "our_clients": "عملاؤنا",
     "partner_logo_alt": "شعار الشريك {{number}}"
+  },
+  "recipes": {
+    "title": "وصفات",
+    "categories": "فئات الوصفات",
+    "trending": "الوصفات الرائجة",
+    "viewAll": "عرض جميع الوصفات",
+    "backToCategory": "العودة إلى جميع الوصفات",
+    "printSave": "طباعة وحفظ الوصفة",
+    "instructions": {
+      "title": "التعليمات:",
+      "add_ingredients": "أضف جميع المكونات إلى الخلاط معًا.",
+      "glassware": "كوب",
+      "cup": "أونصة"
+    },
+    "relatedProducts": "منتجات ذات صلة بهذا العنصر",
+    "chooseText": "اختر صولو للنكهات الرائعة",
+    "descriptionText": "نكهاتنا متوازنة وغنية ولا تُنسى - بدون طعم صناعي - مثالية لمشروباتك",
+    "showingResults": "عرض",
+    "results": "نتيجة",
+    "filters": {
+      "filterRecipes": "تصفية",
+      "beverageType": "نوع المشروب",
+      "blendedCold": "مخفوق بارد",
+      "hot": "ساخن",
+      "coldMixed": "مزيج بارد",
+      "servedHow": "طريقة التقديم",
+      "inBlender": "في الخلاط",
+      "inMug": "في كوب",
+      "inCupWithIce": "في كوب مع ثلج",
+      "flavorType": "نوع النكهة",
+      "berry": "توت",
+      "tropical": "استوائي",
+      "citrus": "حمضيات",
+      "chocolate": "شوكولاتة",
+      "whiteChocolate": "شوكولاتة بيضاء",
+      "caramel": "كراميل",
+      "coffee": "قهوة",
+      "teaHerbal": "شاي/أعشاب",
+      "specialty": "تخصصي",
+      "glassType": "نوع الكوب",
+      "blenderCup": "كوب خلاط",
+      "mug": "كوب",
+      "highballGlass": "كوب طويل",
+      "reset": "إستعادة"
+    }
   }
 }

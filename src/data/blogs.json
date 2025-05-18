@@ -6,7 +6,7 @@
       "date": "May 14, 2025",
       "category": "Coffee",
       "commentCount": 6,
-      "image": "/images/products/frappe-powder.jpg",
+      "image": "/images/blogs/Frappe.jpg",
       "sections": [
         {
           "id": "what-is-frappe",
@@ -85,7 +85,7 @@
       "date": "May 14, 2025",
       "category": "القهوة",
       "commentCount": 6,
-      "image": "/images/products/frappe-powder.jpg",
+      "image": "/images/blogs/Frappe.jpg",
       "sections": [
         {
           "id": "what-is-frappe",
@@ -164,7 +164,7 @@
       "date": "May 10, 2025",
       "category": "Hot Drinks",
       "commentCount": 8,
-      "image": "/images/featured/sahlab-turkey.jpg",
+      "image": "/images/blogs/Sahlab.JPG",
       "sections": [
         {
           "id": "what-is-turkish-salep",
@@ -243,7 +243,7 @@
       "date": "May 10, 2025",
       "category": "مشروبات ساخنة",
       "commentCount": 8,
-      "image": "/images/featured/sahlab-turkey.jpg",
+      "image": "/images/blogs/Sahlab.JPG",
       "sections": [
         {
           "id": "what-is-turkish-salep",
@@ -322,7 +322,7 @@
       "date": "April 20, 2025",
       "category": "Syrups",
       "commentCount": 5,
-      "image": "/images/products/blue-curacao.jpg",
+      "image": "/images/blogs/blue curacao.jpg",
       "sections": [
         {
           "id": "what-is-blue-curacao",
@@ -401,7 +401,7 @@
       "date": "April 20, 2025",
       "category": "سيراب",
       "commentCount": 5,
-      "image": "/images/products/blue-curacao.jpg",
+      "image": "/images/blogs/blue curacao.jpg",
       "sections": [
         {
           "id": "what-is-blue-curacao",
@@ -480,7 +480,7 @@
       "date": "May 5, 2025",
       "category": "Spreads",
       "commentCount": 7,
-      "image": "/images/products/pistachio-spread.jpg",
+      "image": "/images/blogs/Pistachio Spread.JPG",
       "sections": [
         {
           "id": "what-is-pistachio-spread",
@@ -559,7 +559,7 @@
       "date": "May 5, 2025",
       "category": "سبريد",
       "commentCount": 7,
-      "image": "/images/products/pistachio-spread.jpg",
+      "image": "/images/blogs/Pistachio Spread.JPG",
       "sections": [
         {
           "id": "what-is-pistachio-spread",
@@ -638,7 +638,7 @@
       "date": "May 16, 2025",
       "category": "Syrups",
       "commentCount": 4,
-      "image": "/images/products/ice-tea-syrup.jpg",
+      "image": "/images/blogs/Ice Tea Syrup.jpg",
       "sections": [
         {
           "id": "what-is-ice-tea-syrup",
@@ -717,7 +717,7 @@
       "date": "May 16, 2025",
       "category": "سيراب",
       "commentCount": 4,
-      "image": "/images/products/ice-tea-syrup.jpg",
+      "image": "/images/blogs/Ice Tea Syrup.jpg",
       "sections": [
         {
           "id": "what-is-ice-tea-syrup",
@@ -796,7 +796,7 @@
       "date": "May 15, 2025",
       "category": "Purées",
       "commentCount": 5,
-      "image": "/images/products/watermelon-puree.jpg",
+      "image": "/images/blogs/Watermelon Puree.jpg",
       "sections": [
         {
           "id": "what-is-watermelon-puree",
@@ -875,7 +875,7 @@
       "date": "May 15, 2025",
       "category": "بيوريه",
       "commentCount": 5,
-      "image": "/images/products/watermelon-puree.jpg",
+      "image": "/images/blogs/Watermelon Puree.jpg",
       "sections": [
         {
           "id": "what-is-watermelon-puree",
@@ -954,7 +954,7 @@
       "date": "May 12, 2025",
       "category": "Purées",
       "commentCount": 6,
-      "image": "/images/products/pina-colada.jpg",
+      "image": "/images/blogs/Pina Colada.webp",
       "sections": [
         {
           "id": "what-is-pina-colada",
@@ -1033,7 +1033,7 @@
       "date": "May 12, 2025",
       "category": "بيوريه",
       "commentCount": 6,
-      "image": "/images/products/pina-colada.jpg",
+      "image": "/images/blogs/Pina Colada.webp",
       "sections": [
         {
           "id": "what-is-pina-colada",
@@ -1112,7 +1112,7 @@
       "date": "May 8, 2025",
       "category": "Syrups",
       "commentCount": 7,
-      "image": "/images/products/mojito-syrup.jpg",
+      "image": "/images/blogs/Mojito.jpg",
       "sections": [
         {
           "id": "what-is-mojito-syrup",
@@ -1191,7 +1191,7 @@
       "date": "May 8, 2025",
       "category": "سيراب",
       "commentCount": 7,
-      "image": "/images/products/mojito-syrup.jpg",
+      "image": "/images/blogs/Mojito.jpg",
       "sections": [
         {
           "id": "what-is-mojito-syrup",
