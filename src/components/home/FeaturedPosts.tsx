@@ -1,9 +1,13 @@
 import { isRTL } from '@/i18n/i18n-config';
 import { getTranslation } from '@/i18n/server';
-import Image from 'next/image';
 import React from 'react';
+import blogsData from '@/data/blogs.json';
+import BlogSliderWrapper from './BlogSliderWrapper';
+import Link from 'next/link';
+import Image from 'next/image';
 
 interface BlogPostCardProps {
+  id?: string; // Add ID field for blog identification
   title: string;
   tags: string[];
   date: string;
@@ -17,21 +21,25 @@ interface BlogPostCardProps {
 }
 
 const BlogPostCard: React.FC<BlogPostCardProps> = ({
+  id,
   title,
   tags,
   date,
-  comments,
+  /* comments, */
   imageUrl,
   description,
   isNew = true,
   learnMoreText,
-  commentsText,
+  /* commentsText, */
   lng,
 }) => {
+  // Generate blog post URL
+  const blogUrl = `/${lng}/blogs/${id}`;
+
   return (
     <div className="bg-white rounded overflow-hidden shadow-[0px_2px_4px_0px_rgba(0,0,0,0.1)]">
       <div className="relative w-full md:h-[300px] h-0 pb-[62.9%] md:pb-0 overflow-hidden">
-        <Image src={`/images/featured/${imageUrl}`} alt={title} fill style={{ objectFit: 'cover' }} />
+        <Image fill src={imageUrl} alt={title} className="absolute inset-0 w-full h-full object-cover" />
 
         {isNew && (
           <div className="absolute top-4 right-4 bg-[#E74040] px-2.5 py-1 rounded text-white text-xs font-bold tracking-wider shadow-[0px_2px_4px_0px_rgba(0,0,0,0.1)]">
@@ -49,9 +57,11 @@ const BlogPostCard: React.FC<BlogPostCardProps> = ({
           ))}
         </div>
 
-        <h4 className="font-['Dancing_Script'] text-xl leading-7 tracking-wider text-black">{title}</h4>
+        <h4 className="font-['Dancing_Script'] text-xl leading-7 tracking-wider text-black truncate whitespace-nowrap overflow-hidden">
+          {title}
+        </h4>
 
-        <p className="text-sm leading-5 tracking-wider text-black">{description}</p>
+        <p className="text-sm leading-5 tracking-wider text-black line-clamp-2">{description}</p>
 
         <div className="flex justify-between items-center py-4 mt-2">
           <div className="flex items-center gap-1">
@@ -66,31 +76,20 @@ const BlogPostCard: React.FC<BlogPostCardProps> = ({
             </span>
             <span className="text-xs text-[#737373] tracking-wider">{date}</span>
           </div>
-
-          <div className="flex items-center gap-1">
-            <span className="w-4 h-4">
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M15.8333 13.8332H1.5V0.833171C1.5 0.741504 1.425 0.666504 1.33333 0.666504H0.166667C0.075 0.666504 0 0.741504 0 0.833171V15.1665C0 15.2582 0.075 15.3332 0.166667 15.3332H15.8333C15.925 15.3332 16 15.2582 16 15.1665V13.9998C16 13.9082 15.925 13.8332 15.8333 13.8332ZM3 12.4998H14.1667C14.2583 12.4998 14.3333 12.4248 14.3333 12.3332V3.24984C14.3333 3.09984 14.1521 3.02692 14.0479 3.13109L9.66667 7.51234L7.05417 4.929C7.02284 4.89799 6.98054 4.88059 6.93646 4.88059C6.89238 4.88059 6.85007 4.89799 6.81875 4.929L2.88125 8.879C2.86596 8.89433 2.85385 8.91252 2.84562 8.93255C2.8374 8.95257 2.83322 8.97402 2.83333 8.99567V12.3332C2.83333 12.4248 2.90833 12.4998 3 12.4998Z"
-                  fill="#DBB58F"
-                />
-              </svg>
-            </span>
-            <span className="text-xs tracking-wider text-black">
-              {comments} {commentsText}
-            </span>
-          </div>
         </div>
 
-        <div className="flex items-center gap-2.5 mt-2 cursor-pointer">
-          <span className="text-sm font-bold text-[#737373] tracking-wider">{learnMoreText}</span>
+        {/* Make Learn More text a clickable link */}
+        <Link href={blogUrl} className="flex items-center gap-2.5 mt-2 cursor-pointer group">
+          <span className="text-sm font-bold text-[#737373] tracking-wider group-hover:text-[#DBB58F] transition-colors">
+            {learnMoreText}
+          </span>
           <svg
             width="9"
             height="16"
             viewBox="0 0 9 16"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            className={`${isRTL(lng) ? 'rotate-180' : ''}`}
+            className={`${isRTL(lng) ? 'rotate-180' : ''} group-hover:translate-x-1 transition-transform`}
           >
             <path
               fillRule="evenodd"
@@ -99,7 +98,7 @@ const BlogPostCard: React.FC<BlogPostCardProps> = ({
               fill="#DBB58F"
             />
           </svg>
-        </div>
+        </Link>
       </div>
     </div>
   );
@@ -108,62 +107,46 @@ const BlogPostCard: React.FC<BlogPostCardProps> = ({
 const FeaturedPosts = async ({ lng }: { lng: string }) => {
   const { t } = await getTranslation(lng, 'common');
 
-  const posts = [
-    {
-      title: t('home.featured_posts.post1.title', 'Sahlab Turkey'),
+  // Filter blogs based on language (English or Arabic version)
+  const isArabic = isRTL(lng);
+  const filteredBlogs = blogsData.blogs.filter((blog) => {
+    // For Arabic language, select blogs with "-ar" in their ID
+    if (isArabic) {
+      return blog.id.endsWith('-ar');
+    }
+    // For English and other languages, select blogs without "-ar" in their ID
+    return !blog.id.endsWith('-ar');
+  });
+
+  // Use all filtered blogs instead of limiting to 3
+  const featuredBlogs = filteredBlogs;
+
+  const posts = featuredBlogs.map((blog) => {
+    // Extract category and create tags from it
+    const category = blog.category;
+
+    return {
+      id: blog.id, // Pass the blog ID for creating the link
+      title: blog.title,
       tags: [
         t('home.featured_posts.tags.google', 'Google'),
         t('home.featured_posts.tags.trending', 'Trending'),
-        t('home.featured_posts.tags.new', 'New'),
+        category || t('home.featured_posts.tags.new', 'New'),
       ],
-      date: t('home.featured_posts.post1.date', '26 February 2025'),
-      comments: 10,
-      imageUrl: 'sahlab-turkey.jpg',
-      description: t(
-        'home.featured_posts.post1.description',
-        'Easy recipes for preparing Solo Chocolate that you should try'
-      ),
+      date: blog.date,
+      comments: blog.commentCount,
+      // Extract image path (remove "/images/" prefix if it exists)
+      imageUrl: blog.image,
+      description:
+        blog.sections && blog.sections.length > 0
+          ? blog.sections[0].content.split('\n')[0]
+          : t('home.featured_posts.default_description', 'Check out this amazing product from Solo'),
       isNew: true,
       learnMoreText: t('home.featured_posts.learn_more', 'Learn More'),
       commentsText: t('home.featured_posts.comments', 'comments'),
-    },
-    {
-      title: t('home.featured_posts.post2.title', 'Dolce De lcehe Solo'),
-      tags: [
-        t('home.featured_posts.tags.google', 'Google'),
-        t('home.featured_posts.tags.trending', 'Trending'),
-        t('home.featured_posts.tags.new', 'New'),
-      ],
-      date: t('home.featured_posts.post2.date', '21 February 2025'),
-      comments: 10,
-      imageUrl: 'dolce-de-lcehe.jpg',
-      description: t(
-        'home.featured_posts.post2.description',
-        'Easy recipes to prepare Dolce De lcehe Solo that you should try'
-      ),
-      isNew: true,
-      learnMoreText: t('home.featured_posts.learn_more', 'Learn More'),
-      commentsText: t('home.featured_posts.comments', 'comments'),
-    },
-    {
-      title: t('home.featured_posts.post3.title', 'Chocolate Solo'),
-      tags: [
-        t('home.featured_posts.tags.google', 'Google'),
-        t('home.featured_posts.tags.trending', 'Trending'),
-        t('home.featured_posts.tags.new', 'New'),
-      ],
-      date: t('home.featured_posts.post3.date', '18 February 2025'),
-      comments: 10,
-      imageUrl: 'chocolate-solo.jpg',
-      description: t(
-        'home.featured_posts.post3.description',
-        'Easy recipes for preparing Solo Chocolate that you should try'
-      ),
-      isNew: true,
-      learnMoreText: t('home.featured_posts.learn_more', 'Learn More'),
-      commentsText: t('home.featured_posts.comments', 'comments'),
-    },
-  ];
+      lng: lng,
+    };
+  });
 
   return (
     <section className="py-[30px]">
@@ -174,25 +157,9 @@ const FeaturedPosts = async ({ lng }: { lng: string }) => {
           </h2>
         </div>
 
-        {/* Desktop view (grid layout) - Visible on md screens and above */}
-        <div className="hidden md:flex justify-center">
-          <div className="grid grid-cols-3 gap-[30px] max-w-[1100px]">
-            {posts.map((post, index) => (
-              <BlogPostCard
-                key={index}
-                title={post.title}
-                tags={post.tags}
-                date={post.date}
-                comments={post.comments}
-                imageUrl={post.imageUrl}
-                description={post.description}
-                isNew={post.isNew}
-                learnMoreText={post.learnMoreText}
-                commentsText={post.commentsText}
-                lng={lng}
-              />
-            ))}
-          </div>
+        {/* Desktop view with Swiper - Visible on md screens and above */}
+        <div className="hidden md:block">
+          <BlogSliderWrapper posts={posts} />
         </div>
 
         {/* Mobile view (scrollable horizontal cards) - Visible on screens below md */}
@@ -201,6 +168,7 @@ const FeaturedPosts = async ({ lng }: { lng: string }) => {
             {posts.map((post, index) => (
               <div key={index} className="flex-none w-[85%]">
                 <BlogPostCard
+                  id={post.id} // Pass the blog ID to BlogPostCard
                   title={post.title}
                   tags={post.tags}
                   date={post.date}

@@ -105,7 +105,6 @@ const HeroSection = ({ lng = 'en' }: HeroSectionProps) => {
         }}
         pagination={{
           clickable: true,
-          el: '.swiper-pagination',
           bulletClass: 'swiper-pagination-bullet',
           bulletActiveClass: 'swiper-pagination-bullet-active',
         }}
@@ -138,7 +137,7 @@ const HeroSection = ({ lng = 'en' }: HeroSectionProps) => {
                     isRtl ? 'lg:leading-[8em]' : 'lg:leading-[6em]'
                   } tracking-[0.3%] whitespace-pre-line`}
                 >
-                  {/* First Word */}`
+                  {/* First Word */}
                   <span className="text-[75px] lg:text-[150px] font-bold font-['Montserrat']">
                     {isRtl ? slide.firstWordArabic : slide.firstWord}
                   </span>
@@ -150,52 +149,52 @@ const HeroSection = ({ lng = 'en' }: HeroSectionProps) => {
             </div>
           </SwiperSlide>
         ))}
+
+        {/* Custom Navigation Arrows with Lottie Animations */}
+        <div
+          className={`swiper-button-prev absolute top-1/2 ${isRtl ? 'right' : 'left'}-${
+            isMobile ? '[15px]' : '[40px]'
+          } z-30 flex items-center justify-center transform -translate-y-1/2 cursor-pointer`}
+          onMouseEnter={() => setIsLeftHovered(true)}
+          onMouseLeave={() => setIsLeftHovered(false)}
+        >
+          <div className={`w-full h-full transform ${isRtl ? '-rotate-90' : 'rotate-90'}`}>
+            <Lottie
+              lottieRef={leftArrowRef}
+              animationData={arrowAnimation}
+              loop={true}
+              autoplay={false}
+              style={{ width: '100%', height: '100%', filter: 'brightness(0) invert(1)' }} // Force white color
+              initialSegment={[0, 60]}
+            />
+          </div>
+        </div>
+        <div
+          className={`swiper-button-next absolute top-1/2 ${isRtl ? 'left' : 'right'}-${
+            isMobile ? '[15px]' : '[40px]'
+          } z-30 flex items-center justify-center transform -translate-y-1/2 cursor-pointer`}
+          onMouseEnter={() => setIsRightHovered(true)}
+          onMouseLeave={() => setIsRightHovered(false)}
+        >
+          <div className={`w-full h-full transform ${isRtl ? 'rotate-90' : '-rotate-90'}`}>
+            <Lottie
+              lottieRef={rightArrowRef}
+              animationData={arrowAnimation}
+              loop={true}
+              autoplay={false}
+              style={{ width: '100%', height: '100%', filter: 'brightness(0) invert(1)' }} // Force white color
+              initialSegment={[0, 60]}
+            />
+          </div>
+        </div>
+
+        {/* Custom Pagination Dots - Inside Swiper component */}
+        <div
+          className={`swiper-pagination absolute left-0 right-0 flex justify-center items-center gap-[10px] z-30 ${
+            isMobile ? 'bottom-[20px]' : 'bottom-[40px]'
+          }`}
+        ></div>
       </Swiper>
-
-      {/* Custom Navigation Arrows with Lottie Animations */}
-      <div
-        className={`swiper-button-prev absolute top-1/2 ${isRtl ? 'right' : 'left'}-${
-          isMobile ? '[15px]' : '[40px]'
-        } z-30 flex items-center justify-center transform -translate-y-1/2 cursor-pointer`}
-        onMouseEnter={() => setIsLeftHovered(true)}
-        onMouseLeave={() => setIsLeftHovered(false)}
-      >
-        <div className="w-full h-full transform rotate-90">
-          <Lottie
-            lottieRef={leftArrowRef}
-            animationData={arrowAnimation}
-            loop={true}
-            autoplay={false}
-            style={{ width: '100%', height: '100%', filter: 'brightness(0) invert(1)' }} // Force white color
-            initialSegment={[0, 60]}
-          />
-        </div>
-      </div>
-      <div
-        className={`swiper-button-next absolute top-1/2 ${isRtl ? 'left' : 'right'}-${
-          isMobile ? '[15px]' : '[40px]'
-        } z-30 flex items-center justify-center transform -translate-y-1/2 cursor-pointer`}
-        onMouseEnter={() => setIsRightHovered(true)}
-        onMouseLeave={() => setIsRightHovered(false)}
-      >
-        <div className="w-full h-full transform -rotate-90">
-          <Lottie
-            lottieRef={rightArrowRef}
-            animationData={arrowAnimation}
-            loop={true}
-            autoplay={false}
-            style={{ width: '100%', height: '100%', filter: 'brightness(0) invert(1)' }} // Force white color
-            initialSegment={[0, 60]}
-          />
-        </div>
-      </div>
-
-      {/* Custom Pagination Dots - Adjust position for mobile */}
-      <div
-        className={`swiper-pagination absolute left-0 right-0 flex justify-center items-center gap-[10px] z-30 ${
-          isMobile ? 'bottom-[20px]' : 'bottom-[40px]'
-        }`}
-      ></div>
 
       {/* Custom CSS for Swiper navigation and pagination */}
       <style jsx global>{`
@@ -244,7 +243,7 @@ const HeroSection = ({ lng = 'en' }: HeroSectionProps) => {
 
         .swiper,
         .swiper-slide {
-          border-radius: 0px;
+          border-radius: 0px !important;
         }
 
         /* RTL specific adjustments for Swiper */

@@ -107,7 +107,7 @@ const VideoSection = ({ lng = 'en' }: VideoSectionProps) => {
           {/* Right column with stacked video cards */}
           <div className="w-full lg:w-auto relative cards-container-outer">
             {/* Black circular border */}
-            <div className="absolute w-full h-full border-8 lg:border-[44px] border-black rounded-full -z-0"></div>
+            <div className="absolute w-[200] h-[200] md:w-[500] md:h-[500] top-0 right-0 border-25 lg:border-20 border-black rounded-[100%] -z-0"></div>
 
             <div className="relative z-10 p-4">
               <div className="w-full max-w-[600px] mx-auto">
