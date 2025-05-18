@@ -29,8 +29,8 @@ const BigEventBanner = ({ lng }: { lng: string }) => {
       {showVideo && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black bg-opacity-80">
           <div className="relative w-full max-w-4xl">
-            <button 
-              onClick={closeVideo} 
+            <button
+              onClick={closeVideo}
               className="absolute -top-10 right-0 text-white text-2xl font-bold cursor-pointer"
               aria-label={t('events.exhibition.closeButton', 'Close video')}
             >
@@ -54,10 +54,7 @@ const BigEventBanner = ({ lng }: { lng: string }) => {
         <div className="flex flex-col md:flex-row items-center gap-8 md:gap-16 bg-white">
           {/* Left column with image */}
           <div className="w-full md:w-7/12">
-            <div 
-              className="relative aspect-[4/5] w-full overflow-hidden cursor-pointer"
-              onClick={openYoutubeVideo}
-            >
+            <div className="relative aspect-[4/5] w-full overflow-hidden cursor-pointer" onClick={openYoutubeVideo}>
               <Image
                 src="/images/events/asian-woman-man-with-winter-clothes.jpg"
                 alt={t('events.exhibition.imageAlt')}
@@ -67,13 +64,7 @@ const BigEventBanner = ({ lng }: { lng: string }) => {
               />
               <div className="absolute inset-0 bg-black flex items-center justify-center opacity-0 hover:opacity-40 transition-opacity duration-300">
                 <div className="bg-white rounded-full p-4 transform scale-110 hover:scale-125 transition-transform duration-300">
-                  <svg
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M5 3L19 12L5 21V3Z" fill="#DBB58F" />
                   </svg>
                 </div>
@@ -95,15 +86,15 @@ const BigEventBanner = ({ lng }: { lng: string }) => {
               {t('events.exhibition.description')}
             </h4>
 
-            <div className="flex flex-wrap gap-2.5 mt-2">
-              <Link href="https://www.facebook.com/SOLOsolo2005" className="btn-primary uppercase tracking-[1.4%]">
+            <div className="flex flex-nowrap gap-2.5 mt-2 items-center justify-center">
+              <Link
+                href="https://www.facebook.com/SOLOsolo2005"
+                className="btn-primary uppercase tracking-[1.4%] w-full flex items-center justify-center"
+              >
                 {t('events.exhibition.followButton')}
               </Link>
 
-              <button 
-                onClick={openYoutubeVideo} 
-                className="btn-outline uppercase tracking-[1.4%]"
-              >
+              <button onClick={openYoutubeVideo} className="btn-outline uppercase tracking-[1.4%] w-full">
                 {t('events.exhibition.readMoreButton')}
               </button>
             </div>
