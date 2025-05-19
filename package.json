@@ -9,6 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "google-auth-library": "^9.15.1",
+    "googleapis": "^148.0.0",
     "i18next": "^25.1.2",
     "i18next-resources-to-backend": "^1.2.1",
     "lottie-react": "^2.4.1",
