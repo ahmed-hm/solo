@@ -114,13 +114,27 @@ export default function RecipeDetailPage({ params }: PageProps) {
     <main className="min-h-screen py-12 bg-[#FAFAFA]">
       <div className="container mx-auto px-4">
         {/* Use the reusable Breadcrumb component */}
-        <Breadcrumb items={breadcrumbItems} lng={lng} style="blog" className="mb-8" />
+        <div className="print:hidden">
+          <Breadcrumb items={breadcrumbItems} lng={lng} style="blog" className="mb-8" />
+        </div>
 
         {/* Recipe Content - Product Card Style */}
-        <div className="bg-white rounded-lg overflow-hidden">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-0">
+        <div className="bg-white rounded-lg overflow-hidden print:shadow-none print:rounded-none">
+          {/* Print-only attribution header */}
+          <div className="hidden print:block border-b border-gray-200 pb-3 mb-4">
+            <div className="text-center">
+              <h2 className="font-['Montserrat'] font-bold text-lg text-black mb-1">
+                {t('title', 'Solo Sauce')}
+              </h2>
+              <p className="font-['Montserrat'] text-sm text-gray-600">
+                {t('recipes.printedFrom', 'Printed from')} www.solo-sauce.com
+              </p>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-0 print:grid-cols-2">
             {/* Recipe Image */}
-            <div className="relative aspect-square bg-white">
+            <div className="relative aspect-square bg-white print:aspect-auto print:h-64">
               <Image
                 src={recipe.imageUrl}
                 alt={isRtl ? recipe.nameAr : recipe.name}
@@ -131,47 +145,60 @@ export default function RecipeDetailPage({ params }: PageProps) {
             </div>
 
             {/* Recipe Details */}
-            <div className="flex flex-col p-4 md:p-6 gap-4">
-              <span className="font-['Montserrat'] font-bold text-3xl md:text-4xl text-black">
+            <div className="flex flex-col p-4 md:p-6 gap-4 print:p-6">
+              <span className="font-['Montserrat'] font-bold text-3xl md:text-4xl text-black print:text-2xl">
                 {isRtl ? recipe.nameAr : recipe.name}
               </span>
 
               {/* Size Options */}
-              <div className="flex items-center gap-4">
-                <div className="flex items-center gap-2">
-                  <div
-                    className={`w-4 h-4 rounded-full border ${
-                      selectedSize === '12oz' ? 'border-[#DBB58F] bg-white' : 'border-[#E4E4E4] bg-[#E4E4E4]'
-                    }`}
-                    onClick={() => setSelectedSize('12oz')}
-                    role="radio"
-                    aria-checked={selectedSize === '12oz'}
-                  >
-                    {selectedSize === '12oz' && (
-                      <div className="w-2 h-2 mx-auto my-[3px] rounded-full bg-[#DBB58F]"></div>
-                    )}
-                  </div>
-                  <span className="font-['Montserrat'] text-base text-black">12 OZ</span>
+              <div className="flex items-center gap-4 print:mb-4">
+                {/* Print-only selected size indicator */}
+                <div className="hidden print:block">
+                  <span className="font-['Montserrat'] font-medium text-base text-black">
+                    {t('recipes.selectedSize', 'Selected Size:')} {selectedSize === '12oz' ? '12 OZ' : '16 OZ'}
+                  </span>
                 </div>
-                <div className="flex items-center gap-2">
-                  <div
-                    className={`w-4 h-4 rounded-full border ${
-                      selectedSize === '16oz' ? 'border-[#DBB58F] bg-white' : 'border-[#E4E4E4] bg-[#E4E4E4]'
-                    }`}
-                    onClick={() => setSelectedSize('16oz')}
-                    role="radio"
-                    aria-checked={selectedSize === '16oz'}
-                  >
-                    {selectedSize === '16oz' && (
-                      <div className="w-2 h-2 mx-auto my-[3px] rounded-full bg-[#DBB58F]"></div>
-                    )}
+
+                {/* Interactive radio buttons - hidden in print */}
+                <div className="print:hidden flex items-center gap-4">
+                  <div className="flex items-center gap-2">
+                    <div
+                      className={`w-4 h-4 rounded-full border ${
+                        selectedSize === '12oz' ? 'border-[#DBB58F] bg-white' : 'border-[#E4E4E4] bg-[#E4E4E4]'
+                      }`}
+                      onClick={() => setSelectedSize('12oz')}
+                      role="radio"
+                      aria-checked={selectedSize === '12oz'}
+                    >
+                      {selectedSize === '12oz' && (
+                        <div className="w-2 h-2 mx-auto my-[3px] rounded-full bg-[#DBB58F]"></div>
+                      )}
+                    </div>
+                    <span className="font-['Montserrat'] text-base text-black">12 OZ</span>
                   </div>
-                  <span className="font-['Montserrat'] text-base text-black">16 OZ</span>
+                  <div className="flex items-center gap-2">
+                    <div
+                      className={`w-4 h-4 rounded-full border ${
+                        selectedSize === '16oz' ? 'border-[#DBB58F] bg-white' : 'border-[#E4E4E4] bg-[#E4E4E4]'
+                      }`}
+                      onClick={() => setSelectedSize('16oz')}
+                      role="radio"
+                      aria-checked={selectedSize === '16oz'}
+                    >
+                      {selectedSize === '16oz' && (
+                        <div className="w-2 h-2 mx-auto my-[3px] rounded-full bg-[#DBB58F]"></div>
+                      )}
+                    </div>
+                    <span className="font-['Montserrat'] text-base text-black">16 OZ</span>
+                  </div>
                 </div>
               </div>
 
               {/* Ingredients */}
               <div className="mt-2">
+                <h3 className="font-['Montserrat'] font-medium text-base text-black mb-2 print:block hidden">
+                  {t('recipes.ingredients', 'Ingredients:')}
+                </h3>
                 <div className="font-['Montserrat'] text-sm text-black">
                   <ul className="list-disc pl-5 space-y-1">
                     {recipe.detailedIngredients &&
@@ -200,7 +227,7 @@ export default function RecipeDetailPage({ params }: PageProps) {
               </div>
 
               {/* Actions */}
-              <div className="mt-4 flex flex-wrap gap-4">
+              <div className="mt-4 flex flex-wrap gap-4 print:hidden">
                 <button
                   onClick={handlePrintRecipe}
                   className="inline-flex items-center justify-center px-5 py-3 bg-[#DBB58F] text-white font-['Montserrat'] font-bold text-sm rounded-md hover:bg-[#c9a57f] transition-colors duration-300"
@@ -220,7 +247,7 @@ export default function RecipeDetailPage({ params }: PageProps) {
         </div>
 
         {/* Related Products Section */}
-        <div className="mt-12 py-8">
+        <div className="mt-12 py-8 print:hidden">
           <div className="container mx-auto">
             <div className="mb-8">
               <span className="font-['Montserrat'] font-bold text-2xl md:text-3xl text-black">

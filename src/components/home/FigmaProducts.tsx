@@ -23,7 +23,7 @@ interface Product {
 
 // Sample product data - this would typically come from an API or CMS
 const productData: Product[] = [
-  { id: '1', name: 'Blue Berry Puree', imageUrl: '/images/products/blueberry.png', category: 'Puree' },
+  { id: '1', name: 'Blueberry Puree', imageUrl: '/images/products/blueberry.png', category: 'Puree' },
   { id: '2', name: 'Blue Raspberry Puree', imageUrl: '/images/products/blueraspberry.png', category: 'Puree' },
   { id: '3', name: 'Cherry Puree', imageUrl: '/images/products/cherry.png', category: 'Puree' },
   { id: '4', name: 'Mix Berry', imageUrl: '/images/products/mixberry.png', category: 'Puree' },

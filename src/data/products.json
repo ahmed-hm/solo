@@ -1,7 +1,7 @@
 [
   {
     "id": "1",
-    "name": "Blue Berry",
+    "name": "Blueberry",
     "imageUrl": "/images/products/blue berry.png",
     "category": "Puree"
   },
@@ -62,7 +62,7 @@
   {
     "id": "11",
     "name": "Peach",
-    "imageUrl": "/images/products/peach.png",
+    "imageUrl": "/images/products/peach-puree.png",
     "category": "Puree"
   },
   {
@@ -80,7 +80,7 @@
   {
     "id": "14",
     "name": "Strawberry",
-    "imageUrl": "/images/products/strawberry.png",
+    "imageUrl": "/images/products/strawberry-puree.png",
     "category": "Puree"
   },
   {
@@ -109,7 +109,7 @@
   },
   {
     "id": "19",
-    "name": "Blue",
+    "name": "Blue curacao",
     "imageUrl": "/images/products/blue.png",
     "category": "Syrup"
   },

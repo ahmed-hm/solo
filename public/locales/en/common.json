@@ -115,7 +115,7 @@
     "product_thumbnail": "Solo product",
     "previous": "Previous product",
     "next": "Next product",
-    "blue_berry_puree": "Blue Berry Puree",
+    "blue_berry_puree": "Blueberry Puree",
     "blue_raspberry_puree": "Blue Raspberry Puree",
     "cherry_puree": "Cherry Puree",
     "mix_berry": "Mix Berry",
@@ -231,6 +231,7 @@
     "viewAll": "View All Recipes",
     "backToCategory": "Back to all recipes",
     "printSave": "Print and Save Recipe",
+    "printedFrom": "Printed from",
     "instructions": {
       "title": "Instructions:",
       "add_ingredients": "Add all ingredients to the blender together.",

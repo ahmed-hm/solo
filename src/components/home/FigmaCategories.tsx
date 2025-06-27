@@ -27,8 +27,8 @@ const categoryImages = {
   Powder: '/images/categories/powder.png',
   Spreads: '/images/categories/spreads.png',
   Topping: '/images/categories/topping.png',
-  'Mini Topping': '/images/categories/topping.png', // You might want to update this image
-  'Mini Coffee': '/images/categories/powder.png', // You might want to update this image
+  'Mini Topping': '/images/categories/mini topping.png', // You might want to update this image
+  'Mini Coffee': '/images/categories/mini coffe.png', // You might want to update this image
 };
 
 interface FigmaCategoriesProps {

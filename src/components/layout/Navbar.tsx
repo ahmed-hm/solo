@@ -91,7 +91,8 @@ const Navbar = ({ lng = 'en' }: NavbarProps) => {
           </Link>
           <div className={`flex items-center gap-[3px] relative ${isRtl ? 'flex-row-reverse' : ''}`}>
             <Link
-              href={`/${lng}/about`}
+              onClick={() => toggleDropdown('about')}
+              href={''}
               className="text-black font-['Montserrat'] font-medium text-[17px] leading-[20.7px] tracking-[-0.6px] hover:text-[#DBB58F] transition duration-300"
             >
               {t('nav.aboutUs')}
@@ -124,12 +125,14 @@ const Navbar = ({ lng = 'en' }: NavbarProps) => {
                   <Link
                     href={`/${lng}/about`}
                     className="text-black font-['Montserrat'] font-medium text-[14px] hover:text-[#DBB58F] transition duration-300"
+                    onClick={() => setActiveDropdown(null)}
                   >
                     {t('nav.ourStory')}
                   </Link>
                   <Link
                     href={`/${lng}/solo-core`}
                     className="text-black font-['Montserrat'] font-medium text-[14px] hover:text-[#DBB58F] transition duration-300"
+                    onClick={() => setActiveDropdown(null)}
                   >
                     {t('nav.coreOfSolo')}
                   </Link>
@@ -147,7 +150,8 @@ const Navbar = ({ lng = 'en' }: NavbarProps) => {
           </div>
           <div className={`flex items-center gap-[3px] relative ${isRtl ? 'flex-row-reverse' : ''}`}>
             <Link
-              href={`/${lng}/partners`}
+              onClick={() => toggleDropdown('partners')}
+              href={''}
               className="text-black font-['Montserrat'] font-medium text-[17px] leading-[20.7px] tracking-[-0.6px] hover:text-[#DBB58F] transition duration-300"
             >
               {t('nav.partners')}
@@ -180,12 +184,14 @@ const Navbar = ({ lng = 'en' }: NavbarProps) => {
                   <Link
                     href={`/${lng}/partners`}
                     className="text-black font-['Montserrat'] font-medium text-[14px] hover:text-[#DBB58F] transition duration-300"
+                    onClick={() => setActiveDropdown(null)}
                   >
                     {t('nav.clients')}
                   </Link>
                   <Link
                     href={`/${lng}/countries`}
                     className="text-black font-['Montserrat'] font-medium text-[14px] hover:text-[#DBB58F] transition duration-300"
+                    onClick={() => setActiveDropdown(null)}
                   >
                     {t('nav.countries')}
                   </Link>

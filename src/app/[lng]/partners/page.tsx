@@ -2,17 +2,23 @@
 
 import Image from 'next/image';
 import React from 'react';
-import { useParams } from 'next/navigation';
+import { useParams, useRouter } from 'next/navigation';
 import { useTranslation, useIsRTL } from '@/i18n/client';
 
 export default function PartnersPage() {
   // Get language from URL params
   const params = useParams();
   const lng = params.lng as string;
+  const router = useRouter();
   
   // Use translation hook
   const { t } = useTranslation(lng);
   const isRtl = useIsRTL(lng);
+
+  // Handle contact us button click
+  const handleContactUs = () => {
+    router.push(`/${lng}/contact`);
+  };
   
   // Organizing partner logos into 12 rows of 7 logos each (84 total) to match the Figma design
   const partnerLogoRows = [
@@ -58,10 +64,13 @@ export default function PartnersPage() {
             {t('partners.join_us_description', 'Use Solo Sauce products within your brand. All you have to do is contact us and we will respond to you as soon as possible.')}
           </p>
           <div className="flex flex-wrap gap-2.5 justify-center">
-            <button className="bg-[#DBB58F] text-white px-10 py-[15px] font-bold text-sm tracking-wider rounded shadow-sm">
+            <button
+              className="bg-[#DBB58F] text-white px-10 py-[15px] font-bold text-sm tracking-wider rounded shadow-sm cursor-pointer hover:cursor-pointer"
+              onClick={handleContactUs}
+            >
               {t('common.contact_us', 'Contact Us')}
             </button>
-            <button className="border border-[#DBB58F] text-[#DBB58F] px-10 py-[15px] font-bold text-sm tracking-wider rounded shadow-sm">
+            <button className="border border-[#DBB58F] text-[#DBB58F] px-10 py-[15px] font-bold text-sm tracking-wider rounded shadow-sm cursor-pointer hover:cursor-pointer">
               {t('common.learn_more', 'Learn More')}
             </button>
           </div>

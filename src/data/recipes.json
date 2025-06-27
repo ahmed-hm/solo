@@ -37,11 +37,11 @@
     "smoothie": [
       {
         "id": "blue-berry-smoothie",
-        "name": "Blue Berry Smoothie",
+        "name": "Blueberry Smoothie",
         "nameAr": "سموذي التوت الأزرق",
         "imageUrl": "/images/recipes/Smothie/BLUE BERRY SMOOTHIE.png",
         "ingredients": [
-          "Solo Blue Berry Purée",
+          "Solo Blueberry Purée",
           "Milk",
           "Ice"
         ],
@@ -57,12 +57,12 @@
         "glassType": "blender cup",
         "detailedIngredients": {
           "12oz": [
-            "60 ML Blue berry puree",
+            "60 ML Blueberry puree",
             "60 ML Water",
             "210 Gram ice"
           ],
           "16oz": [
-            "75 ML Blue berry puree",
+            "75 ML Blueberry puree",
             "75 ML Water",
             "250 Gram ice"
           ]

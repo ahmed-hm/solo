@@ -237,6 +237,7 @@
     "viewAll": "عرض جميع الوصفات",
     "backToCategory": "العودة إلى جميع الوصفات",
     "printSave": "طباعة وحفظ الوصفة",
+    "printedFrom": "مطبوعة من",
     "instructions": {
       "title": "التعليمات:",
       "add_ingredients": "أضف جميع المكونات إلى الخلاط معًا.",
