@@ -2,7 +2,7 @@ import BigEventBanner from '@/components/home/BigEventBanner';
 import FeaturedPosts from '@/components/home/FeaturedPosts';
 import FeaturedProducts from '@/components/home/FeaturedProducts';
 import FeaturedSection from '@/components/home/FeaturedSection';
-import FigmaCategoryProducts from '@/components/home/FigmaCategoryProducts';
+import CategoryProducts from '@/components/home/CategoryProducts';
 import HeroSection from '@/components/home/HeroSection';
 import ProductsSection from '@/components/home/ProductsSection';
 import VideoSection from '@/components/home/VideoSection';
@@ -27,7 +27,7 @@ export default async function Home({ params }: HomeProps) {
       <VideoSection lng={lng} />
       <ProductsSection lng={lng} />
       <FeaturedSection lng={lng} />
-      <FigmaCategoryProducts lng={lng} />
+      <CategoryProducts lng={lng} />
       <BigEventBanner lng={lng} />
       <FeaturedPosts lng={lng} />
     </>

@@ -37,7 +37,7 @@ interface FigmaCategoriesProps {
   lng: string; // Add language prop
 }
 
-const FigmaCategories: React.FC<FigmaCategoriesProps> = ({ onCategorySelect, selectedCategory = 'Puree', lng }) => {
+const Categories: React.FC<FigmaCategoriesProps> = ({ onCategorySelect, selectedCategory = 'Puree', lng }) => {
   // Initialize translation hook
   const { t } = useTranslation(lng);
 
@@ -158,4 +158,4 @@ const FigmaCategories: React.FC<FigmaCategoriesProps> = ({ onCategorySelect, sel
   );
 };
 
-export default FigmaCategories;
+export default Categories;

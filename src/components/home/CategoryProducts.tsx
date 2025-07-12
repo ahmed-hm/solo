@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-import FigmaCategories from './FigmaCategories';
+import Categories from './Categories';
 import FeaturedProducts from './FeaturedProducts';
 import productData from '@/data/products.json';
 
@@ -12,7 +12,7 @@ interface FigmaCategoryProductsProps {
   lng: string; // Add language prop
 }
 
-const FigmaCategoryProducts: React.FC<FigmaCategoryProductsProps> = ({ lng }) => {
+const CategoryProducts: React.FC<FigmaCategoryProductsProps> = ({ lng }) => {
   // State to track the selected category
   const [selectedCategory, setSelectedCategory] = useState<Category>('Puree');
   // State to track if the device is mobile
@@ -43,7 +43,7 @@ const FigmaCategoryProducts: React.FC<FigmaCategoryProductsProps> = ({ lng }) =>
   return (
     <div>
       {/* Categories Section */}
-      <FigmaCategories selectedCategory={selectedCategory} onCategorySelect={handleCategorySelect} lng={lng} />
+      <Categories selectedCategory={selectedCategory} onCategorySelect={handleCategorySelect} lng={lng} />
 
       {/* Products Section - conditionally pass title and subtitle based on screen size */}
       <FeaturedProducts
@@ -63,4 +63,4 @@ const FigmaCategoryProducts: React.FC<FigmaCategoryProductsProps> = ({ lng }) =>
   );
 };
 
-export default FigmaCategoryProducts;
+export default CategoryProducts;

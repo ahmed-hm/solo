@@ -161,6 +161,8 @@ const FeaturedProducts: React.FC<ProductsProps> = ({
               grabCursor={true}
               onSwiper={setSwiper}
               className="max-w-[1400px] mx-auto"
+              dir={isRtl ? 'rtl' : 'ltr'}
+              key={isRtl ? 'rtl' : 'ltr'} // Force re-render when direction changes
               breakpoints={{
                 320: {
                   slidesPerView: 1,
@@ -205,14 +207,14 @@ const FeaturedProducts: React.FC<ProductsProps> = ({
             <div
               ref={prevRef}
               onClick={handlePrev}
-              className="w-12 h-12 md:w-16 md:h-16 rotate-90 absolute left-0 md:left-1 top-1/2 transform -translate-y-1/2 z-10 cursor-pointer"
+              className={`w-12 h-12 md:w-16 md:h-16 absolute ${isRtl ? 'right-0 md:right-1 rotate-270' : 'left-0 md:left-1 rotate-90'} top-1/2 transform -translate-y-1/2 z-10 cursor-pointer`}
             >
               <Lottie animationData={arrowAnimation} loop={true} />
             </div>
             <div
               ref={nextRef}
               onClick={handleNext}
-              className="w-12 h-12 md:w-16 md:h-16 rotate-270 absolute right-0 md:right-1 top-1/2 transform -translate-y-1/2 z-10 cursor-pointer"
+              className={`w-12 h-12 md:w-16 md:h-16 absolute ${isRtl ? 'left-0 md:left-1 rotate-90' : 'right-0 md:right-1 rotate-270'} top-1/2 transform -translate-y-1/2 z-10 cursor-pointer`}
             >
               <Lottie animationData={arrowAnimation} loop={true} />
             </div>
