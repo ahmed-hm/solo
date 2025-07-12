@@ -103,7 +103,9 @@
     "sauces": "Sauces",
     "powder": "Powder",
     "spreads": "Spreads",
-    "topping": "Topping"
+    "topping": "Topping",
+    "mini topping": "Mini Topping",
+    "mini coffee": "Mini Coffee"
   },
   "products": {
     "featured": "Featured Products",
@@ -227,6 +229,7 @@
   "recipes": {
     "title": "Recipes",
     "categories": "Recipe Categories",
+    "trendy": "Trendy Recipes",
     "trending": "Trending Recipes",
     "viewAll": "View All Recipes",
     "backToCategory": "Back to all recipes",

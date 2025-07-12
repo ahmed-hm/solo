@@ -6,54 +6,28 @@ import Lottie from 'lottie-react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 import arrowAnimation from '../../../public/lottie/arrow-down.json';
-// Import translation hook
-import { useTranslation } from '../../i18n/client';
+import allProducts from '@/data/products.json';
+import { useTranslation, useIsRTL } from '../../i18n/client';
 
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
 
-// Define the Product type
-interface Product {
-  id: string;
-  name: string;
-  imageUrl: string;
-  category: string;
-}
-
-// Sample product data - this would typically come from an API or CMS
-const productData: Product[] = [
-  { id: '1', name: 'Blueberry Puree', imageUrl: '/images/products/blueberry.png', category: 'Puree' },
-  { id: '2', name: 'Blue Raspberry Puree', imageUrl: '/images/products/blueraspberry.png', category: 'Puree' },
-  { id: '3', name: 'Cherry Puree', imageUrl: '/images/products/cherry.png', category: 'Puree' },
-  { id: '4', name: 'Mix Berry', imageUrl: '/images/products/mixberry.png', category: 'Puree' },
-  { id: '5', name: 'Pineapple', imageUrl: '/images/products/pineapple.png', category: 'Puree' },
-  { id: '6', name: 'Hibiscus', imageUrl: '/images/products/hibiscus.png', category: 'Puree' },
-  { id: '7', name: 'Vanilla Syrup', imageUrl: '/images/products/vanilla.png', category: 'Syrup' },
-  { id: '8', name: 'Hazelnut Syrup', imageUrl: '/images/products/hazelnut.png', category: 'Syrup' },
-  { id: '9', name: 'Chocolate Sauce', imageUrl: '/images/products/chocolate.png', category: 'Sauces' },
-  { id: '10', name: 'Caramel Sauce', imageUrl: '/images/products/caramel.png', category: 'Sauces' },
-  { id: '11', name: 'Matcha Powder', imageUrl: '/images/products/matcha.png', category: 'Powder' },
-  { id: '12', name: 'Cocoa Powder', imageUrl: '/images/products/cocoa.png', category: 'Powder' },
-  { id: '13', name: 'Almond Spread', imageUrl: '/images/products/almond.png', category: 'Spreads' },
-  { id: '14', name: 'Honey Topping', imageUrl: '/images/products/honey.png', category: 'Topping' },
-];
-
 interface FigmaProductsProps {
   selectedCategory: string;
-  lng: string; // Add language prop
+  lng: string;
 }
 
 const FigmaProducts: React.FC<FigmaProductsProps> = ({ selectedCategory, lng }) => {
-  // Initialize translation hook
   const { t } = useTranslation(lng);
+  const isRtl = useIsRTL(lng);
   
   // Filter products by selected category
-  const filteredProducts = productData.filter(product => product.category === selectedCategory);
+  const filteredProducts = allProducts.filter(product => product.category === selectedCategory);
   
   // Create refs for custom navigation
-  const prevRef = React.useRef<HTMLDivElement>(null);
-  const nextRef = React.useRef<HTMLDivElement>(null);
+  const prevRef = React.useRef<HTMLButtonElement>(null);
+  const nextRef = React.useRef<HTMLButtonElement>(null);
 
   return (
     <section className="w-full py-16">
@@ -75,22 +49,18 @@ const FigmaProducts: React.FC<FigmaProductsProps> = ({ selectedCategory, lng }) 
             spaceBetween={32}
             slidesPerView={4}
             breakpoints={{
-              // when window width is >= 320px
               320: {
                 slidesPerView: 1,
                 spaceBetween: 16
               },
-              // when window width is >= 640px
               640: {
                 slidesPerView: 2,
                 spaceBetween: 20
               },
-              // when window width is >= 968px
               968: {
                 slidesPerView: 3,
                 spaceBetween: 24
               },
-              // when window width is >= 1200px
               1200: {
                 slidesPerView: 4,
                 spaceBetween: 32
@@ -114,21 +84,23 @@ const FigmaProducts: React.FC<FigmaProductsProps> = ({ selectedCategory, lng }) 
                   <div className="w-full h-[295px] relative mb-4 rounded-md overflow-hidden">
                     <Image 
                       src={product.imageUrl} 
-                      alt={t(`products.${product.name.toLowerCase().replace(/\s+/g, '_')}`, product.name)} 
+                      alt={isRtl ? product.nameAr : product.name}
                       fill 
                       className="object-contain"
                     />
                   </div>
-                  <h3 className="font-['Montserrat'] font-bold text-[17px] tracking-tight text-black text-center">
-                    {t(`products.${product.name.toLowerCase().replace(/\s+/g, '_')}`, product.name)}
-                  </h3>
+                  <div className="flex flex-col items-center">
+                    <span className="font-['Montserrat'] font-medium text-[17px] tracking-tight text-black text-center">
+                      {isRtl ? product.nameAr : product.name}
+                    </span>
+                  </div>
                 </div>
               </SwiperSlide>
             ))}
           </Swiper>
 
           {/* Custom Navigation Buttons */}
-          <div 
+          <button
             ref={prevRef}
             className="absolute left-1 top-1/2 transform -translate-y-1/2 w-10 h-10 rounded-full bg-[#F5F5F5] flex items-center justify-center shadow-md z-10 cursor-pointer"
             aria-label={t('products.previous', 'Previous product')}
@@ -136,8 +108,8 @@ const FigmaProducts: React.FC<FigmaProductsProps> = ({ selectedCategory, lng }) 
             <div className="w-6 h-6 rotate-90">
               <Lottie animationData={arrowAnimation} loop={true} />
             </div>
-          </div>
-          <div 
+          </button>
+          <button 
             ref={nextRef}
             className="absolute right-1 top-1/2 transform -translate-y-1/2 w-10 h-10 rounded-full bg-[#F5F5F5] flex items-center justify-center shadow-md z-10 cursor-pointer"
             aria-label={t('products.next', 'Next product')}
@@ -145,7 +117,7 @@ const FigmaProducts: React.FC<FigmaProductsProps> = ({ selectedCategory, lng }) 
             <div className="w-6 h-6 rotate-270">
               <Lottie animationData={arrowAnimation} loop={true} />
             </div>
-          </div>
+          </button>
         </div>
       </div>
     </section>

@@ -1,9 +1,9 @@
 'use client';
 
-import React from 'react';
 import Image from 'next/image';
-import { useTranslation } from '../../i18n/client';
 import Link from 'next/link';
+import React from 'react';
+import { useTranslation } from '../../i18n/client';
 
 interface ProductsSectionProps {
   lng: string;

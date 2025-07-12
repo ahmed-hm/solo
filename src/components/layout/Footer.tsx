@@ -13,9 +13,9 @@ const Footer = ({ lng = 'en' }: FooterProps) => {
   const isRtl = useIsRTL(lng);
 
   return (
-    <footer className="bg-black text-white py-[80px]">
+    <footer className="bg-black text-white py-[80px]" dir={isRtl ? 'rtl' : 'ltr'}>
       <div className="container mx-auto px-[20px]">
-        <div className={`grid grid-cols-2 md:grid-cols-12 gap-[40px] ${isRtl ? 'text-right' : 'text-left'}`}>
+        <div className="grid grid-cols-2 md:grid-cols-12 gap-[40px]">
           {/* Newsletter section */}
           <div className="col-span-1 md:col-span-3">
             <div className="flex flex-col gap-[24px]">
@@ -36,9 +36,7 @@ const Footer = ({ lng = 'en' }: FooterProps) => {
                 <input
                   type="email"
                   placeholder={t('footer.emailPlaceholder')}
-                  className={`bg-transparent text-white px-[16px] py-[12px] flex-grow outline-none placeholder:text-white placeholder:opacity-40 font-['Montserrat'] text-[16px] ${
-                    isRtl ? 'text-right' : 'text-left'
-                  }`}
+                  className="bg-transparent text-white px-[16px] py-[12px] flex-grow outline-none placeholder:text-white placeholder:opacity-40 font-['Montserrat'] text-[16px]"
                 />
                 <button className="p-[12px]">
                   <svg
@@ -118,22 +116,18 @@ const Footer = ({ lng = 'en' }: FooterProps) => {
           {/* Social Media QR section */}
           <div className="col-span-1 md:col-span-3 flex justify-center">
             <div className="flex flex-col items-center">
-              <span
-                className={`text-white text-[20px] font-medium font-['Montserrat'] mb-[24px] w-full ${
-                  isRtl ? 'text-center md:text-right' : 'text-center md:text-left'
-                }`}
-              >
+              <span className="text-white text-[20px] font-medium font-['Montserrat'] mb-[24px] w-full text-center md:text-start">
                 {t('footer.socialMedia')}
               </span>
               <div className="flex flex-col items-center">
-                <p className="text-white text-[12px] font-medium font-['Montserrat'] mb-[8px]">
+                <p className="text-white text-[12px] font-medium font-['Montserrat'] mb-[8px] text-center">
                   {t('footer.qrDescription')}
                 </p>
                 <div className="w-[140px] h-[140px]">
                   <Image src="/images/qr/qr-code.svg" alt="Solo-Sauce Social Media QR Code" width={140} height={140} />
                 </div>
                 {/* Social Media Icons - moved below QR code */}
-                <div className="flex justify-center gap-[24px]">
+                <div className="flex justify-center gap-[24px] mt-[24px]">
                   <a
                     href="https://www.facebook.com/share/168xJ1rEuJ/"
                     target="_blank"

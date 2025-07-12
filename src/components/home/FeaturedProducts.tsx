@@ -4,11 +4,8 @@ import React, { useRef, useState, TouchEvent, useEffect } from 'react';
 import Image from 'next/image';
 import Lottie from 'lottie-react';
 import arrowAnimation from '../../../public/lottie/arrow-down.json';
-// Import translation hook
-import { useTranslation } from '../../i18n/client';
-// Import products data
+import { useTranslation, useIsRTL } from '../../i18n/client';
 import allProducts from '@/data/products.json';
-// Import Swiper components
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination } from 'swiper/modules';
 import type { Swiper as SwiperType } from 'swiper';
@@ -20,6 +17,7 @@ import 'swiper/css/pagination';
 interface Product {
   id: string;
   name: string;
+  nameAr: string;
   imageUrl: string;
   category?: string;
 }
@@ -29,7 +27,7 @@ interface ProductsProps {
   subtitle?: string;
   products?: Product[];
   filterByCategory?: string;
-  lng: string; // Add language prop
+  lng: string;
 }
 
 const FeaturedProducts: React.FC<ProductsProps> = ({
@@ -39,50 +37,46 @@ const FeaturedProducts: React.FC<ProductsProps> = ({
   filterByCategory,
   lng,
 }) => {
-  // Initialize translation hook
   const { t } = useTranslation(lng);
+  const isRtl = useIsRTL(lng);
 
   // Use default products from JSON file if no products provided
   const [defaultProducts, setDefaultProducts] = useState<Product[]>([]);
-
-  // Initialize with some featured products if no specific products are provided
-  // Use a ref to track if we already set the default products to avoid infinite loops
   const defaultsSetRef = useRef(false);
 
   useEffect(() => {
-    // Only set the default products once and only if needed
     if (products.length === 0 && !defaultsSetRef.current) {
-      // Get a mix of products from different categories for featured display
       const featured = [
-        allProducts.find(p => p.category === 'Puree' && p.name.includes('Blueberry')),
-        allProducts.find(p => p.category === 'Syrup' && p.name.includes('Blue')),
-        allProducts.find(p => p.category === 'Powder' && p.name.includes('Turkish')),
-        allProducts.find(p => p.category === 'Spreads' && p.name.includes('Pistachio')),
-        allProducts.find(p => p.category === 'Sauces'),
-        allProducts.find(p => p.category === 'Mini Coffee'),
+        allProducts.find((p) => p.category === 'Powder' && p.name.includes('Mocha Powder')),
+        allProducts.find((p) => p.category === 'Powder' && p.name.includes('Matcha')),
+        allProducts.find((p) => p.category === 'Topping' && p.name.includes('Caramel Sauce')),
+        allProducts.find((p) => p.category === 'Topping' && p.name.includes('Chocolate Sauce')),
+        allProducts.find((p) => p.category === 'Syrup' && p.name.includes('Passion')),
+        allProducts.find((p) => p.category === 'Puree' && p.name.includes('Raspberry')),
+        allProducts.find((p) => p.category === 'Puree' && p.name.includes('Mango')),
+        allProducts.find((p) => p.category === 'Syrup' && p.name.includes('Strawberry')),
+        allProducts.find((p) => p.category === 'Syrup' && p.name.includes('Caramel')),
+        allProducts.find((p) => p.category === 'Syrup' && p.name.includes('Vanilla')),
       ].filter(Boolean) as Product[];
 
       setDefaultProducts(featured);
       defaultsSetRef.current = true;
     }
-  }, []); // Empty dependency array to run only once on mount
+  }, [products.length]);
 
-  // Filter products by category if specified
   const displayProducts = filterByCategory
     ? products.filter((product) => product.category === filterByCategory)
-    : products.length > 0 ? products : defaultProducts;
+    : products.length > 0
+    ? products
+    : defaultProducts;
 
   // State for Swiper instance
   const [swiper, setSwiper] = useState<SwiperType | null>(null);
   const prevRef = useRef<HTMLDivElement>(null);
   const nextRef = useRef<HTMLDivElement>(null);
-
-  // State for mobile touch swipe functionality
+  const scrollContainerRef = useRef<HTMLDivElement>(null);
   const [touchStart, setTouchStart] = useState<number | null>(null);
   const [touchEnd, setTouchEnd] = useState<number | null>(null);
-  const scrollContainerRef = useRef<HTMLDivElement>(null);
-
-  // Minimum swipe distance (in px) required for swipe action
   const minSwipeDistance = 50;
 
   // Mobile scroll function for touch swipe
@@ -145,7 +139,9 @@ const FeaturedProducts: React.FC<ProductsProps> = ({
         {/* Header */}
         <div className="flex flex-col items-center text-center mb-6 md:mb-12">
           <h2 className="font-['Dancing_Script'] font-semibold text-[42px] md:text-[84px] leading-[1.2em] text-black mb-2 md:mb-3">
-            {title ? t(`products.${title.toLowerCase().replace(/\s+/g, '_')}`, title) : t('products.featured', 'Featured Products')}
+            {title
+              ? t(`products.${title.toLowerCase().replace(/\s+/g, '_')}`, title)
+              : t('products.featured', 'Featured Products')}
           </h2>
           {subtitle && (
             <p className="font-['Montserrat'] text-base md:text-[25px] leading-[1.22em] text-black max-w-5xl">
@@ -168,36 +164,38 @@ const FeaturedProducts: React.FC<ProductsProps> = ({
               breakpoints={{
                 320: {
                   slidesPerView: 1,
-                  spaceBetween: 8
+                  spaceBetween: 8,
                 },
                 640: {
                   slidesPerView: 2.5,
-                  spaceBetween: 12
+                  spaceBetween: 12,
                 },
                 968: {
                   slidesPerView: 3.9,
-                  spaceBetween: 16
+                  spaceBetween: 16,
                 },
                 1200: {
                   slidesPerView: 5,
-                  spaceBetween: 32
-                }
+                  spaceBetween: 32,
+                },
               }}
             >
               {displayProducts.map((product) => (
                 <SwiperSlide key={product.id}>
                   <div className="flex flex-col items-center p-2 md:p-4">
                     <div className="w-full h-[130px] md:h-[295px] relative mb-2 md:mb-4 rounded-md overflow-hidden">
-                      <Image 
-                        src={product.imageUrl} 
-                        alt={t(`products.${product.name.toLowerCase().replace(/\s+/g, '_')}`, product.name)} 
-                        fill 
-                        className="object-contain" 
+                      <Image
+                        src={product.imageUrl}
+                        alt={isRtl ? product.nameAr : product.name}
+                        fill
+                        className="object-contain"
                       />
                     </div>
-                    <span className="font-['Montserrat'] font-bold text-[11px] md:text-[17px] tracking-tight text-black text-center">
-                      {t(`products.${product.name.toLowerCase().replace(/\s+/g, '_')}`, product.name)}
-                    </span>
+                    <div className="flex flex-col items-center">
+                      <span className="font-['Montserrat'] font-medium md:text-[17px] tracking-tight text-black text-center">
+                        {isRtl ? product.nameAr : product.name}
+                      </span>
+                    </div>
                   </div>
                 </SwiperSlide>
               ))}
@@ -234,16 +232,18 @@ const FeaturedProducts: React.FC<ProductsProps> = ({
                 <div key={product.id} className="flex-shrink-0 w-[130px]">
                   <div className="flex flex-col items-center p-2">
                     <div className="w-full h-[130px] relative mb-2 rounded-md overflow-hidden">
-                      <Image 
-                        src={product.imageUrl} 
-                        alt={t(`products.${product.name.toLowerCase().replace(/\s+/g, '_')}`, product.name)} 
-                        fill 
-                        className="object-contain" 
+                      <Image
+                        src={product.imageUrl}
+                        alt={isRtl ? product.nameAr : product.name}
+                        fill
+                        className="object-contain"
                       />
                     </div>
-                    <span className="font-['Montserrat'] font-bold text-[11px] tracking-tight text-black text-center">
-                      {t(`products.${product.name.toLowerCase().replace(/\s+/g, '_')}`, product.name)}
-                    </span>
+                    <div className="flex flex-col items-center">
+                      <span className="font-['Montserrat'] font-medium text-[11px] tracking-tight text-black text-center">
+                        {isRtl ? product.nameAr : product.name}
+                      </span>
+                    </div>
                   </div>
                 </div>
               ))}

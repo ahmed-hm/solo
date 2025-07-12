@@ -3,10 +3,10 @@
     {
       "id": "smoothie",
       "name": "Smoothies",
-      "nameAr": "سموذي",
+      "nameAr": "سموثي",
       "imageUrl": "/images/recipes/Smothie/Strawberry SMOOTHIE.png",
       "description": "Refreshing fruit smoothies made with Solo's premium purées and syrups",
-      "descriptionAr": "سموذي منعش بالفواكه مصنوع من بيوريه وشراب صولو الممتاز"
+      "descriptionAr": "سموثي منعش بالفواكه مصنوع من بيوريه وشراب صولو الممتاز"
     },
     {
       "id": "hot-drinks",
@@ -38,7 +38,7 @@
       {
         "id": "blue-berry-smoothie",
         "name": "Blueberry Smoothie",
-        "nameAr": "سموذي التوت الأزرق",
+        "nameAr": "سموثي التوت الأزرق",
         "imageUrl": "/images/recipes/Smothie/BLUE BERRY SMOOTHIE.png",
         "ingredients": [
           "Solo Blueberry Purée",
@@ -69,12 +69,12 @@
         },
         "detailedIngredientsAr": {
           "12oz": [
-            "60 مل بيوريه",
+            "60 مل بيوريه توت أزرق",
             "60 مل ماء",
             "210 جم ثلج"
           ],
           "16oz": [
-            "75 مل بيوريه",
+            "75 مل بيوريه توت أزرق",
             "75 مل ماء",
             "250 جم ثلج"
           ]
@@ -85,7 +85,7 @@
       {
         "id": "blue-raspberry-smoothie",
         "name": "Blue Raspberry Smoothie",
-        "nameAr": "سموذي التوت الأزرق بالتوت",
+        "nameAr": "سموثي نكهة بلو راسبيري",
         "imageUrl": "/images/recipes/Smothie/Blue Raspberry Smoothie.png",
         "ingredients": [
           "Solo Blue Raspberry Purée",
@@ -116,12 +116,12 @@
         },
         "detailedIngredientsAr": {
           "12oz": [
-            "60 مل بيوريه",
+            "60 مل بيوريه توت أزرق",
             "60 مل ماء",
             "210 جم ثلج"
           ],
           "16oz": [
-            "75 مل بيوريه",
+            "75 مل بيوريه توت أزرق",
             "75 مل ماء",
             "250 جم ثلج"
           ]
@@ -132,7 +132,7 @@
       {
         "id": "cherry-smoothie",
         "name": "Cherry Smoothie",
-        "nameAr": "سموذي الكرز",
+        "nameAr": "سموثي الكرز",
         "imageUrl": "/images/recipes/Smothie/CHERRY SMOOTHIE.png",
         "ingredients": [
           "Solo Cherry Purée",
@@ -163,12 +163,12 @@
         },
         "detailedIngredientsAr": {
           "12oz": [
-            "60 مل بيوريه",
+            "60 مل بيوريه كرز",
             "60 مل ماء",
             "210 جم ثلج"
           ],
           "16oz": [
-            "75 مل بيوريه",
+            "75 مل بيوريه كرز",
             "75 مل ماء",
             "250 جم ثلج"
           ]
@@ -179,7 +179,7 @@
       {
         "id": "green-apple-smoothie",
         "name": "Green Apple Smoothie",
-        "nameAr": "سموذي التفاح الأخضر",
+        "nameAr": "سموثي التفاح الأخضر",
         "imageUrl": "/images/recipes/Smothie/Green Apple SMOOTHIE.png",
         "ingredients": [
           "Solo Green Apple Purée",
@@ -210,12 +210,12 @@
         },
         "detailedIngredientsAr": {
           "12oz": [
-            "60 مل بيوريه",
+            "60 مل بيوريه تفاح أخضر",
             "60 مل ماء",
             "210 جم ثلج"
           ],
           "16oz": [
-            "75 مل بيوريه",
+            "75 مل بيوريه تفاح أخضر",
             "75 مل ماء",
             "250 جم ثلج"
           ]
@@ -226,7 +226,7 @@
       {
         "id": "hibiscus-smoothie",
         "name": "Hibiscus Smoothie",
-        "nameAr": "سموذي الكركديه",
+        "nameAr": "سموثي الكركديه",
         "imageUrl": "/images/recipes/Smothie/Hibiscus SMOOTHIE.png",
         "ingredients": [
           "Solo Hibiscus Syrup",
@@ -257,12 +257,12 @@
         },
         "detailedIngredientsAr": {
           "12oz": [
-            "60 مل بيوريه",
+            "60 مل بيوريه كركديه",
             "60 مل ماء",
             "210 جم ثلج"
           ],
           "16oz": [
-            "75 مل بيوريه",
+            "75 مل بيوريه كركديه",
             "75 مل ماء",
             "250 جم ثلج"
           ]
@@ -273,7 +273,7 @@
       {
         "id": "kiwi-smoothie",
         "name": "Kiwi Smoothie",
-        "nameAr": "سموذي الكيوي",
+        "nameAr": "سموثي الكيوي",
         "imageUrl": "/images/recipes/Smothie/Kiwi SMOOTHIE.png",
         "ingredients": [
           "Solo Kiwi Purée",
@@ -304,12 +304,12 @@
         },
         "detailedIngredientsAr": {
           "12oz": [
-            "60 مل بيوريه",
+            "60 مل بيوريه كيوي",
             "60 مل ماء",
             "210 جم ثلج"
           ],
           "16oz": [
-            "75 مل بيوريه",
+            "75 مل بيوريه كيوي",
             "75 مل ماء",
             "250 جم ثلج"
           ]
@@ -320,7 +320,7 @@
       {
         "id": "lemon-smoothie",
         "name": "Lemon Smoothie",
-        "nameAr": "سموذي الليمون",
+        "nameAr": "سموثي الليمون",
         "imageUrl": "/images/recipes/Smothie/Lemon SMOOTHIE.png",
         "ingredients": [
           "Solo Lemon Purée",
@@ -351,12 +351,12 @@
         },
         "detailedIngredientsAr": {
           "12oz": [
-            "50 مل بيوريه",
+            "50 مل بيوريه ليمون",
             "60 مل ماء",
             "210 جم ثلج"
           ],
           "16oz": [
-            "60 مل بيوريه",
+            "60 مل بيوريه ليمون",
             "75 مل ماء",
             "250 جم ثلج"
           ]
@@ -367,7 +367,7 @@
       {
         "id": "mango-smoothie",
         "name": "Mango Smoothie",
-        "nameAr": "سموذي المانجو",
+        "nameAr": "سموثي المانجو",
         "imageUrl": "/images/recipes/Smothie/MANGO SMOOTHIE.png",
         "ingredients": [
           "Solo Mango Purée",
@@ -398,12 +398,12 @@
         },
         "detailedIngredientsAr": {
           "12oz": [
-            "60 مل بيوريه",
+            "60 مل بيوريه مانجو",
             "60 مل ماء",
             "210 جم ثلج"
           ],
           "16oz": [
-            "75 مل بيوريه",
+            "75 مل بيوريه مانجو",
             "75 مل ماء",
             "250 جم ثلج"
           ]
@@ -414,7 +414,7 @@
       {
         "id": "mix-berry-smoothie",
         "name": "Mix Berry Smoothie",
-        "nameAr": "سموذي التوت المشكل",
+        "nameAr": "سموثي مزيج التوت",
         "imageUrl": "/images/recipes/Smothie/Mix Berry SMOOTHIE.png",
         "ingredients": [
           "Solo Mix Berry Purée",
@@ -445,12 +445,12 @@
         },
         "detailedIngredientsAr": {
           "12oz": [
-            "60 مل بيوريه",
+            "60 مل بيوريه مزيج التوت",
             "60 مل ماء",
             "210 جم ثلج"
           ],
           "16oz": [
-            "75 مل بيوريه",
+            "75 مل بيوريه مزيج التوت",
             "75 مل ماء",
             "250 جم ثلج"
           ]
@@ -461,7 +461,7 @@
       {
         "id": "passion-smoothie",
         "name": "Passion Smoothie",
-        "nameAr": "سموذي الباشن فروت",
+        "nameAr": "سموثي الباشن فروت",
         "imageUrl": "/images/recipes/Smothie/PASSION SMOOTHIE.png",
         "ingredients": [
           "Solo Passion Purée",
@@ -492,12 +492,12 @@
         },
         "detailedIngredientsAr": {
           "12oz": [
-            "60 مل بيوريه",
+            "60 مل بيوريه باشن فروت",
             "60 مل ماء",
             "210 جم ثلج"
           ],
           "16oz": [
-            "75 مل بيوريه",
+            "75 مل بيوريه باشن فروت",
             "75 مل ماء",
             "250 جم ثلج"
           ]
@@ -508,7 +508,7 @@
       {
         "id": "pineapple-smoothie",
         "name": "Pineapple Smoothie",
-        "nameAr": "سموذي الأناناس",
+        "nameAr": "سموثي الأناناس",
         "imageUrl": "/images/recipes/Smothie/PINEAPPLE SMOOTHIE.png",
         "ingredients": [
           "Solo Pineapple Purée",
@@ -539,12 +539,12 @@
         },
         "detailedIngredientsAr": {
           "12oz": [
-            "60 مل بيوريه",
+            "60 مل بيوريه أناناس",
             "60 مل ماء",
             "210 جم ثلج"
           ],
           "16oz": [
-            "75 مل بيوريه",
+            "75 مل بيوريه أناناس",
             "75 مل ماء",
             "250 جم ثلج"
           ]
@@ -555,7 +555,7 @@
       {
         "id": "peach-smoothie",
         "name": "Peach Smoothie",
-        "nameAr": "سموذي الخوخ",
+        "nameAr": "سموثي الخوخ",
         "imageUrl": "/images/recipes/Smothie/Peach Smoothie.png",
         "ingredients": [
           "Solo Peach Purée",
@@ -586,12 +586,12 @@
         },
         "detailedIngredientsAr": {
           "12oz": [
-            "60 مل بيوريه",
+            "60 مل بيوريه خوخ",
             "60 مل ماء",
             "210 جم ثلج"
           ],
           "16oz": [
-            "75 مل بيوريه",
+            "75 مل بيوريه خوخ",
             "75 مل ماء",
             "250 جم ثلج"
           ]
@@ -602,7 +602,7 @@
       {
         "id": "raspberry-smoothie",
         "name": "Raspberry Smoothie",
-        "nameAr": "سموذي التوت",
+        "nameAr": "سموثي التوت الأحمر",
         "imageUrl": "/images/recipes/Smothie/Raspberry SMOOTHIE.png",
         "ingredients": [
           "Solo Raspberry Purée",
@@ -633,12 +633,12 @@
         },
         "detailedIngredientsAr": {
           "12oz": [
-            "60 مل بيوريه",
+            "60 مل بيوريه توت أحمر",
             "60 مل ماء",
             "210 جم ثلج"
           ],
           "16oz": [
-            "75 مل بيوريه",
+            "75 مل بيوريه توت أحمر",
             "75 مل ماء",
             "250 جم ثلج"
           ]
@@ -649,7 +649,7 @@
       {
         "id": "strawberry-smoothie",
         "name": "Strawberry Smoothie",
-        "nameAr": "سموذي الفراولة",
+        "nameAr": "سموثي الفراولة",
         "imageUrl": "/images/recipes/Smothie/Strawberry SMOOTHIE.png",
         "ingredients": [
           "Solo Strawberry Purée",
@@ -680,12 +680,12 @@
         },
         "detailedIngredientsAr": {
           "12oz": [
-            "60 مل بيوريه",
+            "60 مل بيوريه فراولة",
             "60 مل ماء",
             "210 جم ثلج"
           ],
           "16oz": [
-            "75 مل بيوريه",
+            "75 مل بيوريه فراولة",
             "75 مل ماء",
             "250 جم ثلج"
           ]
@@ -2282,7 +2282,7 @@
       "id": "strawberry-smoothie",
       "category": "smoothie",
       "name": "Strawberry Smoothie",
-      "nameAr": "سموذي الفراولة",
+      "nameAr": "سموثي الفراولة",
       "imageUrl": "/images/recipes/Smothie/Strawberry SMOOTHIE.png"
     },
     {
