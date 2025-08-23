@@ -1,0 +1,16 @@
+[
+  {
+    "id": "41",
+    "name": "Mocha Powder",
+    "nameAr": "موكا",
+    "imageUrl": "/images/products/Moca powder.png",
+    "category": "Powder"
+  },
+  {
+    "id": "44",
+    "name": "Latte Powder",
+    "nameAr": "لاتيه",
+    "imageUrl": "/images/products/latee powder.png",
+    "category": "Powder"
+  }
+]

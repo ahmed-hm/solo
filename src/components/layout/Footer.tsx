@@ -70,7 +70,9 @@ const Footer = ({ lng = 'en' }: FooterProps) => {
                 {t('footer.address')}
               </p>
               <p className="text-white text-[16px] font-['Montserrat'] opacity-70">info@solo-sauce.com</p>
-              <p className="text-white text-[16px] font-['Montserrat'] opacity-70">+201002299067</p>
+              <p className="text-white text-[16px] font-['Montserrat'] opacity-70" style={{ direction: 'ltr' }}>
+                +201002299067
+              </p>
             </div>
           </div>
 

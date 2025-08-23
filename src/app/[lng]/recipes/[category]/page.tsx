@@ -4,7 +4,7 @@ import { useTranslation, useIsRTL } from '@/i18n/client';
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { useRouter } from 'next/navigation';
+import { useRouter, useSearchParams, usePathname } from 'next/navigation';
 import recipeData from '@/data/recipes.json';
 import Pagination from '@/components/recipes/Pagination';
 import Breadcrumb from '@/components/layout/Breadcrumb';
@@ -55,6 +55,8 @@ export default function RecipeCategoryPage({ params }: PageProps) {
   const { t } = useTranslation(lng);
   const isRtl = useIsRTL(lng);
   const router = useRouter();
+  const searchParams = useSearchParams();
+  const pathname = usePathname();
 
   const [recipes, setRecipes] = useState<Recipe[]>([]);
   const [categoryInfo, setCategoryInfo] = useState<Category | null>(null);
@@ -67,6 +69,26 @@ export default function RecipeCategoryPage({ params }: PageProps) {
   const [selectedGlass, setSelectedGlass] = useState('');
   const [filteredRecipes, setFilteredRecipes] = useState<Recipe[]>([]);
   const [isMobileFilterOpen, setIsMobileFilterOpen] = useState(false);
+
+  // Read page parameter from URL query parameters on initial load
+  useEffect(() => {
+    const pageParam = searchParams.get('page');
+
+    // Set page
+    if (pageParam) {
+      const page = parseInt(pageParam, 10);
+      if (page > 0) {
+        setCurrentPage(page);
+      } else {
+        // Invalid page parameter, default to 1
+        setCurrentPage(1);
+        updateURLPage(1);
+      }
+    } else {
+      // No page parameter, ensure we're on page 1
+      setCurrentPage(1);
+    }
+  }, [searchParams]);
 
   useEffect(() => {
     // Find category info
@@ -108,12 +130,33 @@ export default function RecipeCategoryPage({ params }: PageProps) {
     }
 
     setFilteredRecipes(result);
-    setTotalPages(Math.ceil(result.length / recipesPerPage));
-    setCurrentPage(1); // Reset to first page when filters change
+    const newTotalPages = Math.ceil(result.length / recipesPerPage);
+    setTotalPages(newTotalPages);
+    
+    // Only reset page if current page exceeds the new total pages
+    if (currentPage > newTotalPages && newTotalPages > 0) {
+      setCurrentPage(1);
+      updateURLPage(1);
+    }
   }, [recipes, selectedBeverageType, selectedServed, selectedFlavor, selectedGlass]);
+
+  // Function to update URL with page parameter only
+  const updateURLPage = (page: number) => {
+    const params = new URLSearchParams(searchParams.toString());
+    
+    if (page === 1) {
+      params.delete('page');
+    } else {
+      params.set('page', page.toString());
+    }
+    
+    const newURL = params.toString() ? `${pathname}?${params.toString()}` : pathname;
+    router.push(newURL, { scroll: false });
+  };
 
   const handlePageChange = (page: number) => {
     setCurrentPage(page);
+    updateURLPage(page);
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
@@ -124,6 +167,8 @@ export default function RecipeCategoryPage({ params }: PageProps) {
     setSelectedGlass('');
     setFilteredRecipes(recipes);
     setCurrentPage(1);
+    
+    updateURLPage(1);
   };
 
   const handleFilterChange = (filterType: string, value: string) => {
@@ -141,6 +186,10 @@ export default function RecipeCategoryPage({ params }: PageProps) {
         setSelectedGlass(value);
         break;
     }
+    
+    // Reset to page 1 when filters change
+    setCurrentPage(1);
+    updateURLPage(1);
   };
 
   const handleApplyFilters = () => {
@@ -242,7 +291,7 @@ export default function RecipeCategoryPage({ params }: PageProps) {
               <select
                 className="text-sm font-['Montserrat'] text-black bg-white cursor-pointer min-w-[140px]"
                 value={selectedBeverageType}
-                onChange={(e) => setSelectedBeverageType(e.target.value)}
+                onChange={(e) => handleFilterChange('beverageType', e.target.value)}
               >
                 <option value="">{t('recipes.filters.beverageType', 'Beverage Type')}</option>
                 <option value="blended cold">{t('recipes.filters.blendedCold', 'Blended Cold')}</option>
@@ -255,7 +304,7 @@ export default function RecipeCategoryPage({ params }: PageProps) {
               <select
                 className="text-sm font-['Montserrat'] text-black bg-white cursor-pointer min-w-[140px]"
                 value={selectedServed}
-                onChange={(e) => setSelectedServed(e.target.value)}
+                onChange={(e) => handleFilterChange('servedHow', e.target.value)}
               >
                 <option value="">{t('recipes.filters.servedHow', 'Served How')}</option>
                 <option value="in a blender">{t('recipes.filters.inBlender', 'In a Blender')}</option>
@@ -268,7 +317,7 @@ export default function RecipeCategoryPage({ params }: PageProps) {
               <select
                 className="text-sm font-['Montserrat'] text-black bg-white cursor-pointer min-w-[140px]"
                 value={selectedFlavor}
-                onChange={(e) => setSelectedFlavor(e.target.value)}
+                onChange={(e) => handleFilterChange('flavorType', e.target.value)}
               >
                 <option value="">{t('recipes.filters.flavorType', 'Flavor Type')}</option>
                 <option value="berry">{t('recipes.filters.berry', 'Berry')}</option>
@@ -287,7 +336,7 @@ export default function RecipeCategoryPage({ params }: PageProps) {
               <select
                 className="text-sm font-['Montserrat'] text-black bg-white cursor-pointer min-w-[140px]"
                 value={selectedGlass}
-                onChange={(e) => setSelectedGlass(e.target.value)}
+                onChange={(e) => handleFilterChange('glassType', e.target.value)}
               >
                 <option value="">{t('recipes.filters.glassType', 'Glass Type')}</option>
                 <option value="blender cup">{t('recipes.filters.blenderCup', 'Blender Cup')}</option>

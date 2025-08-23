@@ -93,6 +93,7 @@ const Navbar = ({ lng = 'en' }: NavbarProps) => {
             <Link
               onClick={() => toggleDropdown('about')}
               href={''}
+              scroll={false}
               className="text-black font-['Montserrat'] font-medium text-[17px] leading-[20.7px] tracking-[-0.6px] hover:text-[#DBB58F] transition duration-300"
             >
               {t('nav.aboutUs')}
@@ -152,6 +153,7 @@ const Navbar = ({ lng = 'en' }: NavbarProps) => {
             <Link
               onClick={() => toggleDropdown('partners')}
               href={''}
+              scroll={false}
               className="text-black font-['Montserrat'] font-medium text-[17px] leading-[20.7px] tracking-[-0.6px] hover:text-[#DBB58F] transition duration-300"
             >
               {t('nav.partners')}
