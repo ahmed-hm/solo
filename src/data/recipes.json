@@ -50,6 +50,7 @@
           "حليب",
           "ثلج"
         ],
+        "relatedProductIds": ["1"],
         "trending": true,
         "beverageType": "blended cold",
         "servedHow": "in a blender",
@@ -97,6 +98,7 @@
           "حليب",
           "ثلج"
         ],
+        "relatedProductIds": ["2"],
         "trending": false,
         "beverageType": "blended cold",
         "servedHow": "in a blender",
@@ -144,6 +146,7 @@
           "حليب",
           "ثلج"
         ],
+        "relatedProductIds": ["3"],
         "trending": true,
         "beverageType": "blended cold",
         "servedHow": "in a blender",
@@ -191,6 +194,7 @@
           "حليب",
           "ثلج"
         ],
+        "relatedProductIds": ["8"],
         "trending": false,
         "beverageType": "blended cold",
         "servedHow": "in a blender",
@@ -238,6 +242,7 @@
           "حليب",
           "ثلج"
         ],
+        "relatedProductIds": ["16"],
         "trending": false,
         "beverageType": "blended cold",
         "servedHow": "in a blender",
@@ -285,6 +290,7 @@
           "حليب",
           "ثلج"
         ],
+        "relatedProductIds": ["9"],
         "trending": false,
         "beverageType": "blended cold",
         "servedHow": "in a blender",
@@ -332,6 +338,7 @@
           "حليب",
           "ثلج"
         ],
+        "relatedProductIds": ["4"],
         "trending": false,
         "beverageType": "blended cold",
         "servedHow": "in a blender",
@@ -379,6 +386,7 @@
           "حليب",
           "ثلج"
         ],
+        "relatedProductIds": ["5"],
         "trending": true,
         "beverageType": "blended cold",
         "servedHow": "in a blender",
@@ -426,6 +434,7 @@
           "حليب",
           "ثلج"
         ],
+        "relatedProductIds": ["10"],
         "trending": false,
         "beverageType": "blended cold",
         "servedHow": "in a blender",
@@ -473,6 +482,7 @@
           "حليب",
           "ثلج"
         ],
+        "relatedProductIds": ["6"],
         "trending": false,
         "beverageType": "blended cold",
         "servedHow": "in a blender",
@@ -520,6 +530,7 @@
           "حليب",
           "ثلج"
         ],
+        "relatedProductIds": ["12"],
         "trending": false,
         "beverageType": "blended cold",
         "servedHow": "in a blender",
@@ -567,6 +578,7 @@
           "حليب",
           "ثلج"
         ],
+        "relatedProductIds": ["11"],
         "trending": false,
         "beverageType": "blended cold",
         "servedHow": "in a blender",
@@ -614,6 +626,7 @@
           "حليب",
           "ثلج"
         ],
+        "relatedProductIds": ["13"],
         "trending": false,
         "beverageType": "blended cold",
         "servedHow": "in a blender",
@@ -661,6 +674,7 @@
           "حليب",
           "ثلج"
         ],
+        "relatedProductIds": ["14"],
         "trending": true,
         "beverageType": "blended cold",
         "servedHow": "in a blender",
@@ -708,6 +722,7 @@
           "بودرة الماتشا من صولو",
           "حليب ساخن"
         ],
+        "relatedProductIds": ["40"],
         "trending": false,
         "beverageType": "hot",
         "servedHow": "in a mug",
@@ -749,6 +764,7 @@
           "بودرة الشوكولاتة البيضاء من صولو",
           "حليب ساخن"
         ],
+        "relatedProductIds": ["39"],
         "trending": false,
         "beverageType": "hot",
         "servedHow": "in a mug",
@@ -790,6 +806,7 @@
           "بودرة شوكولاتة جيرسي من صولو",
           "حليب ساخن"
         ],
+        "relatedProductIds": ["42"],
         "trending": false,
         "beverageType": "hot",
         "servedHow": "in a mug",
@@ -835,6 +852,7 @@
           "بودرة الشوكولاتة الكلاسيكية من صولو",
           "حليب ساخن"
         ],
+        "relatedProductIds": ["42"],
         "trending": true,
         "beverageType": "hot",
         "servedHow": "in a mug",
@@ -878,6 +896,7 @@
           "إسبريسو",
           "حليب مبخر"
         ],
+        "relatedProductIds": ["37"],
         "trending": false,
         "beverageType": "hot",
         "servedHow": "in a mug",
@@ -925,6 +944,7 @@
           "إسبريسو",
           "حليب مبخر"
         ],
+        "relatedProductIds": ["39"],
         "trending": false,
         "beverageType": "hot",
         "servedHow": "in a mug",
@@ -972,6 +992,7 @@
           "إسبريسو",
           "حليب مبخر"
         ],
+        "relatedProductIds": ["38"],
         "trending": false,
         "beverageType": "hot",
         "servedHow": "in a mug",
@@ -1019,6 +1040,7 @@
           "صوص دولسي دي ليتشي من صولو",
           "حليب ساخن"
         ],
+        "relatedProductIds": ["36", "45"],
         "trending": true,
         "beverageType": "hot",
         "servedHow": "in a mug",
@@ -1066,6 +1088,7 @@
           "إسبريسو",
           "حليب مبخر"
         ],
+        "relatedProductIds": ["36"],
         "trending": false,
         "beverageType": "hot",
         "servedHow": "in a mug",
@@ -1117,6 +1140,7 @@
           "حليب",
           "ثلج"
         ],
+        "relatedProductIds": ["46", "2"],
         "trending": true,
         "beverageType": "blended cold",
         "servedHow": "in a blender",
@@ -1170,6 +1194,7 @@
           "حليب",
           "ثلج"
         ],
+        "relatedProductIds": ["46", "1"],
         "trending": false,
         "beverageType": "blended cold",
         "servedHow": "in a blender",
@@ -1223,6 +1248,7 @@
           "حليب",
           "ثلج"
         ],
+        "relatedProductIds": ["46", "3"],
         "trending": false,
         "beverageType": "blended cold",
         "servedHow": "in a blender",
@@ -1276,6 +1302,7 @@
           "حليب",
           "ثلج"
         ],
+        "relatedProductIds": ["46", "36"],
         "trending": true,
         "beverageType": "blended cold",
         "servedHow": "in a blender",
@@ -1331,6 +1358,7 @@
           "حليب",
           "ثلج"
         ],
+        "relatedProductIds": ["43", "37"],
         "trending": false,
         "beverageType": "blended cold",
         "servedHow": "in a blender",
@@ -1384,6 +1412,7 @@
           "حليب",
           "ثلج"
         ],
+        "relatedProductIds": ["46"],
         "trending": true,
         "beverageType": "blended cold",
         "servedHow": "in a blender",
@@ -1435,6 +1464,7 @@
           "حليب",
           "ثلج"
         ],
+        "relatedProductIds": ["43", "36"],
         "trending": false,
         "beverageType": "blended cold",
         "servedHow": "in a blender",
@@ -1490,6 +1520,7 @@
           "حليب",
           "ثلج"
         ],
+        "relatedProductIds": ["43", "39"],
         "trending": false,
         "beverageType": "blended cold",
         "servedHow": "in a blender",
@@ -1545,6 +1576,7 @@
           "حليب",
           "ثلج"
         ],
+        "relatedProductIds": [],
         "trending": false,
         "beverageType": "blended cold",
         "servedHow": "in a blender",
@@ -1596,6 +1628,7 @@
           "حليب",
           "ثلج"
         ],
+        "relatedProductIds": ["42"],
         "trending": false,
         "beverageType": "blended cold",
         "servedHow": "in a blender",
@@ -1645,6 +1678,7 @@
           "مياه غازية",
           "ثلج"
         ],
+        "relatedProductIds": ["18"],
         "trending": false,
         "beverageType": "cold mixed",
         "servedHow": "in a cup with ice",
@@ -1694,6 +1728,7 @@
           "مياه غازية",
           "ثلج"
         ],
+        "relatedProductIds": ["19"],
         "trending": true,
         "beverageType": "cold mixed",
         "servedHow": "in a cup with ice",
@@ -1743,6 +1778,7 @@
           "مياه غازية",
           "ثلج"
         ],
+        "relatedProductIds": ["20"],
         "trending": false,
         "beverageType": "cold mixed",
         "servedHow": "in a cup with ice",
@@ -1792,6 +1828,7 @@
           "مياه غازية",
           "ثلج"
         ],
+        "relatedProductIds": ["34"],
         "trending": false,
         "beverageType": "cold mixed",
         "servedHow": "in a cup with ice",
@@ -1839,6 +1876,7 @@
           "مياه غازية",
           "ثلج"
         ],
+        "relatedProductIds": ["17"],
         "trending": false,
         "beverageType": "cold mixed",
         "servedHow": "in a cup with ice",
@@ -1890,6 +1928,7 @@
           "ماء بارد",
           "ثلج"
         ],
+        "relatedProductIds": ["21"],
         "trending": false,
         "beverageType": "cold mixed",
         "servedHow": "in a cup with ice",
@@ -1945,6 +1984,7 @@
           "مياه غازية",
           "ثلج"
         ],
+        "relatedProductIds": ["35"],
         "trending": true,
         "beverageType": "cold mixed",
         "servedHow": "in a cup with ice",
@@ -1998,6 +2038,7 @@
           "مياه غازية",
           "ثلج"
         ],
+        "relatedProductIds": ["22"],
         "trending": false,
         "beverageType": "cold mixed",
         "servedHow": "in a cup with ice",
@@ -2047,6 +2088,7 @@
           "مياه غازية",
           "ثلج"
         ],
+        "relatedProductIds": ["23"],
         "trending": false,
         "beverageType": "cold mixed",
         "servedHow": "in a cup with ice",
@@ -2096,6 +2138,7 @@
           "مياه غازية",
           "ثلج"
         ],
+        "relatedProductIds": ["29"],
         "trending": false,
         "beverageType": "cold mixed",
         "servedHow": "in a cup with ice",
@@ -2145,6 +2188,7 @@
           "مياه غازية",
           "ثلج"
         ],
+        "relatedProductIds": ["24"],
         "trending": false,
         "beverageType": "cold mixed",
         "servedHow": "in a cup with ice",
@@ -2194,6 +2238,7 @@
           "مياه غازية",
           "ثلج"
         ],
+        "relatedProductIds": ["25"],
         "trending": false,
         "beverageType": "cold mixed",
         "servedHow": "in a cup with ice",
@@ -2243,6 +2288,7 @@
           "مياه غازية",
           "ثلج"
         ],
+        "relatedProductIds": ["26"],
         "trending": false,
         "beverageType": "cold mixed",
         "servedHow": "in a cup with ice",

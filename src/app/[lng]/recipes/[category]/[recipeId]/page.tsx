@@ -2,6 +2,7 @@
 
 import Breadcrumb from '@/components/layout/Breadcrumb';
 import recipesData from '@/data/recipes.json';
+import productsData from '@/data/products.json';
 import { useIsRTL, useTranslation } from '@/i18n/client';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -123,9 +124,7 @@ export default function RecipeDetailPage({ params }: PageProps) {
           {/* Print-only attribution header */}
           <div className="hidden print:block border-b border-gray-200 pb-3 mb-4">
             <div className="text-center">
-              <h2 className="font-['Montserrat'] font-bold text-lg text-black mb-1">
-                {t('title', 'Solo Sauce')}
-              </h2>
+              <h2 className="font-['Montserrat'] font-bold text-lg text-black mb-1">{t('title', 'Solo Sauce')}</h2>
               <p className="font-['Montserrat'] text-sm text-gray-600">
                 {t('recipes.printedFrom', 'Printed from')} www.solo-sauce.com
               </p>
@@ -255,35 +254,37 @@ export default function RecipeDetailPage({ params }: PageProps) {
               </span>
             </div>
 
-            {/* Get related products from the same category (limit to 4) */}
-            {/* <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-8">
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-8">
               {recipesData.recipes[category as keyof typeof recipesData.recipes]
-                .filter((r) => r.id !== recipeId)
-                .slice(0, 4)
-                .map((relatedRecipe) => (
-                  <Link
-                    href={`/${lng}/recipes/${category}/${relatedRecipe.id}`}
-                    key={relatedRecipe.id}
-                    className="overflow-hidden"
-                  >
-                    <div className="flex flex-col items-center">
-                      <div className="relative w-full aspect-square">
-                        <Image
-                          src={relatedRecipe.imageUrl}
-                          alt={isRtl ? relatedRecipe.nameAr : relatedRecipe.name}
-                          fill
-                          className="object-contain"
-                        />
+                .filter((r) => r.id == recipeId)
+                .slice(0, 1)
+                .flatMap((relatedRecipe) => {
+                  const productsIds = relatedRecipe.relatedProductIds || [];
+                  const products = productsData.filter((p) => productsIds.includes(p.id));
+                  return products;
+                })
+                .map((relatedProduct) => {
+                  return (
+                    <>
+                      <div className="flex flex-col items-center">
+                        <div className="relative w-full aspect-square">
+                          <Image
+                            src={relatedProduct.imageUrl}
+                            alt={isRtl ? relatedProduct.nameAr : relatedProduct.name}
+                            fill
+                            className="object-contain"
+                          />
+                        </div>
+                        <div className="p-4 text-center">
+                          <h4 className="font-['Montserrat'] font-bold text-lg text-black">
+                            {isRtl ? relatedProduct.nameAr : relatedProduct.name}
+                          </h4>
+                        </div>
                       </div>
-                      <div className="p-4 text-center">
-                        <h4 className="font-['Montserrat'] font-bold text-lg text-black">
-                          {isRtl ? relatedRecipe.nameAr : relatedRecipe.name}
-                        </h4>
-                      </div>
-                    </div>
-                  </Link>
-                ))}
-            </div> */}
+                    </>
+                  );
+                })}
+            </div>
           </div>
         </div>
       </div>
