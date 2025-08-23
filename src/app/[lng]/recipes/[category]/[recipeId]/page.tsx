@@ -265,23 +265,21 @@ export default function RecipeDetailPage({ params }: PageProps) {
                 })
                 .map((relatedProduct) => {
                   return (
-                    <>
-                      <div className="flex flex-col items-center">
-                        <div className="relative w-full aspect-square">
-                          <Image
-                            src={relatedProduct.imageUrl}
-                            alt={isRtl ? relatedProduct.nameAr : relatedProduct.name}
-                            fill
-                            className="object-contain"
-                          />
-                        </div>
-                        <div className="p-4 text-center">
-                          <h4 className="font-['Montserrat'] font-bold text-lg text-black">
-                            {isRtl ? relatedProduct.nameAr : relatedProduct.name}
-                          </h4>
-                        </div>
+                    <div className="flex flex-col items-center" key={relatedProduct.id}>
+                      <div className="relative w-full aspect-square">
+                        <Image
+                          src={relatedProduct.imageUrl}
+                          alt={isRtl ? relatedProduct.nameAr : relatedProduct.name}
+                          fill
+                          className="object-contain"
+                        />
                       </div>
-                    </>
+                      <div className="p-4 text-center">
+                        <h4 className="font-['Montserrat'] font-bold text-lg text-black">
+                          {isRtl ? relatedProduct.nameAr : relatedProduct.name}
+                        </h4>
+                      </div>
+                    </div>
                   );
                 })}
             </div>
